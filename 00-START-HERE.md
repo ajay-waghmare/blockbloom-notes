@@ -76,7 +76,7 @@ Handover\
   them on the new laptop or let them go.
 - **vc21 has sat at 20% since 10 Oct.** Widen it once Crashlytics is quiet; GA4 showed the first
   ever `app_exception` on 9 Oct (1 user).
-- **Fix the committed es-419 release note.** `tools/release-notes/vc21.json` on the release branch carries a Portuguese fragment ("mais fluida com botão"); the text live on Play is correct. One-line fix before the next rollout. The code review (`01-blockbloom\09-code-review-2026-10-10.md`) also found two latent ads-path bugs, a dead Remote Config events class and a missing portrait lock; none affect what is live today.
+- **Drop the untracked `tools/release-notes/vc21.json` on `main`.** Its es-419 entry carries a Portuguese fragment ("mais fluida com botão"); the committed copy on the release branch and the live notes are correct (corrected 11 Oct after first reading it backwards). The code review (`01-blockbloom\09-code-review-2026-10-10.md`) also found two latent ads-path bugs, a dead Remote Config events class and a missing portrait lock; the fixes are on `release/2026-10-11`.
 - **Revenue:** gems-first or remove_ads-first, the BillDesk verification, and the AdMob account.
   See `05-revenue-plan.md`.
 
