@@ -1,0 +1,34 @@
+[
+  {
+    "language": "en-US",
+    "text": "Starting a new game now asks first, so a saved run is never lost by accident.\n\nThe Daily Challenge sits right under Play.\n\nEvery screen, dialog and reminder is now fully translated — statistics, shop, settings and the tutorial included.\n\nFixes: the \"Loading ad\" screen could stay stuck after closing a rewarded ad; the game now stays in portrait."
+  },
+  {
+    "language": "pt-BR",
+    "text": "Começar um novo jogo agora pede confirmação, para a partida salva nunca se perder por engano.\n\nO Desafio Diário fica logo abaixo de Jogar.\n\nTodas as telas, caixas de diálogo e lembretes estão totalmente traduzidos — estatísticas, loja, configurações e tutorial incluídos.\n\nCorreções: a tela \"Carregando anúncio\" podia travar depois de fechar um anúncio com recompensa; o jogo agora fica sempre em modo retrato."
+  },
+  {
+    "language": "tr-TR",
+    "text": "Yeni oyun başlatırken artık onay isteniyor; kayıtlı oyunun yanlışlıkla kaybolmaz.\n\nGünlük Görev artık Oyna düğmesinin hemen altında.\n\nTüm ekranlar, pencereler ve hatırlatıcılar tamamen çevrildi — istatistikler, mağaza, ayarlar ve öğretici dahil.\n\nDüzeltmeler: ödüllü reklam kapatıldıktan sonra \"Reklam yükleniyor\" ekranı takılı kalabiliyordu; oyun artık dikey modda kalıyor."
+  },
+  {
+    "language": "ko-KR",
+    "text": "새 게임을 시작할 때 먼저 확인을 묻기 때문에 저장된 게임이 실수로 사라지지 않습니다.\n\n일일 챌린지가 플레이 버튼 바로 아래에 자리합니다.\n\n모든 화면, 대화상자, 알림이 완전히 번역되었습니다 — 통계, 상점, 설정, 튜토리얼 포함.\n\n수정: 보상형 광고를 닫은 뒤 \"광고 로딩 중\" 화면이 멈춰 있을 수 있던 문제; 이제 게임은 항상 세로 모드로 유지됩니다."
+  },
+  {
+    "language": "de-DE",
+    "text": "Ein neues Spiel fragt jetzt vorher nach, damit eine gespeicherte Runde nie versehentlich verloren geht.\n\nDie Tägliche Aufgabe sitzt direkt unter Spielen.\n\nJeder Bildschirm, Dialog und jede Erinnerung ist jetzt vollständig übersetzt — Statistiken, Shop, Einstellungen und Anleitung inklusive.\n\nBehoben: Der Bildschirm „Werbung wird geladen“ konnte nach dem Schließen einer Bonus-Werbung hängen bleiben; das Spiel bleibt jetzt im Hochformat."
+  },
+  {
+    "language": "ja-JP",
+    "text": "新しいゲームを始める前に確認するようになり、セーブしたプレイがうっかり消えることがなくなりました。\n\nデイリーチャレンジがプレイボタンのすぐ下に。\n\nすべての画面・ダイアログ・リマインダーを完全日本語化 — 統計、ショップ、設定、チュートリアルも対応。\n\n修正: リワード広告を閉じた後に「広告を読み込み中」画面が残ることがある問題; ゲームは常に縦画面で表示されます。"
+  },
+  {
+    "language": "es-ES",
+    "text": "Empezar una partida nueva ahora pide confirmación, para que una partida guardada nunca se pierda por error.\n\nEl Reto diario está justo debajo de Jugar.\n\nTodas las pantallas, diálogos y recordatorios están completamente traducidos — estadísticas, tienda, ajustes y tutorial incluidos.\n\nCorregido: la pantalla \"Cargando anuncio\" podía quedarse bloqueada tras cerrar un anuncio con recompensa; el juego ahora se mantiene en vertical."
+  },
+  {
+    "language": "es-419",
+    "text": "Empezar una partida nueva ahora pide confirmación, para que una partida guardada nunca se pierda por error.\n\nEl Reto diario está justo debajo de Jugar.\n\nTodas las pantallas, diálogos y recordatorios están completamente traducidos — estadísticas, tienda, configuración y tutorial incluidos.\n\nCorregido: la pantalla \"Cargando anuncio\" podía quedarse trabada tras cerrar un anuncio con recompensa; el juego ahora se mantiene en vertical."
+  }
+]
