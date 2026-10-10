@@ -1,0 +1,70 @@
+# =============================================================================
+#  AW EagleCraft — shared Android toolchain baseline
+#  SINGLE SOURCE OF TRUTH for every app in the portfolio.
+#
+#  Change a value here, then run:
+#      node D:\DevTools\_shared\tools\sync-baseline.js
+#
+#  Check for drift without writing anything:
+#      node D:\DevTools\_shared\tools\sync-baseline.js --check
+#
+#  WHY THIS FILE EXISTS
+#  Before it, every app hardcoded its own SDK levels and they drifted:
+#  BlockBloom 35, Sortopia 35, QuizMaster 34. When Google moved the target-API
+#  floor, that meant hunting through four repos under a deadline. Now it is one
+#  number in one file.
+# =============================================================================
+
+[cadence]
+# Google's rhythm is completely predictable:
+#   - a new Android ships each JUNE
+#   - it becomes MANDATORY for updates on AUG 31 of the FOLLOWING year
+# So we do the bump every FEBRUARY — roughly six months of slack, no deadline,
+# no scramble. The rule: a Play Console warning must never be what triggers
+# this work. If it is, the process failed, not the deadline.
+policy        = "Bump every February. Never let a Play warning be the trigger."
+last_bump     = "2026-07-26"   # API 36, done reactively — the last time that happens
+next_review   = "2027-02"
+next_deadline = "2027-08-31"   # expected API 37 (Android 17) enforcement
+
+[android]
+# The numbers Play actually gates on.
+compileSdk = 36
+targetSdk  = 36
+minSdk     = 26
+
+[play]
+# What Play requires RIGHT NOW. play-preflight.js compares each app against this.
+required_target_sdk = 36
+deadline            = "2026-08-31"
+# New apps face the stricter rule: a first release must already be at the
+# current floor. Sortopia and QuizMaster have never shipped, so they must be
+# at required_target_sdk before their first upload, not merely before a deadline.
+
+[toolchain]
+# AGP 8.13 is the LAST of the 8.x line. The floor for compileSdk 36 is 8.9.1, so
+# rather than take the minimum we sit at the end of the runway: the next move is
+# ONE deliberate AGP 9.x + Kotlin 2.x migration instead of another forced hop.
+#
+# Kotlin stays 1.9.x ON PURPOSE. AGP 9.0 brings built-in Kotlin support and
+# forces the Compose-compiler migration — a February job, not a deadline job.
+# Kotlin 1.9.x is also what pins play-services-ads to the 23.x line (24+ needs
+# kotlin-stdlib 2.1.x metadata a 1.9 compiler cannot read). Those three move
+# together or not at all.
+agp                        = "8.13.0"
+gradle                     = "8.13"     # AGP 8.13 requires Gradle >= 8.13
+kotlin                     = "1.9.24"
+jdk                        = "17"
+composeCompilerExtension   = "1.5.14"   # must match kotlin: 1.9.24 -> 1.5.14
+
+[apps]
+# Gradle/Kotlin apps that sync-baseline.js writes into.
+blockbloom = "D:/DevTools/BlockBloom"
+sortopia   = "D:/DevTools/Sortopia"
+quizmaster = "D:/DevTools/QuizMaster"
+
+[godot]
+# Godot projects: target SDK lives in export_presets.cfg, not Gradle. An EMPTY
+# gradle_build/target_sdk means "inherit the engine default", which is how an
+# app silently ships under-targeted. Preflight flags that; set it explicitly.
+cricket = "D:/DevTools/CricketGame/godot"

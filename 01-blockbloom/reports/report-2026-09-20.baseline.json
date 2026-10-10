@@ -1,0 +1,1601 @@
+{
+ "generated": "2026-09-20T08:56:06.871Z",
+ "months": [
+  {
+   "month": "202606",
+   "installs": 14,
+   "uninstalls": 13,
+   "net": 1,
+   "activeEnd": 8,
+   "through": "2026-06-30",
+   "days": 27
+  },
+  {
+   "month": "202607",
+   "installs": 26,
+   "uninstalls": 22,
+   "net": 4,
+   "activeEnd": 15,
+   "through": "2026-07-31",
+   "days": 31
+  },
+  {
+   "month": "202608",
+   "installs": 27,
+   "uninstalls": 18,
+   "net": 9,
+   "activeEnd": 24,
+   "through": "2026-08-21",
+   "days": 21
+  },
+  {
+   "month": "202609",
+   "installs": 31,
+   "uninstalls": 21,
+   "net": 10,
+   "activeEnd": 61,
+   "through": "2026-09-08",
+   "days": 8
+  }
+ ],
+ "countries": {
+  "IN": {
+   "installs": 19,
+   "uninstalls": 17,
+   "active": 10
+  },
+  "UA": {
+   "installs": 1,
+   "uninstalls": 2,
+   "active": 2
+  },
+  "TR": {
+   "installs": 4,
+   "uninstalls": 3,
+   "active": 3
+  },
+  "VN": {
+   "installs": 3,
+   "uninstalls": 1,
+   "active": 2
+  },
+  "BR": {
+   "installs": 6,
+   "uninstalls": 4,
+   "active": 4
+  },
+  "DK": {
+   "installs": 2,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "US": {
+   "installs": 12,
+   "uninstalls": 11,
+   "active": 5
+  },
+  "CH": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "RU": {
+   "installs": 2,
+   "uninstalls": 3,
+   "active": 0
+  },
+  "CZ": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "DE": {
+   "installs": 4,
+   "uninstalls": 4,
+   "active": 0
+  },
+  "JP": {
+   "installs": 5,
+   "uninstalls": 3,
+   "active": 5
+  },
+  "MM": {
+   "installs": 2,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "KR": {
+   "installs": 3,
+   "uninstalls": 4,
+   "active": 1
+  },
+  "MY": {
+   "installs": 3,
+   "uninstalls": 1,
+   "active": 2
+  },
+  "ID": {
+   "installs": 3,
+   "uninstalls": 3,
+   "active": 2
+  },
+  "HN": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "TN": {
+   "installs": 2,
+   "uninstalls": 1,
+   "active": 1
+  },
+  "QA": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "AU": {
+   "installs": 2,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "ZZ": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 0
+  },
+  "KG": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "UY": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "RO": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "PH": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "EG": {
+   "installs": 2,
+   "uninstalls": 0,
+   "active": 4
+  },
+  "IT": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 1
+  },
+  "NZ": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "PK": {
+   "installs": 2,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "FR": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "HR": {
+   "installs": 2,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "CA": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "DZ": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "ES": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 3
+  },
+  "FI": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "MD": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "MX": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "PL": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "PT": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "TW": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 2
+  },
+  "ZA": {
+   "installs": 0,
+   "uninstalls": 1,
+   "active": 1
+  },
+  "GB": {
+   "installs": 1,
+   "uninstalls": 2,
+   "active": 0
+  },
+  "SA": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "SV": {
+   "installs": 2,
+   "uninstalls": 2,
+   "active": 0
+  },
+  "IR": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "SE": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  }
+ },
+ "languages": {
+  "en_GB": {
+   "installs": 11,
+   "uninstalls": 7,
+   "active": 9
+  },
+  "en_IN": {
+   "installs": 8,
+   "uninstalls": 7,
+   "active": 2
+  },
+  "en_US": {
+   "installs": 21,
+   "uninstalls": 20,
+   "active": 7
+  },
+  "uk_UA": {
+   "installs": 1,
+   "uninstalls": 2,
+   "active": 3
+  },
+  "tr_TR": {
+   "installs": 4,
+   "uninstalls": 3,
+   "active": 2
+  },
+  "vi_VN": {
+   "installs": 3,
+   "uninstalls": 1,
+   "active": 2
+  },
+  "pt_BR": {
+   "installs": 6,
+   "uninstalls": 4,
+   "active": 4
+  },
+  "da_DK": {
+   "installs": 2,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "?": {
+   "installs": 7,
+   "uninstalls": 5,
+   "active": 3
+  },
+  "ru_RU": {
+   "installs": 3,
+   "uninstalls": 4,
+   "active": 0
+  },
+  "de_DE": {
+   "installs": 4,
+   "uninstalls": 4,
+   "active": 0
+  },
+  "ja_JP": {
+   "installs": 4,
+   "uninstalls": 2,
+   "active": 6
+  },
+  "ko_KR": {
+   "installs": 1,
+   "uninstalls": 2,
+   "active": 1
+  },
+  "id_ID": {
+   "installs": 3,
+   "uninstalls": 3,
+   "active": 3
+  },
+  "es_US": {
+   "installs": 2,
+   "uninstalls": 1,
+   "active": 2
+  },
+  "fr_FR": {
+   "installs": 3,
+   "uninstalls": 1,
+   "active": 2
+  },
+  "en_AU": {
+   "installs": 2,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "ar_EG": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "it_IT": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "en_NZ": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 0
+  },
+  "hr_HR": {
+   "installs": 2,
+   "uninstalls": 0,
+   "active": 2
+  },
+  "ar": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "en_CA": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "en_ZA": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "es_ES": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 2
+  },
+  "pl_PL": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "pt_PT": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "ro_RO": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "zh_TW": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 2
+  },
+  "es_419": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "es": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "fa_IR": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "sv_SE": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  }
+ },
+ "devices": {
+  "2109": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "I2301": {
+   "installs": 2,
+   "uninstalls": 6,
+   "active": 0
+  },
+  "Nord": {
+   "installs": 2,
+   "uninstalls": 1,
+   "active": 1
+  },
+  "OP5B05L1": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "e3q": {
+   "installs": 2,
+   "uninstalls": 2,
+   "active": 0
+  },
+  "lyriq": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "manaus": {
+   "installs": 1,
+   "uninstalls": 2,
+   "active": 0
+  },
+  "OP533FL1": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 1
+  },
+  "OP613BL1": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "Pacman": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 2
+  },
+  "RMX3085L1": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "Galaga": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "OP5961L1": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "TECNO-BD2d": {
+   "installs": 1,
+   "uninstalls": 2,
+   "active": 0
+  },
+  "a05m": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "amber": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "HWMAR": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "capri": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "pa3q": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 1
+  },
+  "r0s": {
+   "installs": 2,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "OP5958L1": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "Infinix-X6516": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "unknown": {
+   "installs": 2,
+   "uninstalls": 0,
+   "active": 3
+  },
+  "SC-51C": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "a14m": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "lapis": {
+   "installs": 2,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "spinel": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "V2244": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "y2q": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "TECNO-CK7n": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "OP5B16L1": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "a05s": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "a22": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "HNLGN-Q1": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "sabahl": {
+   "installs": 1,
+   "uninstalls": 2,
+   "active": 0
+  },
+  "P720F09": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 0
+  },
+  "a55x": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 1
+  },
+  "RE5894": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "b0q": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 1
+  },
+  "a56x": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "somalia": {
+   "installs": 2,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "sweet": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 1
+  },
+  "a32x": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "a40": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "a54x": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "itel-S681LN": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "nevada": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "dm3q": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "MNT": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 2
+  },
+  "guam": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "OP62B1L1": {
+   "installs": 1,
+   "uninstalls": 2,
+   "active": 0
+  },
+  "SC-53F": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "beyond1": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 0
+  },
+  "gale": {
+   "installs": 2,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "RE5C9AL1": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "RE60B8": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 0
+  },
+  "dew": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "e2s": {
+   "installs": 2,
+   "uninstalls": 1,
+   "active": 1
+  },
+  "joyeuse": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "q6q": {
+   "installs": 2,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "veux": {
+   "installs": 2,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "Infinix-X6532": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "Infinix-X6895B": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "LAVIETab10FHD4": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "OP574FL1": {
+   "installs": 0,
+   "uninstalls": 1,
+   "active": 1
+  },
+  "SC-53E": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "V2446": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 2
+  },
+  "a20s": {
+   "installs": 1,
+   "uninstalls": 2,
+   "active": 0
+  },
+  "a51": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "a53x": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "cancunf": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 2
+  },
+  "frankel": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "galahad": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "gta11pwifi": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 2
+  },
+  "husky": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 2
+  },
+  "o1s": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "r13s": {
+   "installs": 0,
+   "uninstalls": 1,
+   "active": 1
+  },
+  "spesn": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "stallion": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "surya": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "t2s": {
+   "installs": 2,
+   "uninstalls": 2,
+   "active": 1
+  },
+  "S6539Q": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "HNNLA-M": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "I2221": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "gta3xlwifi": {
+   "installs": 1,
+   "uninstalls": 2,
+   "active": 1
+  },
+  "m3q": {
+   "installs": 2,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "FCG02": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "HNBKQ": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "OP4C72L1": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 2
+  },
+  "a16x": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "fire": {
+   "installs": 2,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "gta9pwifi": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 1
+  },
+  "sapphire": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "Freyr_Pro_4G": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "P606F20": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "rodin": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 2
+  },
+  "tokay": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "vayu": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "REVVLTAB5G": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "fogo": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "g0s": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "gts10p": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 0
+  },
+  "MZW": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 0
+  },
+  "XT2261-2": {
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 2
+  },
+  "mumba": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 1
+  }
+ },
+ "os": {
+  "27": {
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 1
+  },
+  "29": {
+   "installs": 3,
+   "uninstalls": 3,
+   "active": 1
+  },
+  "30": {
+   "installs": 7,
+   "uninstalls": 8,
+   "active": 5
+  },
+  "31": {
+   "installs": 7,
+   "uninstalls": 4,
+   "active": 3
+  },
+  "33": {
+   "installs": 12,
+   "uninstalls": 8,
+   "active": 9
+  },
+  "34": {
+   "installs": 11,
+   "uninstalls": 6,
+   "active": 5
+  },
+  "35": {
+   "installs": 20,
+   "uninstalls": 19,
+   "active": 11
+  },
+  "36": {
+   "installs": 36,
+   "uninstalls": 25,
+   "active": 23
+  },
+  "37": {
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 3
+  }
+ },
+ "appver": {
+  "3": {
+   "installs": 9,
+   "uninstalls": 4,
+   "active": 0
+  },
+  "5": {
+   "installs": 4,
+   "uninstalls": 8,
+   "active": 0
+  },
+  "10": {
+   "installs": 9,
+   "uninstalls": 9,
+   "active": 0
+  },
+  "13": {
+   "installs": 12,
+   "uninstalls": 11,
+   "active": 0
+  },
+  "14": {
+   "installs": 64,
+   "uninstalls": 41,
+   "active": 61
+  }
+ },
+ "traffic": {
+  "Other": {
+   "visitors": 605,
+   "acq": 174
+  }
+ },
+ "daily": [
+  {
+   "date": "2026-06-04",
+   "installs": 7,
+   "uninstalls": 2,
+   "active": 6
+  },
+  {
+   "date": "2026-06-05",
+   "installs": 3,
+   "uninstalls": 1,
+   "active": 10
+  },
+  {
+   "date": "2026-06-06",
+   "installs": 2,
+   "uninstalls": 0,
+   "active": 12
+  },
+  {
+   "date": "2026-06-07",
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 15
+  },
+  {
+   "date": "2026-06-08",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 12
+  },
+  {
+   "date": "2026-06-09",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 12
+  },
+  {
+   "date": "2026-06-10",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 13
+  },
+  {
+   "date": "2026-06-11",
+   "installs": 0,
+   "uninstalls": 1,
+   "active": 13
+  },
+  {
+   "date": "2026-06-12",
+   "installs": 0,
+   "uninstalls": 1,
+   "active": 13
+  },
+  {
+   "date": "2026-06-13",
+   "installs": 0,
+   "uninstalls": 1,
+   "active": 11
+  },
+  {
+   "date": "2026-06-14",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 12
+  },
+  {
+   "date": "2026-06-15",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 12
+  },
+  {
+   "date": "2026-06-16",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 13
+  },
+  {
+   "date": "2026-06-17",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 12
+  },
+  {
+   "date": "2026-06-18",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 11
+  },
+  {
+   "date": "2026-06-19",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 14
+  },
+  {
+   "date": "2026-06-20",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 11
+  },
+  {
+   "date": "2026-06-21",
+   "installs": 0,
+   "uninstalls": 3,
+   "active": 12
+  },
+  {
+   "date": "2026-06-22",
+   "installs": 1,
+   "uninstalls": 2,
+   "active": 11
+  },
+  {
+   "date": "2026-06-23",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 10
+  },
+  {
+   "date": "2026-06-24",
+   "installs": 0,
+   "uninstalls": 1,
+   "active": 10
+  },
+  {
+   "date": "2026-06-25",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 12
+  },
+  {
+   "date": "2026-06-26",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 10
+  },
+  {
+   "date": "2026-06-27",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 11
+  },
+  {
+   "date": "2026-06-28",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 10
+  },
+  {
+   "date": "2026-06-29",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 9
+  },
+  {
+   "date": "2026-06-30",
+   "installs": 0,
+   "uninstalls": 1,
+   "active": 8
+  },
+  {
+   "date": "2026-07-01",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 9
+  },
+  {
+   "date": "2026-07-02",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 9
+  },
+  {
+   "date": "2026-07-03",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 9
+  },
+  {
+   "date": "2026-07-04",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 9
+  },
+  {
+   "date": "2026-07-05",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 8
+  },
+  {
+   "date": "2026-07-06",
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 9
+  },
+  {
+   "date": "2026-07-07",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 9
+  },
+  {
+   "date": "2026-07-08",
+   "installs": 2,
+   "uninstalls": 1,
+   "active": 11
+  },
+  {
+   "date": "2026-07-09",
+   "installs": 0,
+   "uninstalls": 1,
+   "active": 9
+  },
+  {
+   "date": "2026-07-10",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 9
+  },
+  {
+   "date": "2026-07-11",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 9
+  },
+  {
+   "date": "2026-07-12",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 10
+  },
+  {
+   "date": "2026-07-13",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 9
+  },
+  {
+   "date": "2026-07-14",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 11
+  },
+  {
+   "date": "2026-07-15",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 11
+  },
+  {
+   "date": "2026-07-16",
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 10
+  },
+  {
+   "date": "2026-07-17",
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 11
+  },
+  {
+   "date": "2026-07-18",
+   "installs": 0,
+   "uninstalls": 1,
+   "active": 9
+  },
+  {
+   "date": "2026-07-19",
+   "installs": 3,
+   "uninstalls": 2,
+   "active": 11
+  },
+  {
+   "date": "2026-07-20",
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 11
+  },
+  {
+   "date": "2026-07-21",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 11
+  },
+  {
+   "date": "2026-07-22",
+   "installs": 2,
+   "uninstalls": 0,
+   "active": 12
+  },
+  {
+   "date": "2026-07-23",
+   "installs": 5,
+   "uninstalls": 2,
+   "active": 16
+  },
+  {
+   "date": "2026-07-24",
+   "installs": 2,
+   "uninstalls": 4,
+   "active": 11
+  },
+  {
+   "date": "2026-07-25",
+   "installs": 1,
+   "uninstalls": 2,
+   "active": 12
+  },
+  {
+   "date": "2026-07-26",
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 11
+  },
+  {
+   "date": "2026-07-27",
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 10
+  },
+  {
+   "date": "2026-07-28",
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 13
+  },
+  {
+   "date": "2026-07-29",
+   "installs": 2,
+   "uninstalls": 3,
+   "active": 11
+  },
+  {
+   "date": "2026-07-30",
+   "installs": 2,
+   "uninstalls": 0,
+   "active": 14
+  },
+  {
+   "date": "2026-07-31",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 15
+  },
+  {
+   "date": "2026-08-01",
+   "installs": 1,
+   "uninstalls": 2,
+   "active": 14
+  },
+  {
+   "date": "2026-08-02",
+   "installs": 0,
+   "uninstalls": 1,
+   "active": 10
+  },
+  {
+   "date": "2026-08-03",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 10
+  },
+  {
+   "date": "2026-08-04",
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 11
+  },
+  {
+   "date": "2026-08-05",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 10
+  },
+  {
+   "date": "2026-08-06",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 11
+  },
+  {
+   "date": "2026-08-07",
+   "installs": 3,
+   "uninstalls": 2,
+   "active": 12
+  },
+  {
+   "date": "2026-08-08",
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 12
+  },
+  {
+   "date": "2026-08-09",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 10
+  },
+  {
+   "date": "2026-08-10",
+   "installs": 3,
+   "uninstalls": 2,
+   "active": 12
+  },
+  {
+   "date": "2026-08-11",
+   "installs": 0,
+   "uninstalls": 1,
+   "active": 11
+  },
+  {
+   "date": "2026-08-12",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 10
+  },
+  {
+   "date": "2026-08-13",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 10
+  },
+  {
+   "date": "2026-08-14",
+   "installs": 2,
+   "uninstalls": 1,
+   "active": 13
+  },
+  {
+   "date": "2026-08-15",
+   "installs": 1,
+   "uninstalls": 1,
+   "active": 12
+  },
+  {
+   "date": "2026-08-16",
+   "installs": 1,
+   "uninstalls": 0,
+   "active": 12
+  },
+  {
+   "date": "2026-08-17",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 13
+  },
+  {
+   "date": "2026-08-18",
+   "installs": 1,
+   "uninstalls": 2,
+   "active": 12
+  },
+  {
+   "date": "2026-08-19",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 12
+  },
+  {
+   "date": "2026-08-20",
+   "installs": 5,
+   "uninstalls": 3,
+   "active": 13
+  },
+  {
+   "date": "2026-08-21",
+   "installs": 8,
+   "uninstalls": 1,
+   "active": 24
+  },
+  {
+   "date": "2026-09-01",
+   "installs": 2,
+   "uninstalls": 2,
+   "active": 46
+  },
+  {
+   "date": "2026-09-02",
+   "installs": 2,
+   "uninstalls": 0,
+   "active": 48
+  },
+  {
+   "date": "2026-09-03",
+   "installs": 0,
+   "uninstalls": 0,
+   "active": 48
+  },
+  {
+   "date": "2026-09-04",
+   "installs": 8,
+   "uninstalls": 4,
+   "active": 49
+  },
+  {
+   "date": "2026-09-05",
+   "installs": 8,
+   "uninstalls": 5,
+   "active": 58
+  },
+  {
+   "date": "2026-09-06",
+   "installs": 5,
+   "uninstalls": 3,
+   "active": 62
+  },
+  {
+   "date": "2026-09-07",
+   "installs": 3,
+   "uninstalls": 5,
+   "active": 60
+  },
+  {
+   "date": "2026-09-08",
+   "installs": 3,
+   "uninstalls": 2,
+   "active": 61
+  }
+ ],
+ "rating": {
+  "total": 5,
+  "through": "2026-09-17"
+ },
+ "storeMonthly": [
+  {
+   "month": "202606",
+   "visitors": 27,
+   "acquisitions": 20,
+   "cvr": 0.7407407407407407
+  },
+  {
+   "month": "202607",
+   "visitors": 107,
+   "acquisitions": 25,
+   "cvr": 0.2336448598130841
+  },
+  {
+   "month": "202608",
+   "visitors": 282,
+   "acquisitions": 81,
+   "cvr": 0.2872340425531915
+  },
+  {
+   "month": "202609",
+   "visitors": 189,
+   "acquisitions": 48,
+   "cvr": 0.25396825396825395
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+# ---------------------------------------------------------------------------
+# This folder is the Block Bloom NOTES repo (journal + handover + practices).
+# Everything below stays OUT of git and travels by hand with the secrets.
+# ---------------------------------------------------------------------------
+
+# Raw conversation logs and the 31 MB session scratchpad: local reference only
+01-blockbloom/history/
+01-blockbloom/scratchpad-archive/
+
+# The map of where the keystore and service-account key live. Paths only, but it
+# does not need to be on GitHub.
+01-blockbloom/08-files-to-carry-manually.md
+
+# Work-laptop (QI Spine) material: not for a personal repo
+02-claude-practices/starter-kit/CLAUDE.work-laptop-REFERENCE-ONLY.md
+02-claude-practices/starter-kit/standards/
+
+# Memory files: only the Block Bloom / games knowledge is pushed. Personal-life files
+# and the working rules written in the QI Spine context stay local. Delete the
+# matching line here if you decide a file belongs in the repo after all.
+02-claude-practices/starter-kit/memory/*
+!02-claude-practices/starter-kit/memory/MEMORY.md
+!02-claude-practices/starter-kit/memory/project_blockbloom_*.md
+!02-claude-practices/starter-kit/memory/reference_blockbloom_analytics.md
+!02-claude-practices/starter-kit/memory/feedback_blockbloom_*.md
+!02-claude-practices/starter-kit/memory/project_android_target_api_baseline.md
+!02-claude-practices/starter-kit/memory/project_play_store_publishing.md
+!02-claude-practices/starter-kit/memory/project_game_dev_pipeline.md
+!02-claude-practices/starter-kit/memory/env_android_gradle_loopback_fix.md
+!02-claude-practices/starter-kit/memory/reference_personal_laptop_environment.md
+!02-claude-practices/starter-kit/memory/other-games/
+
+# Never, under any name
+*.jks
+*.keystore
+keystore.properties
+local.properties
+avid-airway-*.json
+*service-account*.json

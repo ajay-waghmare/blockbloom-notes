@@ -1,0 +1,5 @@
+Two things that need you
+⚠️ Privacy policy URL is a placeholder — Settings links to https://ajay-waghmare.github.io/blockbloom/privacy, which doesn't exist yet. The real hosted URL must be set (in SettingsScreen.kt and the Play listing) before the next submission. You already have github.com/ajay-waghmare/app-policy hosting a privacy page — want me to point it there?
+
+The remaining plan items all need a decision before I build them:
+

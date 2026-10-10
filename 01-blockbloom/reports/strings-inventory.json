@@ -1,0 +1,842 @@
+[
+  {
+    "file": "events/Events.kt",
+    "kind": "title",
+    "text": "Midweek Mania",
+    "interp": false
+  },
+  {
+    "file": "events/Events.kt",
+    "kind": "title",
+    "text": "Weekend Bonus",
+    "interp": false
+  },
+  {
+    "file": "lifeline/Lifelines.kt",
+    "kind": "label",
+    "text": "Undo",
+    "interp": false
+  },
+  {
+    "file": "lifeline/Lifelines.kt",
+    "kind": "label",
+    "text": "Hammer",
+    "interp": false
+  },
+  {
+    "file": "lifeline/Lifelines.kt",
+    "kind": "label",
+    "text": "Shuffle",
+    "interp": false
+  },
+  {
+    "file": "lifeline/Lifelines.kt",
+    "kind": "label",
+    "text": "Revive",
+    "interp": false
+  },
+  {
+    "file": "MainActivity.kt",
+    "kind": "label",
+    "text": "screen",
+    "interp": false
+  },
+  {
+    "file": "ui/Components.kt",
+    "kind": "contentDescription",
+    "text": "$value $label",
+    "interp": true
+  },
+  {
+    "file": "ui/Components.kt",
+    "kind": "label",
+    "text": "coins",
+    "interp": false
+  },
+  {
+    "file": "ui/Components.kt",
+    "kind": "label",
+    "text": "gems",
+    "interp": false
+  },
+  {
+    "file": "ui/Press.kt",
+    "kind": "label",
+    "text": "press",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/AchievementsScreen.kt",
+    "kind": "Text",
+    "text": "Achievements",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/AchievementsScreen.kt",
+    "kind": "Text",
+    "text": "$claimable ready to claim",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/AchievementsScreen.kt",
+    "kind": "Text",
+    "text": "${minOf(ap.value, def.threshold)} / ${def.threshold}",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/AchievementsScreen.kt",
+    "kind": "Text",
+    "text": "${def.rewardCoins}",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/AchievementsScreen.kt",
+    "kind": "Text",
+    "text": "${def.rewardGems}",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/AchievementsScreen.kt",
+    "kind": "Text",
+    "text": "Claim",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/AchievementsScreen.kt",
+    "kind": "contentDescription",
+    "text": "Back",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/AchievementsScreen.kt",
+    "kind": "contentDescription",
+    "text": "Claimed",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/AchievementsScreen.kt",
+    "kind": "contentDescription",
+    "text": "Locked",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/CalendarScreen.kt",
+    "kind": "Text",
+    "text": "Daily challenge",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/CalendarScreen.kt",
+    "kind": "contentDescription",
+    "text": "Back",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/CalendarScreen.kt",
+    "kind": "contentDescription",
+    "text": "Previous month",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/CalendarScreen.kt",
+    "kind": "contentDescription",
+    "text": "Next month",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/CalendarScreen.kt",
+    "kind": "contentDescription",
+    "text": "Day $day, ${if (done) ",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/Dialogs.kt",
+    "kind": "Text",
+    "text": "Game Over",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/Dialogs.kt",
+    "kind": "Text",
+    "text": "NEW BEST",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/Dialogs.kt",
+    "kind": "Text",
+    "text": "SCORE",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/Dialogs.kt",
+    "kind": "Text",
+    "text": "Best ${state.best}",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/Dialogs.kt",
+    "kind": "Text",
+    "text": "+$shownCoins coins",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/Dialogs.kt",
+    "kind": "Text",
+    "text": "Play Again",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/Dialogs.kt",
+    "kind": "Text",
+    "text": "Share",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/Dialogs.kt",
+    "kind": "Text",
+    "text": "Home",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/Dialogs.kt",
+    "kind": "Text",
+    "text": "+${result.rewardCoins}",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/Dialogs.kt",
+    "kind": "Text",
+    "text": "+${result.rewardGems}",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/Dialogs.kt",
+    "kind": "Text",
+    "text": "Already cleared — no extra reward",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/Dialogs.kt",
+    "kind": "Text",
+    "text": "Objective: ${state.levelObjective ?: ",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/Dialogs.kt",
+    "kind": "Text",
+    "text": "Level map",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/Dialogs.kt",
+    "kind": "Text",
+    "text": "· Watch ad",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/Dialogs.kt",
+    "kind": "Text",
+    "text": "$cost",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/Dialogs.kt",
+    "kind": "Text",
+    "text": "Loading ad…",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/Dialogs.kt",
+    "kind": "label",
+    "text": "coins",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/GameScreen.kt",
+    "kind": "Text",
+    "text": "Level ${state.levelId}: ${state.levelObjective ?: ",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/GameScreen.kt",
+    "kind": "Text",
+    "text": "${state.levelMovesLeft} moves",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/GameScreen.kt",
+    "kind": "Text",
+    "text": "BEST ${state.best}",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/GameScreen.kt",
+    "kind": "Text",
+    "text": "${minOf(cp.progress, cp.challenge.target)} / ${cp.challenge.target}",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/GameScreen.kt",
+    "kind": "Text",
+    "text": "COMBO ×$c",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/GameScreen.kt",
+    "kind": "Text",
+    "text": "x$count",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/GameScreen.kt",
+    "kind": "Text",
+    "text": "${def.coinCost}",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/GameScreen.kt",
+    "kind": "contentDescription",
+    "text": "Home",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/GameScreen.kt",
+    "kind": "contentDescription",
+    "text": "Score ${state.score}, best ${state.best}",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/GameScreen.kt",
+    "kind": "contentDescription",
+    "text": "${state.coins} coins",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/GameScreen.kt",
+    "kind": "contentDescription",
+    "text": "Music",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/GameScreen.kt",
+    "kind": "contentDescription",
+    "text": "Sound effects",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/GameScreen.kt",
+    "kind": "label",
+    "text": "score",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/GameScreen.kt",
+    "kind": "label",
+    "text": "coach",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/GameScreen.kt",
+    "kind": "label",
+    "text": "coachAlpha",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/HomeScreen.kt",
+    "kind": "Text",
+    "text": "BLOCK",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/HomeScreen.kt",
+    "kind": "Text",
+    "text": "BLOOM",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/HomeScreen.kt",
+    "kind": "Text",
+    "text": "Drop · Clear · Bloom",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/HomeScreen.kt",
+    "kind": "Text",
+    "text": "CONTINUE",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/HomeScreen.kt",
+    "kind": "Text",
+    "text": "New Game",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/HomeScreen.kt",
+    "kind": "Text",
+    "text": "PLAY",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/HomeScreen.kt",
+    "kind": "Text",
+    "text": "Remove Ads",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/HomeScreen.kt",
+    "kind": "Text",
+    "text": "DAILY CHALLENGE",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/HomeScreen.kt",
+    "kind": "Text",
+    "text": "${ch.rewardCoins}",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/HomeScreen.kt",
+    "kind": "Text",
+    "text": "${ch.rewardGems}",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/HomeScreen.kt",
+    "kind": "Text",
+    "text": "Completed — back tomorrow",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/HomeScreen.kt",
+    "kind": "Text",
+    "text": "Play again",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/HomeScreen.kt",
+    "kind": "Text",
+    "text": "Play Challenge",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/HomeScreen.kt",
+    "kind": "Text",
+    "text": "Share result",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/HomeScreen.kt",
+    "kind": "Text",
+    "text": "Daily Bonus",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/HomeScreen.kt",
+    "kind": "Text",
+    "text": "Day $streak streak",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/HomeScreen.kt",
+    "kind": "Text",
+    "text": "+$reward coins",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/HomeScreen.kt",
+    "kind": "Text",
+    "text": "Collect",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/HomeScreen.kt",
+    "kind": "contentDescription",
+    "text": "Settings",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/HomeScreen.kt",
+    "kind": "contentDescription",
+    "text": "Challenge calendar",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/HomeScreen.kt",
+    "kind": "contentDescription",
+    "text": "Share result",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/HomeScreen.kt",
+    "kind": "label",
+    "text": "Adventure",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/HomeScreen.kt",
+    "kind": "label",
+    "text": "Shop",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/HomeScreen.kt",
+    "kind": "label",
+    "text": "Awards",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/Juice.kt",
+    "kind": "Text",
+    "text": "NEW BEST!",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/LevelsScreen.kt",
+    "kind": "Text",
+    "text": "Adventure",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/LevelsScreen.kt",
+    "kind": "Text",
+    "text": "$cleared / ${state.levels.size} cleared",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/LevelsScreen.kt",
+    "kind": "Text",
+    "text": "${lp.level.id}",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/LevelsScreen.kt",
+    "kind": "contentDescription",
+    "text": "Back",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/LevelsScreen.kt",
+    "kind": "contentDescription",
+    "text": "Locked",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/OnboardingOverlay.kt",
+    "kind": "Text",
+    "text": "Skip",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/OnboardingOverlay.kt",
+    "kind": "label",
+    "text": "onboard-step",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/SettingsScreen.kt",
+    "kind": "Text",
+    "text": "Settings",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/SettingsScreen.kt",
+    "kind": "Text",
+    "text": "Block Bloom  v${BuildConfig.VERSION_NAME} (${BuildConfig.VERSION_CODE})",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/SettingsScreen.kt",
+    "kind": "contentDescription",
+    "text": "Back",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/SettingsScreen.kt",
+    "kind": "contentDescription",
+    "text": "Selected",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/ShopScreen.kt",
+    "kind": "Text",
+    "text": "Shop",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/ShopScreen.kt",
+    "kind": "Text",
+    "text": "Remove Ads",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/ShopScreen.kt",
+    "kind": "Text",
+    "text": "No interstitials, ever",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/ShopScreen.kt",
+    "kind": "Text",
+    "text": "Active",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/ShopScreen.kt",
+    "kind": "Text",
+    "text": "Select",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/ShopScreen.kt",
+    "kind": "Text",
+    "text": "${unlock.amount}",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/ShopScreen.kt",
+    "kind": "Text",
+    "text": "${unlock.amount}",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/ShopScreen.kt",
+    "kind": "Text",
+    "text": "Free",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/ShopScreen.kt",
+    "kind": "Text",
+    "text": "Select",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/ShopScreen.kt",
+    "kind": "Text",
+    "text": "${pack.gems} gems",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/ShopScreen.kt",
+    "kind": "contentDescription",
+    "text": "Back",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/StatsScreen.kt",
+    "kind": "Text",
+    "text": "Statistics",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/StatsScreen.kt",
+    "kind": "Text",
+    "text": "Everything here is stored on your device.",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/StatsScreen.kt",
+    "kind": "contentDescription",
+    "text": "Back",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/StatsScreen.kt",
+    "kind": "contentDescription",
+    "text": "$label: $value",
+    "interp": true
+  },
+  {
+    "file": "ui/screens/UpdateRequiredOverlay.kt",
+    "kind": "Text",
+    "text": "Update required",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/UpdateRequiredOverlay.kt",
+    "kind": "Text",
+    "text": "This version of Block Bloom can no longer be played. ",
+    "interp": false
+  },
+  {
+    "file": "ui/screens/UpdateRequiredOverlay.kt",
+    "kind": "Text",
+    "text": "Update now",
+    "interp": false
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "Remove Ads restored",
+    "interp": false
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "+$gems gems restored",
+    "interp": true
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "You can turn reminders on in Settings any time",
+    "interp": false
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "Daily Challenge: ${todayChallenge.title()}",
+    "interp": true
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "Clear the previous level first",
+    "interp": false
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "Level ${level.id}: ${level.objectiveLong()}",
+    "interp": true
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "Coins doubled!",
+    "interp": false
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "No ad available, try again",
+    "interp": false
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "Need ${u.amount - prefs.coins} more coins",
+    "interp": true
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "Need ${u.amount - prefs.gems} more gems",
+    "interp": true
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "${skin.name} unlocked!",
+    "interp": true
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "Ads removed — thank you!",
+    "interp": false
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "In-app purchases coming soon!",
+    "interp": false
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "+$granted gems",
+    "interp": true
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "In-app purchases coming soon!",
+    "interp": false
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "Need ${def.coinCost - prefs.coins} more coins for ${def.label}",
+    "interp": true
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "Nice clear! Earned a ${def.label}",
+    "interp": true
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "+1 ${def.label}",
+    "interp": true
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "Need ${def.coinCost - prefs.coins} more coins",
+    "interp": true
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "Nothing to undo",
+    "interp": false
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "No blocks to shuffle",
+    "interp": false
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "Tap a block to remove it",
+    "interp": false
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "You can still move",
+    "interp": false
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "Tap a filled block",
+    "interp": false
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "Quest ready: ${q.describe()}",
+    "interp": true
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "Reward claimed: +${q.rewardCoins} coins$gemPart",
+    "interp": true
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "Daily Challenge complete! +${ch.rewardCoins} coins$gemPart",
+    "interp": true
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "${a.title} unlocked! +${a.rewardCoins} coins$gemPart",
+    "interp": true
+  },
+  {
+    "file": "viewmodel/GameViewModel.kt",
+    "kind": "toast",
+    "text": "Event bonus +$bonus coins",
+    "interp": true
+  }
+]

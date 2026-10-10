@@ -1,0 +1,39 @@
+{
+ "items": [
+  {
+   "file": "02.png",
+   "out": "ja-01.png",
+   "caption": "広告なし・完全オフライン\n容量はわずか1MB以下"
+  },
+  {
+   "file": "03.png",
+   "out": "ja-02.png",
+   "caption": "ドラッグでも、タップでも\nかんたん操作"
+  },
+  {
+   "file": "04.png",
+   "out": "ja-03.png",
+   "caption": "指1本でサクッと\n置くだけ"
+  },
+  {
+   "file": "05.png",
+   "out": "ja-04.png",
+   "caption": "列や行をそろえて\nブロックを消そう"
+  },
+  {
+   "file": "06.png",
+   "out": "ja-05.png",
+   "caption": "連続で消して\nコンボでハイスコア"
+  },
+  {
+   "file": "07.png",
+   "out": "ja-06.png",
+   "caption": "制限時間なし\nリラックスして脳トレ"
+  },
+  {
+   "file": "01.png",
+   "out": "ja-07.png",
+   "caption": "毎日ログインで\nボーナスコインをGET"
+  }
+ ]
+}
