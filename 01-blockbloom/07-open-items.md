@@ -17,7 +17,7 @@ Owner: **A** = Ajay (console/account/business), **C** = Claude once asked.
 
 - [ ] **A** BillDesk bank-account verification (application 2609205439); retry off the corporate
       network; escalate with the id.
-- [ ] **A** Enroll in Play's 15% service-fee tier.
+- [x] **A** Enroll in Play's 15% service-fee tier (enrolled AW EagleCraft 14 Oct 2026).
 - [ ] **A** Create the AdMob account + three ad units.
 - [ ] **A** Choose gems-first or remove_ads-first.
 - [ ] **C** Interstitial behind Remote Config; rewarded-only default; per-country prices.
