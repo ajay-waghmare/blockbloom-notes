@@ -1,11 +1,11 @@
 # Memory Index — personal laptop (seeded from the work-laptop handover, 10 Oct 2026)
 
 ## Block Bloom (read the first one before any Play / release / analytics work)
-- [⭐⭐ Block Bloom release](project_blockbloom_release.md) — READ FIRST: vc21 1.11.0 LIVE at 20% since 10 Oct 2026, vc20 at 100%; full vc1→vc21 history + gotchas; 🔴main behind release/vc19 and release/2026-10-09
-- [⭐ Block Bloom CODE REVIEW 10 Oct 2026](project_blockbloom_code_review_2026_10.md) — vc21 verified OK (bundle hash, tests, live notes, emulator); ranked findings: latent adLoading bug, banner IS wired, FirebaseEventConfig dead, no portrait lock, no line numbers in release traces
-- [⭐⭐ Block Bloom revenue (next release)](project_blockbloom_monetization.md) — ads+IAP already coded behind flags; 🔴BillDesk KYC stuck (app id 2609205439); AdMob account missing; 13 listings still promise "no ads"
-- [⭐ Ref: Block Bloom analytics](reference_blockbloom_analytics.md) — GA4 555700046 + Play bucket scripts; ⛔reports lag 9 days, vitals 0 = NO DATA, split spikes by appVersion
-- [⭐⭐ FB: Block Bloom release flow](feedback_blockbloom_release_process.md) — release/vcNN cut from main, features merge INTO it, main merged once in production; release notes per run; name ≤50 chars; never pipe a committing script
+- [⭐⭐ Block Bloom release](project_blockbloom_release.md) — READ FIRST (synced 19 Oct): vc23 1.12.0 LIVE at 100% since 19 Oct = first revenue build (real AdMob, rewarded-only; Billing ON, IAP products pending); in-app update banner; 🔴main behind FOUR release branches; build output now ~/.build-blockbloom
+- [⭐ Block Bloom CODE REVIEW 10 Oct 2026](project_blockbloom_code_review_2026_10.md) — vc21 verified OK (bundle hash, tests, live notes, emulator); ranked findings: latent adLoading bug, banner IS wired, FirebaseEventConfig dead, no portrait lock, no line numbers in release traces → ALL FIXED 11 Oct on release/2026-10-11 (vc22), emulator-verified
+- [⭐⭐ Block Bloom revenue (next release)](project_blockbloom_monetization.md) — LIVE since vc23 (18 Oct): AdMob pub-1693732810683011 rewarded-only, banner/interstitial OFF via RC; Billing ON but IAP products not yet in Play (BillDesk KYC done 15 Oct); 15% fee tier; 13 listings refreshed with ASO copy; app-ads.txt live
+- [⭐ Ref: Block Bloom analytics](reference_blockbloom_analytics.md) — GA4 + Play scripts; ⛔reports lag 9 days; vitals 0 = no data
+- [⭐⭐ FB: Block Bloom release flow](feedback_blockbloom_release_process.md) — release/vcNN cut from main; merge to main only once in production
 - [⭐⭐ FB: Block Bloom daily JOURNAL](feedback_blockbloom_daily_journal.md) — 11 Oct 2026: day-to-day work goes in the notes repo D:/abc/Handover (journal/YYYY-MM-DD.md, branch journal), NOT the app repo; Ajay pushes/merges
 - [⭐ Android target-API baseline](project_android_target_api_baseline.md) — portfolio toml + sync/preflight scripts; bump every FEBRUARY; Play warning counts every track; Kotlin 1.9.24 pins ads/Firebase/billing
 - [⭐ Play Store publishing](project_play_store_publishing.md) — account ids, service account, upload keystore, API limits (no app-content API; first release via console); Jun–Jul 2026 history
@@ -22,6 +22,8 @@
 - [⭐⭐ FB: How to collaborate](feedback_how_to_collaborate.md) — counter overcomplication / over-research / scope creep; one improvement at a time; teach the reasoning
 - [⭐⭐ FB: Reduce Claude dependency](feedback_reduce_claude_dependency.md) — refuse micro-decisions; tool work only; redirect expression to humans
 - [⭐⭐ FB: NEVER merge into master](feedback_never_merge_master.md) — set on the work repos 5 Oct 2026; for Block Bloom's `main` ask Ajay which reading applies
+- [⭐⭐ Block Bloom HANDOVER folder](project_blockbloom_handover_2026_10.md) — built 10 Oct 2026 at D:/abc/Handover for the move to a personal laptop; what is inside, what was left out, decisions Ajay still owes
+- [Arrow Bloom (new game)](project_arrow_bloom.md) — com.aweagle.arrowbloom, kicked off 19 Oct 2026 on the personal laptop; nothing on this machine yet, ask for the repo
 - [⭐⭐ FB: Worktree per requirement](feedback_worktree_per_requirement.md) — create the worktree FIRST; never chain checkout && pull
 - [⭐⭐ FB: No agents for code checks](feedback_no_agents_for_code_checks.md) — even with ultracode ON: inline greps; ask before any fan-out
 - [⭐⭐ FB: Session hygiene & usage](feedback_session_hygiene.md) — /clear per task, /compact at ~150k; sonnet for mechanical subagents; no self-initiated workflows

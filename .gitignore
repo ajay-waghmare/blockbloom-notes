@@ -21,6 +21,7 @@
 02-claude-practices/starter-kit/memory/*
 !02-claude-practices/starter-kit/memory/MEMORY.md
 !02-claude-practices/starter-kit/memory/project_blockbloom_*.md
+!02-claude-practices/starter-kit/memory/project_arrow_bloom.md
 !02-claude-practices/starter-kit/memory/reference_blockbloom_analytics.md
 !02-claude-practices/starter-kit/memory/feedback_blockbloom_*.md
 !02-claude-practices/starter-kit/memory/project_android_target_api_baseline.md

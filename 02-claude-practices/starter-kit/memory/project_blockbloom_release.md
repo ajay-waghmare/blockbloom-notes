@@ -7,25 +7,64 @@ metadata:
   originSessionId: 66816704-878d-471b-8ad2-e488dd7990f3
 ---
 
-## CURRENT STATE — 10 Oct 2026 (read this first)
+## CURRENT STATE — 19 Oct 2026 (read this first; synced from the notes-repo journal 11–19 Oct)
 
-**Live on production:**
-- **vc21 / 1.11.0 at 20% staged rollout** (`inProgress`, `userFraction: 0.2`), release name "1.11.0 (21) - 3D Visual Polish". Features 3D candy beveled blocks, recessed board design, combo auras, tactile arcade button, title neon bloom glow, jewel mode tiles, score share button, and release notes in **8 locales** (en-US, pt-BR, tr-TR, ko-KR, de-DE, ja-JP, es-ES, es-419).
-- **vc20 / 1.10.0** remains at 100% serving the remaining 80% of active players until vc21 is expanded.
-- vc19 sits on alpha; vc21 also sits on internal as draft.
+**Live on production: vc23 / 1.12.0 at 100%**, approved and live worldwide 19 Oct (uploaded 18 Oct from
+`release/2026-10-17` @ `7cfcd43`, notes in 8 locales). Internal: vc23 completed. History: vc22 1.11.1 went
+internal + production 20% on 11 Oct and 100% by 14 Oct; vc21/vc20 superseded.
 
-**🔴 `main` is 21 commits behind `release/vc19`.** vc20 is now in production, so step 6 of
-[[feedback-blockbloom-release-process]] — merge the release branch into `main` — is DUE and not
-done. Note the standing rule [[feedback-never-merge-master]] forbids merging into master in any
-repo; Block Bloom's branch is `main`, not `master`, and this project's own documented flow ends in
-a merge to `main`. Confirm with Ajay rather than assuming either reading.
+**What vc23 turned on (first revenue build):** `ADS_ENABLED=true` with REAL AdMob ids (publisher
+`pub-1693732810683011`; app id + rewarded/interstitial/banner unit ids are in `app/build.gradle.kts`),
+"minimum ads" policy = rewarded video only, 100% opt-in (out-of-coins +1 lifeline, revive, double coins,
+skin unlock); banner + interstitial stay OFF via `AdsRules` defaults / Remote Config dials.
+`BILLING_ENABLED=true` — `PlayBillingHost` connects but self-gates until products exist in Play Console
+(BillDesk Video KYC done 15 Oct; product catalog activation still pending). Shop sells gem→coin and
+gem→lifeline bundles; `OutOfCoinsDialog` routes an unaffordable lifeline to the shop or a rewarded ad.
+Google Play flexible in-app updates (`InAppUpdateHost` + `UpdateBanner` on Home/Settings). Remote Config
+`min_supported_version_code = 23` is the force-update lever — NOT pulled; ~100 players still on 1.10.0
+which has no update banner, decision was to wait 3–5 days of nightly auto-updates first.
 
-**Uncommitted on `main` in `D:\DevTools\BlockBloom`** as of 7 Oct: `tools/play-rollout.js`
-(release notes moved out of the source) and the new `tools/release-notes/` folder.
+**Store / account:** all 13 listings refreshed with ASO copy (no more "no ads / no IAP" claims), English
+title `Block Bloom: Block Puzzle Game`; 5 store tags; third-party app stores enabled; **15% service-fee
+tier enrolled 14 Oct**; developer website `https://ajay-waghmare.github.io` set via the Publisher API
+(`tools/play-set-website.js`) and `app-ads.txt` (`google.com, pub-1693732810683011, DIRECT, …`) live there;
+privacy policy section 6 now discloses AdMob + Billing.
+
+**Numbers (19 Oct):** ~240 lifetime players, DAU ~28–31, 1,547 games, 796 lifelines, 389 streak claims,
+1 exception lifetime; 1.12.0 had 13 actives after a day with the first real `ad_reward` events. Top
+markets US, India, Indonesia, Korea, Brazil, Germany, Türkiye, Japan.
+
+**Next build, 19/20 Oct 2026: vc24 / 1.12.1 on `release/2026-10-20`** (worktree `D:DevToolsBlockBloom-oct20`, cut from
+`release/2026-10-17`, pushed, NOT uploaded): seeded first board (FirstSession), ShopCatalog + Economy with repriced
+lifeline packs (10 Hammers/10, 10 Shuffles/8, 5+5+5/10 — all beat the coin route, test-enforced), TxReason.GEM_EXCHANGE,
+out-of-coins "Watch Video" gated on adsActive, near-miss window 12%/30 pts, debug builds dark to Analytics, update-banner
+events. 110 unit tests, lint 0 errors, emulator-verified (first placement clears, shop cards, prompt). Notes `vc24.json`.
+
+**Console setup, 19 Oct night (via Claude in the browser + API verification):** Play ads declaration = Yes, advertising-ID
+purposes ads+analytics, Data safety DRAFT prepared (NOT submitted), four one-time products created INACTIVE
+(`remove_ads`, `gems_small/medium/large`; India ₹149/49/129/349), AdMob GDPR + US consent messages published,
+Remote Config v1 live with the four keys, key events marked, GA4 retention 14 months, SA can now read GA4 Admin
++ RC. **Store listings fixed 19 Oct:** 8 locales still said NO ADS / NO IAP in the full description — reworded
+and committed via `play-listings-set-multi.js` (`store/bundle_vc24_listings.json`). Open: AdMob review +
+app-ads.txt crawl, AdMob↔Firebase link, BillDesk/AdMob payments, Blaze before 15 Nov, Data safety submit.
+
+**Branches:** `main` = `ee83031`, untouched and behind `release/vc19`, `release/2026-10-09`, `-10-11`,
+`-10-17` — Ajay merges to `main` himself ([[feedback-never-merge-master]]). Each release branch is cut
+from the previous one. Local worktrees on the work laptop: `BlockBloom-oct17` (release/2026-10-17 @
+`c57f549`, added 19 Oct), `BlockBloom-oct11` (@ `9d8fd1a`), `BlockBloom-oct9`, `BlockBloom-rel` (vc19).
+`D:\DevTools\BlockBloom` (main) still carries an uncommitted `tools/play-rollout.js` and the untracked
+`tools/release-notes/` whose `vc21.json` es-419 entry is wrong — drop it, do not merge it.
+
+**Build output moved:** `layout.buildDirectory` → `~/.build-blockbloom/app` (OneDrive lock fix, 11 Oct), so
+on this laptop the AAB is `C:\Users\Ajay.Waghmare\.build-blockbloom\app\outputs\bundle\release\app-release.aab`.
+New tools on the release branches: `play-listings-set-multi.js`, `play-set-website.js`, `fetch-reviews.js`,
+`store/ASO_PROPOSAL_VC23.md`; `play-rollout.js` REQUIRES `tools/release-notes/vc<N>.json`.
 
 **Play credential:** service account JSON at `D:\Downloads\avid-airway-498216-e5-9f357c8e6b11.json`
 — matches the `avid-airway-*.json` entry in .gitignore. Pass by path via `PLAY_SA_FILE`; never
 inline it, never copy it into the repo. Same key reads Play, the GCS reports bucket and GA4.
+
+Sister title started 19 Oct: [[project-arrow-bloom]]. Daily log: `D:\abc\Handover\journal\`.
 
 ## Timeline
 
@@ -40,7 +79,9 @@ inline it, never copy it into the repo. Same key reads Play, the GCS reports buc
 | 25 Sep | vc18 | polish: force-update gate (dormant), scroll fixes, press feedback, new-best treatment |
 | 2 Oct | vc19 | first-run rebuild — land on a live board, coach marks instead of a card deck, rating/share loops moved to reachable moments, androidx.fragment 1.8.9. **Alpha only** |
 | 2 Oct | vc20 | vc19 + six-language localisation + Language setting + share at game over + REMINDER_OPENED + RC hourly. **Production, 100%** |
-| 4 Oct | vc21 | version bump only so far; revenue is the planned content |
+| 4 Oct | vc21 | 1.11.0 — 3D visual polish, 8-locale notes. Production 20% from 10 Oct |
+| 11 Oct | vc22 | 1.11.1 — every 10 Oct review fix: New Game confirm, challenge card under Play, full i18n sweep, SavedGameCodec v2, RC ad dials (off). Internal + prod 20%, 100% by 14 Oct |
+| 18 Oct | vc23 | 1.12.0 — **first revenue build**: real AdMob ids (rewarded only), Billing ON, shop bundles + out-of-coins flow, flexible in-app updates, squash/stretch + near-miss framing, ASO listings ×13. Prod 100%, approved 19 Oct |
 
 **The insight that drove vc19/vc20:** Block Bloom was never missing growth features — every growth
 loop was gated behind a milestone almost nobody reached (`level_complete` 0 users,

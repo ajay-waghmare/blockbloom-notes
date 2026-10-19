@@ -61,3 +61,11 @@ the vitals probe for the routine pull.
 | `Launch-BlockBloom.bat` | boots the `bloomtest` AVD with `-gpu host`, installs the debug APK, launches the app (edit the APK path) |
 | `Pending.txt` | a June note; the privacy URL it mentions was fixed in v1.4 |
 | `extract-conversation.js <session.jsonl> <out.md> [title]` | turns a Claude Code transcript into a readable Markdown log (prompts + replies only, secrets redacted). Used to produce `..\history\` |
+
+## Added 19 Oct 2026 (console setup and the listing fix)
+
+| Script | Commits? | Usage |
+|---|---|---|
+| `ga4-admin-rc-check.js` | no | `node ga4-admin-rc-check.js <sa> 555700046 block-bloom-31b39` — GA4 Admin (property, streams, key events, retention, Firebase link) + the live Remote Config template. Needs the Analytics Admin API and Remote Config API enabled on the SA project and the SA as Remote Config Viewer on the Firebase project (both done 19 Oct). |
+| `play-listings-fix-claims-2026-10-20.js` | no (writes a bundle) | `node play-listings-fix-claims-2026-10-20.js <sa> <pkg> <out.json>` — reads the LIVE listings through a discarded edit, applies exact text replacements per locale (fails closed on any miss or leftover claim), writes a bundle for `tools/play-listings-set-multi.js`. The 19 Oct run removed the "no ads / no in-app purchases" claims from 8 locales; edit the FIX table for any future wording surgery. |
+| `emu-uitap.js` | n/a | `node emu-uitap.js ui.xml [label]` — parses a `uiautomator dump`; lists every text/content-desc with its centre, or prints the centre of the first node matching `label` for `adb shell input tap`. |
