@@ -8,6 +8,10 @@ metadata:
   modified: 2026-10-20T06:10:42.199Z
 ---
 
+**PERSONAL LAPTOP IS PRIMARY from 20 Oct 2026 12:30** (handover: arrowbloom-notes
+`05-HANDOVER-PERSONAL-LAPTOP.md`). On this work laptop: `git pull` ArrowBloom + arrowbloom-notes before any work.
+Every decision/change → notes repo on GitHub, pushed same session ([[feedback-notes-github-every-change]]).
+
 **Arrow Bloom** = AW EagleCraft's second game (sister of Block Bloom). Kotlin + Compose, zero backend, no INTERNET
 permission, no ads/analytics/IAP. Package `com.aweagle.arrowbloom`.
 
