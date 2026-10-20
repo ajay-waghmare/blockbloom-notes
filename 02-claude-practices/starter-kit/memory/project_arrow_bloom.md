@@ -1,6 +1,6 @@
 ---
 name: project-arrow-bloom
-description: "Arrow Bloom (com.aweagle.arrowbloom) — Ajay's second game; BUILD 2 = the line-arrow game he wanted (winding lines slide out, 3 hearts, shapes, light theme), vc2 staged as DRAFT on internal + closed (alpha) 20 Oct; build 1 live there; paths, scripts, hooks, what Ajay must do"
+description: "Arrow Bloom (com.aweagle.arrowbloom) — Ajay's second game; the line-arrow game (winding lines slide out, 3 hearts, up to 5 stars, shapes, light theme); vc3 DRAFT on internal + closed (alpha) 20 Oct, vc1 live; paths, scripts, hooks, what Ajay must do"
 metadata:
   node_type: memory
   type: project
@@ -16,12 +16,13 @@ of UI") and sent screenshots of a line-arrow game: white board, dark winding arr
 Normal/Hard chip, hint with badge, # grid button. Build 2 is that genre with our identity (garden tints/accents,
 petal bloom at the exit, Daily Bloom, shapes). Rule: an arrow (line, head first, cell behind head in line)
 slides out along its own path; it can leave iff the line from its head to the board edge is empty. Wrong tap =
-bump back + lose a heart; stars = hearts kept; 0 hearts = same board again. Difficulty chip = solve depth
+bump back + lose a heart; 0 hearts = same board again. Stars (build 3): up to 5 per board, every heart lost and
+every hint used costs one, a clear keeps at least 1; Perfect = 5. Difficulty chip = solve depth
 (Easy ≤3, Normal ≤6, Hard ≤8, Expert). Shapes every 5th level (heart/flower/diamond/circle); Daily shape varies.
 
 **Where it lives on this laptop**
 - Worktree `D:\DevTools\ArrowBloom-pub`, branch **`release/2026-10-20-line-arrows`** (90e7c4f build 2,
-  fc3298c play-stage-draft.js), cut from `release/2026-10-20` (build 1, 1a0d894/659746c/63bfd87). Pushed.
+  fc3298c play-stage-draft.js, f628361 build 3 = five stars), cut from `release/2026-10-20` (build 1, 1a0d894/659746c/63bfd87). Pushed.
   `main` (dae1664) = 19 Oct scaffold; Ajay merges, never me.
 - Notes `D:\abc\ArrowBloom-notes`, branch `journal` (pushed): checklist, copyright (build-2 genre note),
   runbook `04-PLAY-CONSOLE-RUNBOOK-2026-10-20.md` (Parts 1–9; Part 9 = roll out build 2), journal 2026-10-20.
@@ -30,9 +31,10 @@ bump back + lose a heart; stars = hearts kept; 0 hearts = same board again. Diff
   `D:\DevTools\BlockBloom-oct20` (gitignored, same upload key; never print the password). Same build env as
   Block Bloom (JDK 17 + jdkpatch, `dangerouslyDisableSandbox`, `./gradlew --stop` on "different roots").
 
-**Play (20 Oct 11:40):** developer 8701670281323658688, app 4972007048514376994. Console setup complete
-(all declarations). Tracks: internal = vc1 completed + **vc2 DRAFT "1.0.0 (2)"**; alpha (Closed Alpha, testers =
-"Block Bloom Testers" list, 34 users) = vc1 completed (sent for review by browser Claude) + **vc2 DRAFT**.
+**Play (20 Oct):** developer 8701670281323658688, app 4972007048514376994. Console setup complete
+(all declarations). Tracks (12:00): internal = vc1 completed + **vc3 DRAFT "1.0.0 (3)"**; alpha (Closed Alpha, testers =
+"Block Bloom Testers" list, 34 users) = vc1 completed (sent for review by browser Claude) + **vc3 DRAFT**.
+vc2 was staged at 11:40 and replaced by vc3 before anyone rolled it out (vc2 is burnt, never used).
 Listing text (8 locales) + new icon/feature graphic/6 screenshots committed by API. 12 testers × 14 days gate
 applies (Dashboard says so). Opt-in link: `https://play.google.com/apps/testing/com.aweagle.arrowbloom`.
 
