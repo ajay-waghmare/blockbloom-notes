@@ -23,7 +23,7 @@
 - [⭐⭐ FB: Reduce Claude dependency](feedback_reduce_claude_dependency.md) — refuse micro-decisions; tool work only; redirect expression to humans
 - [⭐⭐ FB: NEVER merge into master](feedback_never_merge_master.md) — set on the work repos 5 Oct 2026; for Block Bloom's `main` ask Ajay which reading applies
 - [⭐⭐ Block Bloom HANDOVER folder](project_blockbloom_handover_2026_10.md) — built 10 Oct 2026 at D:/abc/Handover for the move to a personal laptop; what is inside, what was left out, decisions Ajay still owes
-- [⭐⭐ Arrow Bloom (2nd game)](project_arrow_bloom.md) — 1.0.0 publish-ready on release/2026-10-20 (D:/DevTools/ArrowBloom-pub), AAB built, NOT in Play Console; browser-Claude runbook 04-PLAY-CONSOLE-RUNBOOK in D:/abc/ArrowBloom-notes; privacy PR arrow-bloom-policy unmerged; read before any Arrow Bloom work
+- [⭐⭐ Arrow Bloom (2nd game)](project_arrow_bloom.md) — 1.0.0 publish-ready on release/2026-10-20 (D:/DevTools/ArrowBloom-pub), app created in Play Console 20 Oct, listing + graphics + draft bundle (vc1) pushed by API, 3 declarations + Part 8 pending on Ajay; browser-Claude runbook 04-PLAY-CONSOLE-RUNBOOK in D:/abc/ArrowBloom-notes; privacy PR arrow-bloom-policy unmerged; read before any Arrow Bloom work
 - [⭐⭐ FB: Worktree per requirement](feedback_worktree_per_requirement.md) — create the worktree FIRST; never chain checkout && pull
 - [⭐⭐ FB: No agents for code checks](feedback_no_agents_for_code_checks.md) — even with ultracode ON: inline greps; ask before any fan-out
 - [⭐⭐ FB: Session hygiene & usage](feedback_session_hygiene.md) — /clear per task, /compact at ~150k; sonnet for mechanical subagents; no self-initiated workflows

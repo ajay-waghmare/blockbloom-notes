@@ -38,8 +38,7 @@ new app's Dashboard decides; Data safety = "No" still needs the privacy URL; Adv
 **State (20 Oct 2026):** targetSdk 36, versionCode 1 / 1.0.0, 50 unit tests green, lint 0 errors, debug
 walkthrough + release (R8) smoke tests on emulator `bloomtest` clean. Store kit in `store/` (icon 512 RGBA,
 feature graphic, 6 framed 1080×1920 screenshots via `tools/store-screenshots.js`, `listing_v1.json` 8 locales).
-**No Play Console app yet** — Ajay creates it via the runbook (Part 1 browser Claude, Part 2 Ajay uploads AAB,
-Part 3 = my scripts, Parts 4–7 declarations by browser Claude, Part 8 Ajay's clicks).
+**Play Console (20 Oct evening):** app EXISTS (developer 8701670281323658688, app 4972007048514376994); listing text (8 locales) + graphics committed via API; versionCode 1 is a DRAFT on Internal testing (uploaded via tools/play-upload.js, so the API does accept a first upload); declarations done except Privacy policy / Target audience / Data safety (blocked on the unmerged privacy PR). Dashboard confirms the 12-tester/14-day closed test applies. Remaining = runbook Part 8 (all Ajay: merge PR, submit Data safety, roll out internal, closed test, send for review, apply for production).
 
 **Test hooks (debug build only):** long-press the score (≈511,241 on the 1080×2400 AVD) auto-taps one
 free arrow; long-press the title (≈511,171) jumps to the next garden.
