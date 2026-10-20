@@ -45,7 +45,7 @@ tracks, keeps live releases, refuses to commit if one would vanish), `play-listi
 
 **Debug-only long-press hooks (1080×2400 AVD `bloomtest`):** arrows chip (113,331) = tap the hinted arrow;
 hearts (537,331) = a wrong tap; title (541,171) = next garden; subtitle (540,234) = next multiple-of-5 level.
-Walkthrough script was `ab-emu-walk-v2.sh` in the 20 Oct scratchpad (29 steps).
+Emulator scripts are in the repo: `tools/emulator/` (walkthrough.sh 29 steps, stars-check.sh, store-shots.sh, common.sh with paths + hook coordinates, README).
 
 **Why:** Ajay wants that line-arrow game, released once testers approve; uniqueness via gardens, blooms,
 Daily Bloom, shapes, own icon/colours. **How to apply:** next steps are Ajay's console clicks (runbook Part 9),
