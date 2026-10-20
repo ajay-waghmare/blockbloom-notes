@@ -1,6 +1,6 @@
 ---
 name: project-arrow-bloom
-description: "Arrow Bloom (com.aweagle.arrowbloom) — Ajay's second game; the line-arrow game (winding lines slide out, 3 hearts, up to 5 stars, shapes, light theme); vc3 DRAFT on internal + closed (alpha) 20 Oct, vc1 live; paths, scripts, hooks, what Ajay must do"
+description: "Arrow Bloom (com.aweagle.arrowbloom) — Ajay's second game; the line-arrow game (winding lines slide out, 3 hearts, up to 5 stars, shapes, light theme); vc4 DRAFT on internal + closed (alpha) 20 Oct, vc1 live; paths, scripts, hooks, what Ajay must do"
 metadata:
   node_type: memory
   type: project
@@ -22,7 +22,7 @@ every hint used costs one, a clear keeps at least 1; Perfect = 5. Difficulty chi
 
 **Where it lives on this laptop**
 - Worktree `D:\DevTools\ArrowBloom-pub`, branch **`release/2026-10-20-line-arrows`** (90e7c4f build 2,
-  fc3298c play-stage-draft.js, f628361 build 3 = five stars), cut from `release/2026-10-20` (build 1, 1a0d894/659746c/63bfd87). Pushed.
+  fc3298c play-stage-draft.js, f628361 build 3 = five stars, 365d71a build 4 = slimmer arrows), cut from `release/2026-10-20` (build 1, 1a0d894/659746c/63bfd87). Pushed.
   `main` (dae1664) = 19 Oct scaffold; Ajay merges, never me.
 - Notes `D:\abc\ArrowBloom-notes`, branch `journal` (pushed): checklist, copyright (build-2 genre note),
   runbook `04-PLAY-CONSOLE-RUNBOOK-2026-10-20.md` (Parts 1–9; Part 9 = roll out build 2), journal 2026-10-20.
@@ -32,9 +32,9 @@ every hint used costs one, a clear keeps at least 1; Perfect = 5. Difficulty chi
   Block Bloom (JDK 17 + jdkpatch, `dangerouslyDisableSandbox`, `./gradlew --stop` on "different roots").
 
 **Play (20 Oct):** developer 8701670281323658688, app 4972007048514376994. Console setup complete
-(all declarations). Tracks (12:00): internal = vc1 completed + **vc3 DRAFT "1.0.0 (3)"**; alpha (Closed Alpha, testers =
-"Block Bloom Testers" list, 34 users) = vc1 completed (sent for review by browser Claude) + **vc3 DRAFT**.
-vc2 was staged at 11:40 and replaced by vc3 before anyone rolled it out (vc2 is burnt, never used).
+(all declarations). Tracks (12:15): internal = vc1 completed + **vc4 DRAFT "1.0.0 (4)"**; alpha (Closed Alpha, testers =
+"Block Bloom Testers" list, 34 users) = vc1 completed (sent for review by browser Claude) + **vc4 DRAFT**.
+vc2 and vc3 were staged and replaced before anyone rolled them out (burnt, never used). Levels: 100 in 5 gardens of 20, then endless Infinite Bloom from 101, plus a Daily Bloom.
 Listing text (8 locales) + new icon/feature graphic/6 screenshots committed by API. 12 testers × 14 days gate
 applies (Dashboard says so). Opt-in link: `https://play.google.com/apps/testing/com.aweagle.arrowbloom`.
 

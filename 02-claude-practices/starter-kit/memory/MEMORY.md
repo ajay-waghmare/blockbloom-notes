@@ -23,7 +23,7 @@
 - [⭐⭐ FB: Reduce Claude dependency](feedback_reduce_claude_dependency.md) — refuse micro-decisions; tool work only; redirect expression to humans
 - [⭐⭐ FB: NEVER merge into master](feedback_never_merge_master.md) — set on the work repos 5 Oct 2026; for Block Bloom's `main` ask Ajay which reading applies
 - [⭐⭐ Block Bloom HANDOVER folder](project_blockbloom_handover_2026_10.md) — built 10 Oct 2026 at D:/abc/Handover for the move to a personal laptop; what is inside, what was left out, decisions Ajay still owes
-- [⭐⭐ Arrow Bloom (2nd game)](project_arrow_bloom.md) — the line-arrow game (winding lines, 3 hearts, up to 5 stars, shapes, light theme) on release/2026-10-20-line-arrows; vc3 DRAFT on internal + closed (alpha), vc1 live; runbook Part 9 = Ajay rolls out; read before any Arrow Bloom work
+- [⭐⭐ Arrow Bloom (2nd game)](project_arrow_bloom.md) — the line-arrow game (winding lines, 3 hearts, up to 5 stars, shapes, light theme) on release/2026-10-20-line-arrows; vc4 DRAFT on internal + closed (alpha), vc1 live; runbook Part 9 = Ajay rolls out; read before any Arrow Bloom work
 - [⭐⭐ Ref: Play API tracks.update gotcha](reference_play_api_track_update_gotcha.md) — PUT with only a draft DROPS the live release; carry live releases over; Block Bloom play-upload.js sends only the draft — check before next use
 - [⭐⭐ FB: Worktree per requirement](feedback_worktree_per_requirement.md) — create the worktree FIRST; never chain checkout && pull
 - [⭐⭐ FB: No agents for code checks](feedback_no_agents_for_code_checks.md) — even with ultracode ON: inline greps; ask before any fan-out
