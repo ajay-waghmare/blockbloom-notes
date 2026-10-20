@@ -19,9 +19,9 @@ Kotlin + Compose, zero backend, no INTERNET permission in 1.0.0. Package `com.aw
 - Notes clone `D:\abc\ArrowBloom-notes` (repo `arrowbloom-notes`), committed on branch `journal` (pushed):
   `02-PLAY-STORE-LAUNCH-CHECKLIST.md`, `03-COPYRIGHT-AND-DIFFERENTIATION.md`,
   **`04-PLAY-CONSOLE-RUNBOOK-2026-10-20.md`** (browser-Claude runbook, parts 1–8), `journal/2026-10-20.md`.
-- Privacy page: `D:\DevTools\app-policy` branch **`arrow-bloom-policy`** (pushed, PR not merged) adds
+- Privacy page: `D:\DevTools\app-policy` branch `arrow-bloom-policy`, MERGED to main 20 Oct 09:50, adds
   `arrow-bloom-privacy.html`; the app's PRIVACY_POLICY_URL already points at
-  `https://ajay-waghmare.github.io/app-policy/arrow-bloom-privacy.html` → 404 until Ajay merges to main.
+  `https://ajay-waghmare.github.io/app-policy/arrow-bloom-privacy.html` (live).
 - Build dir `C:\Users\Ajay.Waghmare\.build-arrowbloom\app` (AAB `outputs\bundle\release\app-release.aab`,
   ~2 MB; release APK `outputs\apk\release`). `keystore.properties` + `local.properties` copied from
   `D:\DevTools\BlockBloom-oct20` (gitignored; same upload key as Block Bloom; never print the password).
@@ -38,7 +38,7 @@ new app's Dashboard decides; Data safety = "No" still needs the privacy URL; Adv
 **State (20 Oct 2026):** targetSdk 36, versionCode 1 / 1.0.0, 50 unit tests green, lint 0 errors, debug
 walkthrough + release (R8) smoke tests on emulator `bloomtest` clean. Store kit in `store/` (icon 512 RGBA,
 feature graphic, 6 framed 1080×1920 screenshots via `tools/store-screenshots.js`, `listing_v1.json` 8 locales).
-**Play Console (20 Oct evening):** app EXISTS (developer 8701670281323658688, app 4972007048514376994); listing text (8 locales) + graphics committed via API; versionCode 1 is a DRAFT on Internal testing (uploaded via tools/play-upload.js, so the API does accept a first upload); declarations done except Privacy policy / Target audience / Data safety (blocked on the unmerged privacy PR). Dashboard confirms the 12-tester/14-day closed test applies. Remaining = runbook Part 8 (all Ajay: merge PR, submit Data safety, roll out internal, closed test, send for review, apply for production).
+**Play Console (20 Oct evening):** app EXISTS (developer 8701670281323658688, app 4972007048514376994); listing text (8 locales) + graphics committed via API; versionCode 1 is a DRAFT on Internal testing (uploaded via tools/play-upload.js, so the API does accept a first upload); declarations done except Privacy policy / Target audience / Data safety (privacy page went live 20 Oct 09:50 after Ajay merged the PR; browser Claude was asked to finish them). Dashboard confirms the 12-tester/14-day closed test applies. Remaining = runbook Part 8 (all Ajay: merge PR, submit Data safety, roll out internal, closed test, send for review, apply for production).
 
 **Test hooks (debug build only):** long-press the score (≈511,241 on the 1080×2400 AVD) auto-taps one
 free arrow; long-press the title (≈511,171) jumps to the next garden.
