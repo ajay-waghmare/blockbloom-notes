@@ -37,23 +37,26 @@ the contents and never copy it into the repo.
 3. **GA4 is not the user base, and a spike must be split by `appVersion` before blaming it on
    testing.** Most early installs ran vc14/vc15, which had no analytics, so GA4 only sees vc16+.
 
-## Baseline from the 23 Oct 2026 pull
+## Baseline from the 24 Oct 2026 pull
 
-- **Active Devices with app installed**: **125** (as of 19 Oct 2026 Play export).
+- **Active Devices with app installed**: **132** (up +7 from previous pull; through 20 Oct 2026 Play export).
 - **Monthly Installs / Uninstalls**:
   - Jul: 26 installs, 22 uninstalls, net +4, active 15
   - Aug: 93 installs, 65 uninstalls, net +28, active 46
   - Sep: 193 installs, 116 uninstalls, net +77, active 127
-  - Oct (through 19 Oct): 120 installs, 133 uninstalls, net -13, active 125
-- **Store Funnel (Play)**: 367 visitors, 98 acquisitions, conversion steady at **26.7%**.
-- **GA4 Daily Traffic (1–23 Oct)**: ~20–25 daily active users, 5–12 new users/day, 350–600m daily engagement time.
-- **Top Countries (Active Devices)**: Brazil (14), US (12), India (8), South Korea (7), Japan (7), UK (5), Indonesia (4), Germany (4), Spain (4).
-- **App Version Migration**: vc24 (1.12.1) rolled out to 100% on 20 Oct and already accumulated 34 active users / 76 sessions in GA4.
+  - Oct (through 20 Oct): 126 installs, 138 uninstalls, net -12, active 132
+- **Store Funnel (Play)**: 414 visitors, 108 acquisitions, conversion steady at **26.1%**.
+- **GA4 Daily Traffic (1–24 Oct)**:
+  - 23 Oct surged to **838 min** total engagement time across 22 daily active users and 39 sessions (~38 min/user).
+  - 24 Oct (in progress): 15 active users, 4 new users, 24 sessions, 442 min engagement.
+- **Top Countries (Active Devices)**: Brazil (15), US (10), Japan (8), India (8), South Korea (7), Indonesia (6), Germany (5), UK (5), Turkey (4), Mexico (4).
+- **App Version Migration**: vc24 (1.12.1) has reached 43 active users / 107 sessions in GA4, and 28 active devices with 0 uninstalls in the Play Console export.
 - **Gameplay & Retention Loops**:
-  - 1,846 games started by 214 users (~8.6 games/user).
-  - 1,047 lifelines used across 63 players.
-  - Tutorial completion: 152 / 164 users (~92.7% completion).
-  - Rating prompt fired for 88 users.
+  - 1,958 games started by 219 users (~8.9 games/user).
+  - 1,132 lifelines used across 65 players.
+  - Tutorial completion: 181 completions across 158 users (~92.9% completion rate).
+  - Rating prompt fired for 91 users.
+  - Rewarded ads watched: 17 events across 10 users.
   - Review: 5-star verified review from Tanmay Bagal on vc24 ("Very fun game with nice clean ui").
 - **Stability**: Zero crash spikes; only 1 `app_exception` recorded in GA4 for the entire month. Vitals below Play privacy threshold.
 
