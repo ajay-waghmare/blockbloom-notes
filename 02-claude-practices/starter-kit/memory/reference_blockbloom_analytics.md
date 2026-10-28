@@ -37,26 +37,27 @@ the contents and never copy it into the repo.
 3. **GA4 is not the user base, and a spike must be split by `appVersion` before blaming it on
    testing.** Most early installs ran vc14/vc15, which had no analytics, so GA4 only sees vc16+.
 
-## Baseline from the 24 Oct 2026 pull
+## Baseline from the 28 Oct 2026 pull
 
-- **Active Devices with app installed**: **132** (up +7 from previous pull; through 20 Oct 2026 Play export).
+- **Active Devices with app installed**: **139** (up +7 from previous pull; through 23 Oct 2026 Play export).
 - **Monthly Installs / Uninstalls**:
   - Jul: 26 installs, 22 uninstalls, net +4, active 15
   - Aug: 93 installs, 65 uninstalls, net +28, active 46
   - Sep: 193 installs, 116 uninstalls, net +77, active 127
-  - Oct (through 20 Oct): 126 installs, 138 uninstalls, net -12, active 132
-- **Store Funnel (Play)**: 414 visitors, 108 acquisitions, conversion steady at **26.1%**.
-- **GA4 Daily Traffic (1–24 Oct)**:
-  - 23 Oct surged to **838 min** total engagement time across 22 daily active users and 39 sessions (~38 min/user).
-  - 24 Oct (in progress): 15 active users, 4 new users, 24 sessions, 442 min engagement.
-- **Top Countries (Active Devices)**: Brazil (15), US (10), Japan (8), India (8), South Korea (7), Indonesia (6), Germany (5), UK (5), Turkey (4), Mexico (4).
-- **App Version Migration**: vc24 (1.12.1) has reached 43 active users / 107 sessions in GA4, and 28 active devices with 0 uninstalls in the Play Console export.
+  - Oct (through 23 Oct): 143 installs, 152 uninstalls, net -9, active 139
+- **Store Funnel (Play)**: 489 visitors, 131 acquisitions, conversion steady at **26.8%**.
+- **GA4 Daily Traffic (1–28 Oct)**:
+  - High sustained engagement throughout the week: 23 Oct (839m), 24 Oct (507m), 25 Oct (756m), 26 Oct (706m), 27 Oct (613m).
+  - Averaging 30–40 min/day per active user.
+  - 28 Oct (in progress): 16 active users, 2 new users, 18 sessions, 288 min engagement.
+- **Top Countries (Active Devices)**: Brazil (13), US (11), India (11), South Korea (8), Japan (8), Indonesia (7), Turkey (4), Germany (4), UK (4), Ukraine (4), Belgium (4), Mexico (4).
+- **App Version Migration**: vc24 (1.12.1) has taken over as the primary version with **83 active devices** in Play export and 70 active users / 256 sessions in GA4.
 - **Gameplay & Retention Loops**:
-  - 1,958 games started by 219 users (~8.9 games/user).
-  - 1,132 lifelines used across 65 players.
-  - Tutorial completion: 181 completions across 158 users (~92.9% completion rate).
-  - Rating prompt fired for 91 users.
-  - Rewarded ads watched: 17 events across 10 users.
+  - 2,318 games started by 238 users (~9.7 games/user).
+  - 1,461 lifelines used across 75 players.
+  - Tutorial completion: 196 completions across 173 users (~93.0% completion rate).
+  - Rating prompt fired for 105 users (190 events).
+  - Rewarded ads watched: 18 events across 11 users.
   - Review: 5-star verified review from Tanmay Bagal on vc24 ("Very fun game with nice clean ui").
 - **Stability**: Zero crash spikes; only 1 `app_exception` recorded in GA4 for the entire month. Vitals below Play privacy threshold.
 
