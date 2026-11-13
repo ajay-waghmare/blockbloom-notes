@@ -7,11 +7,19 @@ metadata:
   originSessionId: 66816704-878d-471b-8ad2-e488dd7990f3
 ---
 
-## CURRENT STATE — 19 Oct 2026 (read this first; synced from the notes-repo journal 11–19 Oct)
+## CURRENT STATE — 13 Nov 2026 (synced from notes journal 13 Nov)
 
-**Live on production: vc23 / 1.12.0 at 100%**, approved and live worldwide 19 Oct (uploaded 18 Oct from
-`release/2026-10-17` @ `7cfcd43`, notes in 8 locales). Internal: vc23 completed. History: vc22 1.11.1 went
-internal + production 20% on 11 Oct and 100% by 14 Oct; vc21/vc20 superseded.
+**Live on production: vc26 / 1.12.3 at 100%**, rolled out via Google Play Publisher API on 13 Nov 2026
+(uploaded from `release/2026-10-25` @ `e2d3132`, notes in 13 locales). Internal: vc26 completed.
+History: vc25 (1.12.2) released 22 Oct; vc24 (1.12.1) approved 21 Oct; vc23 (1.12.0) 19 Oct.
+
+**What vc26 fixed & added:**
+1. Locked all store intents to Google Play (`com.android.vending`) across `InAppUpdateHost`, `ReviewPrompter`, `SettingsScreen`, and `UpdateRequiredOverlay` to prevent OEM store (Xiaomi GetApps) interception.
+2. Unlocked players stuck on pre-fix builds with one-time migration (`promptVersion = 2`) resetting `hasRated`.
+3. Stopped `positiveMoment` from silently swallowing daily review quota mid-game.
+4. Added direct one-tap review buttons on HomeScreen (top bar ★) and GameOverDialog (★ Review).
+5. Lowered rating prompt threshold to score 25.
+6. Play Publisher API service account (`play-publisher@avid-airway-498216-e5.iam.gserviceaccount.com`) granted app access in Google Play Console.
 
 **What vc23 turned on (first revenue build):** `ADS_ENABLED=true` with REAL AdMob ids (publisher
 `pub-1693732810683011`; app id + rewarded/interstitial/banner unit ids are in `app/build.gradle.kts`),

@@ -37,6 +37,39 @@ the contents and never copy it into the repo.
 3. **GA4 is not the user base, and a spike must be split by `appVersion` before blaming it on
    testing.** Most early installs ran vc14/vc15, which had no analytics, so GA4 only sees vc16+.
 
+## Baseline from the 13 Nov 2026 pull
+
+- **GA4 Daily Traffic (7–13 Nov 2026)**:
+  - 07 Nov: 18 active, 9 new, 25 sessions, 9.9m avg playtime (178m total)
+  - 08 Nov: 13 active, 0 new, 22 sessions, 23.7m avg playtime (308m total)
+  - 09 Nov: 11 active, 2 new, 15 sessions, 20.4m avg playtime (224m total)
+  - 10 Nov: 19 active, 9 new, 26 sessions, 16.5m avg playtime (314m total)
+  - 11 Nov: 9 active, 1 new, 12 sessions, 28.4m avg playtime (256m total)
+  - 12 Nov: 14 active, 4 new, 21 sessions, 27.1m avg playtime (379m total)
+  - 13 Nov (in progress): 8 active, 0 new, 17 sessions, 26.4m avg playtime (211m total)
+- **Top Countries (last 30 days active users in GA4)**:
+  - India: 25 active (19 new), 186 sessions, 7.4 sess/user, 133m avg playtime
+  - United States: 24 active (20 new), 110 sessions, 4.6 sess/user, 90m avg playtime
+  - Brazil: 12 active (9 new), 63 sessions, 5.3 sess/user, 68m avg playtime
+  - South Korea: 10 active (3 new), 101 sessions, 10.1 sess/user, 195m avg playtime
+  - Germany: 8 active (5 new), 16 sessions
+  - Indonesia: 8 active (6 new), 43 sessions, 175m avg playtime
+  - Mexico: 7 active (6 new), 25 sessions
+  - Türkiye: 5 active (3 new), 80 sessions, 16.0 sess/user, 387m avg playtime
+- **App Version Migration (active users last 30d in GA4)**:
+  - 1.12.1 (vc24): 124 active users (586 sessions, 8,859m playtime) — dominant version
+  - 1.11.1 (vc22): 49 active users (140 sessions, 2,598m playtime)
+  - 1.12.2 (vc25): 41 active users (92 sessions, 1,306m playtime)
+  - 1.12.0 (vc23): 40 active users (78 sessions, 743m playtime)
+  - 1.10.0 (vc19): 12 active users (42 sessions, 467m playtime)
+  - 1.12.3 (vc26): Just released to Production & Internal (13 Nov)
+- **Gameplay & Retention Loops (GA4)**:
+  - 1,332 games started, 1,316 games over.
+  - 1,100 lifelines used across 42 players.
+  - 112 review prompts fired across 57 users.
+  - Rewarded ads: 28 ad rewards across 10 users, 18 impressions, 2 clicks.
+- **Stability**: Zero crash spikes in GA4; app remains rock-solid.
+
 ## Baseline from the 28 Oct 2026 pull
 
 - **Active Devices with app installed**: **139** (up +7 from previous pull; through 23 Oct 2026 Play export).
