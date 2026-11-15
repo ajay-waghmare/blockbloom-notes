@@ -55,13 +55,19 @@ disclosures each take weeks.
 - Live AdMob earnings to date: **$0.98 USD** ($0.96 in past 7 days, 12 impressions across 382 requests, match rate 27.75%).
 - **Smart Ad Suppression implemented:** Forced interstitials are suppressed on "Play Again" if the player watched a rewarded video (revive / coin doubling) in that game.
 - **2x Daily Streak Rewarded Ad built:** Opt-in doubling of daily streak coins in `DailyRewardDialog`.
-- **Firebase Remote Config Dials:**
-  - `ads_banner_enabled` (default `false`)
-  - `ads_interstitial_enabled` (default `false`)
-  - `ads_interstitial_interval` (default `4` games buffer)
+- **Firebase Remote Config Dials (Version 5 Live):**
+  - `ads_banner_enabled = false`
+  - `ads_interstitial_enabled = true`
+  - `ads_interstitial_interval = 4` (4-game buffer)
+  - `live_events = Weekend Cascade (+50% coins)`
+- **Google Play In-App Products (Activated 15 Nov 2026):**
+  - `remove_ads` (Non-consumable) — **ACTIVE** across 174 countries (USD 1.99 / regional pricing)
+  - `gems_small` (50 Gems, Consumable) — **ACTIVE** across 174 countries
+  - `gems_medium` (150 Gems, Consumable) — **ACTIVE** across 174 countries
+  - `gems_large` (500 Gems, Consumable) — **ACTIVE** across 174 countries
 
 ## Recommendations & Next Monetization Steps
 
-1. **AdMob Mediation:** Set up mediation in the AdMob console to lift the 27.75% match rate towards 80%+.
-2. **Turn on Interstitials in Firebase Console:** Set `ads_interstitial_enabled = true` in Remote Config to start the controlled test.
-3. **BillDesk Merchant KYC:** Complete Indian merchant verification to unlock Google Play Billing (IAP gem packs).
+1. **AdMob Mediation:** Enable partner bidding (Meta, Unity, AppLovin) in AdMob Bidding sources to lift the 27.75% match rate towards 80%+.
+2. **Trader Status Declaration:** Declare status in Play Console (before Feb 2027 requirement).
+3. **BillDesk Merchant KYC:** Complete Indian merchant verification to ensure seamless local INR disbursements.
