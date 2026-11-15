@@ -49,18 +49,19 @@ disclosures each take weeks.
    violation, not just stale copy.
 4. The `app-ads.txt` nag from AdMob needs a developer website on the listing; not a launch blocker.
 
-## Recommendation (given 4 Oct, not yet acted on)
+## Live State (as of 15 Nov 2026)
 
-- **Rewarded only. Interstitial off, but behind Remote Config rather than deleted.** RC already
-  fetches hourly (vc20) and carries `live_events`; a dial makes the decision measurable against
-  the churn instead of permanent.
-- **Lead with gems / the Galaxy skin, not `remove_ads`.** Remove Ads is unsellable when the only
-  ads are opt-in rewarded ones. Gems need no ads to exist, so they do not wait on AdMob, and
-  $0.99 fits BR/IN/TR/ID traffic better than $1.99.
-- **Set local per-country prices** (Rs 49 converts far better than the Rs 89 an auto-converted
-  $0.99 becomes; same in Brazil and Turkey).
-- Products in Play Console: `remove_ads` non-consumable, gem packs consumable, ids exactly as in
-  `BillingHost.kt`. No release is needed for products to appear; the app picks them up on next
-  start. License-testing of IAP needs a build from a Play track, not a sideload.
+- Production AdMob IDs (`ca-app-pub-1693732810683011`) are **LIVE in production `v1.12.3`** (`ADS_ENABLED = true`).
+- Live AdMob earnings to date: **$0.98 USD** ($0.96 in past 7 days, 12 impressions across 382 requests, match rate 27.75%).
+- **Smart Ad Suppression implemented:** Forced interstitials are suppressed on "Play Again" if the player watched a rewarded video (revive / coin doubling) in that game.
+- **2x Daily Streak Rewarded Ad built:** Opt-in doubling of daily streak coins in `DailyRewardDialog`.
+- **Firebase Remote Config Dials:**
+  - `ads_banner_enabled` (default `false`)
+  - `ads_interstitial_enabled` (default `false`)
+  - `ads_interstitial_interval` (default `4` games buffer)
 
-**Nothing has been coded for this yet.** You have not chosen gems-first or remove_ads-first.
+## Recommendations & Next Monetization Steps
+
+1. **AdMob Mediation:** Set up mediation in the AdMob console to lift the 27.75% match rate towards 80%+.
+2. **Turn on Interstitials in Firebase Console:** Set `ads_interstitial_enabled = true` in Remote Config to start the controlled test.
+3. **BillDesk Merchant KYC:** Complete Indian merchant verification to unlock Google Play Billing (IAP gem packs).
