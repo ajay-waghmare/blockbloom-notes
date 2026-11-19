@@ -1,0 +1,5 @@
+# build output that is regenerated
+out/qa/
+out/.chrome/
+out/shots/*.png
+out/shots/*.html

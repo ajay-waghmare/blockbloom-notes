@@ -1,0 +1,1141 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Block Bloom UI-UX Redesign</title><style>@font-face {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../assets/fonts/Baloo2-600.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../assets/fonts/Baloo2-600.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../assets/fonts/Baloo2-600.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../assets/fonts/ChakraPetch-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../assets/fonts/ChakraPetch-500.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../assets/fonts/ChakraPetch-600.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../assets/fonts/ChakraPetch-700.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../assets/fonts/Cinzel-600.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../assets/fonts/Cinzel-600.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../assets/fonts/Cinzel-600.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../assets/fonts/Fredoka-500.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../assets/fonts/Fredoka-500.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../assets/fonts/Fredoka-500.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../assets/fonts/Inter-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../assets/fonts/Inter-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../assets/fonts/Inter-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../assets/fonts/Inter-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../assets/fonts/Inter-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../assets/fonts/Manrope-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../assets/fonts/Manrope-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../assets/fonts/Manrope-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../assets/fonts/Manrope-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../assets/fonts/Manrope-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../assets/fonts/Nunito-500.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../assets/fonts/Nunito-500.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../assets/fonts/Nunito-500.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../assets/fonts/Nunito-500.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(../assets/fonts/Nunito-500.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../assets/fonts/Orbitron-600.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../assets/fonts/Orbitron-600.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../assets/fonts/Orbitron-600.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(../assets/fonts/Orbitron-600.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../assets/fonts/Outfit-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../assets/fonts/Outfit-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../assets/fonts/Outfit-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../assets/fonts/Outfit-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../assets/fonts/Outfit-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.phone,.phone *,.phone *::before,.phone *::after{box-sizing:border-box}
+.phone{width:390px;height:844px;border-radius:58px;padding:11px;position:relative;flex:none;
+  background:linear-gradient(150deg,#4a4a58 0%,#16161d 22%,#08080c 60%,#2a2a34 100%);
+  box-shadow:inset 0 0 0 1.5px #5c5c6c,inset 0 0 0 3px #0b0b10,0 50px 80px -30px rgba(0,0,0,.75),0 20px 40px -12px rgba(0,0,0,.5)}
+.phone::before{content:"";position:absolute;right:-3px;top:170px;width:3px;height:78px;border-radius:0 3px 3px 0;background:#2b2b35}
+.phone::after{content:"";position:absolute;left:-3px;top:150px;width:3px;height:46px;border-radius:3px 0 0 3px;background:#2b2b35;box-shadow:0 70px 0 #2b2b35}
+.screen{position:relative;width:368px;height:822px;border-radius:47px;overflow:hidden;display:flex;flex-direction:column;
+  font-family:var(--ui);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+.bgx{position:absolute;inset:0;z-index:0;pointer-events:none}
+.status{position:relative;z-index:3;height:46px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:4px 30px 0 34px;font:600 15px/1 var(--ui);color:var(--status,var(--ink))}
+.status .cam{position:absolute;left:50%;top:13px;width:19px;height:19px;margin-left:-9.5px;border-radius:50%;background:#030305;box-shadow:inset 0 0 0 4px #0c0c14,0 0 0 1.5px rgba(255,255,255,.07)}
+.status .sys{display:flex;gap:6px;align-items:center}.status .sys svg{height:11px;width:auto}
+.body{position:relative;z-index:1;flex:1;display:flex;flex-direction:column;padding:2px 16px 0;gap:11px;min-height:0}
+.gesture{position:absolute;bottom:8px;left:50%;width:134px;height:5px;margin-left:-67px;border-radius:3px;background:var(--ink);opacity:.42;z-index:9}
+.ic{width:20px;height:20px;flex:none}.art{width:22px;height:22px;flex:none}
+b,strong{font-weight:700}small{font-size:12px}
+.sp{flex:1}
+.body>*:not(.scroll):not(.mapwrap){flex-shrink:0}
+
+/* ---- blocks: the six colours (each direction may retune them) ---- */
+.c1{--c:#7C5CFF;--hi:#AE9BFF;--lo:#5638D9}.c2{--c:#2BD9C6;--hi:#86F4E7;--lo:#0FA595}.c3{--c:#FF5C8A;--hi:#FFA0BC;--lo:#DE2F66}
+.c4{--c:#FFC44D;--hi:#FFE195;--lo:#EE9612}.c5{--c:#59C2FF;--hi:#A3DFFF;--lo:#2A90E6}.c6{--c:#36D399;--hi:#86EDC4;--lo:#13A571}
+.blk{position:absolute;inset:0;display:block}
+.blk::after{content:"";position:absolute}
+
+/* ---- top rows, pills, buttons ---- */
+.top{display:flex;align-items:center;gap:7px;min-height:38px}
+.curs{display:flex;gap:6px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:5px;height:32px;padding:0 5px 0 5px;border-radius:999px;background:var(--pill-bg);border:var(--pill-bd);color:var(--pill-ink,var(--ink));box-shadow:var(--pill-sh,none)}
+.pill .art{width:21px;height:21px}.pill b{font:700 14px/1 var(--disp);letter-spacing:.2px;padding-right:2px}
+.pill .ic{width:16px;height:16px;color:var(--gold,#FFC44D)}
+.plus{display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--plus-bg,var(--acc));color:var(--plus-ink,var(--acc-ink))}.plus .ic{width:13px;height:13px}
+.iconbtn{display:grid;place-items:center;width:38px;height:38px;flex:none;border-radius:var(--ib-r,50%);border:var(--ib-bd,0);background:var(--ib-bg);color:var(--ink);box-shadow:var(--ib-sh,none);padding:0}
+.iconbtn .ic{width:19px;height:19px}.iconbtn.sm{width:30px;height:30px}.iconbtn.sm .ic{width:15px;height:15px}.iconbtn.dis{opacity:.35}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:46px;padding:0 18px;border:var(--btn-bd,0);border-radius:var(--btn-r);
+  background:var(--btn2-bg);color:var(--btn2-ink,var(--ink));font:700 15px/1 var(--disp);box-shadow:var(--btn2-sh,none);letter-spacing:var(--btn-ls,0);white-space:nowrap}
+.btn.primary{background:var(--btn-bg);color:var(--btn-ink);box-shadow:var(--btn-sh)}
+.btn .ic{width:18px;height:18px}
+.btn.big{height:64px;width:100%;font-size:21px;gap:14px;justify-content:center}
+.btn.big .ic{width:26px;height:26px}
+.btn.big span{display:flex;flex-direction:column;align-items:flex-start;gap:4px}.btn.big small{font:600 12px/1 var(--ui);opacity:.78;letter-spacing:0}
+.btn.small{height:32px;padding:0 12px;font-size:13px;gap:5px}.btn.small .art{width:16px;height:16px}
+.btn.ghost{background:var(--ghost-bg,transparent);border:var(--ghost-bd);box-shadow:none;color:var(--mut)}
+.btn.square{width:64px;height:64px;padding:0;flex:none}
+.rw{display:inline-flex;gap:8px;align-items:center;font:700 13px/1 var(--disp)}.rwi{display:inline-flex;align-items:center;gap:3px}.rwi .art{width:17px;height:17px}
+
+/* ---- headers / lists ---- */
+.hdr{display:flex;align-items:center;gap:10px;min-height:44px}
+.hdr .ttl{flex:1;margin:0;font:var(--ttl-font,700 24px/1.1 var(--disp));color:var(--hdr-ink,var(--ink));letter-spacing:var(--ttl-ls,0);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ver{font:600 11px/1 var(--ui);color:var(--mut)}
+.sec{display:flex;align-items:baseline;justify-content:space-between;font:var(--sec-font,700 12px/1 var(--ui));text-transform:uppercase;letter-spacing:1.4px;color:var(--sec-ink,var(--mut));margin:6px 4px -3px}
+.sec em{font-style:normal;text-transform:none;letter-spacing:0;font-weight:600;opacity:.8}
+.card{background:var(--card-bg);border:var(--card-bd);border-radius:var(--r);box-shadow:var(--card-sh);position:relative}
+.list{padding:2px 0}
+.row{display:flex;align-items:center;gap:12px;padding:11px 14px;min-height:50px}
+.row+.row{border-top:1px solid var(--line)}
+.ri{display:grid;place-items:center;width:34px;height:34px;border-radius:var(--ri-r,11px);background:var(--ri-bg);color:var(--acc);flex:none}.ri .ic{width:18px;height:18px}
+.rt{flex:1;display:flex;flex-direction:column;gap:2px;min-width:0}.rt b{font:700 15px/1.2 var(--ui)}.rt small{color:var(--mut)}
+.rv{display:flex;align-items:center;gap:4px;color:var(--mut);font-weight:600;font-size:13px}.rv .ic{width:16px;height:16px;opacity:.8}
+.tgl{width:46px;height:28px;border-radius:999px;background:var(--tgl-off);position:relative;flex:none;box-shadow:var(--tgl-sh,none)}
+.tgl i{position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:var(--knob,#fff);box-shadow:0 2px 4px rgba(0,0,0,.25)}
+.tgl.on{background:var(--tgl-on)}.tgl.on i{left:21px}
+.scroll{position:relative;flex:1;min-height:0;overflow:hidden;display:flex;flex-direction:column;gap:10px;margin:0 -16px;padding:0 16px 30px}
+.scroll::after{content:"";position:absolute;left:0;right:0;bottom:0;height:64px;background:linear-gradient(transparent,var(--fade,#100826));pointer-events:none;z-index:3}
+.bar{height:8px;border-radius:999px;background:var(--track);overflow:hidden}.bar i{display:block;height:100%;border-radius:inherit;background:var(--fill)}
+.tabs{display:flex;gap:6px;padding:4px;border-radius:var(--tabs-r,999px);background:var(--tabs-bg);border:var(--tabs-bd,0)}
+.tb{flex:1;text-align:center;padding:9px 0;border-radius:var(--tabs-r,999px);font:700 13px/1 var(--ui);color:var(--mut)}
+.tb.on{background:var(--tab-on-bg);color:var(--tab-on-ink);box-shadow:var(--tab-on-sh,none)}
+
+/* ---- navigation ---- */
+.nav{margin-top:auto;display:grid;grid-template-columns:repeat(4,1fr);align-items:center;height:64px;background:var(--nav-bg);border:var(--nav-bd);box-shadow:var(--nav-sh);border-radius:var(--nav-r);position:relative;z-index:4}
+.nv{display:flex;flex-direction:column;align-items:center;gap:4px;font:700 11px/1 var(--ui);color:var(--mut);position:relative}
+.nv .ic{width:22px;height:22px}.nv.on{color:var(--nav-on)}
+.nv .dot{position:absolute;top:-6px;left:54%;min-width:17px;height:17px;padding:0 4px;border-radius:9px;background:#FF4F7B;color:#fff;font:800 10px/17px var(--ui);text-align:center;font-style:normal;box-shadow:0 0 0 2px var(--dot-ring,#1a0f35)}
+.nv .dot.new{background:var(--gold,#FFC44D);color:#3a2400;font-size:8px;letter-spacing:.4px}
+
+/* ---- board / tray / lifelines ---- */
+.board{position:relative;padding:var(--board-pad,9px);border-radius:var(--board-r);background:var(--board-bg);border:var(--board-bd);box-shadow:var(--board-sh)}
+.bgrid{position:relative;display:grid;grid-template-columns:repeat(var(--n),1fr);gap:var(--gap,3px)}
+.clrbar{position:absolute;left:-5px;right:-5px;top:calc((100% + var(--gap,3px)) * var(--row) / var(--n) - 5px);height:calc((100% + var(--gap,3px)) / var(--n) - var(--gap,3px) + 10px);border-radius:calc(var(--blk-r) + 4px);box-shadow:0 0 0 2px var(--clr,var(--acc)),0 0 24px -2px var(--clr,var(--acc));background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--clr,var(--acc)) 22%,transparent),transparent);z-index:2;pointer-events:none}
+.cell{position:relative;aspect-ratio:1;border-radius:var(--blk-r);background:var(--cell);box-shadow:var(--cell-sh,none)}
+.blk{border-radius:var(--blk-r)}
+.tray{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;height:112px}
+.slot{position:relative;display:grid;place-items:center;border-radius:var(--slot-r,18px);background:var(--slot-bg);border:var(--slot-bd);box-shadow:var(--slot-sh,none);--pc:24px}
+.slot em{position:absolute;bottom:7px;left:0;right:0;text-align:center;font:600 10.5px/1 var(--ui);font-style:normal;color:var(--mut);display:flex;gap:3px;justify-content:center;align-items:center}
+.slot em .ic{width:11px;height:11px}
+.slot.used .sock{width:34px;height:58px;border-radius:10px;border:2px dashed var(--line2,rgba(255,255,255,.25))}
+.slot.nofit .piece{opacity:.32;filter:saturate(.4)}
+.slot.nofit em{color:var(--warn,#FF8FA8)}
+.piece{display:grid;grid-template-columns:repeat(var(--w),var(--pc));grid-template-rows:repeat(var(--h),var(--pc));gap:3px}
+.piece .blk{position:relative;inset:auto;width:var(--pc);height:var(--pc)}
+.lifes{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.life{display:flex;flex-direction:column;align-items:center;gap:5px;padding:10px 6px;border-radius:var(--life-r,18px);background:var(--life-bg);border:var(--life-bd);box-shadow:var(--life-sh,none)}
+.lico{position:relative;display:grid;place-items:center;width:40px;height:40px;border-radius:var(--lico-r,13px);background:var(--lico-bg);color:var(--lico-ink,var(--ink))}
+.lico .ic{width:22px;height:22px}
+.own{position:absolute;right:-7px;top:-6px;min-width:19px;height:19px;border-radius:10px;background:var(--acc);color:var(--acc-ink);font:800 11px/19px var(--ui);text-align:center;font-style:normal;box-shadow:0 0 0 2px var(--own-ring,#160c2c)}
+.lname{font:700 12.5px/1 var(--ui)}.lcost{display:flex;align-items:center;gap:3px;font:700 12px/1 var(--disp);color:var(--mut)}.lcost .art{width:15px;height:15px}
+.life.buy .lname{opacity:.85}
+
+/* ---- game HUD ---- */
+.ghud{display:grid;grid-template-columns:42px 1fr auto;align-items:center;gap:10px;min-height:76px}
+.score{display:flex;flex-direction:column;align-items:center;gap:3px}
+.score small{font:700 10.5px/1 var(--ui);letter-spacing:2px;color:var(--mut)}
+.score b{font:700 46px/1 var(--disp);letter-spacing:1px}
+.bst{display:flex;align-items:center;gap:4px;font:700 12px/1 var(--ui);color:var(--mut)}.bst .ic{width:13px;height:13px;color:var(--gold,#FFC44D)}
+.gright{display:flex;flex-direction:column;gap:6px;align-items:flex-end}
+.mode,.evt{display:inline-flex;align-items:center;gap:3px;height:24px;padding:0 9px;border-radius:999px;font:800 11px/1 var(--ui);background:var(--chip-bg);color:var(--ink);border:var(--chip-bd,0)}
+.evt{background:var(--evt-bg);color:var(--evt-ink)}.evt .ic{width:12px;height:12px}
+.combo{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:10px;font:700 12px/1 var(--ui)}
+.cl{display:flex;align-items:center;gap:4px;color:var(--combo,#FFB347)}.cl .ic{width:15px;height:15px}
+.cm{height:7px;border-radius:999px;background:var(--track);overflow:hidden}.cm i{display:block;height:100%;background:var(--combo-fill,linear-gradient(90deg,#FFB347,#FF5C8A))}
+.cn{color:var(--mut);font-weight:600}
+.clearhint{align-self:center;margin-top:-6px;display:inline-flex;align-items:center;gap:5px;height:24px;padding:0 10px;border-radius:999px;font:800 11.5px/1 var(--ui);background:var(--hint-bg);color:var(--hint-ink)}
+.clearhint .ic{width:13px;height:13px}
+
+/* ---- daily ---- */
+.dhero{padding:16px;border-radius:var(--r);background:var(--hero-bg);border:var(--card-bd);box-shadow:var(--card-sh);display:flex;flex-direction:column;gap:10px;color:var(--hero-ink,var(--ink))}
+.dtop{display:flex;justify-content:space-between;align-items:center;font:700 12px/1 var(--ui)}
+.dlabel,.dtimer{display:inline-flex;gap:5px;align-items:center;opacity:.9}.dlabel .ic,.dtimer .ic{width:14px;height:14px}
+.dtimer{padding:5px 9px;border-radius:999px;background:var(--dtimer-bg,var(--chip-bg))}
+.dhero h3{margin:2px 0 0;font:700 26px/1.1 var(--disp)}
+.dprog{display:flex;flex-direction:column;gap:6px}.dprog small{opacity:.8}
+.dfoot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:2px}
+.month{padding:12px 14px 22px;border-radius:var(--r);background:var(--card-bg);border:var(--card-bd);box-shadow:var(--card-sh)}
+.month .mt{display:flex;justify-content:space-between;font:700 13px/1 var(--ui);margin-bottom:14px}.month .mt span{color:var(--mut)}
+.trk{position:relative;height:10px;margin:0 12px}.trkbar{height:8px;border-radius:999px;background:var(--track);overflow:hidden}.trkbar i{display:block;height:100%;background:var(--fill)}
+.stp{position:absolute;top:-10px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:3px}
+.stp .sb{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--card-solid,#2a1b4e);border:2px solid var(--track)}.stp .sb .art{width:17px;height:17px}
+.stp.got .sb{border-color:var(--acc)}.stp small{font:700 10px/1 var(--ui);color:var(--mut)}
+.cal{padding:12px;border-radius:var(--r);background:var(--card-bg);border:var(--card-bd);box-shadow:var(--card-sh)}
+.calh{display:flex;align-items:center;justify-content:space-between;font:700 15px/1 var(--disp);margin-bottom:8px}
+.dow,.days{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}.dow span{text-align:center;font:700 10.5px/1 var(--ui);color:var(--mut);padding:4px 0}
+.d{position:relative;aspect-ratio:1;border-radius:var(--day-r,11px);display:grid;place-items:center;font:700 13px/1 var(--ui);background:var(--day-bg)}
+.d.blank{background:none}.d span{position:relative;z-index:1}
+.d.done{background:var(--day-done-bg);color:var(--day-done-ink)}.d.done .ic{position:absolute;width:30px;height:30px;opacity:.28}
+.d.missed{opacity:.55}.d .mx{position:absolute;bottom:4px;width:4px;height:4px;border-radius:50%;background:var(--miss,#FF5C8A)}
+.d.today{box-shadow:inset 0 0 0 2px var(--acc);color:var(--acc)}.d.future{opacity:.38}
+.legend{display:flex;gap:14px;justify-content:center;margin-top:10px;font:600 11px/1 var(--ui);color:var(--mut)}
+.legend span{display:flex;gap:5px;align-items:center}.lg{width:11px;height:11px;border-radius:4px;display:inline-block}
+.lg.done{background:var(--day-done-bg)}.lg.missed{background:var(--miss,#FF5C8A)}.lg.today{box-shadow:inset 0 0 0 2px var(--acc)}
+
+/* ---- chest modal ---- */
+.scr-chest .body{padding:0}
+.behind{position:absolute;inset:-46px 0 0;display:flex;flex-direction:column;padding:48px 16px 0;gap:11px;opacity:.38}
+.scrim{position:absolute;inset:-46px 0 0;background:var(--scrim)}
+.modal{position:absolute;left:18px;right:18px;top:104px;padding:26px 20px 18px;border-radius:var(--modal-r,30px);background:var(--modal-bg);border:var(--modal-bd);box-shadow:var(--modal-sh);display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px}
+.mclose{position:absolute;right:14px;top:14px}
+.rays{position:absolute;top:-10px;left:50%;width:280px;height:240px;margin-left:-140px;background:var(--rays);pointer-events:none;color:var(--ray-c,#FFE08F)}.rays svg{width:100%;height:100%;fill:currentColor;opacity:.16}
+.bigchest{width:150px;height:126px;position:relative;margin-top:2px;filter:drop-shadow(0 12px 24px rgba(0,0,0,.45))}
+.mkick{font:800 11px/1 var(--ui);letter-spacing:2px;text-transform:uppercase;color:var(--acc)}
+.modal h3{margin:0;font:700 27px/1.1 var(--disp)}
+.modal p{margin:0 6px;font-size:13.5px;line-height:1.45;color:var(--mut)}
+.prizes{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;width:100%;margin:4px 0}
+.pz{display:flex;flex-direction:column;align-items:center;gap:4px;padding:12px 4px;border-radius:var(--pz-r,18px);background:var(--pz-bg);border:var(--pz-bd)}
+.pz .art{width:30px;height:30px}.pz .ic{width:28px;height:28px;color:var(--acc)}.pz b{font:700 19px/1 var(--disp)}.pz small{color:var(--mut);font-weight:600}
+.btn.wait{height:40px;font:700 13px/1 var(--ui)}
+
+/* ---- adventure ---- */
+.region{padding:12px 14px;border-radius:var(--r);background:var(--card-bg);border:var(--card-bd);box-shadow:var(--card-sh);display:grid;grid-template-columns:1fr auto;gap:6px 10px;align-items:center}
+.rn{font:700 18px/1 var(--disp)}.rr{font:700 12px/1 var(--ui);color:var(--mut)}.region .rbar{grid-column:1/-1;height:7px;border-radius:999px;background:var(--track);overflow:hidden}.region .rbar i{display:block;height:100%;background:var(--fill)}
+.region small{grid-column:1/-1;color:var(--mut);font-weight:600}
+.mapwrap{position:relative;flex:1;min-height:0;margin:0 -16px}
+.mapbg{position:absolute;inset:0;background:var(--map-bg)}
+.path{position:absolute;left:0;top:0;width:100%;height:100%}.path path{fill:none;stroke:var(--path);stroke-width:var(--path-w,10);stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:var(--path-dash,none)}
+.node{position:absolute;transform:translate(-50%,-50%);width:50px;height:50px;border-radius:var(--node-r,50%);display:grid;place-items:center;background:var(--node-bg);border:var(--node-bd);box-shadow:var(--node-sh);font:700 19px/1 var(--disp);color:var(--node-ink,var(--ink))}
+.node .ic{width:17px;height:17px;opacity:.7}.node.lock{background:var(--node-lock-bg);color:var(--mut);box-shadow:none;width:42px;height:42px}
+.node.cur{width:64px;height:64px;font-size:24px;background:var(--node-cur-bg);color:var(--node-cur-ink);box-shadow:var(--node-cur-sh)}
+.nst{position:absolute;bottom:-11px;display:flex;gap:0}.nst .ic{width:13px;height:13px;color:var(--gold,#FFC44D);opacity:1}
+.milestone{position:absolute;transform:translate(-50%,-50%)}.milestone .art{width:44px;height:38px;filter:drop-shadow(0 4px 8px rgba(0,0,0,.4))}
+.nextregion{position:absolute;top:2%;left:50%;transform:translateX(-50%);display:flex;gap:5px;align-items:center;padding:6px 11px;border-radius:999px;background:var(--chip-bg);font:700 11px/1 var(--ui);color:var(--mut);white-space:nowrap}.nextregion .ic{width:12px;height:12px}
+.lvcard{padding:14px;border-radius:var(--r);background:var(--hero-bg);border:var(--card-bd);box-shadow:var(--card-sh);display:flex;flex-direction:column;gap:10px;margin-bottom:26px;color:var(--hero-ink,var(--ink))}
+.lvh{display:flex;justify-content:space-between;align-items:center}.lvn{font:700 20px/1 var(--disp)}.lvg{display:flex;gap:5px;align-items:center;font:700 12px/1 var(--ui);opacity:.85}.lvg .ic{width:14px;height:14px}
+.lvf{display:flex;align-items:center;gap:10px}.lvf .btn{margin-left:auto}.stars3{display:flex}.stars3 .ic{width:16px;height:16px;opacity:.5}
+
+/* ---- shop ---- */
+.offer{position:relative;display:grid;grid-template-columns:1fr auto;gap:8px;padding:16px;border-radius:var(--r);background:var(--offer-bg);border:var(--card-bd);box-shadow:var(--card-sh);overflow:hidden;min-height:118px;color:var(--offer-ink,var(--ink))}
+.osave{position:absolute;left:14px;top:-1px;padding:5px 8px;border-radius:0 0 8px 8px;background:var(--save-bg,#FF4F7B);color:#fff;font:800 11px/1 var(--ui)}
+.otext{display:flex;flex-direction:column;gap:4px;margin-top:14px;position:relative;z-index:1;max-width:190px}.otext small{opacity:.8;font-weight:700}.otext b{font:700 21px/1.1 var(--disp)}.otext span{font-size:12.5px;opacity:.85;line-height:1.35}
+.obuy{display:flex;flex-direction:column;align-items:flex-end;justify-content:flex-end;gap:4px;position:relative;z-index:1}.obuy s{opacity:.6;font-size:12px}
+.ochest{position:absolute;right:6px;top:4px;width:96px;height:80px;opacity:.95}
+.themes{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.theme{position:relative;padding:10px;border-radius:var(--r-sm,18px);background:var(--card-bg);border:var(--card-bd);box-shadow:var(--card-sh);display:flex;flex-direction:column;gap:7px}
+.theme.active{box-shadow:var(--card-sh),0 0 0 2px var(--acc)}
+.sw{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:8px;border-radius:12px;background:var(--sw-bg,rgba(0,0,0,.25))}
+.sw i{aspect-ratio:1;border-radius:6px;background:linear-gradient(180deg,color-mix(in srgb,var(--c) 55%,#fff),var(--c) 50%,color-mix(in srgb,var(--c) 75%,#000));box-shadow:inset 0 1px 0 rgba(255,255,255,.4)}
+.theme b{font:700 14px/1 var(--ui)}
+.tp{display:inline-flex;align-items:center;gap:4px;align-self:flex-start;height:26px;padding:0 10px;border-radius:999px;background:var(--btn-bg);color:var(--btn-ink);font:800 12px/1 var(--disp)}
+.tp .art{width:15px;height:15px}.tp .ic{width:14px;height:14px}.tp.own{background:var(--chip-bg);color:var(--acc)}.tp.ad{background:var(--chip-bg);color:var(--ink)}
+.ttag{position:absolute;right:8px;top:8px;padding:3px 7px;border-radius:999px;background:var(--gold,#FFC44D);color:#3a2400;font:800 9.5px/1 var(--ui);font-style:normal;z-index:2;white-space:nowrap}
+.free{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:var(--r);background:var(--free-bg);border:var(--free-bd);box-shadow:var(--card-sh)}
+.fi{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:var(--gold,#FFC44D);color:#3a2400}.ft{flex:1;display:flex;flex-direction:column;gap:2px}.ft b{font:700 15px/1 var(--ui)}.ft small{color:var(--mut)}
+.gempacks{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.gp{position:relative;display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 6px 10px;border-radius:var(--r-sm,18px);background:var(--card-bg);border:var(--card-bd);box-shadow:var(--card-sh)}
+.gtag{position:absolute;top:-9px;left:50%;transform:translateX(-50%);padding:4px 8px;border-radius:999px;background:var(--gold,#FFC44D);color:#3a2400;font:800 9.5px/1 var(--ui);font-style:normal;white-space:nowrap}
+.gstack{display:flex;height:34px;align-items:center}.gstack .art{width:30px;height:30px}.gstack .art+.art{margin-left:-14px}
+.gp b{font:700 18px/1 var(--disp)}.gp .btn{width:100%}
+
+/* ---- trophies ---- */
+.tsum{position:relative;display:flex;align-items:center;gap:14px;padding:14px;border-radius:var(--r);background:var(--hero-bg);border:var(--card-bd);box-shadow:var(--card-sh);overflow:hidden;color:var(--hero-ink,var(--ink))}
+.tring{--p:.3;flex:none;width:74px;height:74px;border-radius:50%;display:grid;place-content:center;text-align:center;
+  background:radial-gradient(closest-side,var(--ring-in,#1d1240) 79%,transparent 80% 100%),conic-gradient(var(--acc) calc(var(--p)*100%),var(--track) 0)}
+.tring b{font:700 24px/1 var(--disp)}.tring small{font-weight:700;opacity:.75}
+.tst{display:flex;flex-direction:column;gap:4px;align-items:flex-start;position:relative;z-index:1}.tst b{font:700 17px/1.1 var(--disp)}.tst small{opacity:.8}.tst .btn{margin-top:4px}
+.bigtrophy{position:absolute;right:-6px;bottom:-8px;width:96px;height:96px;opacity:.9}
+.tlist{gap:9px}
+.tr{display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:center;padding:11px 12px;border-radius:var(--r-sm,18px);background:var(--card-bg);border:var(--card-bd);box-shadow:var(--card-sh)}
+.tr.claim{box-shadow:var(--card-sh),0 0 0 2px var(--acc)}
+.tr.done{opacity:.72}
+.tmed .art{width:42px;height:42px}
+.tt{display:flex;flex-direction:column;gap:3px;min-width:0}.tt b{font:700 14.5px/1.1 var(--ui)}.tt small{color:var(--mut);line-height:1.2}
+.tbar{height:6px;border-radius:999px;background:var(--track);overflow:hidden;margin-top:3px}.tbar i{display:block;height:100%;background:var(--fill)}
+.tnum{font:700 10.5px/1 var(--ui);color:var(--mut)}
+.tact{display:flex;flex-direction:column;align-items:flex-end;gap:6px}.tact .rw{font-size:12px}
+.got{display:flex;align-items:center;gap:3px;font:800 11px/1 var(--ui);color:var(--acc)}.got .ic{width:14px;height:14px}
+
+/* ---- settings ---- */
+.moods{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.mood{position:relative;display:flex;flex-direction:column;gap:3px;padding:12px;border-radius:var(--r-sm,18px);background:var(--card-bg);border:var(--card-bd);box-shadow:var(--card-sh)}
+.mood.on{box-shadow:var(--card-sh),0 0 0 2px var(--acc)}
+.mplay{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--chip-bg);color:var(--ink);margin-bottom:4px}.mplay .ic{width:14px;height:14px}
+.mood.on .mplay{background:var(--acc);color:var(--acc-ink)}
+.mood b{font:700 15px/1 var(--disp)}.mood small{color:var(--mut);line-height:1.25}
+.mprice{position:absolute;right:10px;top:12px;display:flex;align-items:center;gap:3px;font:800 11px/1 var(--disp);font-style:normal;color:var(--ink)}.mprice .art{width:14px;height:14px}
+.mood.lock{opacity:.85}
+
+.v-aurora{--disp:'Fredoka',sans-serif;--ui:'Outfit',sans-serif;
+ --bg:radial-gradient(45% 22% at 30% 12%,rgba(45,226,206,.20) 0%,rgba(45,226,206,0) 100%),radial-gradient(50% 24% at 62% 8%,rgba(139,92,246,.30) 0%,rgba(139,92,246,0) 100%),radial-gradient(110% 55% at 15% 0%,#43208C 0%,rgba(67,32,140,0) 62%),radial-gradient(90% 45% at 100% 28%,#0C5F6E 0%,rgba(12,95,110,0) 60%),radial-gradient(90% 50% at 0% 100%,#5B1E66 0%,rgba(91,30,102,0) 60%),linear-gradient(180deg,#1B1038 0%,#100826 100%);
+ --ink:#F5F2FF;--mut:#B9B0E4;--acc:#2DE2CE;--acc-ink:#052A27;--gold:#FFC44D;--line:rgba(255,255,255,.09);--line2:rgba(255,255,255,.28);
+ --card-bg:linear-gradient(160deg,rgba(255,255,255,.12),rgba(255,255,255,.04));--card-bd:1px solid rgba(255,255,255,.13);--card-sh:inset 0 1px 0 rgba(255,255,255,.14),0 12px 28px -8px rgba(5,0,20,.55);--card-solid:#2a1b52;
+ --r:24px;--r-sm:18px;
+ --btn-bg:linear-gradient(180deg,#6BF5E4 0%,#2DE2CE 45%,#14B3A1 100%);--btn-ink:#04211E;--btn-sh:inset 0 1px 0 rgba(255,255,255,.7),inset 0 -3px 0 rgba(0,0,0,.18),0 10px 24px -6px rgba(45,226,206,.65),0 0 0 1px rgba(45,226,206,.6);--btn-r:20px;
+ --btn2-bg:rgba(255,255,255,.08);--btn2-sh:inset 0 0 0 1px rgba(255,255,255,.14);--ghost-bd:1px solid rgba(255,255,255,.16);
+ --pill-bg:rgba(10,4,30,.45);--pill-bd:1px solid rgba(255,255,255,.12);--plus-bg:#2DE2CE;--plus-ink:#052A27;
+ --ib-bg:rgba(255,255,255,.08);--ib-bd:1px solid rgba(255,255,255,.12);
+ --track:rgba(255,255,255,.10);--fill:linear-gradient(90deg,#8B5CF6,#2DE2CE);
+ --tabs-bg:rgba(255,255,255,.06);--tabs-bd:1px solid rgba(255,255,255,.1);--tab-on-bg:linear-gradient(180deg,rgba(45,226,206,.30),rgba(45,226,206,.12));--tab-on-ink:#BFFBF3;--tab-on-sh:inset 0 0 0 1px rgba(45,226,206,.55);
+ --nav-bg:linear-gradient(180deg,rgba(44,26,92,.95),rgba(26,15,58,.97));--nav-bd:1px solid rgba(255,255,255,.12);--nav-sh:0 16px 34px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.12);--nav-r:24px;--nav-on:#2DE2CE;--dot-ring:#24164c;
+ --board-bg:linear-gradient(160deg,rgba(255,255,255,.10),rgba(255,255,255,.03));--board-bd:1px solid rgba(255,255,255,.14);--board-sh:inset 0 1px 0 rgba(255,255,255,.16),0 24px 44px -12px rgba(0,0,0,.6),0 0 46px -6px rgba(124,92,255,.45);--board-r:24px;--blk-r:9px;
+ --cell:rgba(255,255,255,.05);--cell-sh:inset 0 1px 0 rgba(255,255,255,.05),inset 0 -1px 0 rgba(0,0,0,.25);
+ --slot-bg:rgba(255,255,255,.05);--slot-bd:1px solid rgba(255,255,255,.10);
+ --life-bg:linear-gradient(160deg,rgba(255,255,255,.11),rgba(255,255,255,.04));--life-bd:1px solid rgba(255,255,255,.12);--lico-bg:rgba(45,226,206,.14);--lico-ink:#7FF3E6;--own-ring:#1d1140;
+ --chip-bg:rgba(255,255,255,.09);--evt-bg:linear-gradient(90deg,#FFC44D,#FF8A5C);--evt-ink:#3A1800;
+ --hint-bg:rgba(45,226,206,.16);--hint-ink:#9DF7EC;
+ --hero-bg:linear-gradient(150deg,rgba(139,92,246,.55),rgba(45,226,206,.20)),#22134a;
+ --ri-bg:rgba(45,226,206,.12);--tgl-off:rgba(255,255,255,.16);--tgl-on:linear-gradient(90deg,#14B3A1,#2DE2CE);
+ --day-bg:rgba(255,255,255,.05);--day-done-bg:linear-gradient(160deg,#8B5CF6,#5B3FE0);--day-done-ink:#fff;
+ --scrim:rgba(8,3,24,.6);--modal-bg:linear-gradient(170deg,#3A2280 0%,#22134D 55%,#1A0F3B 100%);--modal-bd:1px solid rgba(255,255,255,.16);--modal-sh:0 30px 60px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.2);
+ --rays:radial-gradient(closest-side,rgba(255,196,77,.55),rgba(255,196,77,0));--ray-c:#FFE08F;
+ --pz-bg:rgba(255,255,255,.07);--pz-bd:1px solid rgba(255,255,255,.12);
+ --map-bg:radial-gradient(60% 40% at 30% 70%,rgba(54,211,153,.16),transparent 70%),radial-gradient(50% 35% at 80% 30%,rgba(89,194,255,.14),transparent 70%);
+ --path:rgba(255,255,255,.22);--path-w:12;--path-dash:2 16;
+ --node-bg:linear-gradient(180deg,#A996FF,#6B4BF0);--node-bd:2px solid rgba(255,255,255,.55);--node-sh:0 6px 14px rgba(0,0,0,.4),0 0 18px rgba(124,92,255,.6);
+ --node-lock-bg:rgba(255,255,255,.08);--node-cur-bg:linear-gradient(180deg,#7FF3E6,#14B3A1);--node-cur-ink:#04211E;--node-cur-sh:0 0 0 6px rgba(45,226,206,.22),0 0 30px rgba(45,226,206,.7);
+ --offer-bg:linear-gradient(120deg,#7C5CFF 0%,#C04BD8 55%,#FF7A8A 100%);
+ --free-bg:linear-gradient(90deg,rgba(255,196,77,.20),rgba(255,196,77,.06));--free-bd:1px solid rgba(255,196,77,.4);
+ --ring-in:#2c1a5c;--sw-bg:rgba(8,3,24,.45);--fade:#120a2a}
+.v-aurora .bgx::after{content:"";position:absolute;left:0;top:0;width:2px;height:2px;border-radius:50%;background:transparent;box-shadow:74px 246px 0 rgba(255,255,255,.7),258px 98px 0 rgba(255,255,255,.6),313px 452px 0 rgba(255,255,255,.5),147px 674px 0 rgba(255,255,255,.5),37px 526px 0 rgba(255,255,255,.55),213px 362px 0 rgba(255,255,255,.4),330px 210px 0 rgba(255,255,255,.45),120px 140px 0 rgba(255,255,255,.35)}
+
+.v-aurora .blk{background:linear-gradient(180deg,var(--hi) 0%,var(--c) 46%,var(--lo) 100%);box-shadow:inset 0 1.5px 0 rgba(255,255,255,.6),inset 0 -3px 0 rgba(0,0,0,.22),0 0 12px -3px var(--c)}
+.v-aurora .blk::after{left:16%;right:16%;top:10%;height:26%;border-radius:6px;background:linear-gradient(180deg,rgba(255,255,255,.75),rgba(255,255,255,0))}
+.v-aurora .blk.ghost{background:color-mix(in srgb,var(--c) 18%,transparent);box-shadow:inset 0 0 0 2px var(--c),0 0 16px -2px var(--c)}.v-aurora .blk.ghost::after{display:none}
+.v-aurora .cell.clr .blk{filter:brightness(1.12)}
+.v-aurora .streak{white-space:nowrap;display:flex;align-items:center;gap:5px;height:32px;padding:0 10px 0 8px;border-radius:999px;background:linear-gradient(90deg,rgba(255,140,60,.25),rgba(255,92,138,.18));border:1px solid rgba(255,170,90,.4);font:700 12px/1 var(--ui)}
+.v-aurora .streak .ic{width:16px;height:16px;color:#FFB347}.v-aurora .streak b{font:700 15px/1 var(--disp)}.v-aurora .streak span{color:var(--mut);font-size:11px}
+.v-aurora .brand{display:flex;flex-direction:column;align-items:center;gap:2px;margin-top:-4px}
+.v-aurora .logo{width:52px;height:52px;filter:drop-shadow(0 6px 14px rgba(124,92,255,.6))}
+.v-aurora .word{margin:0;font:700 38px/1 var(--disp);letter-spacing:1.5px;display:flex;gap:10px}
+.v-aurora .word .w2{background:linear-gradient(90deg,#2DE2CE,#59C2FF);-webkit-background-clip:text;background-clip:text;color:transparent}
+.v-aurora .tag{margin:3px 0 0;font:600 10.5px/1 var(--ui);letter-spacing:4px;text-transform:uppercase;color:var(--mut)}
+.v-aurora .hero{position:relative;display:grid;place-items:center;height:176px}
+.v-aurora .glowring{position:absolute;width:240px;height:240px;border-radius:50%;background:radial-gradient(closest-side,rgba(124,92,255,.5),rgba(124,92,255,0))}
+.v-aurora .board.mini{width:168px;--board-pad:8px;--gap:3px;--blk-r:7px;transform:rotate(-5deg)}
+.v-aurora .herostat{position:absolute;right:2px;bottom:4px;display:flex;flex-direction:column;align-items:flex-end;padding:8px 12px;border-radius:14px;background:rgba(10,4,30,.62);border:1px solid rgba(255,255,255,.14);font:700 9px/1 var(--ui);letter-spacing:1.5px;color:var(--mut)}
+.v-aurora .herostat b{font:700 24px/1.1 var(--disp);color:#FFE08F;letter-spacing:0}
+.v-aurora .seg{display:grid;grid-template-columns:repeat(3,1fr);padding:4px;gap:4px;border-radius:16px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10)}
+.v-aurora .sg{position:relative;text-align:center;padding:10px 0;border-radius:12px;font:700 14px/1 var(--ui);color:var(--mut)}
+.v-aurora .sg.on{background:linear-gradient(180deg,rgba(139,92,246,.6),rgba(91,63,224,.6));color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 6px 14px -6px rgba(124,92,255,.9)}
+.v-aurora .sg i{position:absolute;top:-7px;right:6px;padding:2px 5px;border-radius:6px;background:#FF8A5C;color:#2a0d00;font:800 9px/1 var(--ui);font-style:normal}
+.v-aurora .ctarow{display:flex;gap:10px}.v-aurora .ctarow .btn.big{flex:1}
+.v-aurora .btn.square{border-radius:20px;background:rgba(255,255,255,.08);box-shadow:inset 0 0 0 1px rgba(255,255,255,.16)}.v-aurora .btn.square .ic{width:24px;height:24px}
+.v-aurora .tiles{display:grid;grid-template-columns:1.3fr 1fr;gap:10px}
+.v-aurora .tile{position:relative;padding:12px;border-radius:20px;background:var(--card-bg);border:var(--card-bd);box-shadow:var(--card-sh);display:flex;flex-direction:column;gap:6px;min-height:116px;overflow:hidden}
+.v-aurora .tl-h{display:flex;align-items:center;gap:6px;font:700 10px/1 var(--ui);letter-spacing:1.2px;text-transform:uppercase;color:#FFC44D}.v-aurora .tl-h .ic{width:14px;height:14px}
+.v-aurora .tl-goal{font:700 18px/1.1 var(--disp)}
+.v-aurora .ring{position:absolute;right:10px;top:30px;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(closest-side,#2a1a58 75%,transparent 77% 100%),conic-gradient(#2DE2CE calc(var(--p)*100%),rgba(255,255,255,.12) 0);font:700 10.5px/1 var(--disp)}
+.v-aurora .timer{display:flex;align-items:center;gap:4px;color:var(--mut);font-weight:600}.v-aurora .timer .ic{width:12px;height:12px}
+.v-aurora .tile.chest{align-items:center;justify-content:center;text-align:center;background:radial-gradient(70% 60% at 50% 35%,rgba(255,196,77,.32),transparent 70%),var(--card-bg);border-color:rgba(255,196,77,.45)}
+.v-aurora .chestart{width:72px;height:60px;filter:drop-shadow(0 8px 12px rgba(0,0,0,.45))}
+.v-aurora .tile.chest .tl-goal{font-size:15px}
+.v-aurora .ready{display:inline-flex;align-items:center;gap:4px;padding:4px 9px;border-radius:999px;background:rgba(45,226,206,.18);color:#9DF7EC;font:800 10.5px/1 var(--ui)}.v-aurora .ready .ic{width:12px;height:12px}
+.v-aurora .event{display:flex;align-items:center;gap:8px;padding:0 12px;height:40px;border-radius:14px;background:linear-gradient(90deg,rgba(255,196,77,.22),rgba(255,92,138,.14));border:1px solid rgba(255,196,77,.35);font-size:13px}
+.v-aurora .event .ic{width:16px;height:16px;color:#FFC44D}.v-aurora .event span{flex:1}.v-aurora .event em{display:flex;gap:4px;align-items:center;font-style:normal;font-weight:700;color:#FFE08F}.v-aurora .event em .ic{width:13px;height:13px}
+.v-aurora .scr-home .nav{margin:auto 0 24px}
+.v-aurora .nav .nv.on::before{content:"";position:absolute;top:-8px;width:52px;height:44px;border-radius:14px;background:radial-gradient(closest-side,rgba(45,226,206,.32),rgba(45,226,206,0))}
+.v-aurora .pause{border-radius:14px}
+.v-aurora .score b{background:linear-gradient(180deg,#FFFFFF,#CFC6FF);-webkit-background-clip:text;background-clip:text;color:transparent}
+.v-aurora .mode{background:rgba(139,92,246,.32)}
+
+.v-royal{--disp:'Cinzel',serif;--ui:'Manrope',sans-serif;
+ --bg:radial-gradient(100% 50% at 50% 0%,#215E4C 0%,rgba(33,94,76,0) 62%),radial-gradient(90% 45% at 50% 100%,#3B1140 0%,rgba(59,17,64,0) 70%),linear-gradient(180deg,#0E2A22 0%,#091812 100%);
+ --ink:#FBF3DC;--mut:#CDBB8C;--acc:#F2CF72;--acc-ink:#2A1A02;--gold:#F2CF72;--line:rgba(233,196,106,.16);--line2:rgba(233,196,106,.5);
+ --card-bg:linear-gradient(180deg,rgba(24,60,49,.94),rgba(12,34,27,.95));--card-bd:1.5px solid #B8903E;--card-sh:inset 0 0 0 3px rgba(9,24,19,.9),inset 0 0 0 4px rgba(242,207,114,.28),0 14px 26px -10px rgba(0,0,0,.7);--card-solid:#12352B;
+ --r:16px;--r-sm:14px;
+ --btn-bg:linear-gradient(180deg,#FFF0B8 0%,#F2CF72 38%,#C99A3A 72%,#9C6F1C 100%);--btn-ink:#2A1A02;--btn-sh:inset 0 1px 0 #FFF8DC,inset 0 -2px 0 rgba(90,55,5,.5),0 4px 0 #6E4C0E,0 12px 22px -8px rgba(242,207,114,.55);--btn-r:14px;--btn-ls:1px;
+ --btn2-bg:rgba(242,207,114,.08);--btn2-sh:inset 0 0 0 1.5px rgba(242,207,114,.5);--ghost-bd:1.5px solid rgba(242,207,114,.45);
+ --pill-bg:linear-gradient(180deg,rgba(14,40,32,.96),rgba(8,24,19,.96));--pill-bd:1.5px solid #B8903E;--plus-bg:linear-gradient(180deg,#FFE9A3,#C99A3A);--plus-ink:#2A1A02;
+ --ib-bg:linear-gradient(180deg,rgba(24,60,49,.96),rgba(10,28,22,.96));--ib-bd:1.5px solid #B8903E;
+ --track:rgba(242,207,114,.14);--fill:linear-gradient(90deg,#C99A3A,#FFE9A3);
+ --tabs-bg:rgba(9,24,19,.85);--tabs-bd:1.5px solid rgba(184,144,62,.7);--tabs-r:12px;--tab-on-bg:linear-gradient(180deg,#FFE9A3,#C99A3A);--tab-on-ink:#2A1A02;
+ --nav-bg:linear-gradient(180deg,#10302A,#081812);--nav-bd:0;--nav-sh:0 -1.5px 0 #B8903E,0 -5px 0 rgba(242,207,114,.10),0 -16px 30px rgba(0,0,0,.45);--nav-r:0;--nav-on:#F2CF72;--dot-ring:#10302A;
+ --board-bg:radial-gradient(80% 80% at 50% 40%,#1A4A3C,#0B2019);--board-bd:2px solid #C9A04A;--board-sh:0 0 0 5px #0C211A,0 0 0 6.5px rgba(242,207,114,.55),0 22px 40px -12px rgba(0,0,0,.75);--board-r:12px;--blk-r:6px;
+ --cell:rgba(0,0,0,.28);--cell-sh:inset 0 2px 4px rgba(0,0,0,.55),inset 0 0 0 1px rgba(242,207,114,.10);
+ --slot-bg:radial-gradient(120% 100% at 50% 0%,#4A1550,#26092B);--slot-bd:1.5px solid rgba(184,144,62,.6);--slot-r:14px;
+ --life-bg:linear-gradient(180deg,rgba(24,60,49,.94),rgba(12,34,27,.95));--life-bd:1.5px solid #B8903E;--life-r:14px;--lico-bg:radial-gradient(circle at 35% 30%,#FFF0B8,#D9A93F 55%,#8F6416);--lico-ink:#3A2504;--lico-r:50%;--own-ring:#0E2A22;
+ --chip-bg:rgba(242,207,114,.12);--chip-bd:1px solid rgba(242,207,114,.4);--evt-bg:linear-gradient(90deg,#B3123F,#7A0B2B);--evt-ink:#FFE6EC;
+ --hint-bg:rgba(242,207,114,.16);--hint-ink:#FFE9A3;
+ --hero-bg:radial-gradient(90% 90% at 100% 0%,rgba(242,207,114,.24),transparent 60%),linear-gradient(180deg,rgba(28,74,60,.97),rgba(12,34,27,.97));
+ --ri-bg:rgba(242,207,114,.12);--ri-r:50%;--tgl-off:rgba(242,207,114,.18);--tgl-on:linear-gradient(90deg,#C99A3A,#FFE9A3);--knob:#FFF8E6;
+ --day-bg:rgba(0,0,0,.22);--day-r:8px;--day-done-bg:radial-gradient(circle at 35% 30%,#FFF0B8,#D9A93F 60%,#9C6F1C);--day-done-ink:#2A1A02;
+ --scrim:rgba(3,10,8,.66);--modal-bg:radial-gradient(90% 60% at 50% 0%,rgba(242,207,114,.20),transparent 60%),linear-gradient(180deg,#143D32,#0A1F19);--modal-bd:2px solid #C9A04A;--modal-sh:0 0 0 6px #0A1F19,0 0 0 7.5px rgba(242,207,114,.5),0 30px 60px rgba(0,0,0,.7);--modal-r:20px;
+ --rays:radial-gradient(closest-side,rgba(255,224,140,.55),rgba(255,224,140,0));--ray-c:#FFE9A3;
+ --pz-bg:rgba(0,0,0,.25);--pz-bd:1.5px solid rgba(184,144,62,.6);--pz-r:14px;
+ --map-bg:radial-gradient(50% 30% at 30% 75%,rgba(43,182,115,.20),transparent 70%),radial-gradient(40% 30% at 75% 35%,rgba(242,207,114,.10),transparent 70%);
+ --path:rgba(242,207,114,.6);--path-w:4;--path-dash:1 10;
+ --node-bg:radial-gradient(circle at 35% 30%,#FFF0B8,#D9A93F 55%,#8F6416);--node-bd:2px solid #FFF0B8;--node-ink:#2A1A02;--node-sh:0 6px 12px rgba(0,0,0,.5);--node-r:50%;
+ --node-lock-bg:rgba(9,24,19,.92);--node-cur-bg:radial-gradient(circle at 35% 30%,#FFB3C8,#E8336E 55%,#8F0F3A);--node-cur-ink:#fff;--node-cur-sh:0 0 0 4px #0B2019,0 0 0 6px #F2CF72,0 0 26px rgba(242,207,114,.6);
+ --offer-bg:radial-gradient(80% 90% at 85% 20%,rgba(255,224,140,.35),transparent 60%),linear-gradient(120deg,#5A1239 0%,#2D0B2E 55%,#14302A 100%);
+ --free-bg:linear-gradient(90deg,rgba(242,207,114,.16),rgba(242,207,114,.05));--free-bd:1.5px solid rgba(242,207,114,.5);--save-bg:#B3123F;
+ --ring-in:#123a30;--fade:#0a1a14;--sw-bg:rgba(0,0,0,.3);--miss:#E8336E;--combo:#F2CF72;--combo-fill:linear-gradient(90deg,#C99A3A,#FFE9A3);
+ --ttl-font:700 22px/1.1 'Cinzel',serif;--ttl-ls:1.5px;--hdr-ink:#F2CF72;--sec-font:800 11.5px/1 'Manrope',sans-serif;--sec-ink:#D9B969}
+.v-royal .c1{--c:#8E5CF7;--hi:#D2BCFF;--lo:#4E24B8}.v-royal .c2{--c:#1FC7A6;--hi:#A6F7E7;--lo:#0B7D68}.v-royal .c3{--c:#E8336E;--hi:#FFB3C8;--lo:#8F0F3A}
+.v-royal .c4{--c:#F4B63F;--hi:#FFEBB0;--lo:#A8700F}.v-royal .c5{--c:#3B8CF6;--hi:#B8D8FF;--lo:#1748A6}.v-royal .c6{--c:#2BB673;--hi:#A9F2CB;--lo:#0F6B40}
+.v-royal .blk{background:conic-gradient(from 45deg,var(--hi) 0 25%,var(--c) 0 50%,var(--lo) 0 75%,var(--c) 0);box-shadow:inset 0 0 0 1.5px rgba(255,241,184,.85),inset 0 0 0 3px rgba(0,0,0,.15),0 2px 5px rgba(0,0,0,.55)}
+.v-royal .blk::after{inset:24%;border-radius:3px;background:linear-gradient(135deg,rgba(255,255,255,.7),rgba(255,255,255,.08) 55%,rgba(255,255,255,0));box-shadow:0 0 0 1px rgba(255,255,255,.22)}
+.v-royal .blk.ghost{background:color-mix(in srgb,var(--c) 20%,transparent);box-shadow:inset 0 0 0 2px var(--hi),0 0 14px var(--c)}.v-royal .blk.ghost::after{display:none}
+.v-royal{--clr:#F2CF72}.v-royal .cell.clr .blk{filter:brightness(1.12)}
+
+.v-royal .bgx::before,.v-royal .bgx::after{content:"";position:absolute;top:-70px;width:150px;height:150px;border-radius:50%;border:1.5px solid rgba(242,207,114,.30);box-shadow:0 0 0 8px rgba(242,207,114,.05),0 0 0 9.5px rgba(242,207,114,.18)}
+.v-royal .bgx::before{left:-80px}.v-royal .bgx::after{right:-80px}
+.v-royal .medal.streak{display:flex;align-items:center;gap:4px;height:34px;padding:0 10px 0 8px;border-radius:999px;background:var(--pill-bg);border:1.5px solid #B8903E;font:700 15px/1 var(--disp);color:var(--gold)}.v-royal .medal .ic{width:16px;height:16px;color:#FF9A6B}
+.v-royal .crest{display:flex;flex-direction:column;align-items:center;margin-top:-6px}
+.v-royal .crown{width:46px;height:37px;filter:drop-shadow(0 4px 10px rgba(242,207,114,.45))}
+.v-royal .word{margin:2px 0 0;font:800 32px/1 var(--disp);letter-spacing:2.5px;background:linear-gradient(180deg,#FFF6CF 0%,#F2CF72 50%,#A8741A 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 2px 0 rgba(0,0,0,.55))}
+.v-royal .flourish{display:flex;align-items:center;gap:8px;color:var(--gold);margin-top:6px}.v-royal .flourish i{display:block;width:72px;height:1.5px;background:linear-gradient(90deg,transparent,#F2CF72)}.v-royal .flourish i:last-child{transform:scaleX(-1)}.v-royal .flourish .ic{width:16px;height:16px}
+.v-royal .tag{margin:4px 0 0;font:700 9.5px/1 var(--ui);letter-spacing:3.5px;text-transform:uppercase;color:var(--mut)}
+.v-royal .frame{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:2px}
+.v-royal .board.mini{width:192px;--board-pad:7px;--gap:3px;--blk-r:5px}
+.v-royal .plaques{display:flex;flex-direction:column;gap:8px}
+.v-royal .plq{display:flex;flex-direction:column;align-items:flex-start;gap:5px;padding:8px 12px;min-width:96px;border-radius:10px;background:var(--pill-bg);border:1.5px solid #B8903E;font:800 9.5px/1 var(--ui);letter-spacing:1.5px;text-transform:uppercase;color:var(--mut)}.v-royal .plq b{font:700 15px/1 var(--disp);color:var(--gold);letter-spacing:0;text-transform:none}
+.v-royal .medals{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.v-royal .md{position:relative;display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px 4px;border-radius:14px;color:var(--mut)}
+.v-royal .md.on{background:rgba(242,207,114,.08);box-shadow:inset 0 0 0 1.5px rgba(242,207,114,.55);color:var(--ink)}
+.v-royal .coinmd{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#2a6e5a,#0f2d24);border:1.5px solid #B8903E;color:var(--gold)}.v-royal .coinmd .ic{width:19px;height:19px}
+.v-royal .md.on .coinmd{background:radial-gradient(circle at 35% 30%,#FFF0B8,#D9A93F 55%,#8F6416);color:#3A2504;box-shadow:0 0 16px rgba(242,207,114,.55)}
+.v-royal .md b{font:700 13px/1 var(--disp);letter-spacing:1px}.v-royal .md small{font-size:10px}
+.v-royal .md i{position:absolute;top:3px;right:10px;padding:2px 5px;border-radius:5px;background:#B3123F;color:#FFE6EC;font:800 9px/1 var(--ui);font-style:normal}
+.v-royal .btn.gold{text-transform:uppercase;font-size:20px}
+.v-royal .otext b{font-size:18px}.v-royal .otext{max-width:200px}
+.v-royal .gl{display:grid!important;place-items:center;width:38px;height:38px;border-radius:50%;background:rgba(60,35,0,.12);box-shadow:inset 0 0 0 1.5px rgba(60,35,0,.35)}.v-royal .gl .ic{width:20px;height:20px}
+.v-royal .twin{display:grid;grid-template-columns:1.35fr 1fr;gap:10px}
+.v-royal .decree,.v-royal .vault{position:relative;padding:12px;border-radius:14px;background:var(--card-bg);border:var(--card-bd);box-shadow:var(--card-sh);display:flex;flex-direction:column;gap:6px}
+.v-royal .dh{display:flex;gap:5px;align-items:center;font:800 9.5px/1 var(--ui);letter-spacing:1.5px;text-transform:uppercase;color:var(--gold)}.v-royal .dh .ic{width:13px;height:13px}
+.v-royal .decree b{font:700 16px/1.1 var(--disp)}
+.v-royal .decree small{display:flex;gap:4px;align-items:center;color:var(--mut)}.v-royal .decree small .ic{width:12px;height:12px}
+.v-royal .decree .bar{height:6px}
+.v-royal .vault{align-items:center;justify-content:center;text-align:center;gap:5px}
+.v-royal .vault b{font:700 13px/1 var(--disp)}
+.v-royal .chestart{width:70px;height:58px;filter:drop-shadow(0 8px 12px rgba(0,0,0,.5))}
+.v-royal .ready{padding:4px 10px;border-radius:999px;background:linear-gradient(180deg,#FFE9A3,#C99A3A);color:#2A1A02;font:800 10.5px/1 var(--ui)}
+.v-royal .ribbon{position:relative;display:flex;align-items:center;justify-content:space-between;height:36px;padding:0 24px;color:#FFE6EC;font:700 12.5px/1 var(--ui);background:linear-gradient(180deg,#C2174A,#7A0B2B);clip-path:polygon(0 0,100% 0,95% 50%,100% 100%,0 100%,5% 50%)}
+.v-royal .ribbon span{display:flex;align-items:center;gap:6px}.v-royal .ribbon .ic{width:14px;height:14px;color:#FFD36E}.v-royal .ribbon em{font-style:normal;color:#FFD36E;font-weight:800}
+.v-royal .scr-home .nav{margin:auto -16px 0;height:80px;padding-bottom:16px}
+.v-royal .nv.on::before{content:"";position:absolute;top:-13px;width:8px;height:8px;background:#F2CF72;transform:rotate(45deg);box-shadow:0 0 8px #F2CF72}
+.v-royal .score{position:relative;padding:0 30px}
+.v-royal .score b{font-family:'Cinzel',serif;font-weight:800;background:linear-gradient(180deg,#FFF6CF,#F2CF72 55%,#A8741A);-webkit-background-clip:text;background-clip:text;color:transparent}
+.v-royal .laurel{position:absolute;inset:0}
+.v-royal .laurel::before,.v-royal .laurel::after{content:"";position:absolute;top:4px;width:28px;height:62px;border-radius:50%;border:2.5px solid transparent;border-left-color:rgba(242,207,114,.65)}
+.v-royal .laurel::before{left:0}.v-royal .laurel::after{right:0;transform:scaleX(-1)}
+.v-royal .pause{border-radius:50%}
+
+.v-neon{--disp:'Orbitron',sans-serif;--ui:'Chakra Petch',sans-serif;
+ --bg:radial-gradient(90% 40% at 50% -5%,rgba(255,43,214,.30) 0%,rgba(255,43,214,0) 65%),radial-gradient(80% 40% at 110% 55%,rgba(0,240,255,.16) 0%,rgba(0,240,255,0) 60%),linear-gradient(180deg,#070818 0%,#04050D 100%);
+ --ink:#E9FBFF;--mut:#86A2C2;--acc:#00F0FF;--acc-ink:#021418;--gold:#FFE600;--line:rgba(0,240,255,.12);--line2:rgba(0,240,255,.5);
+ --card-bg:linear-gradient(180deg,rgba(14,20,44,.93),rgba(8,11,28,.93));--card-bd:1px solid rgba(0,240,255,.35);--card-sh:0 0 16px -4px rgba(0,240,255,.35),inset 0 0 18px -8px rgba(0,240,255,.25);--card-solid:#0b1026;
+ --r:6px;--r-sm:6px;
+ --btn-bg:linear-gradient(90deg,#FF2BD6 0%,#A259FF 50%,#00F0FF 100%);--btn-ink:#04050D;--btn-sh:0 0 18px -2px rgba(255,43,214,.7),0 0 26px -6px rgba(0,240,255,.7);--btn-r:4px;--btn-ls:1.5px;
+ --btn2-bg:rgba(0,240,255,.06);--btn2-sh:inset 0 0 0 1px rgba(0,240,255,.5);--ghost-bd:1px solid rgba(0,240,255,.5);
+ --pill-bg:rgba(6,10,26,.92);--pill-bd:1px solid rgba(0,240,255,.4);--pill-sh:0 0 10px -2px rgba(0,240,255,.45);--plus-bg:#00F0FF;--plus-ink:#021418;
+ --ib-bg:rgba(6,10,26,.92);--ib-bd:1px solid rgba(0,240,255,.45);--ib-r:8px;--ib-sh:0 0 10px -3px rgba(0,240,255,.6);
+ --track:rgba(0,240,255,.12);--fill:linear-gradient(90deg,#FF2BD6,#00F0FF);
+ --tabs-bg:rgba(6,10,26,.92);--tabs-bd:1px solid rgba(0,240,255,.3);--tabs-r:4px;--tab-on-bg:rgba(0,240,255,.16);--tab-on-ink:#00F0FF;--tab-on-sh:inset 0 -2px 0 #00F0FF,0 0 12px -2px rgba(0,240,255,.6);
+ --nav-bg:linear-gradient(180deg,rgba(8,11,28,.96),rgba(4,5,13,.98));--nav-bd:0;--nav-sh:0 -1px 0 rgba(0,240,255,.55),0 -10px 24px -8px rgba(0,240,255,.35);--nav-r:0;--nav-on:#00F0FF;--dot-ring:#070818;
+ --board-bg:rgba(5,8,22,.94);--board-bd:1px solid rgba(0,240,255,.55);--board-sh:0 0 26px -4px rgba(0,240,255,.45),inset 0 0 30px -10px rgba(0,240,255,.3);--board-r:6px;--blk-r:4px;--gap:4px;
+ --cell:rgba(0,240,255,.035);--cell-sh:inset 0 0 0 1px rgba(0,240,255,.10);
+ --slot-bg:rgba(0,240,255,.04);--slot-bd:1px solid rgba(0,240,255,.25);--slot-r:6px;
+ --life-bg:rgba(8,11,28,.92);--life-bd:1px solid rgba(255,43,214,.45);--life-r:6px;--lico-bg:rgba(255,43,214,.12);--lico-ink:#FF7BE6;--lico-r:6px;--own-ring:#070818;--life-sh:0 0 14px -6px rgba(255,43,214,.8);
+ --chip-bg:rgba(0,240,255,.10);--chip-bd:1px solid rgba(0,240,255,.4);--evt-bg:#FFE600;--evt-ink:#151200;
+ --hint-bg:rgba(182,255,0,.12);--hint-ink:#D6FF6B;
+ --hero-bg:linear-gradient(135deg,rgba(255,43,214,.24),rgba(0,240,255,.10)),#0a0e24;
+ --ri-bg:rgba(0,240,255,.08);--ri-r:6px;--tgl-off:rgba(134,162,194,.25);--tgl-on:#00F0FF;--knob:#04050D;--tgl-sh:0 0 10px -2px rgba(0,240,255,.6);
+ --day-bg:rgba(0,240,255,.04);--day-r:4px;--day-done-bg:rgba(182,255,0,.18);--day-done-ink:#D6FF6B;
+ --scrim:rgba(2,3,10,.7);--modal-bg:linear-gradient(180deg,rgba(18,10,40,.98),rgba(6,8,22,.98));--modal-bd:1px solid rgba(255,43,214,.6);--modal-sh:0 0 40px -6px rgba(255,43,214,.6),0 0 0 1px rgba(255,43,214,.2);--modal-r:8px;
+ --rays:radial-gradient(closest-side,rgba(255,43,214,.45),rgba(255,43,214,0));--ray-c:#00F0FF;
+ --pz-bg:rgba(0,240,255,.05);--pz-bd:1px solid rgba(0,240,255,.35);--pz-r:6px;
+ --map-bg:linear-gradient(transparent 0 0);
+ --path:rgba(0,240,255,.75);--path-w:2;--path-dash:6 6;
+ --node-bg:rgba(8,11,28,.96);--node-bd:2px solid #B6FF00;--node-ink:#D6FF6B;--node-sh:0 0 14px -2px rgba(182,255,0,.7);--node-r:8px;
+ --node-lock-bg:rgba(8,11,28,.92);--node-cur-bg:rgba(255,43,214,.2);--node-cur-ink:#fff;--node-cur-sh:0 0 0 2px #FF2BD6,0 0 30px rgba(255,43,214,.8);
+ --offer-bg:linear-gradient(120deg,rgba(255,43,214,.38),rgba(162,89,255,.26) 50%,rgba(0,240,255,.26)),#080B1C;
+ --free-bg:rgba(255,230,0,.08);--free-bd:1px solid rgba(255,230,0,.5);--save-bg:#FF2BD6;
+ --ring-in:#0b1028;--fade:#05060f;--sw-bg:#04050D;--miss:#FF2BD6;--warn:#FF7BE6;--combo:#FFE600;--combo-fill:linear-gradient(90deg,#FFE600,#FF2BD6);
+ --ttl-font:800 18px/1.1 'Orbitron',sans-serif;--ttl-ls:2px;--sec-font:700 12px/1 'Chakra Petch',sans-serif;--sec-ink:#00F0FF}
+.v-neon .c1{--c:#A259FF}.v-neon .c2{--c:#00F0FF}.v-neon .c3{--c:#FF2BD6}.v-neon .c4{--c:#FFE600}.v-neon .c5{--c:#2D9BFF}.v-neon .c6{--c:#B6FF00}
+.v-neon .blk{background:linear-gradient(180deg,color-mix(in srgb,var(--c) 40%,transparent),color-mix(in srgb,var(--c) 14%,transparent));box-shadow:inset 0 0 0 2px var(--c),0 0 9px -1px var(--c),inset 0 0 12px -2px var(--c)}
+.v-neon .blk::after{left:4px;right:4px;top:4px;height:2px;border-radius:2px;background:rgba(255,255,255,.75)}
+.v-neon .blk.ghost{background:transparent;box-shadow:inset 0 0 0 1.5px var(--c),0 0 12px var(--c);opacity:.85}.v-neon .blk.ghost::after{display:none}
+.v-neon{--clr:#B6FF00}
+.v-neon .bgx{background:repeating-linear-gradient(0deg,rgba(255,255,255,.028) 0 1px,transparent 1px 3px)}
+.v-neon .hdr .ttl{text-transform:uppercase;text-shadow:0 0 12px rgba(0,240,255,.6)}
+.v-neon .sec{letter-spacing:2.5px}
+.v-neon .grid-floor{position:absolute;left:-40%;right:-40%;bottom:70px;height:250px;background:repeating-linear-gradient(90deg,rgba(255,43,214,.5) 0 1px,transparent 1px 44px),repeating-linear-gradient(0deg,rgba(255,43,214,.5) 0 1px,transparent 1px 34px);transform:perspective(240px) rotateX(60deg);transform-origin:50% 100%;-webkit-mask-image:linear-gradient(transparent,#000 60%);mask-image:linear-gradient(transparent,#000 60%);opacity:.9;z-index:0;pointer-events:none}
+.v-neon .scr-home .body>*{position:relative;z-index:1}
+.v-neon .scr-home .body>.grid-floor{position:absolute;z-index:0}
+.v-neon .hudtag{display:flex;align-items:center;gap:6px;height:32px;padding:0 10px;border:1px solid rgba(255,230,0,.55);border-radius:4px;background:rgba(255,230,0,.06);font:700 10.5px/1 var(--ui);letter-spacing:1.5px;color:#FFE600;box-shadow:0 0 12px -4px rgba(255,230,0,.7)}
+.v-neon .hudtag .ic{width:15px;height:15px}.v-neon .hudtag b{font:800 14px/1 var(--disp)}
+.v-neon .brand{text-align:center;margin-top:2px}
+.v-neon .word{margin:0;font:900 35px/1 var(--disp);letter-spacing:3px;display:flex;justify-content:center;gap:12px}
+.v-neon .word span{color:#E8FDFF;text-shadow:0 0 6px #00F0FF,0 0 16px #00F0FF,0 0 34px rgba(0,240,255,.6)}
+.v-neon .word .w2{color:#FFE2FA;text-shadow:0 0 6px #FF2BD6,0 0 16px #FF2BD6,0 0 34px rgba(255,43,214,.6)}
+.v-neon .tag{margin:9px 0 0;font:600 10.5px/1 var(--ui);letter-spacing:4px;color:var(--mut)}
+.v-neon .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.v-neon .st{padding:10px;border:1px solid rgba(0,240,255,.35);border-radius:4px;background:rgba(8,11,28,.88);display:flex;flex-direction:column;gap:7px;box-shadow:inset 0 0 14px -8px rgba(0,240,255,.5)}
+.v-neon .st span{font:700 9px/1 var(--ui);letter-spacing:1.5px;color:var(--mut)}.v-neon .st b{font:800 17px/1 var(--disp);color:#fff}
+.v-neon .diff{padding:10px 12px;border:1px solid rgba(255,43,214,.45);border-radius:4px;background:rgba(8,11,28,.88);display:grid;grid-template-columns:auto 1fr;gap:9px 14px;align-items:center;box-shadow:0 0 14px -6px rgba(255,43,214,.7)}
+.v-neon .dl{display:flex;flex-direction:column;gap:5px}.v-neon .dl span{font:700 9px/1 var(--ui);letter-spacing:1.5px;color:var(--mut)}.v-neon .dl b{font:800 14px/1 var(--disp);color:#FF7BE6}
+.v-neon .heat{display:grid;grid-template-columns:repeat(5,1fr);gap:5px}.v-neon .k{height:12px;border-radius:2px;background:rgba(255,43,214,.14);transform:skewX(-20deg)}.v-neon .k.on{background:linear-gradient(90deg,#FF2BD6,#FF7BE6);box-shadow:0 0 8px #FF2BD6}
+.v-neon .dm{grid-column:1/-1;display:flex;justify-content:space-between;font:700 10px/1 var(--ui);letter-spacing:1.2px;color:var(--mut)}.v-neon .dm .on{color:#FF7BE6}
+.v-neon .ctas{display:flex;gap:10px;filter:drop-shadow(0 0 10px rgba(255,43,214,.55)) drop-shadow(0 0 16px rgba(0,240,255,.3))}
+.v-neon .ctas .btn.big{flex:1;clip-path:polygon(14px 0,100% 0,100% calc(100% - 14px),calc(100% - 14px) 100%,0 100%,0 14px);box-shadow:none;font-weight:900;letter-spacing:2px;font-size:16px}
+.v-neon .ctas .btn.big small{font:700 10px/1 var(--ui);letter-spacing:1.5px}
+.v-neon .ctas .btn.ghost{height:64px;flex-direction:column;gap:5px;width:72px;padding:0;font:800 10.5px/1 var(--disp);letter-spacing:1.5px;color:#00F0FF;clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);background:rgba(0,240,255,.1);border:0;box-shadow:inset 0 0 0 1px rgba(0,240,255,.6)}
+.v-neon .missions{border:1px solid rgba(0,240,255,.3);border-radius:4px;background:rgba(8,11,28,.9)}
+.v-neon .mh{display:flex;justify-content:space-between;padding:9px 12px;border-bottom:1px solid rgba(0,240,255,.15);font:700 10px/1 var(--ui);letter-spacing:2px;color:#00F0FF}.v-neon .mh em{font-style:normal;color:var(--mut)}
+.v-neon .ms{display:grid;grid-template-columns:30px 1fr auto;gap:10px;align-items:center;padding:8px 12px}.v-neon .ms+.ms{border-top:1px dashed rgba(0,240,255,.14)}
+.v-neon .mi{display:grid;place-items:center;width:30px;height:30px;border-radius:4px;background:rgba(0,240,255,.08);color:#00F0FF}.v-neon .mi .ic{width:16px;height:16px}
+.v-neon .mtx{display:flex;flex-direction:column;gap:4px}.v-neon .mtx b{font:700 11.5px/1.1 var(--ui);letter-spacing:.6px}.v-neon .mtx small{font:600 9.5px/1 var(--ui);letter-spacing:.6px;color:var(--mut)}
+.v-neon .mp{font:800 11.5px/1 var(--disp);color:#B6FF00}.v-neon .mp.go{padding:6px 9px;background:#FFE600;color:#151200;border-radius:3px;box-shadow:0 0 12px rgba(255,230,0,.6)}
+.v-neon .ms.hot .mi{background:rgba(255,230,0,.12);color:#FFE600}
+.v-neon .ticker{display:flex;align-items:center;gap:8px;height:34px;padding:0 12px;background:repeating-linear-gradient(-45deg,rgba(255,230,0,.10) 0 8px,rgba(255,230,0,.02) 8px 16px);border:1px solid rgba(255,230,0,.5);border-radius:3px;font:700 10.5px/1 var(--ui);letter-spacing:1.5px;color:#FFE600}
+.v-neon .ticker .ic{width:14px;height:14px}.v-neon .ticker span{flex:1}.v-neon .ticker em{font:800 12px/1 var(--disp);font-style:normal}
+.v-neon .scr-home .nav{margin:auto -16px 0;height:78px;padding-bottom:14px}
+.v-neon .nv{font:700 10px/1 var(--ui);letter-spacing:1.2px;text-transform:uppercase}
+.v-neon .nv.on::after{content:"";position:absolute;bottom:-8px;width:26px;height:2px;background:#00F0FF;box-shadow:0 0 8px #00F0FF}
+.v-neon .score b{font:800 32px/1 var(--disp);letter-spacing:3px;color:#fff;text-shadow:0 0 10px rgba(0,240,255,.85)}
+.v-neon .bst{letter-spacing:1.5px;font-size:10.5px}
+.v-neon .pill b,.v-neon .rw,.v-neon .tp,.v-neon .gp b,.v-neon .lcost,.v-neon .pz b{font-family:'Chakra Petch',sans-serif;font-weight:700}
+.v-neon .dfoot .btn{letter-spacing:.6px;font-size:12px;padding:0 12px}
+.v-neon .lname,.v-neon .mood b,.v-neon .theme b{letter-spacing:.8px;text-transform:uppercase;font-size:12px}
+.v-neon .btn{text-transform:uppercase}
+.v-neon .rn,.v-neon .lvn,.v-neon .dhero h3,.v-neon .modal h3,.v-neon .otext b,.v-neon .tst b{text-transform:uppercase;letter-spacing:1px}
+.v-neon .dhero h3{font-size:21px}.v-neon .modal h3{font-size:21px}.v-neon .otext b{font-size:17px}.v-neon .rn{font-size:15px}
+
+.v-clay{--disp:'Baloo 2',sans-serif;--ui:'Nunito',sans-serif;
+ --bg:radial-gradient(80% 40% at 0% 0%,#FFD6EA 0%,rgba(255,214,234,0) 70%),radial-gradient(80% 42% at 100% 18%,#D4F1FF 0%,rgba(212,241,255,0) 70%),radial-gradient(90% 45% at 50% 100%,#FFE6C7 0%,rgba(255,230,199,0) 72%),linear-gradient(180deg,#F5EEFF 0%,#FFF7EF 100%);
+ --ink:#2C2254;--mut:#7B71A6;--acc:#14B8A6;--acc-ink:#fff;--gold:#F5A524;--line:rgba(44,34,84,.08);--line2:rgba(44,34,84,.22);
+ --card-bg:linear-gradient(180deg,#FFFFFF,#FAF7FF);--card-bd:0;--card-sh:0 10px 22px -8px rgba(90,70,170,.30),inset 0 -3px 0 rgba(124,92,255,.08),inset 0 2px 0 #fff;--card-solid:#fff;
+ --r:26px;--r-sm:22px;
+ --btn-bg:linear-gradient(180deg,#5EEAD4 0%,#14B8A6 100%);--btn-ink:#fff;--btn-sh:0 6px 0 #0E8F81,0 14px 22px -8px rgba(20,184,166,.6),inset 0 2px 0 rgba(255,255,255,.55);--btn-r:22px;
+ --btn2-bg:#fff;--btn2-sh:0 5px 0 #E0D8F7,0 10px 18px -8px rgba(90,70,170,.35);--ghost-bd:2px solid #E3DCF7;--ghost-bg:#fff;
+ --pill-bg:#fff;--pill-bd:0;--pill-sh:0 4px 0 #E6DFFA,0 8px 14px -8px rgba(90,70,170,.4);--plus-bg:linear-gradient(180deg,#5EEAD4,#14B8A6);--plus-ink:#fff;
+ --ib-bg:#fff;--ib-bd:0;--ib-r:14px;--ib-sh:0 4px 0 #E6DFFA,0 8px 14px -8px rgba(90,70,170,.45);
+ --track:#ECE6FB;--fill:linear-gradient(90deg,#8C6BFF,#FF6B9A);
+ --tabs-bg:#ECE6FB;--tab-on-bg:#fff;--tab-on-ink:#2C2254;--tab-on-sh:0 3px 0 #DCD3F5,0 6px 12px -6px rgba(90,70,170,.4);
+ --nav-bg:#fff;--nav-bd:0;--nav-sh:0 -6px 24px -10px rgba(90,70,170,.35);--nav-r:30px 30px 0 0;--nav-on:#7C5CFF;--dot-ring:#fff;
+ --board-bg:#FFFFFF;--board-bd:0;--board-sh:0 16px 30px -12px rgba(90,70,170,.4),inset 0 -5px 0 rgba(124,92,255,.08);--board-r:28px;--blk-r:10px;--board-pad:11px;
+ --cell:#EEE8FB;--cell-sh:inset 0 3px 5px rgba(90,70,170,.18),inset 0 -1px 0 rgba(255,255,255,.9);
+ --slot-bg:#fff;--slot-bd:0;--slot-sh:0 8px 18px -10px rgba(90,70,170,.45),inset 0 -3px 0 rgba(124,92,255,.07);--slot-r:22px;
+ --life-bg:#fff;--life-bd:0;--life-sh:0 5px 0 #E6DFFA,0 10px 18px -10px rgba(90,70,170,.4);--life-r:22px;--lico-bg:#F1EDFF;--lico-ink:#7C5CFF;--lico-r:50%;--own-ring:#fff;
+ --chip-bg:#F1EDFF;--evt-bg:linear-gradient(90deg,#FFC94D,#FF8A5C);--evt-ink:#4A1D00;
+ --hint-bg:#DDF8F3;--hint-ink:#0E8F81;
+ --hero-bg:linear-gradient(140deg,#8C6BFF 0%,#B26BFF 50%,#FF8FB1 100%);--hero-ink:#fff;
+ --ri-bg:#F1EDFF;--ri-r:12px;--tgl-off:#E3DCF7;--tgl-on:linear-gradient(90deg,#2DD4BF,#14B8A6);
+ --day-bg:#F4F0FF;--day-r:12px;--day-done-bg:linear-gradient(180deg,#A78BFA,#7C5CFF);--day-done-ink:#fff;
+ --scrim:rgba(60,40,120,.32);--modal-bg:linear-gradient(180deg,#FFFFFF,#FBF7FF);--modal-bd:0;--modal-sh:0 30px 60px -20px rgba(60,40,120,.55),inset 0 -6px 0 rgba(124,92,255,.08);--modal-r:34px;
+ --rays:radial-gradient(closest-side,rgba(255,201,77,.6),rgba(255,201,77,0));--ray-c:#FFC94D;
+ --pz-bg:#F7F3FF;--pz-bd:0;--pz-r:20px;
+ --map-bg:radial-gradient(60% 30% at 25% 72%,#D7F5E8 0%,transparent 70%),radial-gradient(50% 30% at 80% 32%,#DDEFFF 0%,transparent 70%);
+ --path:#FFFFFF;--path-w:18;
+ --node-bg:linear-gradient(180deg,#A78BFA,#7C5CFF);--node-bd:3px solid #fff;--node-sh:0 5px 0 #5B3FD0,0 10px 16px -6px rgba(90,70,170,.5);--node-ink:#fff;
+ --node-lock-bg:#E9E3FA;--node-cur-bg:linear-gradient(180deg,#FFD36E,#F5A524);--node-cur-ink:#5A2E00;--node-cur-sh:0 6px 0 #C47D0E,0 0 0 8px rgba(245,165,36,.22),0 16px 24px -8px rgba(245,165,36,.6);
+ --offer-bg:linear-gradient(130deg,#FF8FB1 0%,#B26BFF 55%,#7C5CFF 100%);--offer-ink:#fff;
+ --free-bg:linear-gradient(90deg,#FFF4D6,#FFFFFF);--free-bd:0;--save-bg:#FF4F7B;
+ --ring-in:#9F74FF;--fade:#FFF7EF;--dtimer-bg:rgba(255,255,255,.24);--sw-bg:#F4F0FF;--miss:#FF6B9A;--warn:#E0457B;--combo:#F5A524;
+ --ttl-font:800 26px/1.1 'Baloo 2',sans-serif;--sec-ink:#8E83BD;--status:#2C2254}
+.v-clay .c1{--c:#8C6BFF;--hi:#C9B8FF;--lo:#6A45F0}.v-clay .c2{--c:#2FD6C3;--hi:#9AF5EA;--lo:#11AE9B}.v-clay .c3{--c:#FF6B9A;--hi:#FFB3CB;--lo:#E8467C}
+.v-clay .c4{--c:#FFC94D;--hi:#FFE7A3;--lo:#F0A11A}.v-clay .c5{--c:#5CB8FF;--hi:#B1DEFF;--lo:#2F8FEA}.v-clay .c6{--c:#4CD68F;--hi:#A6F0C9;--lo:#20B26B}
+.v-clay .blk{background:radial-gradient(120% 120% at 28% 18%,var(--hi) 0%,var(--c) 52%,var(--lo) 100%);box-shadow:inset 0 -4px 0 rgba(0,0,0,.13),inset 0 3px 0 rgba(255,255,255,.4),0 3px 6px -1px rgba(60,40,120,.3)}
+.v-clay .blk::after{left:18%;top:13%;width:28%;height:20%;border-radius:50%;background:rgba(255,255,255,.75);transform:rotate(-18deg)}
+.v-clay .blk.ghost{background:color-mix(in srgb,var(--c) 22%,#fff);box-shadow:inset 0 0 0 2.5px var(--c)}.v-clay .blk.ghost::after{display:none}
+.v-clay{--clr:#F5A524}
+.v-clay .clouds{position:absolute;inset:0;pointer-events:none;z-index:0}
+.v-clay .clouds i{position:absolute;background:#fff;border-radius:999px;opacity:.9;box-shadow:0 8px 18px -10px rgba(90,70,170,.25)}
+.v-clay .clouds i:nth-child(1){width:120px;height:38px;left:-34px;top:92px}.v-clay .clouds i:nth-child(2){width:96px;height:30px;right:-26px;top:150px}.v-clay .clouds i:nth-child(3){width:70px;height:24px;left:232px;top:66px;opacity:.7}
+.v-clay .scr-home .body>*{position:relative;z-index:1}
+.v-clay .scr-home .body>.clouds,.v-clay .scr-home .body>.floaters{position:absolute;z-index:0}
+.v-clay .brand{display:flex;flex-direction:column;align-items:center;gap:2px;margin-top:2px}
+.v-clay .logo{width:82px;height:82px;filter:drop-shadow(0 10px 14px rgba(124,92,255,.35))}
+.v-clay .word{margin:0;font:800 42px/.95 var(--disp);color:#2C2254;letter-spacing:-.5px;text-shadow:0 3px 0 #fff,0 6px 0 #E3DCF7}
+.v-clay .chips{display:flex;gap:8px;margin-top:8px}
+.v-clay .cp{display:inline-flex;align-items:center;gap:5px;height:30px;padding:0 12px;border-radius:999px;background:#fff;box-shadow:0 4px 0 #E6DFFA,0 8px 14px -8px rgba(90,70,170,.4);font:800 12.5px/1 var(--ui)}
+.v-clay .cp .ic{width:15px;height:15px;color:#F5A524}.v-clay .cp.fire .ic{color:#FF6B5A}
+.v-clay .floaters{inset:0;pointer-events:none}
+.v-clay .floaters .blk{position:absolute;inset:auto;width:30px;height:30px;border-radius:9px}
+.v-clay .floaters .f1{left:18px;top:150px;transform:rotate(-14deg)}.v-clay .floaters .f2{right:22px;top:104px;transform:rotate(12deg);width:24px;height:24px}.v-clay .floaters .f3{right:36px;top:198px;transform:rotate(-8deg)}
+.v-clay .floaters .f4{left:44px;top:64px;transform:rotate(16deg);width:22px;height:22px}.v-clay .floaters .f5{left:290px;top:22px;transform:rotate(20deg);width:18px;height:18px}
+.v-clay .seg{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;padding:5px;border-radius:22px;background:#ECE6FB;box-shadow:inset 0 3px 6px rgba(90,70,170,.15)}
+.v-clay .sg{position:relative;text-align:center;padding:11px 0;border-radius:17px;font:800 14px/1 var(--ui);color:var(--mut)}
+.v-clay .sg.on{background:#fff;color:#2C2254;box-shadow:0 4px 0 #DCD3F5,0 8px 14px -8px rgba(90,70,170,.45)}
+.v-clay .sg i{position:absolute;top:-8px;right:4px;padding:3px 6px;border-radius:8px;background:#FF8A5C;color:#fff;font:800 9px/1 var(--ui);font-style:normal;box-shadow:0 2px 0 #D9603A}
+.v-clay .scr-home .btn.big{height:70px;font-size:25px;border-radius:24px;margin-top:4px}
+.v-clay .newgame{align-self:center;display:inline-flex;gap:6px;align-items:center;font:800 13px/1 var(--ui);color:var(--mut);margin-top:0}.v-clay .newgame .ic{width:15px;height:15px}
+.v-clay .tiles{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.v-clay .tile{position:relative;padding:14px 14px 12px;border-radius:24px;background:var(--card-bg);box-shadow:var(--card-sh);display:flex;flex-direction:column;gap:5px;overflow:hidden;min-height:128px}
+.v-clay .tile::before{content:"";position:absolute;left:0;right:0;top:0;height:6px;background:linear-gradient(90deg,#8C6BFF,#FF6B9A)}
+.v-clay .tile.chest::before{background:linear-gradient(90deg,#FFC94D,#FF8A5C)}
+.v-clay .tic{display:grid;place-items:center;width:34px;height:34px;border-radius:12px;background:#F1EDFF;color:#7C5CFF}.v-clay .tic .ic{width:18px;height:18px}
+.v-clay .tile b{font:800 15px/1.1 var(--disp)}.v-clay .tile small{color:var(--mut);font-weight:700}
+.v-clay .tile .bar{height:7px}
+.v-clay .tile.chest{align-items:center;text-align:center;justify-content:center}
+.v-clay .chestart{width:76px;height:64px;filter:drop-shadow(0 8px 10px rgba(110,53,20,.35))}
+.v-clay .ready{padding:4px 10px;border-radius:999px;background:#DDF8F3;color:#0E8F81;font:800 11.5px/1 var(--ui)}
+.v-clay .event{display:flex;align-items:center;gap:8px;height:40px;padding:0 14px;border-radius:999px;background:linear-gradient(90deg,#FFE9A8,#FFD0B8);box-shadow:0 4px 0 #F5C98E;font:700 13px/1 var(--ui);color:#5A2E00}
+.v-clay .event .ic{width:16px;height:16px;color:#E8890C}.v-clay .event span{flex:1}.v-clay .event em{font-style:normal;font-weight:900}
+.v-clay .scr-home .nav{margin:auto -16px 0;height:84px;padding-bottom:18px}
+.v-clay .nv{z-index:0}
+.v-clay .nv.on{color:#fff}
+.v-clay .nv.on::before{content:"";position:absolute;top:-11px;width:58px;height:54px;border-radius:18px;background:linear-gradient(180deg,#A78BFA,#7C5CFF);box-shadow:0 5px 0 #5B3FD0,0 10px 16px -6px rgba(90,70,170,.5);z-index:-1}
+.v-clay .score b{font:800 52px/1 var(--disp);color:#2C2254;text-shadow:0 4px 0 #fff,0 7px 0 #E3DCF7}
+.v-clay .pause{border-radius:14px}
+.v-clay .mode{background:#fff;box-shadow:0 3px 0 #E6DFFA}
+.v-clay .hdr .ttl{color:#2C2254}
+.v-clay .slot.used .sock{border-color:#D8CFF3}
+
+@page{size:297mm 210mm;margin:0}
+html,body{margin:0;padding:0;background:#0E0A1C;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:1123px;height:794px;position:relative;overflow:hidden;box-sizing:border-box;padding:34px 46px 46px;break-after:page;page-break-after:always;color:#ECE9FA;font:14px/1.5 Inter,sans-serif;
+ background:radial-gradient(60% 55% at 0% 0%,rgba(124,92,255,.20),transparent 60%),radial-gradient(55% 50% at 100% 100%,rgba(45,226,206,.12),transparent 60%),#0E0A1C}
+.page:last-child{break-after:auto;page-break-after:auto}
+.page *{box-sizing:border-box}
+.pf{position:absolute;left:46px;right:46px;bottom:16px;display:flex;justify-content:space-between;font:600 10.5px/1 Inter;color:#7D74A8;letter-spacing:.4px}
+.kicker{margin:0 0 4px;font:700 11px/1 Inter;letter-spacing:2.5px;text-transform:uppercase;color:#2DE2CE}
+.ph-head{margin-bottom:16px}.ph-head h2{margin:0;font:700 30px/1.15 Outfit,sans-serif;letter-spacing:-.2px}.lede{margin:6px 0 0;max-width:820px;color:#B3ABD6;font-size:14.5px}
+h3{margin:0 0 8px;font:700 17px/1.2 Outfit,sans-serif}
+.ph{position:relative;width:calc(390px * var(--s));height:calc(844px * var(--s));flex:none;border-radius:calc(58px * var(--s));box-shadow:0 calc(26px * var(--s)) calc(50px * var(--s)) calc(-16px * var(--s)) rgba(0,0,0,.7)}
+.ph img{display:block;width:100%;height:100%;border-radius:inherit}
+.sev{display:inline-block;padding:3px 7px;border-radius:6px;font:800 9.5px/1 Inter;letter-spacing:.6px;text-transform:uppercase;vertical-align:1px}
+.sev.H{background:#FF5C8A;color:#2a0010}.sev.M{background:#FFC44D;color:#2a1a00}.sev.L{background:#59C2FF;color:#001a2a}
+/* cover */
+.cover{display:flex;gap:20px;padding:56px 56px 46px;background:radial-gradient(70% 70% at 80% 40%,rgba(124,92,255,.35),transparent 60%),radial-gradient(50% 60% at 10% 90%,rgba(45,226,206,.16),transparent 60%),#0E0A1C}
+.cv-left{flex:0 0 430px;display:flex;flex-direction:column;justify-content:center}
+.cv-mark{display:flex;align-items:center;gap:10px;font:700 12px/1 Inter;letter-spacing:2px;text-transform:uppercase;color:#B3ABD6}.cv-mark .art{width:38px;height:38px}
+.cover h1{margin:18px 0 0;font:700 72px/1 Outfit;letter-spacing:-1.5px;color:#F3F0FF}
+.cv-sub{margin:8px 0 0;font:600 30px/1.1 Outfit;color:#2DE2CE}
+.cv-text{margin:18px 0 0;color:#C4BDE3;font-size:15px;line-height:1.55}
+.cv-meta{margin:22px 0 0;display:grid;gap:8px}.cv-meta div{display:grid;grid-template-columns:84px 1fr;gap:10px}.cv-meta dt{font:700 10.5px/1.6 Inter;letter-spacing:1.5px;text-transform:uppercase;color:#7D74A8}.cv-meta dd{margin:0;font-size:13px;color:#E3DEF8}
+.cv-fan{position:relative;flex:1}
+.fan{position:absolute;top:60px}.fan.f0{left:4px;transform:rotate(-9deg);top:100px}.fan.f1{left:112px;transform:rotate(-3deg);top:50px}.fan.f2{left:220px;transform:rotate(3deg);top:50px}.fan.f3{left:326px;transform:rotate(9deg);top:100px}
+/* toc */
+.toc{display:grid;gap:2px;max-width:760px}.toc .trow{display:grid;grid-template-columns:150px 1fr 40px;align-items:baseline;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.tk{font:700 13px/1 Inter;letter-spacing:1.5px;text-transform:uppercase;color:#2DE2CE}.tv{font:600 17px/1.2 Outfit}.tpn{text-align:right;font:700 15px/1 Outfit;color:#B3ABD6}
+.howto{position:absolute;left:46px;right:46px;bottom:60px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.howto div{padding:14px 16px;border-radius:14px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)}.howto p{margin:6px 0 0;color:#B3ABD6;font-size:12.5px}
+/* summary */
+.sum3{display:grid;grid-template-columns:1fr 1fr 1.05fr;gap:16px}
+.sc{padding:18px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09)}.sc ul{margin:0;padding-left:18px}.sc li{margin:0 0 7px;color:#D6D0F0;font-size:13.5px}
+.sc.rec{background:linear-gradient(160deg,rgba(124,92,255,.30),rgba(45,226,206,.12));border-color:rgba(45,226,206,.35)}.sc.rec p{margin:0 0 10px;font-size:13.5px;color:#E7E2FA}
+.dots4{display:flex;gap:8px;margin-top:8px}
+.dd{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:8px;font:800 13px/1 Outfit;margin-right:8px;vertical-align:middle}
+.dd.v-aurora{background:linear-gradient(160deg,#7C5CFF,#2DE2CE);color:#fff}.dd.v-royal{background:linear-gradient(180deg,#FFE9A3,#C99A3A);color:#2A1A02}.dd.v-neon{background:#05060F;color:#00F0FF;box-shadow:inset 0 0 0 1.5px #FF2BD6}.dd.v-clay{background:#fff;color:#7C5CFF}
+/* current strip */
+.strip{display:flex;gap:12px;align-items:flex-start;height:446px}
+.strip figure{margin:0;flex:1;display:flex;flex-direction:column;gap:8px;min-width:0}
+.strip .shot{width:100%;max-height:410px;border-radius:12px;overflow:hidden;background:#000;box-shadow:0 0 0 1px rgba(255,255,255,.12)}.strip .shot img{width:100%;display:block}
+.strip figcaption{font:600 12px/1.2 Inter;color:#B3ABD6}.strip figcaption b{color:#2DE2CE;margin-right:4px}
+.glob{display:grid;grid-template-columns:repeat(3,1fr);gap:10px 18px;margin-top:6px}.glob div{padding:10px 14px;border-left:3px solid #FF5C8A;background:rgba(255,92,138,.06);border-radius:0 10px 10px 0}.glob p{margin:3px 0 0;color:#B3ABD6;font-size:12px;line-height:1.4}.glob b{font:700 13.5px/1.2 Outfit}
+/* audit */
+.arow{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.ablock{display:flex;flex-direction:column;gap:10px;min-width:0}
+.atitle{display:flex;align-items:center;gap:10px}.an{display:grid;place-items:center;width:28px;height:28px;border-radius:9px;background:#2DE2CE;color:#052A27;font:800 14px/1 Outfit}.atitle h3{margin:0;flex:1}.acount{font:700 11px/1 Inter;color:#7D74A8;letter-spacing:1px;text-transform:uppercase}
+.abody{display:flex;gap:14px;align-items:flex-start}
+.aimg{border-radius:12px;box-shadow:0 0 0 1px rgba(255,255,255,.14);flex:none;object-fit:cover;object-position:top}
+.split{display:flex;gap:6px;flex:none}.part{border-radius:10px;box-shadow:0 0 0 1px rgba(255,255,255,.14);background-repeat:no-repeat}
+.finds{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;min-width:0}
+.aone{display:flex;gap:26px;align-items:flex-start}
+.finds.two{display:grid;grid-template-columns:1fr 1fr;gap:10px;flex:1}
+.finds.two li{padding:11px 13px}.finds.three{grid-template-columns:repeat(3,1fr)}.finds.three li{padding:10px 11px}.finds.three .now{font-size:12.2px}.finds.three .fix{font-size:12px}.finds.two .now{font-size:12.6px}.finds.two .fix{font-size:12.3px}
+.hyp{margin-top:16px}.hgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.hgrid div{padding:12px 14px;border-radius:14px;background:rgba(45,226,206,.07);border:1px solid rgba(45,226,206,.25)}.hgrid b{font:700 14px/1.2 Outfit}.hgrid p{margin:4px 0 0;font-size:12px;color:#B3ABD6;line-height:1.4}
+.finds li{padding:8px 10px;border-radius:10px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.07)}
+.finds .now{margin:5px 0 0;font-size:11.6px;line-height:1.38;color:#E3DEF8}.finds .fix{margin:4px 0 0;display:flex;gap:4px;font-size:11.4px;line-height:1.38;color:#8FEFE3}.finds .fix .ic{width:13px;height:13px;flex:none;margin-top:2px}
+/* principles */
+.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.pc{padding:15px 16px;border-radius:16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);min-height:172px}.pn{font:800 12px/1 Outfit;color:#2DE2CE;letter-spacing:1px}.pc b{display:block;margin:8px 0 6px;font:700 16px/1.2 Outfit}.pc p{margin:0;color:#B3ABD6;font-size:13.2px;line-height:1.5}
+/* IA */
+.iawrap{display:grid;grid-template-columns:1.35fr 1fr;gap:26px;align-items:start}
+.iamap{display:flex;flex-direction:column;gap:18px}
+.iacol{display:flex;align-items:center;gap:10px}
+.iab{display:flex;flex-direction:column;gap:3px;padding:11px 13px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);min-width:0}.iab .ic{width:18px;height:18px;color:#2DE2CE}.iab b{font:700 14.5px/1.2 Outfit}.iab small{color:#B3ABD6;font-size:11.5px}
+.iab.hub{background:linear-gradient(160deg,rgba(124,92,255,.4),rgba(45,226,206,.15));border-color:rgba(45,226,206,.4);width:190px;flex:none}
+.iaarrow{color:#7D74A8}.iaarrow .ic{width:26px;height:26px}
+.iastack{display:grid;grid-template-columns:1fr 1fr;gap:8px;flex:1}
+.ianav{padding:14px;border-radius:16px;border:1px dashed rgba(45,226,206,.45)}.ianav p{margin:0 0 10px;font:700 11px/1 Inter;letter-spacing:2px;text-transform:uppercase;color:#2DE2CE}.iarow{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.loop{position:relative;height:500px}
+.loop svg{position:absolute;left:0;top:0;width:400px;height:350px}.loop circle{fill:none;stroke:rgba(255,255,255,.14);stroke-width:2;stroke-dasharray:4 8}.loop .arr{fill:none;stroke:#2DE2CE;stroke-width:3;stroke-linecap:round}
+.ln{position:absolute;transform:translate(-50%,-50%);display:flex;align-items:center;gap:6px;padding:8px 11px;border-radius:999px;background:#1E1540;border:1px solid rgba(255,255,255,.14);font-size:12.5px;white-space:nowrap}.ln .ic{width:15px;height:15px;color:#FFC44D}
+.loop circle{stroke:rgba(45,226,206,.35)}
+.navspec{padding:13px 15px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)}.navspec b{font:700 14px/1.2 Outfit}.navspec ul{margin:6px 0 0;padding-left:16px}.navspec li{font-size:12.3px;color:#C9C2E6;margin-bottom:4px}
+.loopc{position:absolute;left:0;right:0;top:372px;margin:0;color:#B3ABD6;font-size:13px}
+/* every */
+.egrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.ec{padding:13px 15px;border-radius:16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);min-height:150px}
+.film{position:relative;display:flex;gap:18px;justify-content:center;margin-top:14px}.filmc{margin:8px 0 0;text-align:center;font:700 10px/1 Inter;letter-spacing:1.5px;text-transform:uppercase;color:#7D74A8}
+.en{display:grid;place-items:center;width:26px;height:26px;border-radius:8px;background:rgba(45,226,206,.15);color:#2DE2CE;font:800 13px/1 Outfit}.ec b{display:block;margin:8px 0 4px;font:700 17px/1.2 Outfit}.ec p{margin:0;color:#C9C2E6;font-size:12.4px;line-height:1.42}
+/* direction intro */
+.dintro{display:grid;grid-template-columns:330px 1fr;gap:34px;padding-top:30px}
+.di-left{display:flex;justify-content:center}
+.dtitle{margin:0;font:700 44px/1.05 Outfit}.dline{margin:6px 0 0;font:500 18px/1.3 Outfit;color:#B3ABD6}
+.dconcept{margin:14px 0 0;color:#D6D0F0;font-size:14px;line-height:1.55;max-width:640px}
+.dfacts{display:grid;grid-template-columns:1fr 1.6fr 1fr;gap:10px;margin-top:14px}.dfacts div{padding:10px 12px;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)}.dfacts span{display:block;font:700 10px/1 Inter;letter-spacing:1.5px;text-transform:uppercase;color:#7D74A8;margin-bottom:5px}.dfacts b{font:600 12.5px/1.35 Inter}
+.dpal{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:14px}.sw1 i{display:block;height:46px;border-radius:10px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.18)}.sw1 b{display:block;margin-top:6px;font:600 11.5px/1.2 Inter}.sw1 span{font:500 10.5px/1 Inter;color:#7D74A8}
+.dsamp{margin-top:14px;padding:16px;border-radius:16px;background:var(--bg);display:grid;grid-template-columns:1.2fr 1fr;gap:12px 18px;align-items:center;color:var(--ink)}
+.dsamp .type{display:flex;flex-direction:column;gap:4px;grid-row:span 2}.dsamp .t1{font-size:34px;font-weight:700;line-height:1}.dsamp .t2{font-size:12.5px;opacity:.8}
+.dsamp .blocks{display:flex;gap:8px}.dsamp .bk{position:relative;width:34px;height:34px;display:block}.dsamp .blk{border-radius:var(--blk-r)}
+.dsamp .comps{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.dsamp .btn{height:38px;font-size:14px;padding:0 14px}
+/* screen rows */
+.row4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;justify-items:center}
+.row4 figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:10px}
+.row4 figcaption{width:234px}.row4 figcaption b{font:700 14px/1.2 Outfit}.row4 figcaption p{margin:4px 0 0;color:#B3ABD6;font-size:11.8px;line-height:1.4}
+.compare .row4 figcaption{width:236px}
+/* score */
+.scwrap{display:grid;grid-template-columns:1.25fr 1fr;gap:24px;align-items:start}
+.sct{width:100%;border-collapse:collapse}.sct th{font:700 13px/1.2 Outfit;text-align:left;padding:8px 6px;border-bottom:1px solid rgba(255,255,255,.12)}.sct td{padding:9px 6px;border-bottom:1px solid rgba(255,255,255,.06);font-size:13px}.sct td:first-child{color:#D6D0F0}
+.rate{display:inline-flex;gap:4px}.rate i{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.12)}.rate i.on{background:linear-gradient(160deg,#8B5CF6,#2DE2CE)}
+.sct .tot td{border-bottom:0;padding-top:12px}.sct .tot b{font:800 18px/1 Outfit;color:#2DE2CE}
+.recbox{padding:18px;border-radius:18px;background:linear-gradient(160deg,rgba(124,92,255,.30),rgba(45,226,206,.12));border:1px solid rgba(45,226,206,.35)}.recbox ol{margin:0;padding-left:18px}.recbox li{margin-bottom:9px;font-size:13.2px;color:#E7E2FA;line-height:1.45}
+/* plan */
+.phases{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.phase{padding:14px;border-radius:16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)}.phh{display:flex;flex-direction:column;gap:3px;margin-bottom:8px}.pp{display:inline-block;align-self:flex-start;padding:4px 8px;border-radius:7px;background:#2DE2CE;color:#052A27;font:800 12px/1 Outfit}.phh b{font:700 17px/1.2 Outfit}.phh small{color:#7D74A8;font-weight:600}
+.phase ul{margin:0;padding-left:16px}.phase li{font-size:12.2px;color:#D6D0F0;margin-bottom:5px;line-height:1.4}
+.sub{margin:16px 0 10px;font:700 16px/1.2 Outfit;color:#fff}
+.cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.cgrid div{padding:11px 13px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07)}.cgrid b{font:700 13.5px/1.2 Outfit;color:#8FEFE3}.cgrid p{margin:4px 0 0;font-size:12px;color:#B3ABD6;line-height:1.4}
+/* measure */
+.mwrap{display:grid;grid-template-columns:1.1fr 1fr;gap:26px}
+.kt{width:100%;border-collapse:collapse}.kt td{padding:9px 8px;border-bottom:1px solid rgba(255,255,255,.07);font-size:12.8px;vertical-align:top}.kt td:first-child{width:46%}.kt td:last-child{color:#B3ABD6}
+.tests{display:flex;flex-direction:column;gap:9px}.tests div{position:relative;padding:11px 13px 11px 46px;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)}.tn{position:absolute;left:13px;top:12px;display:grid;place-items:center;width:22px;height:22px;border-radius:7px;background:rgba(45,226,206,.15);color:#2DE2CE;font:800 12px/1 Outfit}.tests b{font:700 14px/1.2 Outfit}.tests p{margin:3px 0 0;font-size:12.3px;color:#B3ABD6}
+.note{display:flex;gap:10px;margin-top:12px;padding:12px 14px;border-radius:12px;background:rgba(255,196,77,.08);border:1px solid rgba(255,196,77,.3)}.note .ic{color:#FFC44D;width:20px;height:20px}.note p{margin:0;font-size:12.5px;color:#E7E2FA}
+/* spec */
+.spgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.spc{padding:14px;border-radius:16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)}
+.spc>b{display:flex;align-items:center;gap:8px;font:700 16px/1.2 Outfit;margin-bottom:8px}.spc>b span{display:grid;place-items:center;width:24px;height:24px;border-radius:7px;background:rgba(45,226,206,.15);color:#2DE2CE;font:800 12px/1 Outfit}
+.spc ul{margin:0;padding:0;list-style:none}.spc li{display:flex;gap:6px;font-size:12px;line-height:1.4;color:#D6D0F0;margin-bottom:6px}.spc li .ic{width:14px;height:14px;color:#2DE2CE;flex:none;margin-top:2px}
+/* closing */
+.closing{display:grid;place-items:center;text-align:center}.clz{display:flex;flex-direction:column;align-items:center;gap:10px;max-width:760px}.clz .art{width:56px;height:56px}.clz h2{margin:0;font:700 40px/1.1 Outfit}.clz>p{margin:0;color:#C9C2E6;font-size:15px}.clz .small{font-size:11.5px;color:#7D74A8;margin-top:8px}
+.clrow{display:flex;gap:18px;margin:14px 0 4px}
+</style></head><body><svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="g-coin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE27A"/><stop offset=".55" stop-color="#FFC233"/><stop offset="1" stop-color="#E08A00"/></linearGradient>
+<linearGradient id="g-coin-in" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7A800"/><stop offset="1" stop-color="#FFD45C"/></linearGradient>
+<linearGradient id="g-gem-a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B9F3FF"/><stop offset="1" stop-color="#3FA9FF"/></linearGradient>
+<linearGradient id="g-gem-b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5CC8FF"/><stop offset="1" stop-color="#2563EB"/></linearGradient>
+<linearGradient id="g-gem-c" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1D4ED8"/><stop offset="1" stop-color="#60A5FA"/></linearGradient>
+<linearGradient id="g-wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B8642E"/><stop offset="1" stop-color="#6E3514"/></linearGradient>
+<linearGradient id="g-wood-lid" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D27A3A"/><stop offset="1" stop-color="#8A4419"/></linearGradient>
+<linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF1A8"/><stop offset=".5" stop-color="#F5C443"/><stop offset="1" stop-color="#B27A0B"/></linearGradient>
+<radialGradient id="g-glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFE9A0" stop-opacity=".95"/><stop offset="1" stop-color="#FFB703" stop-opacity="0"/></radialGradient>
+<linearGradient id="g-petal-a" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF9EC0"/><stop offset="1" stop-color="#FF4F8B"/></linearGradient>
+<linearGradient id="g-petal-b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C4B5FF"/><stop offset="1" stop-color="#7C5CFF"/></linearGradient>
+<linearGradient id="g-petal-c" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8AF5E8"/><stop offset="1" stop-color="#19C2AE"/></linearGradient>
+<linearGradient id="g-trophy" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF0A6"/><stop offset=".6" stop-color="#F7B928"/><stop offset="1" stop-color="#C27C05"/></linearGradient>
+<linearGradient id="g-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".6" stop-color="#C9D2E3"/><stop offset="1" stop-color="#8592AD"/></linearGradient>
+<linearGradient id="g-bronze" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD3A8"/><stop offset=".6" stop-color="#D9864A"/><stop offset="1" stop-color="#8F4E22"/></linearGradient></defs><symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 10.5 12 3.5l8.5 7V19a1.5 1.5 0 0 1-1.5 1.5h-4.5v-6h-5v6H5A1.5 1.5 0 0 1 3.5 19z"/></symbol><symbol id="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor" stroke="none"/></symbol><symbol id="i-pause" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 5v14M15.5 5v14"/></symbol><symbol id="i-gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.8v2.6M12 18.6v2.6M21.2 12h-2.6M5.4 12H2.8M18.5 5.5l-1.8 1.8M7.3 16.7l-1.8 1.8M18.5 18.5l-1.8-1.8M7.3 7.3 5.5 5.5"/><circle cx="12" cy="12" r="6.6"/></symbol><symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 17l-5.4 2.9 1.1-6.1-4.5-4.2 6.1-.8z"/></symbol><symbol id="i-starf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 17l-5.4 2.9 1.1-6.1-4.5-4.2 6.1-.8z" fill="currentColor"/></symbol><symbol id="i-flame" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.5c-3.9 0-6.5-2.7-6.5-6.3 0-3.9 3.2-6 3.8-10.2 2.7 1.6 4.2 4 4.4 6.4.9-.7 1.5-1.9 1.6-3.2 2.1 1.8 3.2 4.3 3.2 7 0 3.6-2.6 6.3-6.5 6.3z"/></symbol><symbol id="i-trophy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.5 4h9v5.5a4.5 4.5 0 0 1-9 0z"/><path d="M7.5 6H4.5c0 2.6 1.4 4.3 3.4 4.6M16.5 6h3c0 2.6-1.4 4.3-3.4 4.6M12 14v3.5M8 20.5h8M9.5 17.5h5"/></symbol><symbol id="i-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5 3.5 6.5v13l5.5-2 6 2 5.5-2v-13l-5.5 2z"/><path d="M9 4.5v13M15 6.5v13"/></symbol><symbol id="i-bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8.5h14l-1.2 11.5H6.2z"/><path d="M9 8.5V7a3 3 0 0 1 6 0v1.5"/></symbol><symbol id="i-gift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 11.5h15V20h-15zM3.5 7.5h17v4h-17zM12 7.5V20"/><path d="M12 7.5C10.5 4 7 4.2 7.6 6.3c.4 1.2 2.4 1.2 4.4 1.2zM12 7.5c1.5-3.5 5-3.3 4.4-1.2-.4 1.2-2.4 1.2-4.4 1.2z"/></symbol><symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/></symbol><symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol><symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5.5" y="10.5" width="13" height="10" rx="2.5"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></symbol><symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></symbol><symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 6l6 6-6 6"/></symbol><symbol id="i-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5.5M11 6l-6 6 6 6"/></symbol><symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v12M6 12h12"/></symbol><symbol id="i-undo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 13.5 4 9l4.5-4.5"/><path d="M4 9h10a5.5 5.5 0 0 1 0 11h-3"/></symbol><symbol id="i-hammer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 3.5l6.5 6.5-3 3-6.5-6.5z"/><path d="M11.2 9.6 4.3 16.5a1.8 1.8 0 0 0 2.6 2.6l6.9-6.9"/></symbol><symbol id="i-shuffle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3.5h4.5V8M4 20 20.5 3.5M20.5 16v4.5H16M15 15l5.5 5.5M4 4l5 5"/></symbol><symbol id="i-music" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5.5l11-2v12.5"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></symbol><symbol id="i-volume" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M15.5 9.5a3.5 3.5 0 0 1 0 5M18 7a7 7 0 0 1 0 10"/></symbol><symbol id="i-vibrate" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="4" width="8" height="16" rx="2"/><path d="M4.5 8.5v7M19.5 8.5v7"/></symbol><symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16.5v-5a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></symbol><symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.5 3.5 5.3 3.5 8.5s-1 6-3.5 8.5c-2.5-2.5-3.5-5.3-3.5-8.5s1-6 3.5-8.5z"/></symbol><symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20.5h16M6.5 17v-5M11 17V7M15.5 17v-7.5M19 17V4.5"/></symbol><symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 5.5A2 2 0 0 1 6.5 3.5h12v14h-12a2 2 0 0 0-2 2z"/><path d="M4.5 19.5a2 2 0 0 0 2 2h12v-4"/></symbol><symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7.5-4.4-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.6-7.5 10-7.5 10z"/></symbol><symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l7.5 3v5.5c0 4.6-3.2 7.6-7.5 8.5-4.3-.9-7.5-3.9-7.5-8.5V6.5z"/><path d="M9 12l2 2 4-4"/></symbol><symbol id="i-gamepad" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8.5h10a4 4 0 0 1 4 4.3l-.6 3.5a2.6 2.6 0 0 1-4.6 1.1L14.5 16h-5l-1.3 1.4a2.6 2.6 0 0 1-4.6-1.1L3 12.8a4 4 0 0 1 4-4.3z"/><path d="M8 11v3M6.5 12.5h3"/><circle cx="15.5" cy="11.5" r=".6" fill="currentColor"/><circle cx="17" cy="13.5" r=".6" fill="currentColor"/></symbol><symbol id="i-sparkle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l1.9 5.6 5.6 1.9-5.6 1.9L12 18.5l-1.9-5.6-5.6-1.9 5.6-1.9z"/></symbol><symbol id="i-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2.5 5 13.5h6l-1 8 8-11h-6z"/></symbol><symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol><symbol id="i-crown" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8.5l4 3.5 4-6 4 6 4-3.5-1.8 10H5.8z"/><path d="M5.8 20.5h12.4"/></symbol><symbol id="i-ad" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></symbol><symbol id="i-cloud" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18.5h10a4 4 0 0 0 .3-8 6 6 0 0 0-11.6 1.5A3.4 3.4 0 0 0 7 18.5z"/></symbol><symbol id="i-restore" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.4-5.7"/><path d="M20 4v4.5h-4.5"/></symbol><symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></symbol><symbol id="i-swap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7.5h12.5L16 4M17 16.5H4.5L8 20"/></symbol><symbol id="i-motion" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h3.5l2.5-6.5 4.5 13 2.5-6.5H21"/></symbol><symbol id="i-palette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5a8.5 8.5 0 0 0 0 17c1.4 0 2-1 1.5-2.2-.5-1.4.4-2.8 1.9-2.8h1.6a3.5 3.5 0 0 0 3.5-3.5c0-4.7-3.8-8.5-8.5-8.5z"/><circle cx="8" cy="11" r="1" fill="currentColor"/><circle cx="11" cy="7.5" r="1" fill="currentColor"/><circle cx="15.5" cy="8.5" r="1" fill="currentColor"/></symbol><symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></symbol><symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2.5"/><path d="M4 9.3h16M4 14.6h16M9.3 4v16M14.6 4v16"/></symbol><symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.5M12 7.5v.5"/></symbol><symbol id="i-share" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="12" r="2.5"/><circle cx="17.5" cy="6" r="2.5"/><circle cx="17.5" cy="18" r="2.5"/><path d="M8.3 10.8l6.9-3.6M8.3 13.2l6.9 3.6"/></symbol><symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8.5" r="4"/><path d="M4.5 20.5a7.5 7.5 0 0 1 15 0"/></symbol><symbol id="i-medal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="15" r="5.5"/><path d="M8.5 10.5 6 3.5h4l2 4.5 2-4.5h4l-2.5 7"/><path d="M12 12.5l.9 1.8 2 .3-1.5 1.4.4 2-1.8-1-1.8 1 .4-2-1.5-1.4 2-.3z" fill="currentColor" stroke="none"/></symbol><symbol id="i-ticket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8a2 2 0 0 0 0 4v4.5h17V12a2 2 0 0 1 0-4V3.5h-17z" transform="translate(0 2)"/></symbol><symbol id="i-bloom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2.6"/><path d="M12 9.4c-1.6-2.5-1.2-5 0-6 1.2 1 1.6 3.5 0 6zM14.6 12c2.5-1.6 5-1.2 6 0-1 1.2-3.5 1.6-6 0zM12 14.6c1.6 2.5 1.2 5 0 6-1.2-1-1.6-3.5 0-6zM9.4 12c-2.5 1.6-5 1.2-6 0 1-1.2 3.5-1.6 6 0z"/></symbol><symbol id="i-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h12"/></symbol><symbol id="i-plusb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5.5v13M5.5 12h13" stroke-width="3.4"/></symbol><symbol id="i-fire" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.5c-3.9 0-6.5-2.7-6.5-6.3 0-3.9 3.2-6 3.8-10.2 2.7 1.6 4.2 4 4.4 6.4.9-.7 1.5-1.9 1.6-3.2 2.1 1.8 3.2 4.3 3.2 7 0 3.6-2.6 6.3-6.5 6.3z"/></symbol><symbol id="a-coin" viewBox="0 0 32 32"><circle cx="16" cy="16.8" r="13.6" fill="#B26E00"/><circle cx="16" cy="15.4" r="13.6" fill="url(#g-coin)"/><circle cx="16" cy="15.4" r="9.6" fill="url(#g-coin-in)"/><path d="M16 9.2c-.9 1.8-.6 3.4 0 4.2.6-.8.9-2.4 0-4.2zm6 6.2c-1.8-.9-3.4-.6-4.2 0 .8.6 2.4.9 4.2 0zm-6 6.2c.9-1.8.6-3.4 0-4.2-.6.8-.9 2.4 0 4.2zm-6-6.2c1.8.9 3.4.6 4.2 0-.8-.6-2.4-.9-4.2 0z" fill="#FFF3C4"/><circle cx="16" cy="15.4" r="1.4" fill="#FFF3C4"/><path d="M7 10.5c2-4 6-5.8 10.5-5.3" stroke="#FFF7D6" stroke-width="1.6" fill="none" stroke-linecap="round" opacity=".8"/></symbol><symbol id="a-gem" viewBox="0 0 32 32"><path d="M9 5h14l6 7.5L16 28 3 12.5z" fill="url(#g-gem-b)"/><path d="M3 12.5h26L16 28z" fill="url(#g-gem-c)"/><path d="M9 5l3.5 7.5L16 5zM16 5l3.5 7.5L23 5z" fill="url(#g-gem-a)"/><path d="M12.5 12.5 16 28l3.5-15.5z" fill="#93D9FF" opacity=".85"/><path d="M9 5 3 12.5h9.5zM23 5l6 7.5h-9.5z" fill="#7FD3FF" opacity=".9"/><path d="M10 7.5l1.5 3" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/></symbol><symbol id="a-chest" viewBox="0 0 120 100"><ellipse cx="60" cy="92" rx="46" ry="6" fill="#000" opacity=".25"/><path d="M14 46h92v38a6 6 0 0 1-6 6H20a6 6 0 0 1-6-6z" fill="url(#g-wood)"/><path d="M14 46c0-20 14-32 46-32s46 12 46 32z" fill="url(#g-wood-lid)"/><path d="M14 46h92v8H14z" fill="#5A2A0D" opacity=".55"/><rect x="24" y="14" width="10" height="76" rx="2" fill="url(#g-gold)"/><rect x="86" y="14" width="10" height="76" rx="2" fill="url(#g-gold)"/><path d="M14 44h92v6H14z" fill="url(#g-gold)"/><rect x="50" y="40" width="20" height="22" rx="4" fill="url(#g-gold)"/><circle cx="60" cy="49" r="3.2" fill="#6B3A08"/><path d="M58.6 51h2.8l.8 6h-4.4z" fill="#6B3A08"/><path d="M30 22c8-5 20-7 34-6" stroke="#FFD9A8" stroke-width="3" fill="none" stroke-linecap="round" opacity=".5"/></symbol><symbol id="a-trophy" viewBox="0 0 40 40"><path d="M11 6h18v9a9 9 0 0 1-18 0z" fill="url(#g-trophy)"/><path d="M11 9H6c0 5 2.5 8 6 8.5M29 9h5c0 5-2.5 8-6 8.5" stroke="#E7A818" stroke-width="2.4" fill="none"/><rect x="17.5" y="23" width="5" height="6" fill="#D8970F"/><rect x="12" y="29" width="16" height="5" rx="1.5" fill="url(#g-trophy)"/><path d="M15 9.5c0 4 1.2 6.5 3 7.5" stroke="#FFF6CC" stroke-width="1.8" fill="none" stroke-linecap="round"/></symbol><symbol id="a-logo" viewBox="0 0 64 64"><g transform="translate(32 32)"><g><ellipse rx="9" ry="17" cy="-14" fill="url(#g-petal-a)"/><ellipse rx="9" ry="17" cy="-14" fill="url(#g-petal-b)" transform="rotate(72)"/><ellipse rx="9" ry="17" cy="-14" fill="url(#g-petal-c)" transform="rotate(144)"/><ellipse rx="9" ry="17" cy="-14" fill="url(#g-petal-a)" transform="rotate(216)"/><ellipse rx="9" ry="17" cy="-14" fill="url(#g-petal-b)" transform="rotate(288)"/></g><rect x="-8" y="-8" width="16" height="16" rx="4" fill="url(#g-coin)"/><rect x="-5" y="-6" width="10" height="3" rx="1.5" fill="#fff" opacity=".6"/></g></symbol><symbol id="a-crown" viewBox="0 0 40 32"><path d="M4 10l9 7 7-13 7 13 9-7-3.5 18h-25z" fill="url(#g-gold)"/><rect x="7.5" y="26" width="25" height="4" rx="1.5" fill="#C9900F"/><circle cx="4" cy="9" r="2.6" fill="#FFE27A"/><circle cx="36" cy="9" r="2.6" fill="#FFE27A"/><circle cx="20" cy="4" r="2.6" fill="#FFE27A"/><circle cx="20" cy="19" r="2.4" fill="#FF4F8B"/></symbol><symbol id="a-medal-gold" viewBox="0 0 32 32"><path d="M10 2h5l3 8h-5zM22 2h-5l-3 8h5z" fill="#7C5CFF"/><circle cx="16" cy="19" r="10" fill="url(#g-trophy)"/><circle cx="16" cy="19" r="6.5" fill="none" stroke="#FFF3C4" stroke-width="1.5"/></symbol><symbol id="a-medal-silver" viewBox="0 0 32 32"><path d="M10 2h5l3 8h-5zM22 2h-5l-3 8h5z" fill="#2BD9C6"/><circle cx="16" cy="19" r="10" fill="url(#g-silver)"/><circle cx="16" cy="19" r="6.5" fill="none" stroke="#fff" stroke-width="1.5"/></symbol><symbol id="a-medal-bronze" viewBox="0 0 32 32"><path d="M10 2h5l3 8h-5zM22 2h-5l-3 8h5z" fill="#FF5C8A"/><circle cx="16" cy="19" r="10" fill="url(#g-bronze)"/><circle cx="16" cy="19" r="6.5" fill="none" stroke="#FFE1C4" stroke-width="1.5"/></symbol></svg><section class="page cover">
+  <div class="cv-left">
+    <div class="cv-mark"><svg class="art " aria-hidden="true"><use href="#a-logo"/></svg><span>AW EagleCraft · Block Bloom</span></div>
+    <h1>Block Bloom</h1>
+    <p class="cv-sub">Premium UI/UX redesign</p>
+    <p class="cv-text">Four visual directions for all eight screens, built on one improved structure. Includes the audit of today's UI with every improvement point, a comparison, a recommendation and a build plan for Jetpack Compose.</p>
+    <dl class="cv-meta"><div><dt>App</dt><dd>Block Bloom v1.12.11 (34) · Android</dd></div><div><dt>Date</dt><dd>19 November 2026</dd></div><div><dt>Screens</dt><dd>Home · Gameplay · Settings · Daily challenge · Lucky chest · Adventure · Shop · Trophies</dd></div><div><dt>Directions</dt><dd>1 Aurora Glass · 2 Royal Bloom · 3 Neon Pulse · 4 Petal Pop</dd></div></dl>
+  </div>
+  <div class="cv-fan"><div class="fan f0"><div class="ph " style="--s:0.56"><img src="shots/aurora-home.jpg" alt="Aurora Glass · home"></div></div><div class="fan f1"><div class="ph " style="--s:0.56"><img src="shots/royal-home.jpg" alt="Royal Bloom · home"></div></div><div class="fan f2"><div class="ph " style="--s:0.56"><img src="shots/neon-home.jpg" alt="Neon Pulse · home"></div></div><div class="fan f3"><div class="ph " style="--s:0.56"><img src="shots/clay-home.jpg" alt="Petal Pop · home"></div></div></div></section>
+<section class="page contents"><header class="ph-head"><p class="kicker">Contents</p><h2>What is in this document</h2></header>
+  <div class="toc"><div class="trow"><span class="tk">Summary</span><span class="tv">What changes and why</span><span class="tpn">3</span></div><div class="trow"><span class="tk">Today's UI</span><span class="tv">Audit of the eight screens, with every finding and fix</span><span class="tpn">4</span></div><div class="trow"><span class="tk">Foundations</span><span class="tv">Principles, structure and the new UI on every screen</span><span class="tpn">13</span></div><div class="trow"><span class="tk">Direction 1</span><span class="tv">Aurora Glass</span><span class="tpn">16</span></div><div class="trow"><span class="tk">Direction 2</span><span class="tv">Royal Bloom</span><span class="tpn">19</span></div><div class="trow"><span class="tk">Direction 3</span><span class="tv">Neon Pulse</span><span class="tpn">22</span></div><div class="trow"><span class="tk">Direction 4</span><span class="tv">Petal Pop</span><span class="tpn">25</span></div><div class="trow"><span class="tk">Compare</span><span class="tv">Side by side, scorecard and recommendation</span><span class="tpn">28</span></div><div class="trow"><span class="tk">Build</span><span class="tv">Plan, Compose notes, measurement, spec checklist</span><span class="tpn">31</span></div></div>
+  <div class="howto"><div><b>How to read it</b><p>Directions are numbered 1 to 4 and screens 1 to 8, so “3.6” is Neon Pulse · Adventure. All four directions show the same content and the same structure: the differences are design only.</p></div>
+  <div><b>Severity of findings</b><p><span class="sev H">High</span> hurts play or revenue now · <span class="sev M">Medium</span> clear friction · <span class="sev L">Low</span> polish.</p></div>
+  <div><b>Source</b><p>Screenshots of the live app (v1.12.11, 19 Nov 2026) and the app code: skins, levels, events, lifelines. Mockups are HTML renders at 368 × 822 dp.</p></div></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>2 / 35</span></footer></section>
+<section class="page summary"><header class="ph-head"><p class="kicker">Summary</p><h2>Premium, clearer, and easier to monetise</h2><p class="lede">The game feels good to play; the screens around it do not yet look or behave like a premium title. The same eight fixes apply to every direction; the directions change the look.</p></header>
+  <div class="sum3">
+    <div class="sc"><h3>What holds it back today</h3><ul>
+      <li>Home: eleven blocks compete and there is no persistent navigation.</li>
+      <li>Gameplay: a banner ad under the tray, unlabelled lifelines, tiny tray pieces, a hint that never goes away.</li>
+      <li>Broken text: “BEST VALU E” in the Shop and “Achieveme nts”.</li>
+      <li>Daily challenge opens on an empty calendar.</li>
+      <li>Adventure is a wall of padlocks.</li>
+      <li>Mixed icons and low-contrast text make it look less premium than it plays.</li></ul></div>
+    <div class="sc"><h3>What changes on every screen</h3><ul>
+      <li>One primary action per screen; bottom navigation with badges.</li>
+      <li>Pause menu, ghost piece, line-clear bar, combo meter in play.</li>
+      <li>Lifelines with names, owned counts and disabled states.</li>
+      <li>Today's challenge first, with a month streak track.</li>
+      <li>An Adventure path with regions and milestone chests.</li>
+      <li>Shop tabs, a featured offer and real theme cards.</li>
+      <li>Trophies you claim, with tiers and Claim all.</li>
+      <li>One icon family, a type scale, 4.5:1 contrast, RTL and long-text ready.</li></ul></div>
+    <div class="sc rec"><h3>Recommendation</h3>
+      <p><b>Ship 1 · Aurora Glass as the new default.</b> It keeps the plum-and-teal identity players know and the store art you have, with the lowest build effort.</p>
+      <p><b>Sell 2, 3 and 4 as full-UI themes</b> in the Shop (Royal Bloom, Neon Pulse, Petal Pop), each paired with a music mood: themes become a real reason to spend gems.</p>
+      <p><b>Test 4 · Petal Pop as a light default</b> for new installs in one market.</p>
+      <div class="dots4"><span class="dd v-aurora">1</span><span class="dd v-royal">2</span><span class="dd v-neon">3</span><span class="dd v-clay">4</span></div></div>
+  </div>
+  <div class="hyp"><p class="kicker">Hypotheses to measure</p><div class="hgrid"><div><b>More daily challenges started</b><p>Today's challenge is the first thing on its screen, with the reward and the timer.</p></div><div><b>More coins spent per game</b><p>Lifelines show names, owned counts and when they are affordable.</p></div><div><b>Deeper Adventure progress</b><p>A path with regions, a level card and milestone chests.</p></div><div><b>More gems spent</b><p>Full-UI themes and a featured offer give gems a clear use.</p></div></div></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>3 / 35</span></footer></section>
+<section class="page current"><header class="ph-head"><p class="kicker">Today's UI</p><h2>The eight screens as they are now</h2><p class="lede">v1.12.11 (34), captured on a phone on 19 Nov 2026.</p></header>
+  <div class="strip"><figure><div class="shot" style="aspect-ratio:229/595.4"><img src="../assets/current/01.jpg"></div><figcaption><b>1</b> Home</figcaption></figure><figure><div class="shot" style="aspect-ratio:1080/2448"><img src="../assets/current/02.jpg"></div><figcaption><b>2</b> Gameplay</figcaption></figure><figure><div class="shot" style="aspect-ratio:540/1404"><img src="../assets/current/03.jpg"></div><figcaption><b>3</b> Settings</figcaption></figure><figure><div class="shot" style="aspect-ratio:1080/2400"><img src="../assets/current/04.jpg"></div><figcaption><b>4</b> Daily challenge</figcaption></figure><figure><div class="shot" style="aspect-ratio:1080/2400"><img src="../assets/current/05.jpg"></div><figcaption><b>5</b> Lucky Bloom Chest</figcaption></figure><figure><div class="shot" style="aspect-ratio:1080/2400"><img src="../assets/current/06.jpg"></div><figcaption><b>6</b> Adventure</figcaption></figure><figure><div class="shot" style="aspect-ratio:540/1404"><img src="../assets/current/07.jpg"></div><figcaption><b>7</b> Shop</figcaption></figure><figure><div class="shot" style="aspect-ratio:540/1404"><img src="../assets/current/08.jpg"></div><figcaption><b>8</b> Achievements</figcaption></figure></div>
+  <div class="glob"><div><b>Mixed icon styles</b><p>Emoji, filled and line icons side by side make the app look assembled rather than designed.</p></div><div><b>Low-contrast secondary text</b><p>Lilac text on purple falls below WCAG AA (4.5:1) at small sizes.</p></div><div><b>No shared component set</b><p>Four card styles and three button shapes across eight screens.</p></div><div><b>Text that breaks</b><p>“BEST VALU E”, “Achieveme nts”: fixed widths will break further in German, Arabic and the CJK locales.</p></div><div><b>Colour-only meaning</b><p>Six block colours with no shape cue; about 1 in 12 men is colour-blind.</p></div><div><b>Small touch targets</b><p>Several top-bar icons are under 48 dp.</p></div></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>4 / 35</span></footer></section>
+<section class="page audit one"><header class="ph-head"><p class="kicker">Today's UI · audit 1 of 8</p><h2>Home</h2><p class="lede">Everything is on the screen and nothing leads: the first decision is hard.</p></header><div class="aone"><img class="aimg" style="height:600px;width:172px" src="../assets/current/01.jpg"><ol class="finds two three"><li><span class="sev H">High</span><p class="now">Eleven blocks compete on one screen (Continue, New Game, three modes, Daily, Chest, three tiles, event, Remove Ads). Nothing says what to do first.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>One hero action (Continue / Play), the mode as a small segmented control, the rest as compact secondary tiles.</p></li><li><span class="sev H">High</span><p class="now">Adventure, Shop and Achievements are tiles near the bottom of a scroll. There is no persistent navigation.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>A bottom navigation bar (Home · Adventure · Shop · Trophies) with badges for rewards waiting.</p></li><li><span class="sev M">Medium</span><p class="now">“New Game” sits right under “Continue” at the same size: one wrong tap ends a run.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>A secondary icon button, with a confirm step when a run is in progress.</p></li><li><span class="sev M">Medium</span><p class="now">The mode row (three large cards plus a description line) takes about a fifth of the screen for a choice most players make once.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>Segmented control; show the best score per mode.</p></li><li><span class="sev M">Medium</span><p class="now">“Weekend Cascade · Ends today”: no time left, no call to action.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>A live countdown (4h 12m) and the ×1.5 shown on coin rewards while it runs.</p></li><li><span class="sev M">Medium</span><p class="now">The chest takes a full-width row to say “READY!”.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>A compact tile that glows when ready and shows a timer when not.</p></li><li><span class="sev L">Low</span><p class="now">An unlabelled star icon top right; currency pills have no “+” to buy more.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>Remove or label the star; add “+” to the pills (opens the Shop tab).</p></li><li><span class="sev L">Low</span><p class="now">Emoji icons (🌱 ⭐ 🔥) next to line icons; the logo art is small and static.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>One icon family; an animated hero board that respects Reduce motion.</p></li><li><span class="sev L">Low</span><p class="now">“Remove Ads” floats as a text link at the very bottom.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>Move it to the Shop (featured) and Settings.</p></li></ol></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>5 / 35</span></footer></section>
+<section class="page audit one"><header class="ph-head"><p class="kicker">Today's UI · audit 2 of 8</p><h2>Gameplay</h2><p class="lede">The board works; the frame around it costs space, attention and trust.</p></header><div class="aone"><img class="aimg" style="height:600px;width:265px" src="../assets/current/02.jpg"><ol class="finds two three"><li><span class="sev H">High</span><p class="now">A shopping banner ad sits right under the piece tray: accidental taps, a cheap look, and an ad next to game controls is a Play policy risk.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>No banner during play. Monetise at natural breaks (rewarded continue, chest), or keep the banner above the HUD with clear separation.</p></li><li><span class="sev H">High</span><p class="now">Lifelines show only an icon and a price (40 / 75 / 60): no name, no owned count, no disabled state.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>Name + owned badge (“Free” while owned) + price, and a disabled style when coins are short.</p></li><li><span class="sev H">High</span><p class="now">Tray pieces are drawn at about a quarter of a board cell and float far below the board; an empty slot looks like a bug.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>Three fixed slots, pieces at about 65% of a cell, a dashed socket for the piece being placed, a “No space” state for pieces that cannot fit.</p></li><li><span class="sev M">Medium</span><p class="now">“Drag a block to the grid — or tap a block, then tap the grid” stays on screen all game.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>Show it in the first two games (onboarding), then hide it.</p></li><li><span class="sev M">Medium</span><p class="now">Seven items crowd the top bar, and the home button leaves the run in one tap.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>A pause button (resume, restart, sound, music, home with confirm); keep score, best, mode and the event bonus.</p></li><li><span class="sev M">Medium</span><p class="now">No placement preview and no hint of which lines will clear.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>A ghost piece under the finger and a glowing bar on the rows or columns that will clear, with the points.</p></li><li><span class="sev L">Low</span><p class="now">Empty cells are close to the board colour; colour alone tells blocks apart.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>An inner bevel on empty cells; optional colour-blind patterns.</p></li><li><span class="sev L">Low</span><p class="now">No combo feedback while playing.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>A combo meter under the score (“Combo ×3 · +60 next clear”).</p></li></ol></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>6 / 35</span></footer></section>
+<section class="page audit one"><header class="ph-head"><p class="kicker">Today's UI · audit 3 of 8</p><h2>Settings</h2><p class="lede">Complete for audio, thin for everything else players look for.</p></header><div class="aone"><img class="aimg" style="height:600px;width:172px" src="../assets/current/03.jpg"><ol class="finds two "><li><span class="sev M">Medium</span><p class="now">Unselected music moods show a crossed-out note: it reads as “muted” or “broken”.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>Mood cards with a play button to preview, a tick on the selected one, a lock and price when locked.</p></li><li><span class="sev M">Medium</span><p class="now">Help &amp; About rows end in a dot instead of a chevron; Language shows no current value.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>Chevrons, and the current value on the right (“English”).</p></li><li><span class="sev M">Medium</span><p class="now">Settings players expect are missing: restore purchases, cloud save, reminder time, colour-blind mode, reduce motion (already supported in code), left-handed layout, haptics strength.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>Add them in clear groups: Sound · Music mood · Gameplay &amp; accessibility · Notifications · Account · Help.</p></li><li><span class="sev L">Low</span><p class="now">One long list where every row has the same weight.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>Section headers and grouped cards.</p></li><li><span class="sev L">Low</span><p class="now">The version line is tiny and alone at the bottom.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>Keep it in the header; add Support / Contact.</p></li></ol></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>7 / 35</span></footer></section>
+<section class="page audit one"><header class="ph-head"><p class="kicker">Today's UI · audit 4 of 8</p><h2>Daily challenge</h2><p class="lede">A calendar where the challenge should be.</p></header><div class="aone"><img class="aimg" style="height:600px;width:270px" src="../assets/current/04.jpg"><ol class="finds two "><li><span class="sev H">High</span><p class="now">The screen opens on an empty calendar (“No challenges completed this month yet”): today's challenge, reward and timer are not here.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>Today's challenge first: goal, reward, time left, your best attempt, Play.</p></li><li><span class="sev M">Medium</span><p class="now">Days have no states.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>Completed (bloom mark), missed (dot), today (ring), future (dimmed), with a legend.</p></li><li><span class="sev M">Medium</span><p class="now">Nothing rewards coming back through the month.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>A month streak track with milestone rewards at 3, 7, 15 and 25 days.</p></li><li><span class="sev L">Low</span><p class="now">The forward arrow browses empty future months.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>Disable it past the current month.</p></li></ol></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>8 / 35</span></footer></section>
+<section class="page audit one"><header class="ph-head"><p class="kicker">Today's UI · audit 5 of 8</p><h2>Lucky Bloom Chest</h2><p class="lede">A good moment, with one path and mixed signals.</p></header><div class="aone"><img class="aimg" style="height:600px;width:270px" src="../assets/current/05.jpg"><ol class="finds two "><li><span class="sev M">Medium</span><p class="now">Home calls it a “Mystery Booster Chest”; the dialog lists the exact rewards.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>One story: show “possible rewards”, or reveal them after opening.</p></li><li><span class="sev M">Medium</span><p class="now">Watching an ad is the only way to open it, and the video length is not said.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>Add a free timer path (“or open free in 3h 59m”); say “about 30 seconds”.</p></li><li><span class="sev L">Low</span><p class="now">“Close” is plain text far below the button.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>An × in the corner and a quiet “Not now”.</p></li><li><span class="sev L">Low</span><p class="now">Opening is not celebrated.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>Chest burst, rewards fly to the counters, a light haptic.</p></li></ol></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>9 / 35</span></footer></section>
+<section class="page audit one"><header class="ph-head"><p class="kicker">Today's UI · audit 6 of 8</p><h2>Adventure</h2><p class="lede">A grid of padlocks where a journey should be.</p></header><div class="aone"><img class="aimg" style="height:600px;width:270px" src="../assets/current/06.jpg"><ol class="finds two "><li><span class="sev H">High</span><p class="now">A flat 4 × 6 grid of padlocks: no journey, no destination, nothing to look forward to.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>A path through named regions (Petal Meadow, Crystal Lagoon, Sunset Ridge) with level nodes.</p></li><li><span class="sev M">Medium</span><p class="now">A level tile shows no goal, moves or reward.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>A level card: goal, moves, reward, stars, Play.</p></li><li><span class="sev M">Medium</span><p class="now">Progress is only “0 / 24 cleared”.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>A region progress bar and total stars (14 / 72).</p></li><li><span class="sev L">Low</span><p class="now">23 identical locked tiles feel like a wall.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>Show the next levels on the path, and a milestone chest every 8 levels.</p></li></ol></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>10 / 35</span></footer></section>
+<section class="page audit one"><header class="ph-head"><p class="kicker">Today's UI · audit 7 of 8</p><h2>Shop</h2><p class="lede">Everything for sale in one list, with broken labels.</p></header><div class="aone"><div class="split" style="height:529px"><div class="part" style="width:190px;height:529px;background-image:url(../assets/current/07.jpg);background-size:190px auto;background-position:0 -0px"></div><div class="part" style="width:190px;height:529px;background-image:url(../assets/current/07.jpg);background-size:190px auto;background-position:0 -529px"></div></div><ol class="finds two "><li><span class="sev H">High</span><p class="now">Badges wrap letter by letter (“BEST VALU E”, “BES T VAL UE”): visibly broken.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>Fixed-width ribbons that never wrap, with short labels.</p></li><li><span class="sev H">High</span><p class="now">One long list mixes themes, power-ups, coin packs, gems and Remove Ads; the best offers sit below the fold.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>Tabs (Featured · Themes · Boosts · Gems) with a featured offer on top.</p></li><li><span class="sev M">Medium</span><p class="now">Themes, the main cosmetic sale, get small thumbnails in a list.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>Two-column theme cards with a larger preview and clear states (Active, Use, price, Free with ad).</p></li><li><span class="sev M">Medium</span><p class="now">Coin, gem and rupee prices all look the same.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>A distinct style per currency; show the bonus on bigger packs.</p></li><li><span class="sev L">Low</span><p class="now">“Free Coins Gift” shows no daily limit or cooldown.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>“2 of 5 left today”.</p></li><li><span class="sev L">Low</span><p class="now">No “Restore purchases”.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>Add it to the Shop footer and Settings.</p></li></ol></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>11 / 35</span></footer></section>
+<section class="page audit one"><header class="ph-head"><p class="kicker">Today's UI · audit 8 of 8</p><h2>Achievements</h2><p class="lede">Progress is tracked; rewards are not celebrated.</p></header><div class="aone"><img class="aimg" style="height:600px;width:161px" src="../assets/current/08.jpg"><ol class="finds two "><li><span class="sev H">High</span><p class="now">The title wraps (“Achieveme / nts”) because of the currency pills.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>A shorter title (“Trophies”) and a header that flexes; test with German and the other locales.</p></li><li><span class="sev M">Medium</span><p class="now">Completed items only show a tick: there is no claim moment.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>A Claim button with the reward, and “Claim all” at the top.</p></li><li><span class="sev M">Medium</span><p class="now">Items in progress show a padlock although they are not locked.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>Tier medals (bronze, silver, gold) with progress; padlocks only for hidden ones.</p></li><li><span class="sev L">Low</span><p class="now">No summary or grouping.</p><p class="fix"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg>A summary ring (3 of 11) and filters (All · In progress · Completed).</p></li></ol></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>12 / 35</span></footer></section>
+<section class="page principles"><header class="ph-head"><p class="kicker">Foundations</p><h2>Twelve principles behind every screen</h2></header>
+  <div class="pgrid"><div class="pc"><span class="pn">01</span><b>One primary action</b><p>Every screen has one obvious next step; everything else is visibly secondary.</p></div><div class="pc"><span class="pn">02</span><b>Persistent navigation</b><p>A bottom bar for Home · Adventure · Shop · Trophies, with badges for rewards waiting.</p></div><div class="pc"><span class="pn">03</span><b>Design tokens</b><p>One source for colour, type, radius, elevation and motion. Each direction in this document is one token set.</p></div><div class="pc"><span class="pn">04</span><b>Type scale</b><p>Display 40 / 32 / 24 · Title 18 · Body 15 · Caption 12. Numbers use tabular figures so scores do not jump.</p></div><div class="pc"><span class="pn">05</span><b>Contrast & colour</b><p>Text at least 4.5:1. Never colour alone: colour-blind patterns as an option.</p></div><div class="pc"><span class="pn">06</span><b>One icon family</b><p>Line icons 24 dp, 2 px stroke; illustrated art only for currencies and rewards.</p></div><div class="pc"><span class="pn">07</span><b>Motion</b><p>150–300 ms, ease-out. Line-clear burst, combo shake, coins fly to the counter. Reduce motion turns it down.</p></div><div class="pc"><span class="pn">08</span><b>Haptics & sound</b><p>Light tick on place, medium on clear, strong on combo ×3+. Intensity setting; sounds follow the music mood.</p></div><div class="pc"><span class="pn">09</span><b>Accessibility</b><p>48 dp targets, text scaling to 130%, TalkBack labels, left-handed tray option.</p></div><div class="pc"><span class="pn">10</span><b>13 languages</b><p>Arabic mirrors right-to-left; leave 30% room for longer text; never a fixed-width label; CJK fallback fonts.</p></div><div class="pc"><span class="pn">11</span><b>Fair monetisation</b><p>Rewarded ads opt-in and labelled with their length; no ads next to controls; interstitials only at natural breaks, capped; restore purchases.</p></div><div class="pc"><span class="pn">12</span><b>Performance</b><p>60 fps on low-end phones: no live blur below Android 12, block art pre-rendered once per colour and size.</p></div></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>13 / 35</span></footer></section>
+<section class="page ia"><header class="ph-head"><p class="kicker">Foundations</p><h2>One structure for every direction</h2><p class="lede">Three taps or fewer to anything; the run is always one tap away.</p></header>
+  <div class="iawrap">
+    <div class="iamap">
+      <div class="iacol"><div class="iab hub"><svg class="ic " aria-hidden="true"><use href="#i-home"/></svg><b>Home</b><small>Continue / Play · modes · Daily · Chest · event</small></div>
+        <div class="iaarrow"><svg class="ic " aria-hidden="true"><use href="#i-chev"/></svg></div>
+        <div class="iastack"><div class="iab"><svg class="ic " aria-hidden="true"><use href="#i-play"/></svg><b>Game</b><small>Pause menu · Game over · Continue with ad</small></div><div class="iab"><svg class="ic " aria-hidden="true"><use href="#i-calendar"/></svg><b>Daily challenge</b><small>Today first · streak track · calendar</small></div><div class="iab"><svg class="ic " aria-hidden="true"><use href="#i-gift"/></svg><b>Lucky chest</b><small>Dialog · ad or timer</small></div><div class="iab"><svg class="ic " aria-hidden="true"><use href="#i-gear"/></svg><b>Settings</b><small>From the gear</small></div></div></div>
+      <div class="ianav"><p>Bottom navigation</p><div class="iarow">
+        <div class="iab"><svg class="ic " aria-hidden="true"><use href="#i-map"/></svg><b>Adventure</b><small>Map → level card → game</small></div>
+        <div class="iab"><svg class="ic " aria-hidden="true"><use href="#i-bag"/></svg><b>Shop</b><small>Featured · Themes · Boosts · Gems</small></div>
+        <div class="iab"><svg class="ic " aria-hidden="true"><use href="#i-trophy"/></svg><b>Trophies</b><small>Claim · tiers · filters</small></div></div></div>
+      <div class="navspec"><b>Bottom navigation rules</b><ul><li>Four tabs, 64 dp, labels always visible; the current tab is coloured and raised.</li><li>Badges: a red count for trophies to claim, “NEW” for new shop items; the chest glows on Home when ready.</li><li>Hidden during play; the pause menu is the way out of a run.</li><li>Arabic mirrors the order right-to-left.</li></ul></div>
+    </div>
+    <div class="loop"><svg viewBox="0 0 400 350"><circle cx="200" cy="175" r="130"/><path d="M200 45a130 130 0 0 1 123.6 89.8" class="arr"/></svg>
+      <div class="ln" style="left:200.0px;top:45.0px"><svg class="ic " aria-hidden="true"><use href="#i-play"/></svg><b>Play</b></div><div class="ln" style="left:323.6px;top:134.8px"><svg class="ic " aria-hidden="true"><use href="#i-sparkle"/></svg><b>Clear & combo</b></div><div class="ln" style="left:276.4px;top:280.2px"><svg class="ic " aria-hidden="true"><use href="#i-starf"/></svg><b>Earn</b></div><div class="ln" style="left:123.6px;top:280.2px"><svg class="ic " aria-hidden="true"><use href="#i-bag"/></svg><b>Spend</b></div><div class="ln" style="left:76.4px;top:134.8px"><svg class="ic " aria-hidden="true"><use href="#i-calendar"/></svg><b>Come back</b></div>
+      <p class="loopc"><b>The core loop.</b> Play, clear lines and chain combos; earn coins, gems and stars; spend them on themes and lifelines; come back for the daily challenge, the chest timer, the streak and events. Each screen in this redesign feeds one step.</p></div>
+  </div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>14 / 35</span></footer></section>
+<section class="page every"><header class="ph-head"><p class="kicker">Foundations</p><h2>The new UI on every screen</h2><p class="lede">These changes are in all four directions. The direction pages that follow describe only what is different in the look.</p></header>
+  <div class="egrid"><div class="ec"><span class="en">1</span><b>Home</b><p>One primary action (Continue), modes as a segmented control, Daily and Chest as tiles, a live event countdown, bottom navigation with badges.</p></div><div class="ec"><span class="en">2</span><b>Gameplay</b><p>Pause instead of Home, ghost piece and line-clear bar, three fixed tray slots with a “No space” state, labelled lifelines with owned counts; no banner near the tray.</p></div><div class="ec"><span class="en">3</span><b>Settings</b><p>Grouped sections, mood cards with preview and lock price, accessibility toggles, cloud save and restore purchases, chevrons with current values.</p></div><div class="ec"><span class="en">4</span><b>Daily challenge</b><p>Today's challenge first (goal, reward, timer, best attempt), a month streak track with milestone rewards, calendar states with a legend.</p></div><div class="ec"><span class="en">5</span><b>Lucky chest</b><p>A clear “free with a short video” path plus a free timer path, labelled rewards, close in the corner.</p></div><div class="ec"><span class="en">6</span><b>Adventure</b><p>A path through named regions, stars per level, a milestone chest, and a level card with goal, moves and reward.</p></div><div class="ec"><span class="en">7</span><b>Shop</b><p>Tabs, a featured offer with its saving, theme cards with previews and clear states, ribbons that never wrap, free coins with a daily limit.</p></div><div class="ec"><span class="en">8</span><b>Trophies</b><p>A summary with Claim all, claimable items first with a Claim button, tier medals, progress with numbers, no padlocks on items in progress.</p></div></div>
+  <div class="film"><div class="ph " style="--s:0.24"><img src="shots/aurora-home.jpg" alt="Aurora Glass · home"></div><div class="ph " style="--s:0.24"><img src="shots/aurora-game.jpg" alt="Aurora Glass · game"></div><div class="ph " style="--s:0.24"><img src="shots/aurora-settings.jpg" alt="Aurora Glass · settings"></div><div class="ph " style="--s:0.24"><img src="shots/aurora-daily.jpg" alt="Aurora Glass · daily"></div><div class="ph " style="--s:0.24"><img src="shots/aurora-chest.jpg" alt="Aurora Glass · chest"></div><div class="ph " style="--s:0.24"><img src="shots/aurora-adventure.jpg" alt="Aurora Glass · adventure"></div><div class="ph " style="--s:0.24"><img src="shots/aurora-shop.jpg" alt="Aurora Glass · shop"></div><div class="ph " style="--s:0.24"><img src="shots/aurora-trophies.jpg" alt="Aurora Glass · trophies"></div></div><p class="filmc">The eight screens as drawn in direction 1 · Aurora Glass</p><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>15 / 35</span></footer></section>
+<section class="page dintro d-aurora">
+    <div class="di-left"><div class="ph big" style="--s:0.8"><img src="shots/aurora-home.jpg" alt="Aurora Glass · home"></div></div>
+    <div class="di-right">
+      <p class="kicker">Direction 1</p><h2 class="dtitle">Aurora Glass</h2><p class="dline">Today's plum and teal, lit from within.</p>
+      <p class="dconcept">The evolution of the current look. Players keep the colours they know; the app gains depth: glass panels, an aurora sky, glossy jelly blocks with a soft glow, and a teal call to action that is already the brand colour.</p>
+      <div class="dfacts"><div><span>Mood</span><b>Calm · Luminous · Modern</b></div><div><span>Best for</span><b>The new default. Lowest migration risk: the icon, store art and Classic skin already match.</b></div><div><span>Build effort</span><b>Low–medium</b></div></div>
+      <div class="dpal"><div class="sw1"><i style="background:#1B1038"></i><b>Night plum</b><span>#1B1038</span></div><div class="sw1"><i style="background:#100826"></i><b>Deep</b><span>#100826</span></div><div class="sw1"><i style="background:#7C5CFF"></i><b>Violet</b><span>#7C5CFF</span></div><div class="sw1"><i style="background:#2DE2CE"></i><b>Teal</b><span>#2DE2CE</span></div><div class="sw1"><i style="background:#FF5C8A"></i><b>Pink</b><span>#FF5C8A</span></div><div class="sw1"><i style="background:#FFC44D"></i><b>Gold</b><span>#FFC44D</span></div></div>
+      <div class="dsamp v-aurora">
+        <div class="type"><span class="t1" style="font-family:'Fredoka'">Block Bloom 640</span><span class="t2" style="font-family:'Outfit'">Fredoka for display · Outfit for the interface</span></div>
+        <div class="blocks"><span class="bk"><i class="blk c1"></i></span><span class="bk"><i class="blk c2"></i></span><span class="bk"><i class="blk c3"></i></span><span class="bk"><i class="blk c4"></i></span><span class="bk"><i class="blk c5"></i></span><span class="bk"><i class="blk c6"></i></span></div>
+        <div class="comps"><button class="btn primary"><svg class="ic " aria-hidden="true"><use href="#i-play"/></svg>Continue</button><div class="pill cur coin"><svg class="art " aria-hidden="true"><use href="#a-coin"/></svg><b>702</b><i class="plus"><svg class="ic " aria-hidden="true"><use href="#i-plusb"/></svg></i></div><span class="tgl on"><i></i></span><span class="tgl"><i></i></span></div>
+      </div>
+    </div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>16 / 35</span></footer></section>
+<section class="page dscreens d-aurora"><header class="ph-head"><p class="kicker">Direction 1 · Aurora Glass</p><h2>Home, Gameplay, Settings and Daily challenge</h2></header>
+      <div class="row4"><figure><div class="ph " style="--s:0.6"><img src="shots/aurora-home.jpg" alt="Aurora Glass · home"></div><figcaption><b>1.1 Home</b><p>A tilted live board in a glass hero; teal Continue; a floating glass dock.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/aurora-game.jpg" alt="Aurora Glass · game"></div><figcaption><b>1.2 Gameplay</b><p>Jelly-gloss blocks with a soft glow; a teal line-clear bar; glass lifeline chips.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/aurora-settings.jpg" alt="Aurora Glass · settings"></div><figcaption><b>1.3 Settings</b><p>Glass cards on the aurora sky; teal toggles; mood cards that preview.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/aurora-daily.jpg" alt="Aurora Glass · daily"></div><figcaption><b>1.4 Daily challenge</b><p>A violet-to-teal hero card; bloom marks on completed days.</p></figcaption></figure></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>17 / 35</span></footer></section>
+<section class="page dscreens d-aurora"><header class="ph-head"><p class="kicker">Direction 1 · Aurora Glass</p><h2>Chest, Adventure, Shop and Trophies</h2></header>
+      <div class="row4"><figure><div class="ph " style="--s:0.6"><img src="shots/aurora-chest.jpg" alt="Aurora Glass · chest"></div><figcaption><b>1.5 Lucky chest</b><p>Golden rays behind the chest; a teal “Watch to open” with the ad icon.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/aurora-adventure.jpg" alt="Aurora Glass · adventure"></div><figcaption><b>1.6 Adventure</b><p>A dotted light path; violet nodes; the current level in teal with a halo.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/aurora-shop.jpg" alt="Aurora Glass · shop"></div><figcaption><b>1.7 Shop</b><p>A sunset-gradient featured offer; theme swatches on dark glass.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/aurora-trophies.jpg" alt="Aurora Glass · trophies"></div><figcaption><b>1.8 Trophies</b><p>A progress ring and gold trophy; the claimable row outlined in teal.</p></figcaption></figure></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>18 / 35</span></footer></section>
+<section class="page dintro d-royal">
+    <div class="di-left"><div class="ph big" style="--s:0.8"><img src="shots/royal-home.jpg" alt="Royal Bloom · home"></div></div>
+    <div class="di-right">
+      <p class="kicker">Direction 2</p><h2 class="dtitle">Royal Bloom</h2><p class="dline">A royal garden: jewels, gold and ornament.</p>
+      <p class="dconcept">A luxury puzzle look. Faceted jewel blocks feel valuable, double gold frames say premium, and the garden crest ties back to the name. Strong as a paid theme or a season reward.</p>
+      <div class="dfacts"><div><span>Mood</span><b>Luxurious · Classic · Rewarding</b></div><div><span>Best for</span><b>A premium full-UI theme or season pass; players who spend.</b></div><div><span>Build effort</span><b>Medium (ornament assets)</b></div></div>
+      <div class="dpal"><div class="sw1"><i style="background:#0E2A22"></i><b>Emerald night</b><span>#0E2A22</span></div><div class="sw1"><i style="background:#3B1140"></i><b>Velvet plum</b><span>#3B1140</span></div><div class="sw1"><i style="background:#F2CF72"></i><b>Gold</b><span>#F2CF72</span></div><div class="sw1"><i style="background:#E8336E"></i><b>Ruby</b><span>#E8336E</span></div><div class="sw1"><i style="background:#3B8CF6"></i><b>Sapphire</b><span>#3B8CF6</span></div><div class="sw1"><i style="background:#8E5CF7"></i><b>Amethyst</b><span>#8E5CF7</span></div></div>
+      <div class="dsamp v-royal">
+        <div class="type"><span class="t1" style="font-family:'Cinzel'">Block Bloom 640</span><span class="t2" style="font-family:'Manrope'">Cinzel for display · Manrope for the interface</span></div>
+        <div class="blocks"><span class="bk"><i class="blk c1"></i></span><span class="bk"><i class="blk c2"></i></span><span class="bk"><i class="blk c3"></i></span><span class="bk"><i class="blk c4"></i></span><span class="bk"><i class="blk c5"></i></span><span class="bk"><i class="blk c6"></i></span></div>
+        <div class="comps"><button class="btn primary"><svg class="ic " aria-hidden="true"><use href="#i-play"/></svg>Continue</button><div class="pill cur coin"><svg class="art " aria-hidden="true"><use href="#a-coin"/></svg><b>702</b><i class="plus"><svg class="ic " aria-hidden="true"><use href="#i-plusb"/></svg></i></div><span class="tgl on"><i></i></span><span class="tgl"><i></i></span></div>
+      </div>
+    </div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>19 / 35</span></footer></section>
+<section class="page dscreens d-royal"><header class="ph-head"><p class="kicker">Direction 2 · Royal Bloom</p><h2>Home, Gameplay, Settings and Daily challenge</h2></header>
+      <div class="row4"><figure><div class="ph " style="--s:0.6"><img src="shots/royal-home.jpg" alt="Royal Bloom · home"></div><figcaption><b>2.1 Home</b><p>A gold crest and wordmark, a framed jewel board with plaques, medallion modes, a velvet event ribbon.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/royal-game.jpg" alt="Royal Bloom · game"></div><figcaption><b>2.2 Gameplay</b><p>Faceted jewel blocks set in gold; gold-coin lifelines; a plum velvet tray.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/royal-settings.jpg" alt="Royal Bloom · settings"></div><figcaption><b>2.3 Settings</b><p>Lacquered panels with double gold borders; Cinzel headings.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/royal-daily.jpg" alt="Royal Bloom · daily"></div><figcaption><b>2.4 Daily challenge</b><p>“Today's decree”; gold-coin days on dark velvet.</p></figcaption></figure></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>20 / 35</span></footer></section>
+<section class="page dscreens d-royal"><header class="ph-head"><p class="kicker">Direction 2 · Royal Bloom</p><h2>Chest, Adventure, Shop and Trophies</h2></header>
+      <div class="row4"><figure><div class="ph " style="--s:0.6"><img src="shots/royal-chest.jpg" alt="Royal Bloom · chest"></div><figcaption><b>2.5 Lucky chest</b><p>An ornate double frame; a gold metallic call to action.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/royal-adventure.jpg" alt="Royal Bloom · adventure"></div><figcaption><b>2.6 Adventure</b><p>Gold-coin level nodes on a dotted gold trail; a ruby current level.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/royal-shop.jpg" alt="Royal Bloom · shop"></div><figcaption><b>2.7 Shop</b><p>A plum-and-gold offer card; gold price buttons.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/royal-trophies.jpg" alt="Royal Bloom · trophies"></div><figcaption><b>2.8 Trophies</b><p>Gold-framed rows with the medals as the hero.</p></figcaption></figure></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>21 / 35</span></footer></section>
+<section class="page dintro d-neon">
+    <div class="di-left"><div class="ph big" style="--s:0.8"><img src="shots/neon-home.jpg" alt="Neon Pulse · home"></div></div>
+    <div class="di-right">
+      <p class="kicker">Direction 3</p><h2 class="dtitle">Neon Pulse</h2><p class="dline">Arcade energy: light on black.</p>
+      <p class="dconcept">Competitive and fast. A HUD language with stat tiles, a difficulty heat bar and a missions panel; neon-tube blocks; a synthwave floor. It matches the Pulse music mood and Hard mode, and it pops in YouTube Shorts.</p>
+      <div class="dfacts"><div><span>Mood</span><b>Electric · Competitive · Fast</b></div><div><span>Best for</span><b>Hard mode, the Pulse mood, timed modes and younger players; short-video creatives.</b></div><div><span>Build effort</span><b>Medium (glow budget on low-end phones)</b></div></div>
+      <div class="dpal"><div class="sw1"><i style="background:#05060F"></i><b>Void</b><span>#05060F</span></div><div class="sw1"><i style="background:#00F0FF"></i><b>Cyan</b><span>#00F0FF</span></div><div class="sw1"><i style="background:#FF2BD6"></i><b>Magenta</b><span>#FF2BD6</span></div><div class="sw1"><i style="background:#B6FF00"></i><b>Lime</b><span>#B6FF00</span></div><div class="sw1"><i style="background:#FFE600"></i><b>Yellow</b><span>#FFE600</span></div><div class="sw1"><i style="background:#A259FF"></i><b>Violet</b><span>#A259FF</span></div></div>
+      <div class="dsamp v-neon">
+        <div class="type"><span class="t1" style="font-family:'Orbitron'">Block Bloom 640</span><span class="t2" style="font-family:'Chakra Petch'">Orbitron for display · Chakra Petch for the interface</span></div>
+        <div class="blocks"><span class="bk"><i class="blk c1"></i></span><span class="bk"><i class="blk c2"></i></span><span class="bk"><i class="blk c3"></i></span><span class="bk"><i class="blk c4"></i></span><span class="bk"><i class="blk c5"></i></span><span class="bk"><i class="blk c6"></i></span></div>
+        <div class="comps"><button class="btn primary"><svg class="ic " aria-hidden="true"><use href="#i-play"/></svg>Continue</button><div class="pill cur coin"><svg class="art " aria-hidden="true"><use href="#a-coin"/></svg><b>702</b><i class="plus"><svg class="ic " aria-hidden="true"><use href="#i-plusb"/></svg></i></div><span class="tgl on"><i></i></span><span class="tgl"><i></i></span></div>
+      </div>
+    </div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>22 / 35</span></footer></section>
+<section class="page dscreens d-neon"><header class="ph-head"><p class="kicker">Direction 3 · Neon Pulse</p><h2>Home, Gameplay, Settings and Daily challenge</h2></header>
+      <div class="row4"><figure><div class="ph " style="--s:0.6"><img src="shots/neon-home.jpg" alt="Neon Pulse · home"></div><figcaption><b>3.1 Home</b><p>HUD stat tiles, a difficulty heat bar, a missions panel and a synthwave floor.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/neon-game.jpg" alt="Neon Pulse · game"></div><figcaption><b>3.2 Gameplay</b><p>Neon-tube blocks on a dark grid; a digital score; a lime clear bar.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/neon-settings.jpg" alt="Neon Pulse · settings"></div><figcaption><b>3.3 Settings</b><p>Cyan HUD panels; uppercase labels with wide tracking.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/neon-daily.jpg" alt="Neon Pulse · daily"></div><figcaption><b>3.4 Daily challenge</b><p>Lime day markers; a magenta-to-cyan Play button.</p></figcaption></figure></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>23 / 35</span></footer></section>
+<section class="page dscreens d-neon"><header class="ph-head"><p class="kicker">Direction 3 · Neon Pulse</p><h2>Chest, Adventure, Shop and Trophies</h2></header>
+      <div class="row4"><figure><div class="ph " style="--s:0.6"><img src="shots/neon-chest.jpg" alt="Neon Pulse · chest"></div><figcaption><b>3.5 Lucky chest</b><p>A magenta frame with cyan rays; a gradient call to action.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/neon-adventure.jpg" alt="Neon Pulse · adventure"></div><figcaption><b>3.6 Adventure</b><p>A circuit-style dashed path; lime square nodes; a magenta current level.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/neon-shop.jpg" alt="Neon Pulse · shop"></div><figcaption><b>3.7 Shop</b><p>A neon gradient offer; glowing price chips.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/neon-trophies.jpg" alt="Neon Pulse · trophies"></div><figcaption><b>3.8 Trophies</b><p>A cyan progress ring; HUD rows.</p></figcaption></figure></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>24 / 35</span></footer></section>
+<section class="page dintro d-clay">
+    <div class="di-left"><div class="ph big" style="--s:0.8"><img src="shots/clay-home.jpg" alt="Petal Pop · home"></div></div>
+    <div class="di-right">
+      <p class="kicker">Direction 4</p><h2 class="dtitle">Petal Pop</h2><p class="dline">Soft 3D clay in daylight.</p>
+      <p class="dconcept">Bright, tactile and friendly. A light theme for players who find dark interfaces heavy; puffy candy blocks you want to squeeze; big chunky buttons. The strongest contrast for store screenshots and ads.</p>
+      <div class="dfacts"><div><span>Mood</span><b>Cheerful · Tactile · Cozy</b></div><div><span>Best for</span><b>A broad casual audience, daytime play, a light-mode option, and user-acquisition creatives.</b></div><div><span>Build effort</span><b>Medium (a light theme on every screen)</b></div></div>
+      <div class="dpal"><div class="sw1"><i style="background:#F5EEFF"></i><b>Lavender mist</b><span>#F5EEFF</span></div><div class="sw1"><i style="background:#FFF7EF"></i><b>Peach</b><span>#FFF7EF</span></div><div class="sw1"><i style="background:#2C2254"></i><b>Ink</b><span>#2C2254</span></div><div class="sw1"><i style="background:#14B8A6"></i><b>Teal</b><span>#14B8A6</span></div><div class="sw1"><i style="background:#7C5CFF"></i><b>Violet</b><span>#7C5CFF</span></div><div class="sw1"><i style="background:#FF6B9A"></i><b>Candy pink</b><span>#FF6B9A</span></div></div>
+      <div class="dsamp v-clay">
+        <div class="type"><span class="t1" style="font-family:'Baloo 2'">Block Bloom 640</span><span class="t2" style="font-family:'Nunito'">Baloo 2 for display · Nunito for the interface</span></div>
+        <div class="blocks"><span class="bk"><i class="blk c1"></i></span><span class="bk"><i class="blk c2"></i></span><span class="bk"><i class="blk c3"></i></span><span class="bk"><i class="blk c4"></i></span><span class="bk"><i class="blk c5"></i></span><span class="bk"><i class="blk c6"></i></span></div>
+        <div class="comps"><button class="btn primary"><svg class="ic " aria-hidden="true"><use href="#i-play"/></svg>Continue</button><div class="pill cur coin"><svg class="art " aria-hidden="true"><use href="#a-coin"/></svg><b>702</b><i class="plus"><svg class="ic " aria-hidden="true"><use href="#i-plusb"/></svg></i></div><span class="tgl on"><i></i></span><span class="tgl"><i></i></span></div>
+      </div>
+    </div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>25 / 35</span></footer></section>
+<section class="page dscreens d-clay"><header class="ph-head"><p class="kicker">Direction 4 · Petal Pop</p><h2>Home, Gameplay, Settings and Daily challenge</h2></header>
+      <div class="row4"><figure><div class="ph " style="--s:0.6"><img src="shots/clay-home.jpg" alt="Petal Pop · home"></div><figcaption><b>4.1 Home</b><p>A clay logo with floating candy blocks; a big tactile Continue; a raised nav bubble.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/clay-game.jpg" alt="Petal Pop · game"></div><figcaption><b>4.2 Gameplay</b><p>Puffy clay blocks in soft wells; chunky round lifelines; an amber clear bar.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/clay-settings.jpg" alt="Petal Pop · settings"></div><figcaption><b>4.3 Settings</b><p>White clay cards on a pastel sky; friendly rounded type.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/clay-daily.jpg" alt="Petal Pop · daily"></div><figcaption><b>4.4 Daily challenge</b><p>A lavender-to-pink hero; plum completed days.</p></figcaption></figure></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>26 / 35</span></footer></section>
+<section class="page dscreens d-clay"><header class="ph-head"><p class="kicker">Direction 4 · Petal Pop</p><h2>Chest, Adventure, Shop and Trophies</h2></header>
+      <div class="row4"><figure><div class="ph " style="--s:0.6"><img src="shots/clay-chest.jpg" alt="Petal Pop · chest"></div><figcaption><b>4.5 Lucky chest</b><p>A white clay dialog with sunny rays.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/clay-adventure.jpg" alt="Petal Pop · adventure"></div><figcaption><b>4.6 Adventure</b><p>A thick white road; the current level as an amber button.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/clay-shop.jpg" alt="Petal Pop · shop"></div><figcaption><b>4.7 Shop</b><p>A candy-gradient offer; clay theme cards.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/clay-trophies.jpg" alt="Petal Pop · trophies"></div><figcaption><b>4.8 Trophies</b><p>A lilac hero with the trophy; soft progress bars.</p></figcaption></figure></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>27 / 35</span></footer></section>
+<section class="page compare"><header class="ph-head"><p class="kicker">Compare</p><h2>Home in the four directions</h2></header>
+    <div class="row4"><figure><div class="ph " style="--s:0.6"><img src="shots/aurora-home.jpg" alt="Aurora Glass · home"></div><figcaption><b>1 · Aurora Glass</b><p>Today's plum and teal, lit from within.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/royal-home.jpg" alt="Royal Bloom · home"></div><figcaption><b>2 · Royal Bloom</b><p>A royal garden: jewels, gold and ornament.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/neon-home.jpg" alt="Neon Pulse · home"></div><figcaption><b>3 · Neon Pulse</b><p>Arcade energy: light on black.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/clay-home.jpg" alt="Petal Pop · home"></div><figcaption><b>4 · Petal Pop</b><p>Soft 3D clay in daylight.</p></figcaption></figure></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>28 / 35</span></footer></section>
+<section class="page compare"><header class="ph-head"><p class="kicker">Compare</p><h2>Gameplay in the four directions</h2></header>
+    <div class="row4"><figure><div class="ph " style="--s:0.6"><img src="shots/aurora-game.jpg" alt="Aurora Glass · game"></div><figcaption><b>1 · Aurora Glass</b><p>Today's plum and teal, lit from within.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/royal-game.jpg" alt="Royal Bloom · game"></div><figcaption><b>2 · Royal Bloom</b><p>A royal garden: jewels, gold and ornament.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/neon-game.jpg" alt="Neon Pulse · game"></div><figcaption><b>3 · Neon Pulse</b><p>Arcade energy: light on black.</p></figcaption></figure><figure><div class="ph " style="--s:0.6"><img src="shots/clay-game.jpg" alt="Petal Pop · game"></div><figcaption><b>4 · Petal Pop</b><p>Soft 3D clay in daylight.</p></figcaption></figure></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>29 / 35</span></footer></section>
+<section class="page scorecard"><header class="ph-head"><p class="kicker">Compare</p><h2>Scorecard and recommendation</h2><p class="lede">Scores from 1 to 5, judged on the mockups and the build effort in Compose.</p></header>
+  <div class="scwrap"><table class="sct"><thead><tr><th></th><th><span class="dd v-aurora">1</span>Aurora Glass</th><th><span class="dd v-royal">2</span>Royal Bloom</th><th><span class="dd v-neon">3</span>Neon Pulse</th><th><span class="dd v-clay">4</span>Petal Pop</th></tr></thead>
+    <tbody><tr><td>Premium feel</td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></td></tr><tr><td>Readability & accessibility</td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></td></tr><tr><td>Brand continuity</td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></td><td><span class="rate"><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i></span></td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></td></tr><tr><td>Build effort (5 = least)</td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></td></tr><tr><td>Low-end performance</td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></td></tr><tr><td>Sells as a shop theme</td><td><span class="rate"><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i></span></td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></td></tr><tr><td>Store & video appeal</td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></td><td><span class="rate"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></td></tr>
+    <tr class="tot"><td>Total of 35</td><td><b>28</b></td><td><b>26</b></td><td><b>25</b></td><td><b>28</b></td></tr></tbody></table>
+  <div class="recbox"><h3>Recommendation</h3><ol>
+    <li><b>Aurora Glass becomes the default UI.</b> It ties with Petal Pop on points and wins on what matters most for the default: brand continuity and build effort. It sets up the design tokens every other direction reuses.</li>
+    <li><b>Royal Bloom, Neon Pulse and Petal Pop become full-UI themes in the Shop</b>, not only block skins. Pair each with a music mood (Royal · Calm, Neon · Pulse, Petal Pop · Bright) and price them in gems; Galaxy stays as the premium block skin.</li>
+    <li><b>Test Petal Pop as a light default</b> for new installs in one market; keep it if D1 retention and session length hold or improve.</li>
+    <li><b>Do P0 now</b>: the quick wins in the plan fix the broken text and the in-game banner before any new look ships.</li></ol></div></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>30 / 35</span></footer></section>
+<section class="page plan"><header class="ph-head"><p class="kicker">Build</p><h2>Plan in four phases</h2><p class="lede">Estimates on a Claude Code basis, as for the recent releases; each phase ships on its own and is measured.</p></header>
+  <div class="phases"><div class="phase"><div class="phh"><span class="pp">P0</span><b>Quick wins</b><small>Next release · 1–2 days</small></div><ul><li>Fix the Shop ribbons and the Achievements title wrap</li><li>Chevrons and current values in Settings</li><li>Names and owned counts on lifelines; disabled when coins are short</li><li>Hide the gameplay hint after two games</li><li>No banner next to the tray during play</li><li>Pause menu instead of the Home button</li><li>Event countdown; one story for the chest (“possible rewards”)</li></ul></div><div class="phase"><div class="phh"><span class="pp">P1</span><b>Core structure</b><small>1–2 releases</small></div><ul><li>New Home: one Continue, segmented modes, Daily and Chest tiles</li><li>Bottom navigation with badges</li><li>Gameplay HUD: combo meter, ghost piece, line-clear bar, tray slot states</li><li>Daily challenge hero, calendar states, month streak track</li><li>Chest free timer path</li></ul></div><div class="phase"><div class="phh"><span class="pp">P2</span><b>Depth</b><small>2 releases</small></div><ul><li>Adventure path map with regions and milestone chests</li><li>Shop tabs, featured offer, theme cards, restore purchases</li><li>Trophies claim flow, tiers, summary and filters</li><li>Accessibility toggles: colour-blind patterns, left-handed tray, haptics strength</li></ul></div><div class="phase"><div class="phh"><span class="pp">P3</span><b>Visual system</b><small>2–3 releases</small></div><ul><li>Design tokens + BlockStyle renderer in Compose</li><li>Aurora Glass as the default UI</li><li>Royal Bloom, Neon Pulse and Petal Pop as full-UI shop themes</li><li>Motion and haptics pass; RTL and long-text pass for all 13 locales</li></ul></div></div>
+  <h3 class="sub">Jetpack Compose notes</h3>
+  <div class="cgrid"><div><b>BloomTokens</b><p>A data class of colours, type, shapes, elevations and motion, provided through a CompositionLocal. One instance per direction.</p></div><div><b>BlockStyle</b><p>A sealed interface with Jelly (Aurora), Gem (Royal), NeonTube (Neon) and Clay (Petal Pop); each draws on Canvas and is cached as an ImageBitmap per colour and size.</p></div><div><b>Components</b><p>CurrencyPill · PrimaryCta · ModeSegmented · FeatureTile · EventStrip · BloomBottomNav · LifelineButton · TraySlot · ProgressTrack · RewardChip · ClaimRow.</p></div><div><b>Glass without blur</b><p>RenderEffect blur exists only from Android 12 (API 31): use layered gradients for glass so older phones look the same.</p></div><div><b>Motion & haptics</b><p>Keep the existing reduce-motion hook; add HapticFeedback with an intensity setting.</p></div><div><b>RTL & long text</b><p>LayoutDirection.Rtl for Arabic (mirror the nav and progress), flexible rows, ellipsis only as a last resort.</p></div></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>31 / 35</span></footer></section>
+<section class="page measure"><header class="ph-head"><p class="kicker">Build</p><h2>How we will know it worked</h2></header>
+  <div class="mwrap"><div><h3 class="sub">Metrics and what moves them</h3><table class="kt"><tbody><tr><td><b>D1 / D7 retention</b></td><td>New Home and bottom navigation; Daily challenge first</td></tr><tr><td><b>Daily-challenge starts per DAU</b></td><td>Hero card with reward and timer</td></tr><tr><td><b>Lifelines used per game · coins spent</b></td><td>Labels, owned counts, disabled states</td></tr><tr><td><b>Adventure levels per player</b></td><td>Path map, level card, milestone chests</td></tr><tr><td><b>Shop visits · IAP conversion · theme purchases</b></td><td>Tabs, featured offer, theme cards, full-UI themes</td></tr><tr><td><b>Rewarded views per DAU</b></td><td>Clear chest and free-coin paths</td></tr><tr><td><b>Session length · games per session</b></td><td>No banner during play, pause menu, combo feedback</td></tr><tr><td><b>Crash-free users · ANR · janky frames</b></td><td>Guardrails for every release</td></tr></tbody></table></div>
+  <div><h3 class="sub">A/B tests (Remote Config)</h3><div class="tests"><div><span class="tn">1</span><b>New Home vs current</b><p>Remote Config flag; 50 / 50 on new installs; primary metric D1 retention.</p></div><div><span class="tn">2</span><b>Petal Pop light default vs Aurora Glass</b><p>One market first; D1 retention and session length.</p></div><div><span class="tn">3</span><b>No banner during play</b><p>Session length and games per session against banner revenue.</p></div><div><span class="tn">4</span><b>Lifeline labels and owned counts</b><p>Lifeline use and the coin sink per game.</p></div></div>
+  <div class="note"><svg class="ic " aria-hidden="true"><use href="#i-info"/></svg><p>Guardrails for every release: crash-free users, ANR rate and janky frames must not get worse; rewarded-ad revenue per DAU is watched when the in-game banner goes.</p></div></div></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>32 / 35</span></footer></section>
+<section class="page spec"><header class="ph-head"><p class="kicker">Build · spec checklist</p><h2>Home, Gameplay, Settings, Daily challenge</h2><p class="lede">Every point of the new UI, written as a check a reviewer can tick.</p></header>
+  <div class="spgrid"><div class="spc"><b><span>1</span>Home</b><ul><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Continue is the one primary action; it shows mode and score of the run in progress, or “Play” when none</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>New game is a secondary button and asks before discarding a run</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Modes: Easy · Medium · Hard (×1.5) as a segmented control, best score per mode</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Daily tile: goal, reward, % of goal, time left</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Chest tile: “Ready” glow, or a timer</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Event strip with a live countdown and the bonus</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Currency pills with “+” that open the Shop</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Bottom navigation with badges; no star icon without a label</li></ul></div><div class="spc"><b><span>2</span>Gameplay</b><ul><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Pause button opens resume · restart · sound · music · home (confirm)</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Score, best, mode chip and event chip in the HUD</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Combo meter with the next-clear bonus</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Ghost piece and a line-clear bar with points</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Three fixed tray slots; dashed socket while placing; “No space” on pieces that cannot fit</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Lifelines show name, owned count or price, disabled when unaffordable</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>No banner ad near the tray; hint text only in the first two games</li></ul></div><div class="spc"><b><span>3</span>Settings</b><ul><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Sound and music toggles</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Mood cards: preview, selected tick, lock with price</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Vibration with strength, colour-blind patterns, reduce motion, left-handed tray</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Daily reminder with time</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Cloud save and restore purchases</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Help rows with chevrons and current values; version in the header</li></ul></div><div class="spc"><b><span>4</span>Daily challenge</b><ul><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Today's challenge card first: goal, reward, time left, best attempt, Play</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Month streak track with rewards at 3 · 7 · 15 · 25 days</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Calendar states: completed · missed · today · future, with a legend</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Forward arrow disabled past the current month</li></ul></div></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>33 / 35</span></footer></section>
+<section class="page spec"><header class="ph-head"><p class="kicker">Build · spec checklist</p><h2>Lucky chest, Adventure, Shop, Trophies</h2><p class="lede">Every point of the new UI, written as a check a reviewer can tick.</p></header>
+  <div class="spgrid"><div class="spc"><b><span>5</span>Lucky chest</b><ul><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Possible rewards labelled with amounts</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Primary: watch a short video (length stated)</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Secondary: open free when the timer ends</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>× in the corner; rewards fly to the counters on open</li></ul></div><div class="spc"><b><span>6</span>Adventure</b><ul><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Path map with named regions of 8 levels</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Stars under cleared levels; locked levels quiet</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Milestone chest every 8 levels</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Level card: goal, moves, reward, stars, Play</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Region progress and total stars</li></ul></div><div class="spc"><b><span>7</span>Shop</b><ul><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Tabs: Featured · Themes · Boosts · Gems</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Featured offer with its saving and time left</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Theme cards in two columns: preview, name, state (Active · Use · price · Free with ad)</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Ribbons that never wrap</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Free coins with the daily limit</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Distinct coin, gem and rupee price styles; Restore purchases in the footer</li></ul></div><div class="spc"><b><span>8</span>Trophies</b><ul><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Title “Trophies” that fits every locale</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Summary ring, rewards waiting, Claim all</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Filters: All · In progress · Completed</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Claimable items first with a Claim button</li><li><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg>Tier medals with progress numbers; no padlocks on items in progress</li></ul></div></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>34 / 35</span></footer></section>
+<section class="page closing"><div class="clz"><svg class="art " aria-hidden="true"><use href="#a-logo"/></svg><h2>Next step</h2><p>Pick the default direction (recommended: 1 · Aurora Glass) and start P0. The mockups in this document are HTML; the same source renders any screen in any direction again in seconds.</p>
+  <div class="clrow"><div class="ph " style="--s:0.36"><img src="shots/aurora-game.jpg" alt="Aurora Glass · game"></div><div class="ph " style="--s:0.36"><img src="shots/royal-game.jpg" alt="Royal Bloom · game"></div><div class="ph " style="--s:0.36"><img src="shots/neon-game.jpg" alt="Neon Pulse · game"></div><div class="ph " style="--s:0.36"><img src="shots/clay-game.jpg" alt="Petal Pop · game"></div></div><p class="small">Block Bloom · Premium UI/UX redesign · 19 November 2026 · Source: 01-blockbloom/ui-redesign-2026-11 in the notes repo</p></div><footer class="pf"><span>Block Bloom · Premium UI/UX redesign · 19 Nov 2026</span><span>35 / 35</span></footer></section></body></html>
