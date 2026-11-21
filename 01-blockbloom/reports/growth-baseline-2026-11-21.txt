@@ -1,0 +1,251 @@
+# Block Bloom growth baseline, end 2026-11-21 (pulled 2026-11-21T18:10:10.615Z)
+
+## daily, last 28 days (ad revenue in USD as GA4 reports it)
+date | activeUsers | newUsers | totalAdRevenue | publisherAdImpressions | userEngagementDuration
+20261025 | 23 | 4 | 0 | 0 | 45349
+20261026 | 17 | 5 | 0 | 0 | 42360
+20261027 | 23 | 6 | 0 | 0 | 36788
+20261028 | 20 | 4 | 0 | 0 | 34923
+20261029 | 19 | 2 | 0 | 0 | 31781
+20261030 | 24 | 8 | 0 | 0 | 54012
+20261031 | 19 | 3 | 0 | 0 | 37568
+20261101 | 16 | 2 | 0 | 0 | 28072
+20261102 | 11 | 1 | 0 | 0 | 24731
+20261103 | 17 | 4 | 0 | 0 | 32691
+20261104 | 22 | 6 | 0 | 0 | 16814
+20261105 | 19 | 5 | 0 | 0 | 26168
+20261106 | 14 | 4 | 0 | 0 | 14760
+20261107 | 18 | 9 | 0.0002 | 2 | 10661
+20261108 | 13 | 0 | 0 | 0 | 18503
+20261109 | 11 | 2 | 0.6937 | 6 | 13430
+20261110 | 19 | 9 | 0.0083 | 6 | 18821
+20261111 | 9 | 1 | 0.2395 | 2 | 15357
+20261112 | 14 | 4 | 0.0051 | 2 | 22714
+20261113 | 27 | 10 | 0.0075 | 3 | 30156
+20261114 | 19 | 3 | 0.0102 | 1 | 16734
+20261115 | 38 | 21 | 0.0494 | 94 | 24391
+20261116 | 35 | 21 | 0.6022 | 214 | 32200
+20261117 | 43 | 29 | 0.2675 | 132 | 32132
+20261118 | 115 | 93 | 0.2306 | 162 | 42478
+20261119 | 79 | 49 | 0.4449 | 312 | 41880
+20261120 | 95 | 68 | 0.5013 | 309 | 41108
+20261121 | 65 | 37 | 0.8647 | 496 | 49270
+
+## country, last 21 days (top 30 by new users)
+country | newUsers | activeUsers | totalAdRevenue | publisherAdImpressions | userEngagementDuration
+(not set) | 62 | 62 | 0.0013 | 5 | 6416
+India | 51 | 59 | 0.1176 | 214 | 80600
+United States | 50 | 53 | 2.1904 | 529 | 101410
+Pakistan | 44 | 44 | 0.0222 | 40 | 10334
+Bangladesh | 31 | 31 | 0.0050 | 9 | 5194
+France | 12 | 12 | 0.0612 | 23 | 1920
+Kenya | 12 | 12 | 0.0011 | 1 | 13778
+Germany | 7 | 9 | 0.0112 | 2 | 923
+Iran | 7 | 8 | 0 | 0 | 11193
+Brazil | 6 | 10 | 0.0154 | 32 | 17422
+Somalia | 6 | 6 | 0 | 0 | 829
+Indonesia | 5 | 6 | 0.0171 | 166 | 35083
+South Africa | 5 | 7 | 0.0008 | 7 | 7403
+Tanzania | 5 | 5 | 0.0027 | 15 | 1992
+ | 4 | 4 | 0 | 0 | 1217
+Malaysia | 4 | 4 | 0.0027 | 4 | 809
+Syria | 4 | 5 | 0.0069 | 51 | 2112
+Gambia | 3 | 3 | 0.0100 | 5 | 335
+Netherlands | 3 | 3 | 0.3241 | 275 | 20249
+Russia | 3 | 4 | 0 | 0 | 1517
+United Kingdom | 3 | 3 | 0.0032 | 2 | 808
+Azerbaijan | 2 | 5 | 0.0001 | 2 | 1430
+Botswana | 2 | 2 | 0 | 0 | 1921
+Colombia | 2 | 2 | 0.0082 | 5 | 939
+Egypt | 2 | 2 | 0 | 0 | 654
+Eswatini | 2 | 2 | 0 | 0 | 25142
+Ethiopia | 2 | 2 | 0 | 0 | 787
+Lebanon | 2 | 3 | 0 | 0 | 75
+Morocco | 2 | 2 | 0.0002 | 1 | 584
+Myanmar (Burma) | 2 | 2 | 0.0064 | 1 | 254
+
+## first-user channel x country, last 21 days (top 25)
+firstUserDefaultChannelGroup | country | newUsers | activeUsers | totalAdRevenue | userEngagementDuration
+Direct | (not set) | 62 | 62 | 0.0013 | 6416
+Cross-network | Pakistan | 39 | 39 | 0.0102 | 7418
+Direct | United States | 36 | 38 | 1.4602 | 90118
+Cross-network | India | 35 | 35 | 0.0105 | 4451
+Cross-network | Bangladesh | 31 | 31 | 0.0050 | 5194
+Cross-network | Kenya | 11 | 11 | 0.0011 | 9840
+Cross-network | France | 10 | 10 | 0.0471 | 1026
+Cross-network | United States | 9 | 10 | 0.0360 | 389
+Direct | India | 9 | 12 | 0.0768 | 34218
+Organic Search | India | 7 | 12 | 0.0274 | 36239
+Cross-network | Somalia | 5 | 5 | 0 | 797
+Organic Search | Pakistan | 5 | 5 | 0 | 498
+Organic Search | United States | 5 | 5 | 0 | 1277
+Cross-network | Iran | 4 | 4 | 0 | 3704
+Direct |  | 4 | 4 | 0 | 421
+Direct | Brazil | 4 | 5 | 0.0147 | 15718
+Cross-network | Gambia | 3 | 3 | 0.0100 | 335
+Cross-network | Germany | 3 | 3 | 0.0112 | 290
+Cross-network | Syria | 3 | 3 | 0.0030 | 1703
+Cross-network | Tanzania | 3 | 3 | 0.0011 | 609
+Direct | Germany | 3 | 4 | 0 | 548
+Direct | Iran | 3 | 3 | 0 | 2029
+Direct | Malaysia | 3 | 3 | 0.0027 | 806
+Organic Search | Russia | 3 | 3 | 0 | 148
+Organic Search | South Africa | 3 | 4 | 0 | 4877
+
+## first-user channel x date, last 7 days
+date | firstUserDefaultChannelGroup | newUsers | activeUsers
+20261115 | Direct | 18 | 27
+20261115 | Organic Search | 3 | 11
+20261116 | Direct | 16 | 26
+20261116 | Organic Search | 5 | 9
+20261117 | Direct | 13 | 20
+20261117 | Cross-network | 12 | 12
+20261117 | Organic Search | 4 | 11
+20261118 | Cross-network | 66 | 69
+20261118 | Direct | 19 | 26
+20261118 | Organic Search | 8 | 20
+20261118 | Unassigned | 0 | 1
+20261119 | Cross-network | 43 | 54
+20261119 | Direct | 4 | 14
+20261119 | Organic Search | 2 | 9
+20261119 | Unassigned | 0 | 2
+20261120 | Cross-network | 35 | 45
+20261120 | Direct | 30 | 39
+20261120 | Organic Search | 3 | 8
+20261120 | Unassigned | 0 | 7
+20261121 | Cross-network | 27 | 27
+20261121 | Direct | 7 | 7
+20261121 | Organic Search | 3 | 3
+20261121 | Unassigned | 0 | 38
+
+## events, last 21 days (top 50 by users)
+eventName | eventCount | totalUsers
+session_start | 1000 | 425
+screen_view | 1627 | 415
+streak_claimed | 747 | 414
+game_start | 1694 | 400
+first_open | 378 | 378
+tutorial_begin | 453 | 361
+user_engagement | 1957 | 345
+(not set) | 0 | 256
+tutorial_complete | 243 | 235
+first_clear | 190 | 188
+review_prompt | 316 | 168
+app_remove | 157 | 156
+ad_requested | 957 | 155
+game_over | 1408 | 154
+positive_moment | 1988 | 107
+first_game_over | 104 | 98
+lifeline_used | 999 | 86
+ad_loaded | 637 | 83
+ad_impression | 1741 | 81
+update_available | 233 | 79
+ad_failed_to_load | 990 | 71
+notification_permission | 63 | 63
+ | 0 | 44
+ad_reward | 89 | 26
+share_result | 47 | 23
+ad_click | 58 | 21
+update_tap | 85 | 17
+app_update | 22 | 17
+daily_challenge_done | 33 | 12
+ad_reward_earned | 45 | 11
+theme_direction_changed | 41 | 10
+lucky_chest_dialog_open | 12 | 9
+level_complete | 61 | 8
+ad_clicked | 11 | 4
+lucky_chest_claimed | 2 | 2
+os_update | 2 | 2
+reminder_opened | 2 | 2
+app_clear_data | 1 | 1
+
+## install cohorts (first session date): size, then % active on day N ("-" = none active or not yet reached)
+cohort | size | D1 | D2 | D3 | D7
+2026-11-04 | 6 | 33% | 17% | - | -
+2026-11-05 | 5 | 20% | - | - | -
+2026-11-06 | 4 | - | - | - | -
+2026-11-07 | 9 | - | - | - | 11%
+2026-11-09 | 2 | - | - | - | -
+2026-11-10 | 9 | - | 11% | 33% | 11%
+2026-11-11 | 1 | - | 100% | - | -
+2026-11-12 | 4 | - | - | - | -
+2026-11-13 | 10 | 20% | 20% | 10% | -
+2026-11-14 | 3 | - | - | - | -
+2026-11-15 | 21 | 10% | 5% | 5% | -
+2026-11-16 | 21 | 10% | 5% | 5% | -
+2026-11-17 | 29 | 17% | 3% | 3% | -
+2026-11-18 | 93 | 15% | 4% | 4% | -
+2026-11-19 | 49 | 18% | 12% | - | -
+2026-11-20 | 68 | 10% | - | - | -
+weighted D1 14.6% over 302 installs; weighted D7 11.1% over 18 installs (cohorts with any day-1 / day-7 activity)
+
+## Play installs (lags ~9 days): installs_com.aweagle.blockbloom_202610_overview.csv, installs_com.aweagle.blockbloom_202611_overview.csv
+Date,Package name,Daily Device Installs,Daily Device Uninstalls,Daily Device Upgrades,Total User Installs,Daily User Installs,Daily User Uninstalls,Active Device Installs,Install events,Update events,Uninstall events
+2026-10-20,com.aweagle.blockbloom,6,0,0,0,5,4,132,9,31,5
+2026-10-21,com.aweagle.blockbloom,6,0,0,0,5,3,131,6,33,3
+2026-10-22,com.aweagle.blockbloom,6,0,0,0,6,2,137,7,7,4
+2026-10-23,com.aweagle.blockbloom,5,0,0,0,5,6,139,6,6,7
+2026-10-24,com.aweagle.blockbloom,3,0,0,0,2,3,141,4,5,3
+2026-10-25,com.aweagle.blockbloom,4,0,0,0,3,7,128,4,3,6
+2026-10-26,com.aweagle.blockbloom,7,0,0,0,8,7,132,7,5,6
+2026-10-27,com.aweagle.blockbloom,5,0,0,0,6,5,136,6,3,6
+2026-10-28,com.aweagle.blockbloom,3,0,0,0,4,2,139,3,3,2
+2026-10-29,com.aweagle.blockbloom,8,0,0,0,6,4,136,8,0,5
+2026-10-30,com.aweagle.blockbloom,8,0,0,0,7,4,142,8,1,4
+2026-10-31,com.aweagle.blockbloom,1,0,0,0,1,2,135,1,2,2
+Date,Package name,Daily Device Installs,Daily Device Uninstalls,Daily Device Upgrades,Total User Installs,Daily User Installs,Daily User Uninstalls,Active Device Installs,Install events,Update events,Uninstall events
+2026-11-06,com.aweagle.blockbloom,2,0,0,0,2,4,141,2,0,4
+2026-11-07,com.aweagle.blockbloom,3,0,0,0,3,3,140,3,21,4
+2026-11-08,com.aweagle.blockbloom,1,0,0,0,1,1,135,1,27,1
+2026-11-09,com.aweagle.blockbloom,5,0,0,0,4,3,142,5,12,3
+2026-11-10,com.aweagle.blockbloom,3,0,0,0,3,0,137,3,8,0
+2026-11-11,com.aweagle.blockbloom,2,0,0,0,2,2,135,2,9,2
+2026-11-12,com.aweagle.blockbloom,0,0,0,0,0,0,133,0,3,0
+2026-11-13,com.aweagle.blockbloom,4,0,0,0,4,6,143,4,20,6
+2026-11-14,com.aweagle.blockbloom,1,0,0,0,1,4,140,1,28,4
+2026-11-15,com.aweagle.blockbloom,6,0,0,0,5,4,142,9,26,5
+2026-11-16,com.aweagle.blockbloom,3,0,0,0,3,2,142,3,34,2
+2026-11-17,com.aweagle.blockbloom,173,0,0,0,171,48,269,177,45,45
+
+## Play ratings (lags ~9 days): ratings_com.aweagle.blockbloom_202610_overview.csv, ratings_com.aweagle.blockbloom_202611_overview.csv
+Date,Package Name,Daily Average Rating,Total Average Rating
+2026-10-20,com.aweagle.blockbloom,0.0,4.8333
+2026-10-21,com.aweagle.blockbloom,5.0,4.8571
+2026-10-22,com.aweagle.blockbloom,5.0,4.875
+2026-10-23,com.aweagle.blockbloom,0.0,4.875
+2026-10-24,com.aweagle.blockbloom,0.0,4.875
+2026-10-25,com.aweagle.blockbloom,0.0,4.875
+2026-10-26,com.aweagle.blockbloom,0.0,4.875
+2026-10-27,com.aweagle.blockbloom,0.0,4.875
+2026-10-28,com.aweagle.blockbloom,0.0,4.875
+2026-10-29,com.aweagle.blockbloom,5.0,4.8888
+2026-10-30,com.aweagle.blockbloom,0.0,4.8888
+2026-10-31,com.aweagle.blockbloom,0.0,4.8888
+Date,Package Name,Daily Average Rating,Total Average Rating
+2026-11-01,com.aweagle.blockbloom,0.0,4.8888
+2026-11-02,com.aweagle.blockbloom,0.0,4.8888
+2026-11-03,com.aweagle.blockbloom,5.0,4.9
+2026-11-04,com.aweagle.blockbloom,0.0,4.9
+2026-11-05,com.aweagle.blockbloom,0.0,4.9
+2026-11-06,com.aweagle.blockbloom,0.0,4.9
+2026-11-07,com.aweagle.blockbloom,0.0,4.9
+2026-11-08,com.aweagle.blockbloom,0.0,4.9
+2026-11-09,com.aweagle.blockbloom,0.0,4.9
+2026-11-10,com.aweagle.blockbloom,0.0,4.9
+2026-11-11,com.aweagle.blockbloom,0.0,4.9
+2026-11-12,com.aweagle.blockbloom,0.0,4.9
+
+## Play store listing (retained installers) (lags ~9 days): no files
+
+## Play one-time products: HTTP 200
+gems_large | ACTIVE
+gems_medium | ACTIVE
+gems_small | ACTIVE
+remove_ads | ACTIVE
+
+## Remote Config: HTTP 200, version 5, 5 parameters
+ads_banner_enabled = "true"
+ads_interstitial_enabled = "false"
+ads_interstitial_interval = "4"
+live_events = "[{\"id\":\"weekend_cascade\",\"title\":\"Weekend Cascade\",\"description\":\"+50% coins\",\"kind\":\"COIN_BOOST\",\"multiplier\":1.5,\"endsInDays\":0}]"
+min_supported_version_code = "0"

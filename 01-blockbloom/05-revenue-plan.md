@@ -1,5 +1,9 @@
 # Revenue plan (ads + in-app purchases)
 
+> **21 Nov 2026:** this page describes the 4 Oct state. Today ads are live, interstitials are OFF in Remote Config,
+> `remove_ads` and the three gem packs are ACTIVE in Play with no purchase yet, and the plan for 22 Nov – 21 Dec is
+> `11-growth-roadmap-30-days.md` (§3.5 for the current ad and purchase state, W3 for the work).
+
 Direction you set on 4 Oct 2026: "we have ads in app but very few, not disturbing the game",
 plus `remove_ads` and payouts into your own bank account. The release that carries it is the
 next one after vc21.

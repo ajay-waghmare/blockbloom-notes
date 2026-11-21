@@ -1,5 +1,9 @@
 # Analytics and metrics
 
+> **21 Nov 2026:** `scripts/growth-baseline-pull.js` pulls GA4, the Play bulk reports, the Play products and Remote
+> Config in one read-only run (`--end`, `--sa`). The 21 Nov baseline is `reports/growth-baseline-2026-11-21.txt`; its
+> reading is §3 of `11-growth-roadmap-30-days.md`, and `scripts/growth-model.js` turns it into the 30-day paths.
+
 ## Sources and how to pull them
 
 All scripts: Node, zero dependencies, read-only, credential by path. Copies in `scripts\`;
