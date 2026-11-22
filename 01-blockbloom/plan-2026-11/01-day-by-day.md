@@ -75,7 +75,7 @@ opened install above ₹35 for 3 days → ₹300 (pause if it repeats).
 3. app-ads.txt check (C-22).
 4. First daily KPI output from `tools/growth-kpi.js` (even if partial).
 
-**Done when:** a Monday home screen shows no "Weekend Cascade"; Tier-1 cost per install ≤ ₹25; KPI output exists.
+**Done when:** Firebase shows no `live_events` parameter; Tier-1 cost per install ≤ ₹25; KPI output exists. (The home-screen strip is hard-coded to "Weekend Cascade" in vc39, so the screen only changes with vc40, V40-11.)
 
 ### Day 3 — Tue 24 Nov · Budget ₹400
 **Ajay**
@@ -87,7 +87,7 @@ opened install above ₹35 for 3 days → ₹300 (pause if it repeats).
 **Gemini**
 1. vc40: V40-4 rewarded readiness (preload before game over, buttons only when ready, log fallback grants),
    V40-5 remove-ads offers in context, V40-6 interstitial 150 s gap + code default OFF, V40-7 chest badge,
-   V40-8 review rule.
+   V40-8 review rule (official Play review API only), V40-11 home event strip shows the real live event.
 2. V40-10 staged rollout support in `tools/play-rollout.js` (fraction + **keep the live vc39 release in the same
    track update**, or the live release can be dropped — check the Production track screen after the first commit).
 3. vc40 internal build; gates 1–3 of `MAJOR_ISSUES_AND_GO_LIVE_CHECKLIST.md`.
