@@ -1,0 +1,332 @@
+{
+ "findings": [
+  {
+   "topic": "CPI - Tier-1 (US/UK/CA/AU), puzzle, Android",
+   "claim": "AppsFlyer's Q3 2026 benchmarks list Android puzzle CPI at US $4.81, AU $4.54, CA $3.62, UK $3.45, DE $3.10 and FR $1.56. Android hypercasual CPI is US $1.55. MMPs count an install at first open, so these numbers compare directly with the model's 'cost per OPENED install'.",
+   "value": "US $4.81 (Rs449), AU $4.54 (Rs424), CA $3.62 (Rs338), UK $3.45 (Rs322), US hypercasual $1.55 (Rs145), at Rs93.32/USD",
+   "source_url": "https://www.appsflyer.com/?p=549948",
+   "source_date": "2026-11-05 (Q3 2026 data)",
+   "confidence": "medium",
+   "implication": "The observed Rs19.71 per Play install at Rs500/day is a small-budget artefact, probably cheap EU or low-intent inventory. Extra Tier-1 spend will cost roughly Rs100-450 per opened install, not the model's Rs35-52 at Rs3k-8k/day. S4/S5 Tier-1 installs are therefore overstated 3-10x, and Tier-1 is the worst lever this week for downloads and DAU."
+  },
+  {
+   "topic": "CPI - India",
+   "claim": "Android CPI in India per AppsFlyer Q3 2026: puzzle $0.10, hypercasual $0.03. Linkrunner gives a median of $0.12 (Rs11) for India Android casual games. vmobify gives a blended Rs6-15 for India hyper-casual. Mintegral's 2026 India outlook says global Android CPI is about 19.9x India's.",
+   "value": "puzzle $0.10 (Rs9.3); hypercasual $0.03 (Rs2.8); casual median $0.12 (Rs11)",
+   "source_url": "https://www.appsflyer.com/?p=549948 ; https://linkrunner.io/cost-per-install-benchmark ; https://vmobify.com/blog/app-install-cost-india",
+   "source_date": "2026-11-05 / undated / 2026-08-28",
+   "confidence": "medium",
+   "implication": "App-1's Rs2.28 per Play install is hypercasual-level pricing. The model's Rs4, rising to Rs6.4-6.9 at Rs3,200-6,000/day, sits about 25-35% below the puzzle market price, before any learning-phase inflation. Plan on Rs9-12 per opened install for incremental India spend."
+  },
+  {
+   "topic": "CPI - Tier-2 (Brazil, Mexico, Philippines, Indonesia)",
+   "claim": "AppsFlyer Q3 2026 Android puzzle CPI: Brazil $0.49, Mexico $0.44, Philippines $0.29, Indonesia $0.26. Adjust's 2025 all-genre CPI: LATAM $0.14 (+40% YoY), Europe $0.53, North America $1.68, global $0.56 (+30% YoY).",
+   "value": "BR Rs46, MX Rs41, PH Rs27, ID Rs24 per puzzle install; LATAM all-genre Rs13",
+   "source_url": "https://www.appsflyer.com/?p=549948 ; https://gamedevreports.substack.com/p/adjust-gaming-app-insights-report",
+   "source_date": "2026-11-05; 2026-04-15 (2025 data)",
+   "confidence": "medium",
+   "implication": "The model's Tier-2 Rs8 (Rs11 at Rs2k/day) is 2-6x too cheap. Tier-2 money buys about a third of the modelled installs, so it does little for the download target. Revenue per Tier-2 player is still about 5x India's."
+  },
+  {
+   "topic": "CPI - Google App campaigns only",
+   "claim": "I found no public Google-only CPI broken down by country. A secondary summary of Singular's ROI Index 2025 gives a median Google App campaign Android CPI of $1.22 across all verticals and $0.38 for hypercasual games.",
+   "value": "$1.22 all-vertical median; $0.38 hypercasual",
+   "source_url": "https://www.rocketshiphq.com/google-app-campaigns-uac-complete-guide/",
+   "source_date": "2025 (secondary)",
+   "confidence": "low",
+   "implication": "Cross-network MMP benchmarks are the right yardstick. Google can buy far cheaper installs than these benchmarks, as App-1 shows, but those installs retain poorly. That matches the model's 0.6 quality factor."
+  },
+  {
+   "topic": "CPI seasonality - Black Friday and post-Diwali",
+   "claim": "Singular festive-season report: in 2025, US CPI in Black Friday week was 13% above mid-October and stayed 11-14% higher for the next three weeks, about a month in total. Outside the US the rise was 7%. Asian markets running 11.11/12.12 rose 27% vs early November. India CPI starts climbing two weeks after Diwali and was 21% above July by week 4 (2025). Sunday is the cheapest install day in India, 4-9% below other days. Diwali 2026 fell on 8 Nov.",
+   "value": "US +13% from Black Friday week for about a month; India +10-21% in weeks 2-4 after Diwali",
+   "source_url": "https://www.singular.net/festive-season-report-2026/",
+   "source_date": "~Oct 2026 (2024-2025 data)",
+   "confidence": "medium",
+   "implication": "The model's x1.3 Tier-1 premium on Days 5-7 is about twice the measured US premium, but the premium really applies to the whole week. India CPI is probably 10-20% above early-November levels this week, and the model ignores that. Sunday (Day 1) is the cheapest day to raise the India budget."
+  },
+  {
+   "topic": "Retention - paid puzzle, Android, by country",
+   "claim": "AppsFlyer Q3 2026 retention for paid-media Android puzzle users. D1: US 29.20%, India 32.55%, UK 30.95%, AU 32.47%, Brazil 29.19%, Mexico 28.99%, Indonesia 33.59%. D7: US 11.12%, India 11.17%, UK 11.75%, AU 14.23%, BR 9.19%, MX 10.17%, ID 10.37%. D30 is not published.",
+   "value": "D1 29-34%; D7 9-14%",
+   "source_url": "https://www.appsflyer.com/?p=549948",
+   "source_date": "2026-11-05",
+   "confidence": "medium",
+   "implication": "Block Bloom's D1 of 14.6% is about half the paid-puzzle norm. At market level India retains as well as the US, so the model's 0.6 Tier-3 factor reflects the cheap inventory Google buys, not India itself. Fixing onboarding (vc40) is worth more than any budget lever."
+  },
+  {
+   "topic": "Retention - all genres (GameAnalytics, Adjust)",
+   "claim": "GameAnalytics 2026 (2025 data): median D1 ~22%, D7 just under 4%, D30 0.69-0.79%. Top 25%: D1 just above 30%, D7 6-7%, D30 1.6-1.8%. Top 10%: about 40/12/4. GameAnalytics 2025 (2024 data): top-25% D1 is 25-27% on Android vs 31-33% on iOS, and bottom-25% D1 is 10-11.5%; puzzle is among the best genres for mid- and long-term retention. Adjust 2026: D1 was 27% across the top 5,000 gaming apps in 2025.",
+   "value": "median 22% / 4% / 0.7%; top-25% 30%+ / 6-7% / 1.6-1.8%",
+   "source_url": "https://gamedevreports.substack.com/p/gameanalytics-mobile-and-pc-game ; https://investgame.net/news/pdf/2026-01-20-mobile_retention_benchmarks_2026/ ; https://gamedevreports.substack.com/p/gameanalytics-mobile-gaming-benchmarks",
+   "source_date": "2026-06-04 / 2026-01-20 / 2025-02-17",
+   "confidence": "medium",
+   "implication": "Block Bloom's D1 of 14.6% sits between the bottom quartile and the median; its ~3.5% D7 is about median. The model's D30 of ~1.1% is above the median, which is fine for puzzle. The vc40 curve's D7 of 7.2% would be top-quartile."
+  },
+  {
+   "topic": "eCPM - US Android by format",
+   "claim": "Tenjin x CAS, US Android: Q1 2024 rewarded $27.88, interstitial $19.62, banner $1.22; Q2 2024 rewarded $30.25, interstitial $16.15, banner $1.18. Playwire's AdMob benchmarks (Sep 2025): Tier-1 rewarded $15-30, interstitial $5-8, banner $0.5-1.5; global $8-18, $2.5-5 and $0.2-0.8.",
+   "value": "US rewarded ~$28-30, interstitial ~$16-20, banner ~$1.2",
+   "source_url": "https://gamedevreports.substack.com/p/tenjin-ad-monetization-in-mobile ; https://blog.playio.co/mobile-game-ecpm-benchmarks-2026 ; https://www.playwire.com/blog/admob-ecpm-benchmarks-what-publishers-should-expect",
+   "source_date": "2024-06-17 (Q1 2024) / 2026-10-05 (cites Q2 2024) / 2025-09-17",
+   "confidence": "medium",
+   "implication": "Block Bloom's AdMob rewarded eCPM of $26.93 matches the US level, so rewarded revenue is US-driven. Its banner eCPM of $2.50 is above benchmark. US interstitials should clear about $11-20, which is where the revenue upside sits."
+  },
+  {
+   "topic": "eCPM - US vs India vs Tier-2 (Android)",
+   "claim": "Appodeal, September 2024 (via Moonetix), Android rewarded / interstitial / banner: US $13.00 / $11.24 / $0.45; India $0.63 / $0.52 / $0.04; UK $7.01 / $5.47 / $0.15; DE $5.26 / $5.01 / $0.13; FR $2.76 / $2.63 / $0.08; BR $2.03 / $2.01 / $0.11; MX $2.03 / $2.03 / $0.10; PH $1.63 / $1.66 / $0.09; ID $1.12 / $1.04 / $0.07. Rewarded only: Pakistan $0.41, Bangladesh $0.33. Mintegral 2026: rewarded-video yields are about 22.1x higher internationally than in India.",
+   "value": "US is about 21x India for rewarded, 22x for interstitial, 11x for banner",
+   "source_url": "https://moonetix.com/academy/monetization/highest-cpm-countries ; https://indiantelevision.com/iworld/indias-gaming-edge-is-cheap-installs-but-player-retention-lags-report/",
+   "source_date": "Sep 2024 data (page checked 2026-10-20); 2026-07-14",
+   "confidence": "medium",
+   "implication": "An Indian daily player is worth about 1/20 of a US one. Block Bloom's own numbers agree: Rs3.51 vs Rs0.17 per active player, a 20.6x gap. India volume can deliver downloads and DAU but not revenue. Cheap EU 'Tier-1' players earn 45-80% less than US players."
+  },
+  {
+   "topic": "ARPDAU - ad-monetised casual/puzzle",
+   "claim": "Game Growth Advisor (via Playio): casual ads-only ARPDAU $0.01-0.05, hypercasual $0.03-0.08, hybrid-casual $0.15-0.50. AppsFlyer (Jan 2025-Mar 2026): D90 in-app-ad ARPU of $0.55 for casual and $0.22 for hypercasual. My estimate from the eCPMs above: Block Bloom's 120-second banner refresh over the 22-minute median playtime gives about 11 banner impressions per DAU. Adding 0.1-0.3 rewarded views per DAU gives about $0.008-0.022 per DAU for US players (Rs0.7-2.1) and about $0.0006 for India (Rs0.05).",
+   "value": "casual ads-only $0.01-0.05/DAU; US banner+rewarded estimate Rs0.7-2.1; India estimate ~Rs0.05",
+   "source_url": "https://blog.playio.co/arpdau-benchmarks-mobile-games ; https://gamedevreports.substack.com/p/appsflyer-app-monetization-in-2026",
+   "source_date": "2026-09-09; 2026-06-25",
+   "confidence": "medium",
+   "implication": "The model's Tier-1 Rs1.4 ($0.015) fits the US range. Block Bloom earns about $0.01 per player over 3 weeks against $0.55 per casual user by D90, a 20-50x gap. Rs10k a week means Rs1,429 ($15.3) a day, which needs roughly 400-550 US daily players with interstitials on; today there are about 25."
+  },
+  {
+   "topic": "Interstitial revenue uplift",
+   "claim": "TopOn H1 2025, casual games: interstitials 44.25% of ad revenue, rewarded 39.35%, banner 6.50%; banners are 37% of impressions. Appodeal A/B tests: cutting the first-interstitial delay from 3 to 2 minutes gave +20% ad ARPU (casual); dropping a 10-minute ad-free start gave +10% (board); cutting the interval from 2 minutes to 0 gave up to +15% (word). From Block Bloom's eCPMs (rewarded $26.93, banner $2.50, overall $5.53), rewarded is about 12% of impressions and 60% of revenue. A typical casual format mix would therefore imply x1.7-2.0 revenue. At about 1.2 interstitials per DAU, US players would add about Rs1.3-1.8 per DAU.",
+   "value": "x1.7-2.0 implied by a typical casual mix; +10-20% from cadence changes alone",
+   "source_url": "https://mores.toponad.com/reports/TopOn%20Global%20Mobile%20Games%20Monetization%20Report%20_%202025%20H1.pdf ; https://appodeal.com/success-stories/20-arpu-retention-strategies-3-successful-games/",
+   "source_date": "2025-08-14 (H1 2025); Appodeal page undated",
+   "confidence": "low",
+   "implication": "The model's x1.6 is reasonable and may be conservative for US players. The code limits exposure: interstitials fire only on 'play again', after lifetime game 3, every Nth game, and not after a rewarded view (GameViewModel.kt:1206-1208, 1230-1249; countdown starts at 2, line 277). Light players never see one, and only 20% of players see any ad today. Also, the in-app default is ON (AdsConfig.kt:28-29; BlockBloomApp.kt:63-64), so 'OFF' depends on the Remote Config fetch succeeding."
+  },
+  {
+   "topic": "Interstitial retention impact",
+   "claim": "The evidence is weak and mixed. Appodeal's controlled tests found no retention loss over 12 days to 3 weeks while ad ARPU rose 10-20%. A Samsung Instant Plays paper (ACM RecSys 2024) got 49% more ads watched with similar retention by tuning timing. One developer anecdote reports a 33% D1 drop after adding interstitials. ironSource/Unity (2021) advise casual games to wait about 2 weeks before showing interstitials; CrazyGames advises not before level 3-4.",
+   "value": "Controlled tests ~0% retention change; anecdotal worst case -33% D1",
+   "source_url": "https://appodeal.com/success-stories/20-arpu-retention-strategies-3-successful-games/ ; https://dl.acm.org/doi/fullHtml/10.1145/3640457.3688058 ; https://unity.com/blog/best-practices-for-maximizing-revenue-from-interstitial-ads-in-your-app",
+   "source_date": "2021-2026 (mixed)",
+   "confidence": "low",
+   "implication": "The model's x0.92 is a reasonable central case, because the code never interrupts a player's first 2 games (GameViewModel.kt:1233-1234). If interstitials go ON, keep ads_interstitial_interval at 4 or more and compare D1/D7 by daily cohort for 3-7 days."
+  },
+  {
+   "topic": "Google App campaigns - budget sizing and change limits",
+   "claim": "Google's guidance: 'Set your average daily budget at 50 times your target CPI, or 10 times your target CPA.' 'Try not to make drastic changes ... changing the budget by >20%, or changing your CPI by >20%.' Best-practice minimums: tCPI budget at least 50x the bid, in-app tCPA at least 10x, engagement tCPA at least 15x. The 'Grow my app' guide adds: 'Keep your budget sufficient for 100 installs per day' and 'Only adjust your bids and budgets within a 20% range once every 2-3 days, and not simultaneously.'",
+   "value": "50x tCPI; 10x tCPA; at most 20% change every 2-3 days; budget for 100 installs/day",
+   "source_url": "https://support.google.com/google-ads/answer/9176652?hl=en ; https://support.google.com/google-ads/answer/14104492?hl=en ; https://ads.google.cn/home/grow-my-app/evaluate-expand",
+   "source_date": "undated live pages (c)2026",
+   "confidence": "high",
+   "implication": "India at Rs200/day with a ~Rs4 CPI meets the 50x rule. Tier-1 at Rs500 with a Rs25 CPI is below both 50x (Rs1,250) and the 100-installs rule (Rs2,500), which explains 'limited by budget'. Under the 20%-per-2-3-days rule, India can reach only ~Rs346/day and Tier-1 ~Rs864/day by Day 7. S1-S5 all need new campaigns or a deliberate breach of the guidance, with volatile CPIs."
+  },
+  {
+   "topic": "Google App campaigns - learning period",
+   "claim": "Google's phases are learning (Days 1-7), assessment (Days 7-14) and optimisation (Days 14-30). 'For Android, the learning phase will take at least a week; for iOS it may take up to 6 weeks.' Changes made 'before reaching 100 conversions can disrupt campaign learning.' CPI may be inflated in the first few days or weeks. 'You may notice fluctuations or lower spend during this initial ramp-up period.' The generic Smart Bidding page says budget changes do not trigger a 'Learning' status, but it is not App-specific.",
+   "value": "At least 7 days on Android; evaluate after 14 days; reach 100 conversions before changing",
+   "source_url": "https://ads.google.cn/home/grow-my-app/evaluate-expand ; https://support.google.com/google-ads/answer/9176652?hl=en ; https://support.google.com/google-ads/answer/12171560?hl=en ; https://support.google.com/google-ads/answer/13020501",
+   "source_date": "undated live pages (c)2026",
+   "confidence": "high",
+   "implication": "Any campaign created or scaled about 10x this week will be in learning for all 7 days. Expect CPIs above the model's on Days 2-7, and judge India or Tier-2 tests from about 6 Dec, not this week."
+  },
+  {
+   "topic": "Google App campaigns - tCPA / tROAS volume needs",
+   "claim": "Target ROAS for App campaigns needs 'At least 10 conversions every day (or 300 conversions in 30 days)' from Firebase events, and Google recommends running a tCPA campaign first. An in-app-action tCPA campaign needs at least 10 different users completing the action every day and a budget of at least 10x the tCPA.",
+   "value": "tROAS: 10+ conversions/day or 300 in 30 days; tCPA: 10+ users/day completing the action, budget 10x+ tCPA",
+   "source_url": "https://support.google.com/google-ads/answer/6268637?hl=en ; https://support.google.com/adwords/answer/6167156?hl=en-GB",
+   "source_date": "undated live pages",
+   "confidence": "high",
+   "implication": "tROAS is impossible with zero purchases. A tCPA campaign on tutorial_complete (62% of first opens) already clears 10 completions a day and would buy better-retaining users. It starts a fresh 7-day learning period, so it is a week-2 lever."
+  },
+  {
+   "topic": "Can Google deliver Rs3,000-6,000/day of India installs now?",
+   "claim": "Supply is not the limit: India is 17.8% of global Android downloads (Mintegral 2026), and at Rs9-11 per install Rs6,000/day buys only ~550-650 installs. Google may spend up to 2x the average daily budget on a given day. Against that, Google warns of ramp-up fluctuations and lower spend, flags overlapping App campaigns that enter the same auctions, and says early CPI may be inflated. Manual prepaid payments by net banking take 24-48 hours up to 2-5 business days; card payments clear almost immediately.",
+   "value": "Spend: likely within 1-2 days. Efficient CPI: not within the week.",
+   "source_url": "https://support.google.com/google-ads/answer/12171560?hl=en ; https://support.google.com/google-ads/answer/6385083 ; https://support.google.com/google-ads/answer/2393016 ; https://indiantelevision.com/iworld/indias-gaming-edge-is-cheap-installs-but-player-retention-lags-report/",
+   "source_date": "live pages; 2026-07-14",
+   "confidence": "medium",
+   "implication": "S2/S3 can probably spend the money, but at CPIs above the model's Rs6.4-6.9. Top up the prepaid funds by card on Day 1. If a separate India campaign is added, exclude India from App-1 so the two campaigns don't bid against each other."
+  },
+  {
+   "topic": "Play Console promotional content - lead time",
+   "claim": "Promotional content is available to all games. 'It can take up to four days to approve your event', and Google recommends submitting at least four days before the start date. The content-quality review 'typically takes less than 24 hours'. Featuring requests need at least 14 days' notice. Events can be submitted at most 60 days ahead and last up to 4 weeks. Content that fails the guidelines appears only on the app's details page.",
+   "value": "Submit 4+ days ahead; approval up to 4 days (quality review usually under 24 h); featuring 14+ days",
+   "source_url": "https://support.google.com/googleplay/android-developer/answer/12932541?hl=en ; https://support.google.com/googleplay/android-developer/answer/12932123?hl=en",
+   "source_date": "undated live pages (c)2026",
+   "confidence": "high",
+   "implication": "An event starting Thu 26 Nov must be submitted today (Sun 22). A Black Friday start (Fri 27) must be submitted by Mon 23. Featuring is impossible this week. With ~100 DAU and live_events not set in Remote Config, promotional content adds almost nothing to this week's targets."
+  },
+  {
+   "topic": "eCPM seasonality - Q4 / December",
+   "claim": "Playio, citing AdReact (May 2026): Q4 eCPMs typically run 20-40% above Q1. Bidlogic, Q3 to Q4 2025: US Android rewarded +24.19%, UK +23.29%, US Android interstitial up more than 17%. Playwire: November-December has the highest eCPMs and January the lowest. Singular: ad spend stays 13-16% above mid-November into late January.",
+   "value": "Q4 +17-24% vs Q3 (US Android); Q4 20-40% above Q1",
+   "source_url": "https://blog.playio.co/mobile-game-ecpm-benchmarks-2026 ; https://www.playwire.com/blog/admob-ecpm-benchmarks-what-publishers-should-expect ; https://www.singular.net/festive-season-report-2026/",
+   "source_date": "2026-10-05; 2025-09-17; ~Oct 2026",
+   "confidence": "medium",
+   "implication": "This week is near the annual eCPM peak, and the 1-21 Nov baseline already includes most of the Q4 uplift. December may add only ~0-15% in Tier-1, so the model should not get a separate Q4 multiplier."
+  },
+  {
+   "topic": "eCPM seasonality - January drop",
+   "claim": "Bidlogic, Q4 2025 to Q1 2026: 24 of 30 country/format data points fell, by single digits up to about 30%. Examples: UK Android banner -29.79%, DE Android banner -27.32%, US Android banner -17.74%, India Android rewarded -9.51%, UK Android rewarded -7.29%. The exception was US Android rewarded at +9.93%. Playio advises budgeting for about a 30% January drop (20-35% peak-to-trough on Android).",
+   "value": "-10% to -30% in January for most Android formats",
+   "source_url": "https://bidlogic.io/2026/04/24/breaking-down-the-q4-to-q1-ecpm-plunge/ ; https://blog.playio.co/mobile-game-ecpm-benchmarks-2026",
+   "source_date": "2026-04-24; 2026-10-05",
+   "confidence": "medium",
+   "implication": "Late-November revenue per player will not hold into January. Any payback estimate for December spend should assume January ARPDAU 10-30% lower. Block Bloom gets 40% of its revenue from banners, which fell hardest."
+  },
+  {
+   "topic": "AdMob payment threshold and timing (India)",
+   "claim": "The AdMob payment threshold is $100 for USD; INR is not in AdMob's reporting-currency table. Last month's estimated earnings are finalized on the 3rd. Payment is issued around the 21st if the balance on the 20th meets the threshold and there are no holds. For wire transfers, Google says to 'allow ten days'.",
+   "value": "$100 threshold; finalized on the 3rd; paid ~21st; ~10 days by wire",
+   "source_url": "https://support.google.com/admob/answer/2772208?hl=en ; https://support.google.com/admob/answer/2772140?hl=en",
+   "source_date": "undated live pages (c)2026",
+   "confidence": "high",
+   "implication": "November earnings (~$5-10 including this week) will roll over. At ~$1/day the $100 threshold is about 3 months away, so this week's revenue is accrual only, with no cash. Even Rs10k earned this week would be paid around 21 Dec plus wire time, net of any invalid-traffic deductions."
+  },
+  {
+   "topic": "Meta Audience Network bidding needs an in-app adapter",
+   "claim": "Google's AdMob guide requires adding the Meta adapter to the app (Kotlin: implementation(\"com.google.ads.mediation:facebook:6.22.0.1\") with play-services-ads 25.5.0). 'No additional code is required' beyond the dependency, and Android API 24+ is needed. Meta is bidding-only. Setup also needs a Meta bidding agreement in AdMob, a Meta placement ID, app-ads.txt, and Meta added to the EU/US-state ad partners list. Adapter 6.19.0.1 raised the minimum Google Mobile Ads SDK to 24.0.0; the last adapters built on 23.x are 6.17.0.0 (23.0.0), 6.18.0.0 (23.3.0) and 6.19.0.0 (23.6.0). Block Bloom pins play-services-ads 23.2.0 because of its Kotlin 1.9 toolchain (app/build.gradle.kts:203-207); minSdk is 26 (line 23).",
+   "value": "Adapter dependency mandatory; a new app release is required",
+   "source_url": "https://developers.google.com/admob/android/mediation/meta",
+   "source_date": "live page (adapter 6.22.x)",
+   "confidence": "high",
+   "implication": "Meta demand cannot be switched on from the AdMob console. It needs a new release (vc41+) with an older 23.x-compatible adapter, or a Kotlin and Ads SDK upgrade, plus Meta account setup. It does nothing for this week, but it is a December lever for the 67% match rate and the ad-load failures."
+  },
+  {
+   "topic": "Fill rate vs geo mix",
+   "claim": "Playwire's AdMob guide: fill is 85-95% when 80%+ of traffic is Tier-1, 70-85% at 50% Tier-1, and 50-70% at 20% Tier-1. The guide cites no data source.",
+   "value": "50-70% fill at a 20% Tier-1 share",
+   "source_url": "https://www.playwire.com/blog/admob-ecpm-benchmarks-what-publishers-should-expect",
+   "source_date": "2025-09-17",
+   "confidence": "low",
+   "implication": "Block Bloom's 67% match rate and 637 loaded vs 989 failed ads are normal for an AdMob-only app with an emerging-market audience. More India/Tier-3 installs will push failures higher. Each failed rewarded ad currently grants the reward free (GameViewModel.kt:1211-1221 with the onFailFallback callers), so rewarded inventory is given away for nothing."
+  },
+  {
+   "topic": "FX rate",
+   "claim": "The rupee closed at 93.32 per USD on Thu 19 Nov 2026.",
+   "value": "Rs93.32/USD",
+   "source_url": "https://theprint.in/economy/rupee-rallies-for-4th-session-to-close-9-paise-higher-at-93-32-against-us-dollar/3103570/",
+   "source_date": "2026-11-19",
+   "confidence": "high",
+   "implication": "The model's Rs85/USD understates INR revenue by ~10%: GA4's $3.93 is Rs367, not Rs334, and $0.51/day is Rs48. This does not change the gap to Rs10k in any meaningful way."
+  },
+  {
+   "topic": "Casual-game ROAS and payer-rate benchmarks",
+   "claim": "Liftoff 2025 Casual Gaming Apps report: average D30 ROAS for casual games on Android was 15% in 2024. AppsFlyer Q3 2026, share of Android puzzle installs that pay within 30 days: UK 2.92%, US 1.85%, DE 1.86%, MX 0.97%, FR 0.45%, India 0.32%.",
+   "value": "Android casual D30 ROAS 15%; US puzzle 30-day payer rate 1.85%",
+   "source_url": "https://liftoff.ai/?p=35032 ; https://www.appsflyer.com/?p=549948",
+   "source_date": "2025-07-28; 2026-11-05",
+   "confidence": "medium",
+   "implication": "An average casual game gets back only ~15% of Android UA spend in 30 days, so no scenario pays back within the week (S1-S5 recover 3-7% in-week). The model's IAP of Rs0.5 per Tier-1 install by day 2 is plausible: 1.85% x ~Rs169 net is about Rs3 per US install over 30 days. Zero November purchases from ~80 Tier-1 players is not statistically surprising."
+  },
+  {
+   "topic": "Benchmark-adjusted rerun of the week-1 model (sensitivity)",
+   "claim": "I re-ran a read-only copy of bb_week1_model.js with four changes: (a) today's observed CPIs for today's budgets, with every extra rupee priced at benchmarks (India Rs9.3, Tier-2 Rs30, Tier-1 Rs100 per opened install); (b) a Black Friday x1.13 on Tier-1 for the whole week; (c) Rs93.32/USD; (d) India ARPDAU Rs0.05. Results: S1 997 downloads, avg DAU 198, Rs544 (AdMob est. Rs625). S2 2,081 downloads, DAU 588 on Day 7, avg 375, Rs658. S3 4,541 downloads, avg DAU 787, Rs912. S4 2,690 downloads, avg 478, Rs1,619 (Rs1,862). S5 5,316 downloads, avg 918, Rs3,157 (Rs3,630). Learning-phase inflation is not included, so these remain upper bounds.",
+   "value": "S1 ~1,000 downloads; S3 avg DAU ~790; best revenue S5 ~Rs3.2-3.6k on Rs96.7k spend",
+   "source_url": "C:/Users/AJAY~1.WAG/AppData/Local/Temp/claude/e8459d6bbeb92c11/3f49de16-d0eb-4e63-b147-6e335d5c963c/scratchpad/bb_benchmarks/bb_week1_bench_sensitivity.js",
+   "source_date": "2026-11-22 (derived from the sources above)",
+   "confidence": "low",
+   "implication": "1,000 downloads in the week is still borderline-feasible at ~Rs9.7k (S1). A 500 average DAU needs S3-level India spend from Day 2. 1,000 downloads per day and 500 DAU on every day are out of reach. Rs10k revenue is out of reach in every scenario. Separately, the original model's 'revenue Day 7' column and the S2 daily revenue column are really cumulative week totals: bb_week1_model.js:43 pushes the running `rev` and lines 59/62 print it."
+  }
+ ],
+ "assumption_checks": [
+  {
+   "assumption": "Cost per OPENED install Tier-1 = Rs25, rising 15% per doubling of daily budget",
+   "verdict": "too_optimistic",
+   "note": "Holds at today's Rs500/day (Rs19.71 per Play install observed). At Rs3k-8k/day the model gives Rs35-52, while AppsFlyer Q3 2026 Android puzzle CPI is US $4.81 (Rs449), UK $3.45 (Rs322), CA $3.62, AU $4.54, and even US hypercasual is $1.55 (Rs145). The 15%-per-doubling curve is far too gentle. Treat each extra Tier-1 rupee as Rs100-450 per opened install."
+  },
+  {
+   "assumption": "Black Friday: Tier-1 CPI x1.3 on Days 5-7 only",
+   "verdict": "too_pessimistic",
+   "note": "Singular measured US Black Friday-week CPI at +13% vs mid-October, lasting about a month, and +7% outside the US. The premium is half the size the model uses but covers the whole week of 22-28 Nov, not just Days 5-7. The net effect is small."
+  },
+  {
+   "assumption": "Cost per OPENED install Tier-2 = Rs8 (+15% per doubling)",
+   "verdict": "too_optimistic",
+   "note": "AppsFlyer Q3 2026 Android puzzle CPI: Brazil $0.49 (Rs46), Mexico $0.44 (Rs41), Philippines $0.29 (Rs27), Indonesia $0.26 (Rs24). Adjust's LATAM all-genre CPI is $0.14 (Rs13). The model is 2-6x too cheap."
+  },
+  {
+   "assumption": "Cost per OPENED install Tier-3/India = Rs4, rising to ~Rs6.4-6.9 at Rs3,200-6,000/day",
+   "verdict": "too_optimistic",
+   "note": "Mildly optimistic. Rs4 is fine at Rs200/day (App-1 pays Rs2.28 per Play install). At scale, benchmarks are India puzzle $0.10 (Rs9.3), casual median $0.12 (Rs11) and hypercasual $0.03 (Rs2.8). India CPI also rises in weeks 2-4 after Diwali (+21% vs July in 2025), and Google warns early CPI is inflated. Plan Rs9-12 per opened install for incremental India spend."
+  },
+  {
+   "assumption": "Budget changes deliver next day (at the modelled CPI)",
+   "verdict": "too_optimistic",
+   "note": "Spend can rise the same or next day, since Google may spend up to 2x the daily budget. But Google advises at most 20% budget changes every 2-3 days, says Android learning lasts at least 7 days, warns early CPI may be inflated, and expects ramp-up 'fluctuations or lower spend'. Delivery is plausible; delivery at the modelled CPI is not."
+  },
+  {
+   "assumption": "Google can absorb India Rs3,200/day from Day 4 (S2) or Rs6,000/day from Day 2 (S3)",
+   "verdict": "too_optimistic",
+   "note": "Inventory is not the constraint: Rs6k is about 600 installs at benchmark prices. Efficiency and process are. The jump is 16-30x against the 20% guidance, the campaign stays in learning all week, App-1 already bids on India in the same auctions, and prepaid funds paid by net banking take 1-5 business days to arrive (card is near-immediate)."
+  },
+  {
+   "assumption": "Revenue per daily player Tier-1 = Rs1.4",
+   "verdict": "supported",
+   "note": "For US players, my estimate from eCPMs puts banner+rewarded at Rs0.7-2.1 per DAU (Tenjin x CAS US Android rewarded $28-30, banner ~$1.2; Appodeal US rewarded $13, banner $0.45). The caveat is mix: if cheap 'Tier-1' installs are mostly EU, eCPMs run 45-80% lower (UK rewarded $7.01, DE $5.26, FR $2.76)."
+  },
+  {
+   "assumption": "Revenue per daily player Tier-2 = Rs0.3",
+   "verdict": "supported",
+   "note": "Brazil and Mexico eCPMs are 16-24% of US levels (rewarded $2.03, banner $0.10-0.11), which implies Rs0.22-0.34. Indonesia and the Philippines are lower, about Rs0.12-0.18."
+  },
+  {
+   "assumption": "Revenue per daily player Tier-3 = Rs0.03",
+   "verdict": "too_pessimistic",
+   "note": "For an India-only campaign, US:India eCPM is about 20-22x (Appodeal; Mintegral says 22.1x), which implies ~Rs0.06-0.07. Block Bloom's own per-active-player ratio is 20.6x. Rs0.03 fits a Pakistan/Bangladesh/Kenya mix. The difference is immaterial to the targets."
+  },
+  {
+   "assumption": "Revenue per daily player organic = Rs0.4",
+   "verdict": "unknown",
+   "note": "No benchmark applies; it depends on the organic geo mix. GA4's US 'Direct' installs (36 installs, $1.46) suggest a US-heavy organic slice, which would support it."
+  },
+  {
+   "assumption": "Interstitials ON = revenue x1.6",
+   "verdict": "supported",
+   "note": "TopOn H1 2025: interstitials are 44% of casual-game ad revenue, which implies x1.7-2.0 for an app that has only rewarded and banner. Appodeal saw +10-20% from cadence changes alone. The realised figure depends on games per DAU: interstitials fire only on 'play again', after lifetime game 3, every 4th game (GameViewModel.kt:1230-1249), and only 20% of players see any ad today."
+  },
+  {
+   "assumption": "Interstitials ON = retention x0.92",
+   "verdict": "supported",
+   "note": "A reasonable central case on weak evidence. Controlled vendor tests (Appodeal, Samsung RecSys 2024) showed about 0% retention change with paced interstitials. Anecdotes go as far as -33% D1 when ads come early. The code's first-2-games guard (GameViewModel.kt:1233-1234) protects the first session."
+  },
+  {
+   "assumption": "Baseline retention curve R0 (D1 15%, D2 7%, D3 5%, D7 3.5%, ~1.1% D30)",
+   "verdict": "supported",
+   "note": "Matches Block Bloom's own GA4 cohorts. D7 is near the GameAnalytics median (~4%) and D30 is above the median (~0.7%). Against the market, D1 is weak: GameAnalytics median ~22% and AppsFlyer paid puzzle 29-34%."
+  },
+  {
+   "assumption": "Tier quality multipliers (T1 1.2, T2 1.0, T3 0.6, organic 1.1)",
+   "verdict": "unknown",
+   "note": "The benchmarks conflict. AppsFlyer Q3 2026 shows paid puzzle D1 in India (32.55%) at or above the US (29.20%), while GameAnalytics says Asia and Africa retain worst. The 0.6 reflects the cheap inventory Google buys rather than India itself. Check it against GA4 D1 by country and campaign."
+  },
+  {
+   "assumption": "vc40 (onboarding fix) at 100% from Thu 26 Nov lifts later installs to curve R1 (D1 24%, D7 7.2%)",
+   "verdict": "too_optimistic",
+   "note": "That is +64% on D1 and 2x on D7 from one onboarding fix, which would move D7 into GameAnalytics' top quartile (6-7%). Onboarding fixes mainly lift D1. Halving the uplift changes week results by less than 5%."
+  },
+  {
+   "assumption": "vc40 revenue x1.3 from Day 6",
+   "verdict": "unknown",
+   "note": "No public benchmark exists. It would need its own measurement."
+  },
+  {
+   "assumption": "Rs85 per USD",
+   "verdict": "too_pessimistic",
+   "note": "The rupee closed at 93.32 on 19 Nov 2026, so INR revenue is ~10% higher than modelled. GA4 1-21 Nov is Rs367, not Rs334."
+  },
+  {
+   "assumption": "AdMob console = ~1.15x GA4",
+   "verdict": "supported",
+   "note": "This comes from Block Bloom's own data ($4.50 vs $3.93). AdMob finalizes earnings on the 3rd of the next month and may deduct invalid traffic, so use GA4 as the floor."
+  },
+  {
+   "assumption": "Revenue per player stays at the 1-21 Nov level through the week (no seasonal change)",
+   "verdict": "supported",
+   "note": "Late November is near the eCPM peak (Bidlogic Q3 to Q4 2025: US Android rewarded +24%, interstitial +17%), and the baseline already includes it. Expect a January drop of 10-30%."
+  },
+  {
+   "assumption": "IAP from vc40: ~Rs0.5 per Tier-1/organic install around day 2 (T3 = 0)",
+   "verdict": "supported",
+   "note": "Weakly supported. AppsFlyer's 30-day payer rate for Android puzzle is 1.85% in the US and 0.32% in India, about Rs3 per US install over 30 days at ~Rs169 net. Zero November purchases are consistent with small numbers. It is immaterial to the Rs10k target."
+  }
+ ],
+ "summary": "Public 2024-2026 benchmarks show the week-1 model is most optimistic about install costs at scale, and fair to slightly pessimistic about money per player. This step covered benchmarks only; the GitHub daily-activity and issues check the user also asked for was not part of this task and is still to be done.\n\n**Install costs (AppsFlyer Q3 2026, Android puzzle, per opened install)**\n- **US/UK/Canada/Australia:** $3.45-4.81 (Rs322-449); US hypercasual is $1.55 (Rs145). The model's Tier-1 cost of Rs25-52 only holds at today's Rs500/day.\n- **Brazil/Mexico/Philippines/Indonesia:** $0.26-0.49 (Rs24-46), against the model's Rs8.\n- **India:** $0.10 (Rs9.3), against the model's Rs6.4-6.9 at Rs3-6k/day.\n- **This week's timing:** costs run about 13% higher from Black Friday week for roughly a month (Singular). India costs are also rising in the weeks after Diwali.\n\n**Retention**\n- Paid puzzle players keep D1 at 29-34% and D7 at 9-14%, and India is no worse than the US.\n- The all-genre median is D1 ~22%, D7 ~4%, D30 ~0.7% (GameAnalytics).\n- Block Bloom's D1 of 14.6% is about half the paid-puzzle norm. The onboarding fix (vc40) is the biggest lever, but the modelled jump to D1 24% / D7 7.2% is optimistic.\n\n**Money per player**\n- US Android ad rates are about $28-30 rewarded, $16-20 interstitial and $1.2 banner (per 1,000 ads, Tenjin x CAS 2024). Block Bloom's $26.93 rewarded matches that.\n- US is about 20x India for rewarded and interstitial and 11x for banner (Appodeal; Mintegral says 22x). Block Bloom's own per-player gap is 20.6x.\n- So the model's Tier-1 Rs1.4 and Tier-2 Rs0.3 per daily player hold up. India's Rs0.03 is about 2x low, but that doesn't matter for the targets.\n- **Interstitials:** turning them on plausibly gives x1.6-2.0 revenue; interstitials are 44% of casual ad revenue in TopOn H1 2025. The 0.92 retention cost is a reasonable central case on weak evidence. The code waits until a player's 3rd game and then fires only on 'play again' every 4th game.\n- **Exchange rate:** the rupee closed at Rs93.32/USD on 19 Nov, so revenue is about 10% higher than the model's Rs85 implies.\n- **Season:** this week is near the annual ad-rate peak; January is typically 10-30% lower.\n\n**Google Ads rules**\n- Daily budget should be at least 50x the target cost per install, enough for 100 installs a day.\n- Change budgets by no more than 20% every 2-3 days. Learning takes at least a week on Android, and installs cost more during it.\n- Target-ROAS bidding needs 10 conversions a day, and there are zero purchases. A target-CPA campaign on tutorial_complete is a viable week-2 option.\n- Rs3-6k/day for India can probably be spent within 1-2 days, but not at the modelled cost and not within Google's guidance. Top up the prepaid funds by card (net banking takes 1-5 business days). If a separate India campaign is added, exclude India from App-1 so they don't compete.\n\n**Operational**\n- **Play promotional content:** submit at least 4 days before the start (approval can take up to 4 days); featuring needs 14 days. A Thursday start must be submitted today.\n- **AdMob payout:** threshold is $100, earnings finalize on the 3rd and pay around the 21st. This week's revenue brings in no cash.\n- **Meta Audience Network:** needs the adapter added to the app. Block Bloom is pinned to play-services-ads 23.2.0 (app/build.gradle.kts:203-207), so this needs a release with an older adapter or a Kotlin upgrade. It does nothing this week.\n\n**Model re-run with benchmark costs**\n- **What changed:** I kept today's observed costs for today's budgets, priced every extra rupee at benchmark (India Rs9.3, Tier-2 Rs30, Tier-1 Rs100), and used Rs93.32/USD.\n- **Downloads and players:**\n\n| Scenario | Downloads in week | Average daily players |\n|---|---|---|\n| S1 | ~1,000 | 198 |\n| S2 | 2,081 (588 players on Day 7) | 375 |\n| S3 | 4,541 | 787 |\n\n- **Revenue:** the best case is S5 at about Rs3.2-3.6k on Rs96.7k of ad spend.\n- **Against the targets:**\n  - 1,000 downloads in the week is borderline-feasible at about Rs9.7k of spend.\n  - 500 average daily players needs S3-level India spend (~Rs6k/day) starting Day 2.\n  - 1,000 downloads per day and 500 daily players on every day are not reachable.\n  - Rs10k revenue is out of reach in every scenario.\n- **Model bug:** in bb_week1_model.js, the 'revenue Day 7' column and the S2 daily revenue column print the running week total, not that day's revenue (line 43 pushes the cumulative figure; lines 59 and 62 print it).\n\nFiles are in C:/Users/AJAY~1.WAG/AppData/Local/Temp/claude/e8459d6bbeb92c11/3f49de16-d0eb-4e63-b147-6e335d5c963c/scratchpad/bb_benchmarks/:\n- bb_week1_bench_sensitivity.js"
+}

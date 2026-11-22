@@ -42,7 +42,7 @@ function run(sc) {
 		}
 		const di = i.t1 + i.t2 + i.t3 + i.organic;
 		installs += di; rev += r; dauSum += dau;
-		out.push({ d, installs: di, dau, rev, spend: live.t1 + live.t2 + live.t3 });
+		out.push({ d, installs: di, dau, rev: r, spend: live.t1 + live.t2 + live.t3 });
 	}
 	return { out, spend, rev, installs, avgDau: dauSum / 7 };
 }

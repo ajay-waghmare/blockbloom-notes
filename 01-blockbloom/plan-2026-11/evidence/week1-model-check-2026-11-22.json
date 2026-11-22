@@ -1,0 +1,189 @@
+{
+ "errors_found": [
+  {
+   "issue": "The daily revenue column is actually cumulative. bb_week1_model.js:43 pushes `rev` (the running total declared at :22 and summed at :42) instead of the day's `r`. So the summary column 'revenue Day 7' (:59) and the S2 daily table (:62) print week-to-date revenue, not the day's.",
+   "impact": "The Saturday run-rate is overstated 4-7x. S0 prints Rs370 against a true Rs52/day, S2 Rs651 against Rs161, S3 Rs887 against Rs214, S4 Rs2,373 against Rs539, and S5 Rs5,164 against Rs1,201. Weekly totals are correct, and growth-model.js:44/55 does not have this bug."
+  },
+  {
+   "issue": "The scenario labels (bb_week1_model.js:50-52) do not match what the scenarios buy, so none of S1-S3 is a minimum spend.",
+   "impact": "S1 ('1k downloads', Rs9.7k) buys 1,363 first opens; the minimum is Rs4.95k, or Rs7.3k keeping today's T1. S2 ('500 DAU on Day 7', Rs19.3k) gives 786 on Saturday and a weekly average of 498, so it just misses the average reading; Saturday-only 500 costs Rs3.4k, or Rs7.1k keeping today's budget. S3 ('500 DAU weekly average', Rs41.5k) averages 1,018; the minimum is Rs16.5k, or Rs18.7k keeping today's budget. That is 1.4x-5.6x overspend."
+  },
+  {
+   "issue": "The interstitial revenue lift (x1.6, :31 and :37) is applied to install-day players, but the code almost never shows them one. maybeInterstitialThen skips games 1-2 (GameViewModel.kt:1234), the countdown starts at 2 (:277), and both call sites (:844 going home, :1208 play again) pass through it. The first interstitial therefore comes in a player's 4th-5th game, and only 98 of 378 first-openers (26%) finished even one game (baseline :127, :138).",
+   "impact": "Limiting the lift to returning players cuts S4 week revenue from Rs2,721 to Rs2,005 (-26%) and S5 from Rs5,920 to Rs4,296 (-27%), AdMob basis. The best in-week return on spend falls from 14.8% to 11.0%, and the model minimum for Rs10k rises from Rs1.25 lakh to Rs1.76 lakh."
+  },
+  {
+   "issue": "Day 1 does not match recent days. At today's Rs700 the model gives 78.5 first opens and 110.5 DAU. The same Rs700/day actually delivered 61.8 first opens and 88.5 DAU a day on 18-21 Nov (70.0 first opens on 18-20 Nov; baseline :29-32). Legacy players start at 32, while measured returning users were 22-30.",
+   "impact": "The model's costs per opened install are 13-30% too cheap, so CPI x1.2 is the best-fit case, not x1.0. At x1.2 every download and DAU minimum rises about 23%, S2's weekly average drops to 421, and the Rs10k minimum rises to Rs1.54 lakh."
+  },
+  {
+   "issue": "The 30-day model (growth-model.js:24) has no cost scaling: Rs25/8/4 at any budget. The week-1 model adds +15% per budget doubling (bb_week1_model.js:16-18). growth-model.js:21 also uses a vc40 revenue lift of x1.6 from Day 6, against x1.3 in week-1 (:31). And it applies budgets the same day (:39-41), using T2 instead of the live App-1 on Day 1.",
+   "impact": "With week-1's own scaling rule, path C's Day-30 installs/day fall from 1,106 to 741, DAU from 2,167 to 1,515, revenue/day from Rs1,116 to Rs890, and 30-day earnings from Rs13.7k to Rs11.8k. B+ falls from 161 to 142 installs/day and DAU from 479 to 427. So the roadmap claim 'Only the Rs77k path hits all three targets' (11-growth-roadmap-30-days.md:36) fails. The Day-7 scoreboard figure of Rs112/day (:401) depends on the x1.6 lift."
+  },
+  {
+   "issue": "GA4 and AdMob revenue are mixed. (a) 'AdMob est.' multiplies total revenue, purchases included, by 1.15 (:38 + :59). (b) The 1.15 is month-to-date ($4.50 vs $3.93). The handoff's '$0.80-1.20/day' (docs/PROJECT_HANDOFF_AND_STRATEGIC_ROADMAP.md:93) against GA4's $0.44-0.86 on 19-21 Nov implies anything from about 1.0x to 2.4x. (c) The roadmap defines revenue as AdMob + Play (:49, :56-57), but its Rs43/day baseline and its model are on GA4 basis.",
+   "impact": "(a) is trivial (Rs3-19). (b) matters: at 1.6x the Rs10k minimum falls from Rs1.25 lakh to Rs85k, and S5 rises from Rs5.9k to Rs8.2k, but no verdict changes. (c) means the roadmap understates revenue against its own target definition."
+  },
+  {
+   "issue": "The retention curve is applied to the wrong reference. R0 (D1 15%) was measured on cohorts that were about 47% Cross-network (T3), and then T3 gets x0.6 on top (:10, :12), giving 9% D1. The 19 Nov cohort was 43 of 49 Cross-network yet returned 18% on day 1. That puts T3 D1 at least 7% even if every other user returned, and about 17% if the others returned at 25%; 18 Nov implies about 13%. Separately, the 14.6% headline (baseline :180, roadmap :85) leaves out 32 installs from cohorts with zero returns: it is 13.2% over all 334 (13.9% excluding the partial 20 Nov cohort).",
+   "impact": "The T3 penalty is probably counted twice. With T3 quality 1.0, the 500-DAU minimums fall about 9-10%: the average from Rs16.5k to Rs14.9k, every day from Rs14.5k to Rs13.1k. The D1 headline is about 1 point high. No verdict changes."
+  },
+  {
+   "issue": "The back-of-envelope for Rs10k (bb_week1_model.js:64-66, 'Rs70-100k/week') ignores four things: Day 1 is locked, CPI rises with scale, Black Friday raises T1 cost, and about 70% of a paid install's in-week revenue comes on its install day.",
+   "impact": "The model's own minimum is Rs1.25 lakh as written and Rs1.76 lakh with the code-guard fix. Even with unlimited T1 installs at an unscaled Rs25, the 14.8% in-week return ceiling needs at least Rs65.9k."
+  },
+  {
+   "issue": "The one-day delivery lag is coded correctly (:24-25: today's Rs700 is locked, a change delivers tomorrow). But the model assumes a brand-new India or T2 campaign spends its full budget on its first day, and S4/S5 raise T1 6x-16x overnight. That breaks the roadmap's own W4.4 (hold T1 flat in Black Friday week, :280) and W4.5 (at most +30% per 2 days, :281). It also breaks Google's guidance: 'Changes made to your in-flight campaign before the first 100 conversions have registered may disrupt learning'; budget at least 50x the tCPI (https://support.google.com/google-ads/answer/14104492); wait for 100 conversions before judging cost (https://support.google.com/google-ads/answer/7130502).",
+   "impact": "If Monday delivers only 50%, the cheapest 500-every-day plan reaches 297 DAU on Monday, not 500. Under a ramp of at most 20% a day, the week's revenue tops out at about Rs1.3k."
+  },
+  {
+   "issue": "Installs and first opens are different counts. The model's 'downloads' are GA4 first opens (cost per OPENED install), matching the roadmap definition (:50). The model's own CPIs, against Google Ads' Rs19.71 and Rs2.28 per Play install, imply 1.27 Play installs per first open for T1 and 1.75 for T3.",
+   "impact": "Counted as Play installs, today's unchanged Rs4.9k already yields about 843 'downloads' a week. 1,000 in the week costs Rs5.3k keeping today's budget, and 1,000 a day Mon-Sat costs Rs22k instead of Rs40.6k. The target should name its counter."
+  },
+  {
+   "issue": "CPI scaling is linear in log2 (+15% of the base per doubling, :16-18), not compounding, and it is untested above Rs500 (T1) and Rs200 (T3). The India-only base of Rs4 is borrowed from App-1's mix, which is heavy on Pakistan, Bangladesh and Kenya (Cross-network: PK 38, IN 34, BD 31, KE 11).",
+   "impact": "With compounding, the 1,000-a-day Mon-Sat minimum rises from Rs40.6k to Rs47.8k, and the Rs10k minimum from Rs1.25 lakh to Rs1.51 lakh. The risk that India alone costs more is covered by the CPI x1.5 case."
+  },
+  {
+   "issue": "The Black Friday x1.3 raises T1 cost only, Days 5-7 (:16). The revenue side is not raised, although US eCPMs also rise in Thanksgiving week, and T2 Black Friday markets (Brazil, Mexico) are ignored.",
+   "impact": "Revenue is slightly conservative, and the optimiser front-loads T1 spend into Mon-Wed. No verdict impact."
+  },
+  {
+   "issue": "vc40 is assumed on time. The x1.3 revenue lift from Day 6 applies to every player, including those not yet updated (:31), and R1 is assumed for installs from Thu 26 Nov. But no release/vc40 branch exists yet (latest commit d0235e0, 21 Nov 23:01, docs only). Cut, internal build, 20% and 100% would all have to fit into 4 days.",
+   "impact": "If vc40 slips past Saturday, the 500-DAU average rises from Rs16.5k to Rs17.0k and the Rs10k minimum from Rs1.25 lakh to Rs1.35 lakh. Small this week, large for the 30-day plan."
+  },
+  {
+   "issue": "Legacy players: legacy(d) = 15 + 17·e^-(d-1)/10 (:19) gives 32 on Day 1 falling to 24 on Day 7. The decay of the 18-21 Nov cohorts plus about 12 long-time players suggests about 28 falling to 17-19.",
+   "impact": "About 5 DAU too high by Saturday, roughly 1% of 500. Immaterial."
+  },
+  {
+   "issue": "Two minor factual mismatches. (1) AdsConfig.kt:28 sets DEFAULT_INTERSTITIAL = true and BlockBloomApp.kt:63 registers it as the Remote Config in-app default, contradicting the class comment 'Both default to OFF' (:5). (2) The raw pull shows live_events IS set in RC v5 (weekend_cascade COIN_BOOST, baseline :250), while roadmap :139-140 and the brief say it is not set.",
+   "impact": "Before the first Remote Config activation (first launch or offline), interstitials are on at interval 3. The 2-game guard mostly neutralises this, but 'interstitials never' is not literally zero. The live_events state matters for the festival step W5.4, not for this model."
+  }
+ ],
+ "targets": [
+  {
+   "target": "1,000+ downloads",
+   "reading": "in the week Sun 22 - Sat 28 Nov, counted as GA4 first opens (the roadmap definition)",
+   "min_spend_inr": "Rs4,950 total: today's locked Rs700 plus India about Rs710/day Mon-Sat, with T1 paused. Rs7,310 keeping today's T1 Rs500 + App-1 Rs200 and lifting the T3/India pool to about Rs600/day.",
+   "expected_result": "1,000 first opens (about 1,640-1,690 Play installs). DAU rises from 111 to about 236-240 on Saturday (average about 196-199). Revenue Rs278 with T1 paused or Rs530 with T1 kept, AdMob basis.",
+   "achievable": "yes",
+   "reasoning": "India first opens are the cheapest download. S1 (Rs9.7k) overshoots by 36%, at 1,363. The minimum ranges from Rs3.3k (CPI x0.7) to Rs7.8k (CPI x1.5), Rs6.1k at the calibrated x1.2. Retention, revenue per player and interstitials do not move it. S1 itself misses at CPI x1.5 (925). Pausing T1 costs revenue, so the Rs7.3k version is the sensible one."
+  },
+  {
+   "target": "1,000+ downloads",
+   "reading": "in the week, counted as Play Console installs (device acquisitions)",
+   "min_spend_inr": "Rs2,720 with T1 paused and India about Rs340/day. Rs5,300 keeping today's Rs700/day plus about Rs70/day more India.",
+   "expected_result": "About 1,000 Play installs, which is about 600-630 first opens. Today's unchanged Rs4,900 already gives about 843.",
+   "achievable": "yes",
+   "reasoning": "Play counts installs that never open the app. Open rates implied by the model's own CPIs against Google Ads Rs19.71 / Rs2.28 are 79% for T1 and 57% for T3. On 17 Nov Play logged 173 installs against GA4's 29 + 93 first opens. The minimum ranges Rs1.9k-4.2k across CPI x0.7-1.5."
+  },
+  {
+   "target": "1,000 downloads per day",
+   "reading": "every day Sun 22 - Sat 28",
+   "min_spend_inr": "Not reachable at any spend.",
+   "expected_result": "Sunday is locked at today's Rs700: about 79 first opens (about 123 Play installs) in the model, 62-70 observed on 18-21 Nov.",
+   "achievable": "no",
+   "reasoning": "A budget change made today delivers tomorrow (bb_week1_model.js:24-25). Even a same-day change cannot buy about 920 more opened installs in the hours left, and a new campaign needs review and learning first."
+  },
+  {
+   "target": "1,000 downloads per day",
+   "reading": "every day Mon 23 - Sat 28, counted as GA4 first opens",
+   "min_spend_inr": "Rs40,600: India about Rs6,490/day plus T2 Rs120-180/day, T1 paused. Rs42,760 keeping today's budget. Practical flat version: India Rs6,550/day plus T1 Rs500 = Rs43,000.",
+   "expected_result": "1,000-1,001 first opens each day Mon-Sat; 6,081 for the week (about 10,400 Play installs). DAU about 1,040 on Monday rising to 1,355 on Saturday (average 1,042). Revenue only Rs730-930 for the week.",
+   "achievable": "conditional",
+   "reasoning": "A new India campaign has to spend about Rs6.5k (32x App-1's Rs200) on its first day at about Rs6.6 per opened install. India-only CPI is untested, and Google warns that changes before 100 conversions disrupt learning. The minimum ranges from Rs27.3k (CPI x0.7) to Rs63.9k (x1.5), and is Rs47.8k if scaling compounds. S3 (Rs41.5k) falls 24 short on Saturday (976). Counted as Play installs it costs Rs22k (India about Rs3,560/day). This buys players, not money: about Rs1 of revenue per Rs50 spent."
+  },
+  {
+   "target": "1,000 downloads per day",
+   "reading": "on Sat 28 Nov only (end-of-week run-rate)",
+   "min_spend_inr": "Rs7,310: pause Mon-Fri, then India about Rs6,490 plus T2 Rs120 on Saturday. Rs11,190 keeping today's Rs700/day all week plus the Saturday burst.",
+   "expected_result": "About 1,001 first opens on Saturday and 1,112-1,470 for the week. Saturday DAU about 1,030-1,060, back to about 180 on Sunday 29 Nov unless spend continues.",
+   "achievable": "conditional",
+   "reasoning": "Feasible as a one-day burst: decide Friday, it delivers Saturday. But it is a spike, not a sustained 1,000 a day, and a 32x one-day jump carries the same delivery risk. The minimum ranges Rs5.1k-11.2k across CPI x0.7-1.5."
+  },
+  {
+   "target": "500 daily active users",
+   "reading": "weekly average over Sun 22 - Sat 28 (7 days)",
+   "min_spend_inr": "Rs16,530 on the optimal schedule: India Rs2.0-3.8k/day plus T2 Rs300 on two days, T1 paused. Rs18,680 keeping today's budget. Practical flat version: India Rs2,540/day from Monday plus T1 Rs500 = Rs18,940. The 6-day Mon-Sat average costs Rs14,290 (Rs16,450 keeping today's budget).",
+   "expected_result": "Average 500: Sunday 111, Mon-Sat about 565. About 2,750-2,820 first opens. Revenue Rs470-710.",
+   "achievable": "conditional",
+   "reasoning": "Sunday's locked 111 has to be made up, so the 7-day average costs more than 500 every day from Monday. S3 (Rs41.5k) overshoots 2x (average 1,018), and S2 (Rs19.3k) gives 498. The minimum ranges from Rs11.0k (CPI x0.7) to Rs26.2k (x1.5), Rs20.3k at x1.2. D1 at 10% or 25% gives Rs17.7k or Rs14.6k. It depends on India delivering from Monday at the modelled ~Rs6 per opened install."
+  },
+  {
+   "target": "500 daily active users",
+   "reading": "every day Mon 23 - Sat 28",
+   "min_spend_inr": "Rs14,460: India Rs2,720 on Monday tapering to Rs1,880 on Saturday, T1 paused. Rs16,610 keeping today's budget. Practical flat version: India Rs2,570/day plus T1 Rs500 = Rs19,120.",
+   "expected_result": "DAU 111, 501, 500, 501, 501, 501, 500 (Mon-Sat average 501). About 2,490 first opens. Revenue Rs390-670.",
+   "achievable": "conditional",
+   "reasoning": "Monday needs about 460 first opens from a campaign set up today. At 50% first-day delivery, Monday reaches only 297 and Tue-Sat 481-495. The minimum ranges from Rs9.7k (CPI x0.7) to Rs22.8k (x1.5), Rs17.7k at x1.2. D1 at 10% or 25% gives Rs15.4k or Rs12.9k; T3 quality 1.0 gives Rs13.1k. About 70% of Saturday's DAU are that day's installs, so the level holds only while spend continues."
+  },
+  {
+   "target": "500 daily active users",
+   "reading": "on Sat 28 Nov (end of week)",
+   "min_spend_inr": "Rs3,420: today's Rs700 plus a Saturday-only India burst of about Rs2,720, all paid spend paused Mon-Fri. Rs7,120 keeping today's Rs700/day plus about Rs2,220 extra India on Saturday. Rs9,420 if India is warmed up at Rs700/day Mon-Fri.",
+   "expected_result": "Saturday DAU 501, about 470 of them installed that day. Weekly average 116-250. Revenue Rs240-555. Sunday 29 Nov falls back to about 100-150.",
+   "achievable": "yes",
+   "reasoning": "GA4 counts install-day players as active, so a one-day burst is the cheapest route. The minimum ranges from Rs2.5k (CPI x0.7) to Rs5.1k (x1.5), Rs4.1k at x1.2. Retention and interstitials barely matter (Rs3.38-3.44k). S2 (Rs19.3k, 786 on Saturday) overshoots 5.6x. It is a vanity peak and leaves no lasting player base."
+  },
+  {
+   "target": "Rs10,000+ revenue in the week",
+   "reading": "AdMob earnings plus Play purchases, Sun 22 - Sat 28 Nov",
+   "min_spend_inr": "No sane spend reaches it. Model minimum Rs1,24,800 as written: T1 Rs1.16 lakh, including Rs35.6k on Monday (71x today), with interstitials ON from today. Rs1,76,200 when the interstitial lift reaches only returning players. Hard floor Rs65,900 even with unlimited T1 at an unscaled Rs25 per opened install.",
+   "expected_result": "At the model minimum: Rs10k of revenue for a net loss of Rs1.15-1.66 lakh, about 3,400 first opens, average DAU about 670. Most revenue reachable by Saturday: about Rs1.3k if budgets rise at most 20% a day, as Google advises (Rs1.0k with the code guard, Rs1.8k if AdMob = 1.6x GA4). About Rs6.0k if budgets double every day (Rs83.8k spend). Today's Rs4.9k, optimally re-aimed, earns Rs560-875.",
+   "achievable": "no",
+   "reasoning": "Only 10-15% of what a T1 install costs comes back inside the week. The best slot is a Monday T1 install, earning Rs3.71 for Rs25 (14.8%); 11.0% with the code guard, 9.6% without interstitials. About 70% of that is earned on the install day, and day-1 returns are only 15-24%. Single-factor sensitivities keep the minimum at Rs54.6k or more: Rs54.6k (revenue per player x2), Rs82.9k (CPI x0.7), Rs85.1k (AdMob 1.6x), Rs1.03 lakh (D1 25%). That is always 5x the revenue or more. Only the all-optimistic corner (CPI x0.7, revenue x2, AdMob 1.6x and D1 25% together) gets down to Rs19.7k, and if budgets rise at most 20% a day even that corner stops at Rs5.6k. Purchases would need about 59 remove_ads sales at Rs199; November has none."
+  }
+ ],
+ "sensitivity": [
+  {
+   "assumption": "Cost per opened install (all tiers; base T1 Rs25, T2 Rs8, T3 Rs4 at today's budgets)",
+   "low_case": "x0.7: 1k first opens in the week Rs3.3k; 1k a day Mon-Sat Rs27.3k; 1k on Saturday Rs5.1k; 500 DAU average Rs11.0k; every day Rs9.7k; Saturday Rs2.5k; Rs10k Rs82.9k. With budgets rising at most 20% a day the week earns Rs1.8k; doubling earns Rs8.5k.",
+   "high_case": "x1.5: Rs7.8k; Rs63.9k; Rs11.2k; Rs26.2k; Rs22.8k; Rs5.1k; Rs1.98 lakh. Capped ramps earn Rs1.0k / Rs4.1k. The calibrated x1.2: Rs6.1k; Rs49.8k; Rs8.8k; Rs20.3k; Rs17.7k; Rs4.1k; Rs1.54 lakh.",
+   "effect_on_verdict": "No target verdict flips; this is the only input that moves the download and DAU spends much (-33% / +58%). Two plan scenarios do flip: S1 falls to 925 first opens at x1.5 and misses 1k, and S2's weekly average reaches 500 only at x0.7 (421 at the best-fit x1.2). The model already looks 13-30% too cheap against 18-21 Nov."
+  },
+  {
+   "assumption": "Day-1 retention (whole curve scaled; base D1 15%, R1 24% for vc40 installs)",
+   "low_case": "D1 10%: 500 DAU average Rs17.7k (+7%); every day Mon-Sat Rs15.4k (+6%); Saturday Rs3.44k; Rs10k Rs1.39 lakh. Downloads unchanged.",
+   "high_case": "D1 25%: Rs14.6k (-12%); Rs12.9k (-11%); Rs3.38k; Rs10k Rs1.03 lakh.",
+   "effect_on_verdict": "No flip. Within one week most daily players are that day's installs, so return rates barely move the DAU spends. Retention matters for the 30-day plan, not this week. S2's average reaches 500 (542) only at D1 25%."
+  },
+  {
+   "assumption": "Revenue per daily player (base T1 Rs1.4, T2 Rs0.3, T3 Rs0.03, organic Rs0.4, legacy Rs0.5; purchases scaled too)",
+   "low_case": "x0.5: Rs10k minimum Rs2.78 lakh. With budgets rising at most 20% a day the week earns Rs0.66k; doubling every day earns Rs3.0k.",
+   "high_case": "x2: Rs10k minimum Rs54.6k. With budgets rising at most 20% a day the week earns Rs2.7k; doubling every day earns Rs12.0k on Rs83.8k. S5 (Rs96.7k) earns Rs11.8k.",
+   "effect_on_verdict": "Rs10k stays NO if budgets rise at most 20% a day. At x2 it becomes reachable only by spending Rs55-97k (5-10x the revenue) with T1 raised 20-64x overnight. No effect on the download or DAU targets."
+  },
+  {
+   "assumption": "Interstitials ON from Day 1 (Remote Config, no release) vs never",
+   "low_case": "Never: Rs10k minimum Rs2.06 lakh. With budgets rising at most 20% a day the week earns Rs0.85k; doubling every day earns Rs3.9k. DAU targets slightly cheaper (Rs16.53k average).",
+   "high_case": "ON from Day 1: Rs10k minimum Rs1.25 lakh with the lift on all players as written, Rs1.76 lakh with the lift on returning players only (code guard). DAU spends +1-2% (Rs16.79k average, Rs14.66k every day) from the x0.92 return.",
+   "effect_on_verdict": "No flip. Interstitials raise revenue at a given spend: S5 goes from Rs3.8k to Rs5.9k, and today's Rs4.9k re-aimed at T1 earns Rs875 instead of Rs564. They cannot close a ~10x gap, and most of the x1.6 never reaches install-day players."
+  },
+  {
+   "assumption": "AdMob revenue as a multiple of GA4 (extra; base 1.15 month-to-date)",
+   "low_case": "1.15: as base, Rs10k minimum Rs1.25 lakh.",
+   "high_case": "1.6 (handoff daily pacing $0.80-1.20 against GA4 $0.44-0.86): Rs10k minimum Rs85.1k. With budgets rising at most 20% a day the week earns Rs1.8k; doubling every day earns Rs8.3k. S5 earns Rs8.2k.",
+   "effect_on_verdict": "No flip. Pull the AdMob daily report to settle the ratio, since the revenue target is on AdMob basis."
+  },
+  {
+   "assumption": "First-day delivery of a new India or T2 campaign (extra; base = full budget the day after the decision)",
+   "low_case": "50% on its first day: the cheapest 500-every-day plan gets Monday DAU 297, and Tue-Sat 481-495.",
+   "high_case": "Full delivery on Monday: as base.",
+   "effect_on_verdict": "This is the one input that flips readings: '500 DAU every day from Monday' and '1,000 per day Mon-Sat' fail on Monday. Weekly and Saturday readings are unaffected. Hence 'conditional'."
+  },
+  {
+   "assumption": "vc40 timing (extra; base 100% on Thu 26 Nov, but no release/vc40 branch exists yet)",
+   "low_case": "vc40 slips past Saturday: 500 DAU average Rs17.0k (+3%), every day Rs14.9k, Rs10k Rs1.35 lakh.",
+   "high_case": "On time: as base.",
+   "effect_on_verdict": "No flip this week."
+  },
+  {
+   "assumption": "T3 return quality and the shape of cost scaling (extra)",
+   "low_case": "T3 quality 1.0 instead of 0.6, as the 18-19 Nov cohorts suggest: 500 DAU average Rs14.9k, every day Rs13.1k.",
+   "high_case": "Cost compounding +15% per doubling: 1k a day Mon-Sat Rs47.8k; 500 DAU average Rs18.0k; Rs10k Rs1.51 lakh.",
+   "effect_on_verdict": "No flip."
+  }
+ ],
+ "summary": "I rebuilt the week-1 model independently. A replica reproduces every number the original prints (S0-S5), and a second, parameterised simulator matches it before applying fixes. The weekly totals are arithmetically right, but the model has real errors:\n- **Revenue column bug.** The 'revenue Day 7' column and S2's daily table are cumulative (bb_week1_model.js:43). S2's Saturday is Rs161/day, not Rs651.\n- **Scenarios are not minimums.** S1-S3 overspend 1.4-5.6x against the true minimum for their labelled targets, and S2 actually misses the weekly average (498).\n- **Interstitial lift is overstated.** The x1.6 is applied to install-day players, who the code never shows an interstitial before their 4th-5th game (GameViewModel.kt:277, :1234). S4/S5 revenue is about 26% too high.\n- **Costs are too cheap.** Day 1 gives 78.5 first opens and 110.5 DAU against 61.8 and 88.5 actually delivered on 18-21 Nov, so CPIs are 13-30% low.\n- **The 30-day model has no cost scaling.** With week-1's own rule, path C reaches 741 installs/day on Day 30, not 1,106, so the roadmap claim that path C hits all three targets fails.\n- **Smaller issues:** the GA4/AdMob mix-up, T3 retention double-penalised, the D1 headline leaving out zero-return cohorts, and an aggressive vc40 schedule.\n\nMinimum spend for the week, including today's locked Rs700:\n- **1,000 downloads in the week:** YES. Rs4.95k, or Rs7.3k keeping today's T1 (Rs2.7k-5.3k counted as Play installs).\n- **1,000 per day every day Sun-Sat:** NO. Sunday is locked at about 79 first opens.\n- **1,000 per day Mon-Sat:** CONDITIONAL. Rs40.6k-43k with a new India campaign at about Rs6.5k/day from Monday.\n- **1,000 on Saturday only:** CONDITIONAL. Rs7.3k-11.2k as a one-day burst.\n- **500 DAU weekly average Sun-Sat:** CONDITIONAL. Rs16.5k-19k (Mon-Sat average Rs14.3k).\n- **500 DAU every day Mon-Sat:** CONDITIONAL. Rs14.5k-19k, and it fails on Monday if the new campaign under-delivers.\n- **500 DAU on Saturday:** YES. Rs3.4k (Saturday India burst only), Rs7.1k keeping today's budget.\n- **Rs10k revenue:** NO. The model minimum is Rs1.25 lakh as written (Rs1.76 lakh with the code-guard fix), and Monday's T1 budget would have to be 71x today's. The in-week return ceiling of 14.8% sets a hard floor of Rs65.9k. If budgets rise at most 20% a day, as Google advises, the week tops out at about Rs1.3k; doubling budgets daily (Rs84k) reaches about Rs6k.\n\nNo single sensitivity flips a verdict (CPI x0.7/x1.5, D1 10%/25%, revenue x0.5/x2, interstitials on or never, AdMob 1.6x, vc40 slip, T3 quality, compounding CPI). CPI moves the download and DAU spends by -33%/+58%. Two things do flip results: Monday under-delivery breaks the 'every day from Monday' readings, and the four-factor optimistic corner brings Rs10k down to Rs19.7k of spend (still only Rs5.6k if budgets rise at most 20% a day).\n\nThis step covered the model re-check only, not the GitHub activity and issues check. Scripts and outputs (read-only analysis; no repo edited, nothing written to Google, Play, Firebase or GitHub):\n- C:/Users/AJAY~1.WAG/AppData/Local/Temp/claude/e8459d6bbeb92c11/3f49de16-d0eb-4e63-b147-6e335d5c963c/scratchpad/bb_model_recheck/recheck.js\n- C:/Users/AJAY~1.WAG/AppData/Local/Temp/claude/e8459d6bbeb92c11/3f49de16-d0eb-4e63-b147-6e335d5c963c/scratchpad/bb_model_recheck/results.json\n- C:/Users/AJAY~1.WAG/AppData/Local/Temp/claude/e8459d6bbeb92c11/3f49de16-d0eb-4e63-b147-6e335d5c963c/scratchpad/bb_model_recheck/extras.js\n- C:/Users/AJAY~1.WAG/AppData/Local/Temp/claude/e8459d6bbeb92c11/3f49de16-d0eb-4e63-b147-6e335d5c963c/scratchpad/bb_model_recheck/extras.json\n- C:/Users/AJAY~1.WAG/AppData/Local/Temp/claude/e8459d6bbeb92c11/3f49de16-d0eb-4e63-b147-6e335d5c963c/scratchpad/bb_model_recheck/flips.js\n- C:/Users/AJAY~1.WAG/AppData/Local/Temp/claude/e8459d6bbeb92c11/3f49de16-d0eb-4e63-b147-6e335d5c963c/scratchpad/bb_model_recheck/flips.json\n\nSources for the delivery limits: https://support.google.com/google-ads/answer/14104492 and https://support.google.com/google-ads/answer/7130502."
+}
