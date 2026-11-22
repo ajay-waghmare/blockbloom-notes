@@ -8,6 +8,11 @@ am ready to invest — revenue has to come from that." So this version spends on
 sets targets the data supports, and lets spend grow **only when the money is shown to come back**. v1.0's volume
 paths (₹42k / ₹77k) are kept in Appendix D for the record.
 
+**22 Nov update:** Gemini does all development and changes (Ajay's decision); wherever this file says "Agent",
+read "Gemini". The step-by-step execution plan is in `plan-2026-11/` (start with `00-README.md` and
+`01-day-by-day.md`); where the two differ — budget steps of about 20%, the first push only after vc40, and Gate B
+expected to hold the budget (≈ ₹14k for the month) — `plan-2026-11/` wins.
+
 **Built from:** the 21 Nov baseline (`reports/growth-baseline-2026-11-21.txt`, pulled with
 `scripts/growth-baseline-pull.js`), the Tier-1 model `scripts/growth-model-t1.js`, the app repo `main` at d0235e0
 (v1.15.1, vc39), and the app repo's `DAILY_ACTIVITY.md`, `MAJOR_ISSUES_AND_GO_LIVE_CHECKLIST.md` and

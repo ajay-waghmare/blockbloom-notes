@@ -114,7 +114,7 @@ opened install above ₹35 for 3 days → ₹300 (pause if it repeats).
 **Gemini**
 1. vc40 → **100%** if crash-free ≥ 99.5% and no ANR cluster; else halt (C-15) and fix.
 2. Release notes in 13 locales (`tools/release-notes/vc40.json`, CP release notes).
-3. Cut `release/vc41`; start V41-1 (mediation adapters) — the longest item.
+3. Cut `release/vc41`; start V41-01 (mediation adapters) — the longest item.
 
 **Done when:** vc40 at 100%.
 
@@ -153,15 +153,15 @@ tutorial completion ≥ 80% for vc40 players; day-1 return ≥ 22% for installs 
 - The day-1 return of the 28 Nov installs arrives on Day 9: if it changes the answer, change the budget on Day 10.
 - Record and schedule 7 clips (1 hour).
 
-**Gemini** — Gate A report (provisional), then the confirmation on Day 9. Continue V41-1.
+**Gemini** — Gate A report (provisional), then the confirmation on Day 9. Continue V41-01.
 
 ### Day 9 — Mon 30 Nov (Cyber Monday) · Budget ₹400
 **Ajay**
-1. Open the mediation network accounts: AppLovin, Liftoff, Pangle, Mintegral — payment and tax details (the
-   list of what each needs is in V41-1).
+1. Open the mediation network accounts (about 3 hours): AppLovin, Liftoff, Pangle, Mintegral — payment and tax details (the
+   list of what each needs is in V41-01).
 
 **Gemini**
-1. V41-1 adapters (versions that compile under the Kotlin 1.9 pins), V41-2 daily loop on home.
+1. V41-01 adapters (versions that compile under the Kotlin 1.9 pins), V41-02 daily loop on home.
 2. Gate A confirmation with the 28 Nov installs' day-1 return.
 
 ### Day 10 — Tue 1 Dec · Budget ₹480 (Gate A pass) or ₹300
@@ -170,7 +170,8 @@ tutorial completion ≥ 80% for vc40 players; day-1 return ≥ 22% for installs 
 2. Play Console: submit the **Winter Bloom** promotional content for 14–21 Dec (C-19).
 
 **Gemini**
-1. V41-3 reminders v2; V41-4 referral if it fits (else it moves to vc42).
+1. V41-03 reminders v2; V41-04 referral phase A (phase B, the inviter reward, moves to vc42 unless ahead).
+   vc41 is ~48 h of work in 6 days: if it slips, cut V41-04 phase B first, then the come-back chest.
 2. vc41 internal build; gates 1–3 with an ANR focus (new SDKs).
 
 **Done when:** vc41 internal build clean; Winter Bloom submitted.
@@ -229,11 +230,11 @@ tutorial completion ≥ 80% for vc40 players; day-1 return ≥ 22% for installs 
 1. Meta verified? If yes, tell Gemini to switch Meta on in the mediation group.
 
 **Gemini**
-1. Cut `release/vc42`; V42-1 Winter Bloom content, V42-2 Adventure on home.
+1. Cut `release/vc42`; V42-01 Winter Bloom content, V42-02 Adventure on home.
 
 ### Day 17 — Tue 8 Dec · Budget as Day 13
 **Gemini**
-1. V42-3 starter pack only if `offer_tap` ≥ 3%; V42-4 Arrow Bloom card.
+1. V42-03 starter pack only if `offer_tap` ≥ 3%; V42-04 Arrow Bloom card.
 2. vc42 internal build; gates 1–3.
 
 **Ajay**
@@ -295,7 +296,8 @@ yesterday's revenue; reply to reviews.
 - Day 26, Thu 17 Dec: Ajay — Reddit post #4.
 - Day 27, Fri 18 Dec: Gemini — vc43 hotfix slot, only if something is broken (no features, no SDKs).
 - Day 28, Sat 19 Dec: weekly review #4 (target: revenue ≥ ₹350 a day).
-- Day 29, Sun 20 Dec: Gemini — Winter Bloom ends at 23:59 UTC; remove its `live_events` value afterwards (C-11).
+- Day 29, Sun 20 Dec: nothing extra. Winter Bloom runs to the end of Mon 21 Dec; Gemini removes its `live_events`
+  value on Tue 22 Dec (C-11, V42-01).
 
 ### Day 30 — Mon 21 Dec · **Day-30 review**
 **Ajay + Gemini**
