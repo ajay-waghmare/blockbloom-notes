@@ -12,7 +12,7 @@ Meta verification, Play Console UI-only items, clips, posts, review replies and 
 | 01-day-by-day.md | Every day, 22 Nov – 21 Dec: Ajay steps, Gemini steps, budget, done-when | coming |
 | 02-gemini-dev-specs.md | vc40, vc41, vc42, vc43 specs | coming |
 | 03-console-runbooks.md | Google Ads, Firebase, Play Console, AdMob, GA4 click-by-click (C-01..C-25) | draft (UNVERIFIED items marked) |
-| 04-measurement-and-gates.md | KPI script spec, spend log, Gate A / Gate B formulas | coming |
+| 04-measurement-and-gates.md | KPI script spec (tools/growth-kpi.js), spend log, Gate A / Gate B formulas, daily + Saturday routines | draft |
 | 05-content-pack.md | Ad texts, US/UK listing, push texts, Reddit drafts, clip briefs, review replies, release notes | draft (not yet verified) |
 | evidence/ | Benchmarks (sourced) and the independent week-1 model check, 22 Nov | done |
 
