@@ -19,8 +19,8 @@ Handover\
     07-open-items.md               prioritised backlog, with who owns each item
     08-files-to-carry-manually.md  the secrets manifest (paths only, nothing copied here)
     09-code-review-2026-10-10.md   vc21 release check + whole-project code review, ranked findings
-    11-growth-roadmap-30-days.md   22 Nov-21 Dec plan for Rs30k revenue / 1,000 installs a day / 1,000+ players:
-                                   baseline, growth model, workstreams, release train, gates (+ growth\ spend log)
+    11-growth-roadmap-30-days.md   22 Nov-21 Dec plan v1.1: Tier-1 first, revenue first - week by week, day by day,
+                                   budget rules, gates, issues found (+ growth\ spend log, scripts\growth-model*.js)
     scripts\                       every Play/GA4/listing script that lived only in temp dirs
     reports\                       player workbooks, baseline report.json, store-listing dumps
     history\                       readable logs of the Block Bloom conversations (Aug->Oct 2026)
