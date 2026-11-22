@@ -12,7 +12,7 @@ Handover\
   01-blockbloom\
     01-project-brief.md            what the app is, every account/id, stack, repo map, flags
     02-current-state-and-history.md  state on 10 Oct 2026 (vc21 at 20%) + the full vc1->vc21 timeline
-    03-release-runbook.md          how a release is actually shipped, and every way it has gone wrong
+    03-release-runbook.md          how a release is shipped + every way it has gone wrong (22 Nov: status, vc40-vc43 calendar, staged rollout)
     04-analytics-and-metrics.md    how to pull Play/GA4 numbers, the latest numbers, the 3 traps
     05-revenue-plan.md             ads + IAP state, BillDesk/AdMob blockers, the recommendation
     06-new-machine-setup.md        toolchain + paths + emulator + what to edit after cloning
@@ -67,6 +67,16 @@ Handover\
    `C:\Users\Ajay.Waghmare\.android\avd\`, and the browser logins for the personal Google account.
 
 ## Decisions still yours (nothing below was actioned)
+
+> **22 Nov 2026: every item below is closed or replaced** (checked 22 Nov):
+> - `main` contains every release branch up to vc39;
+> - `play-rollout.js` reads `tools/release-notes/vc<N>.json` and stops without it;
+> - `vc20.json`, `vc21.json` and `play-reviews.js` are committed;
+> - 1.15.1 (39) is at 100%;
+> - revenue is plan v2.
+>
+> Release state, flow and calendar: `01-blockbloom\03-release-runbook.md`. Open decisions:
+> `01-blockbloom\plan-2026-11\00-README.md`.
 
 - **Merge the release branches into `main`.** `main` is 21 commits behind `release/vc19` and
   further behind `release/2026-10-09`, which is what is live. The documented flow ends in a
