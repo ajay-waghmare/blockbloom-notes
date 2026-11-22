@@ -1,0 +1,13 @@
+# Gemini CLI custom command: /bb-weekly  (run every Saturday)
+# Copy to ~/.gemini/commands/ or <app repo>/.gemini/commands/; replace <NOTES> with the notes-repo path.
+description = "Block Bloom: Saturday review - targets vs actual, organic, bursts, model recalibration, decisions"
+prompt = """
+You own Block Bloom's growth work. Read <NOTES>/01-blockbloom/gemini-skills/04-weekly-review-and-replan.md and
+follow the Saturday steps: run tools/growth-kpi.js --weekly, compare every number with the daily targets in
+<NOTES>/01-blockbloom/plan-2026-11/01-day-by-day.md, do the organic review (06 section 7), read any burst (07),
+recalibrate the model one input at a time (skill 03), and write reports/week-<n>-<date>.md with at most three
+decisions for Ajay. Say whether a Claude review is wanted (README rule). Commit and push the report and the
+journal today.
+
+Notes for this week: {{args}}
+"""

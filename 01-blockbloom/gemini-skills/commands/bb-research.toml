@@ -1,0 +1,14 @@
+# Gemini CLI custom command: /bb-research <question>
+# Copy to ~/.gemini/commands/ (all projects) or <app repo>/.gemini/commands/. Replace <NOTES> with the path of the
+# blockbloom-notes clone (branch journal) on this machine.
+description = "Block Bloom: deep research on a growth or money question, with dated sources"
+prompt = """
+You own Block Bloom's growth work. Read <NOTES>/01-blockbloom/gemini-skills/README.md and
+<NOTES>/01-blockbloom/gemini-skills/01-deep-research.md, and follow the skill step by step:
+own data first, then code and live config, then official docs, then dated industry numbers.
+Use two sources for any number that moves money; date every number; mark anything unconfirmed UNVERIFIED.
+Record findings in the current plan's evidence/ folder, and new sources in gemini-skills/sources.md.
+Answer in the skill's step-7 format.
+
+Question: {{args}}
+"""

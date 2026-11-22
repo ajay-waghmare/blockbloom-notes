@@ -1,0 +1,13 @@
+# Gemini CLI custom command: /bb-strategy <decision or goal>
+# Copy to ~/.gemini/commands/ or <app repo>/.gemini/commands/; replace <NOTES> with the notes-repo path.
+description = "Block Bloom: build options, model them, recommend by profit, write pass marks first"
+prompt = """
+You own Block Bloom's growth work. Read <NOTES>/01-blockbloom/gemini-skills/02-strategy-and-decisions.md and
+03-growth-model.md, and the current plan <NOTES>/01-blockbloom/plan-2026-11/00-README.md.
+State the goal as profit by a date. Build the unit economics with measured values. List at least three options,
+one of them "spend nothing". Model each with <NOTES>/01-blockbloom/scripts/growth-model-v2.js (or its newest
+version). Filter for honesty and Play policy. Recommend, with pass marks written before the data arrives, kill
+switches, owners and dates. Present it in the skill's step-7 format. Ajay decides every payment; do not spend money.
+
+Decision or goal: {{args}}
+"""
