@@ -13,6 +13,11 @@ read "Gemini". The step-by-step execution plan is in `plan-2026-11/` (start with
 `01-day-by-day.md`); where the two differ — budget steps of about 20%, the first push only after vc40, and Gate B
 expected to hold the budget (≈ ₹14k for the month) — `plan-2026-11/` wins.
 
+**22 Nov evening — plan v2 replaces this file's money sections (§1–§4 targets and budget, §7 daily budgets, §11
+gates).** Organic first in Tier-1; paid ads only in 7-day bursts: ₹3,500 committed, ₹10,500 at most to 31 Dec; profit
++₹1.6k by 31 Dec in the model (`scripts/growth-model-v2.js`). The every-day budget below lost about ₹7.4k by Day 30 in
+its own model. Read `plan-2026-11/00-README.md`, `06-organic-tier1.md` and `07-ad-bursts.md`.
+
 **Built from:** the 21 Nov baseline (`reports/growth-baseline-2026-11-21.txt`, pulled with
 `scripts/growth-baseline-pull.js`), the Tier-1 model `scripts/growth-model-t1.js`, the app repo `main` at d0235e0
 (v1.15.1, vc39), and the app repo's `DAILY_ACTIVITY.md`, `MAJOR_ISSUES_AND_GO_LIVE_CHECKLIST.md` and

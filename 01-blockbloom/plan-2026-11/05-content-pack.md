@@ -3,6 +3,11 @@
 For Gemini (use the text exactly) and Ajay (copy, paste, post). Roadmap: `11-growth-roadmap-30-days.md` v1.1.
 Written by Claude. Claude has no tasks in the plan. Nothing here was published.
 
+> **Plan v2 (22 Nov evening).** Reddit post 3 moves to Mon 14 Dec (r/AndroidGaming, Winter Bloom launch) and post 4 to
+> Sat 26 Dec (r/playmygame, Holiday Bloom). The Google Ads texts (§1) are used only in the bursts (`07-ad-bursts.md`).
+> Section 3's honest listing text replaces the live en-US description on Mon 23 Nov (O-1). New texts — Holiday Bloom
+> Play card and push, the creator email — are in `06-organic-tier1.md` §4–§5.
+
 ## 0. Read first: rules for every text below
 
 1. **The old `marketing/MARKETING_PACK.md` in the app repo is now WRONG. Do not reuse it.** It says "no ads", "zero ads", "under 1 MB" and "daily leaderboard". Facts today:

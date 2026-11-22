@@ -2,6 +2,18 @@
 
 Written 22 Nov 2026. Day 1 = Sun 22 Nov. Day n = (21 + n) Nov, so Day 8 = Sun 29 Nov, Day 10 = Tue 1 Dec, Day 13 = Fri 4 Dec, Day 18 = Wed 9 Dec, Day 30 = Mon 21 Dec.
 
+> **Plan v2 (22 Nov evening) — read first.** Day numbers in this file are v1's (Day 1 = Sun 22 Nov). The steps are still
+> right; the schedule is `01-day-by-day.md` v2 (Day 1 = Mon 23 Nov). Changes:
+> - **C-03:** the Tier-1 campaign is paused on Mon 23 Nov and runs only in 7-day bursts (`07-ad-bursts.md`): ₹500 a
+>   day for Burst 1 (12–18 Dec), ₹1,000 for Burst 2 (25–31 Dec, only if Burst 1 passes).
+> - **C-04:** no weekly prepay. Pay only before a burst (Burst 1: ₹3,500 minus the balance, on Wed 9 Dec).
+> - **C-05:** no edits during a burst; settings change only while the campaign is paused, before the burst.
+> - **C-08** (in-app action bidding): not used; a 7-day burst cannot reach 10 conversions a day.
+> - **C-18** (price test E2): dropped until there are buyers.
+> - **C-19:** Winter Bloom card submitted Sat 28 Nov (15 days ahead, so it can be featured); a new Holiday Bloom card
+>   (24 Dec – 3 Jan) submitted Wed 9 Dec (`06` §4).
+> - Gemini may do the console clicks on Ajay's go; payments stay Ajay's.
+
 Rules for all tasks:
 - Owner AJAY = a human-only console (Google Ads money, AdMob payments, Play UI-only items).
 - Owner GEMINI = Firebase / Remote Config / Play API / GA4 settings. Gemini uses the console, or the Firebase REST API or Admin SDK, or `firebase` CLI. Use repo-relative paths only.

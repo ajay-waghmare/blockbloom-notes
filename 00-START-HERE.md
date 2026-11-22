@@ -19,10 +19,12 @@ Handover\
     07-open-items.md               prioritised backlog, with who owns each item
     08-files-to-carry-manually.md  the secrets manifest (paths only, nothing copied here)
     09-code-review-2026-10-10.md   vc21 release check + whole-project code review, ranked findings
-    11-growth-roadmap-30-days.md   22 Nov-21 Dec plan v1.1: Tier-1 first, revenue first - week by week, day by day,
-                                   budget rules, gates, issues found (+ growth\ spend log, scripts\growth-model*.js)
-    plan-2026-11\                  step-by-step execution plan: Gemini dev specs, console runbooks, measurement,
-                                   content pack; start with 00-README.md and 01-day-by-day.md
+    11-growth-roadmap-30-days.md   22 Nov-21 Dec plan v1.1 (strategy background; its money sections are replaced
+                                   by plan v2) (+ growth\ spend log, scripts\growth-model*.js)
+    plan-2026-11\                  PLAN v2 (23 Nov-31 Dec): organic first in Tier-1, ads only in 7-day bursts
+                                   (Rs3.5k committed, Rs10.5k max); start with 00-README.md and 01-day-by-day.md
+    gemini-skills\                 how Gemini researches, builds strategy, runs the model and reviews weekly,
+                                   with every source used; Gemini owns the plan, Claude guides
     scripts\                       every Play/GA4/listing script that lived only in temp dirs
     reports\                       player workbooks, baseline report.json, store-listing dumps
     history\                       readable logs of the Block Bloom conversations (Aug->Oct 2026)

@@ -3,6 +3,12 @@
 Part 1: vc40 (1.16.0). Part 2: vc41 (1.17.0), vc42 (1.18.0) and the vc43 hotfix rules.
 Owner of every item: Gemini. Read `00-README.md` and `01-day-by-day.md` first.
 
+> **Plan v2 (22 Nov evening).** The development work below is unchanged, and its release calendar is the one v2 uses
+> (vc40 100% Thu 26 Nov, vc41 100% Sat 5 Dec, vc42 100% Fri 11 Dec). Gemini's additions that need no new app code are
+> in `06-organic-tier1.md`: O-1 store listing fix (Mon 23 Nov), store video, Holiday Bloom event value (24 Dec – 3 Jan),
+> the KPI organic split. Paid ads now run only in 7-day bursts (`07-ad-bursts.md`), so vc41 must be stable by Thu
+> 10 Dec (burst-ready check).
+
 ---
 
 # Block Bloom vc40 (1.16.0): development spec for Gemini

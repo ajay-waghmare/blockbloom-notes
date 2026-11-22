@@ -9,6 +9,16 @@ Checked against: app repo `main` d0235e0 (read-only), notes repo branch `journal
 Path names: "app repo" = `ajay-waghmare/BlockBloom`. "Notes repo" = `ajay-waghmare/blockbloom-notes`, branch
 `journal`. All paths below are relative to the repo root. Gemini's laptop paths are not known; pass them as options.
 
+> **Plan v2 (22 Nov evening) — read first.** Day numbers in this file are v1's; v2 (`01-day-by-day.md`) has Day 1 =
+> Mon 23 Nov.
+> - **Gate A becomes Check A** (Mon 30 Nov): the same quality thresholds, but no budget depends on it.
+> - **Gate B, the budget ladder, the stop-loss and the Day-22 rule (§3.7, §3.9)** are replaced by `07-ad-bursts.md`:
+>   the burst-ready check (Thu 10 Dec) and the Burst 2 decision (Wed 23 Dec, day-7 return on spend ≥ 40%).
+> - The formulas in §3.2–§3.5 are unchanged and are used for the bursts.
+> - **New for the KPI tool:** the organic split and source lines (`06-organic-tier1.md` §6) and the burst cohort
+>   (`07`, "Measuring a burst").
+> - The spend log stays: one line whenever the money changes (pause, payment, every burst day).
+
 ---
 
 ## 0. Seven facts that change the plan (read first)
