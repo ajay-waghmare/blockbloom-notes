@@ -10,7 +10,7 @@
 | :--- | :--- | :---: | :--- |
 | **[`topic_block_bloom.md`](topic_block_bloom.md)** | **Block Bloom: Block Puzzle Game** | 🟢 Live / Active | Production releases (`v1.17.0 / vc41`), AdMob bidding mediation, 16 KB policy extension, LiveOps events, store listings, social shorts, telemetry. |
 | **[`topic_arrow_bloom.md`](topic_arrow_bloom.md)** | **Arrow Bloom – Tap Logic Puzzle** | 🟡 Closed Testing | Package `com.aweagle.arrowbloom`, Track status (Alpha/Closed), uploaded bundles (vc1-4), 14-day tester graduation requirements, localized listings. |
-| **[`topic_personal_life.md`](topic_personal_life.md)** | **Ajay — Life, Personal & Operating Principles** | 🟢 Core Profile | Solo developer identity, business principles, strict verification laws, zero-handwaving mandate, developer accounts, communication expectations. |
+| **[`topic_personal_life.md`](topic_personal_life.md)** | **Ajay — Life, Career & AI Operating System** | 🟢 Core Profile | Full developer identity, Java/Spring Boot & AWS stack, enterprise healthcare projects (QiSpine appointment booking, Outbox pattern, DSA engine), 8-step engineering protocol, Agentic AI & cloud career vision, 5 life pillars (English communication mastery, friendships, financial independence, enjoyment, habit reset), AI thinking partner contract. |
 
 ---
 
