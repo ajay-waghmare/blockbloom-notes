@@ -22,6 +22,8 @@
   - Opt-in URL: [`https://play.google.com/apps/testing/com.aweagle.arrowbloom`](https://play.google.com/apps/testing/com.aweagle.arrowbloom)
 * **Internal Testing Track:**
   - Release `1.0.0 (4)`: **Available to internal testers / Full rollout** (live Nov 25, 2026 1:34 PM IST via Edit `05758245235302111230`).
+  - Tester List: `"Block Bloom Testers"` (34 users, checked — includes `ajaywaghmare00a@gmail.com`, `ajaywaghmare11a@gmail.com`, `ajay.qispine@gmail.com`).
+  - Internal Opt-in URL: [`https://play.google.com/apps/internaltest/4701488149397707358`](https://play.google.com/apps/internaltest/4701488149397707358)
 * **Publishing Overview & Policy:**
   - `Managed publishing`: **Off** (`Changes in review`: `Closed testing - Alpha` `1.0.0 (4)` `Start full rollout`; auto-publishes upon review).
   - `Policy status`: **No issues found**.
