@@ -24,7 +24,7 @@
    - **Play Integrity API:** Linked Cloud project **`Block Bloom`** (`620724418792` / `block-bloom-31b39`); App licensing, Application integrity, and Device integrity all **`On`**.
    - **Data Safety:** Checked **`Purchase history`** (`Collected`, non-ephemeral, Required -> App functionality & Analytics) and checked **`App functionality`** under **`Device or other IDs`** (for FCM push tokens), submitted and **published live** (`Last published on November 25, 2026`, no pending `Changes in review`).
    - **Account Linked Services:** Approved Google Ads (`684-480-0945`) link (`Accounts linked`).
-   - **Q3 Applied & Verified (`2026-11-25 22:40 IST`):** Enabled **`Managed publishing on`** on Block Bloom (`4976030358371797626`, verified after page reload) and verified Account **License testing** (`.../license-tester`) leaves **`Block Bloom Testers`** (`34` emails) **UNCHECKED** with `RESPOND_NORMALLY` (`Email lists` checked, no other list created).
+   - **Q3 Applied & Verified (`2026-11-25 22:40 IST`):** Enabled **`Managed publishing on`** on Block Bloom (`4976030358371797626`, verified after page reload); created owner-only **`Owner QA`** License Testing email list (`ajaywaghmare00a@gmail.com` only, `1` user) and enabled ONLY **`Owner QA`** while keeping **`Block Bloom Testers`** (`34` emails) **UNCHECKED** (`RESPOND_NORMALLY`, verified after reload `22:47 IST`).
 8. **Google Ads (`684-480-0945`) — Completed & Verified (Both Campaigns Strictly `Paused`, `₹0/day`):**
    - **`BlockBloom-Tier1-EN` Settings:** Verified Location options = **`Presence: People in or regularly in your included locations`**, Languages = **`English`**, Locations = 6 Tier-1 countries, Budget = `₹400/day`.
    - **`BlockBloom-Tier1-EN` Creatives:** Upgraded to **`Descriptions 5/5`** (all policy-safe from `05-content-pack.md`) and **`Videos 1/20`** (`https://youtube.com/shorts/Cc5TRVKpt7c`). `App-1` Headline 5 replaced (`"Zero Mid-Game Popups"` → `"Free 8x8 Block Puzzle Fun"`).
@@ -37,8 +37,8 @@
 - **Ajay One-by-One Decisions Progress (`3/4` Locked & Executed):**
   - **[DECIDED Q1 — 2026-11-25]:** **Arrow Bloom (`com.aweagle.arrowbloom`)** keeps `1.0.0` dark/offline until it passes Play's 12-tester × 14-day Production review; then create a **dedicated `arrow-bloom` Firebase project** and add Firebase + AdMob in `1.1.0` under the same GA4 account (`409217568`).
   - **[DECIDED & APPLIED Q2 — 2026-11-25]:** AdMob Max Ad Content Rating set to **`T` (Teens)** AND **`References to Sex` blocked** (plus GDPR Consent Mode + Auto-add ad sources enabled).
-  - **[DECIDED & APPLIED Q3 — 2026-11-25]:** Play Console **`Managed publishing on`** enabled on Block Bloom, and **`Block Bloom Testers`** (`34` emails) kept **UNCHECKED** in License Testing (`RESPOND_NORMALLY`).
-  - **Pending (Q4 / Final Wrap-Up):** Manual account/tax/tester tasks (`9/12` → `12/12` Arrow Bloom testers still verified at `9/12`, Google Ads India Tax, AdMob India/`W-8BEN` Tax, Firebase Remote Config Blaze notice, GA4 `555700046` IAM grant for `play-publisher` SA).
+  - **[DECIDED & APPLIED Q3 — 2026-11-25]:** Play Console **`Managed publishing on`** enabled on Block Bloom, **`Owner QA`** (`ajaywaghmare00a@gmail.com` only) created & enabled for free QA IAP tests, and **`Block Bloom Testers`** (`34` emails) kept **UNCHECKED** (`RESPOND_NORMALLY`).
+  - **In Progress (Q4 — Waiting on Ajay's GA4 IAM Grant):** Wait for Ajay to grant `Editor` on GA4 `555700046` to `play-publisher@avid-airway-498216-e5.iam.gserviceaccount.com` in his regular browser, then execute the 10-custom-dimensions + Key Events cleanup script. Manual follow-ups: `9/12` → `12/12` Arrow Bloom testers, Google Ads India Tax, AdMob India/`W-8BEN` Tax, Firebase Remote Config Blaze notice.
 
 ---
 
@@ -149,8 +149,8 @@
 ### Decisions Needed From Ajay
 1. **[DECIDED 2026-11-25 — Q1 Approved]:** Keep `block-bloom-31b39` dedicated to Block Bloom only, keep Arrow Bloom `1.0.0` dark/offline through the 12-tester × 14-day Production review, and create a **dedicated `arrow-bloom` Firebase project** under GA4 Account `409217568` when adding Firebase + AdMob in `1.1.0`.
 2. **[DECIDED & APPLIED 2026-11-25 — Q2 Approved]:** AdMob Max Ad Content Rating set to **`T` (Teens)** and **`References to Sex`** blocked (verified after reload), plus GDPR **`Automatically add ad sources as ad partners`**, **`Enable consent mode for advertising purposes`**, and **`Enable consent mode for analytics purposes`** saved cleanly.
-3. **[DECIDED & APPLIED 2026-11-25 — Q3 Approved]:** Block Bloom **`Managed publishing on`** verified after reload; **`Block Bloom Testers`** (`34` emails) kept **UNCHECKED** in Account License Testing (`RESPOND_NORMALLY`).
-4. **Remaining Non-Technical / User-Only Execution (Q4 — Next):** GA4 `555700046` IAM grant (`play-publisher@avid-airway-498216-e5.iam.gserviceaccount.com` -> `Editor` due to embedded webview `401`), plus optional Owner-only QA License Testing list or manual tax/tester wrap-up (`9/12` -> `12/12` Arrow Bloom, India/W-8BEN tax, Firebase Blaze check).
+3. **[DECIDED & APPLIED 2026-11-25 — Q3 Approved]:** Block Bloom **`Managed publishing on`** verified after reload; created & enabled **`Owner QA`** (`ajaywaghmare00a@gmail.com` only) while keeping **`Block Bloom Testers`** (`34` emails) **UNCHECKED** (`RESPOND_NORMALLY`).
+4. **[Q4 Selected — In Progress]:** Created `Owner QA` License Testing list (`ajaywaghmare00a@gmail.com`) and waiting for Ajay to grant `Editor` on GA4 Property `555700046` to `play-publisher@avid-airway-498216-e5.iam.gserviceaccount.com` in his regular browser so we can run the 10-custom-dimensions + Key Events cleanup script. Remaining offline/manual items: `9/12` -> `12/12` Arrow Bloom testers, Google Ads India Tax, AdMob India/`W-8BEN` Tax, Firebase Blaze check.
 5. **Ajay Manual Actions:**
    - Get **3 more testers** opted into Arrow Bloom (`9/12` → `12/12`) at `https://play.google.com/apps/testing/com.aweagle.arrowbloom`.
    - Submit **India Tax** in Google Ads (`684-480-0945`) + verify **India Tax & US `W-8BEN`** in AdMob Payments + check Firebase Remote Config Blaze notice.
