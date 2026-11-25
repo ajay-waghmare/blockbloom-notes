@@ -30,7 +30,9 @@
 
 ## ⏳ Remaining Unfinished Technical Fix & Pending Ajay Decisions
 - **GA4 (`555700046`) Property Access / Schema Cleanup:** Embedded webview gets HTTP `401` on `analyticssuitefrontend-pa.clients6.google.com` (`/v1/usermanagement/...`). Ajay needs to add `play-publisher@avid-airway-498216-e5.iam.gserviceaccount.com` as **`Editor`** on `555700046` in his regular browser so Node API immediately registers the `10` custom dimensions (`ad_format`, `placement`, `trigger`, `reason`, `via`, `step`, `offer`, `action`, `result`, `event_id`) and removes the `10` noisy Key Events (`session_start`, etc.).
-- **Ajay One-by-One Decisions Needed:** (1) Arrow Bloom dedicated `arrow-bloom` Firebase project post-`1.0.0`, (2) AdMob `MA` → `T` rating & `References to Sex`, (3) Play Managed Publishing ON + License Testing, (4) Manual account/tax/tester tasks (`9/12` → `12/12` Arrow Bloom testers, Google Ads India Tax, AdMob India/W-8BEN Tax).
+- **Ajay One-by-One Decisions Progress (`1/4` Locked):**
+  - **[DECIDED Q1 — 2026-11-25]:** **Arrow Bloom (`com.aweagle.arrowbloom`)** keeps `1.0.0` dark/offline until it passes Play's 12-tester × 14-day Production review; then create a **dedicated `arrow-bloom` Firebase project** and add Firebase + AdMob in `1.1.0` under the same GA4 account (`409217568`).
+  - **Pending (Q2–Q4):** (2) AdMob `MA` → `T`/`PG` rating & `References to Sex`, (3) Play `Managed Publishing` ON + `License Testing`, (4) Manual account/tax/tester tasks (`9/12` → `12/12` Arrow Bloom testers, Google Ads India Tax, AdMob India/`W-8BEN` Tax, Firebase Remote Config Blaze notice, GA4 IAM grant).
 
 ---
 
@@ -139,10 +141,10 @@
 ## 6. Pending Ajay Decisions & Execution Queue
 
 ### Decisions Needed From Ajay
-1. **Firebase Multi-App:** Confirm **Option A** — keep `block-bloom-31b39` for Block Bloom only, and create a separate `arrow-bloom` Firebase project under GA4 Account `409217568` once Arrow Bloom `1.0.0` graduates Closed Testing (`1.1.0` adds Firebase + AdMob).
-2. **AdMob Max Content Rating:** Approve tightening **`MA` → `T` (Teen)** (matching Play `13+` target audience) and blocking **`References to Sex`** (`~7.2%` current rev)?
-3. **Play Console Controls:** Enable **Managed Publishing = ON** for Block Bloom and enable **`Block Bloom Testers`** in account **License Testing**?
-4. **`"GO"` for Batch Optimization:** Approve executing API/script fixes (GA4 Key Events + 10 custom dimensions, Remote Config 5 missing kill switches, 12 non-English Block Bloom listings + Arrow Bloom `"set them free"` fix, Studio Website + Privacy Policy `14 months` alignment) AND Browser UI fixes (Google Ads `Presence`/`English`/copy/video/Play-link/`first_open`/Pause-rule fix, AdMob Banner group + GDPR Consent Mode/Auto-add, Play Integrity + Data Safety + SHA-1/256)?
+1. **[DECIDED 2026-11-25 — Q1 Approved]:** Keep `block-bloom-31b39` dedicated to Block Bloom only, keep Arrow Bloom `1.0.0` dark/offline through the 12-tester × 14-day Production review, and create a **dedicated `arrow-bloom` Firebase project** under GA4 Account `409217568` when adding Firebase + AdMob in `1.1.0`.
+2. **AdMob Max Content Rating (Q2 — Next):** Tighten **`MA` → `T` (Teen)** (or `PG`) and block **`References to Sex`** (`11.9%` impr / `7.2%` rev)?
+3. **Play Console Controls (Q3):** Enable **Managed Publishing = ON** for Block Bloom and enable **`Block Bloom Testers`** in account **License Testing**?
+4. **Already Executed (`"GO"` / `"Finish the unfinished ASAP"` Batch):** Websites, Play Store listings (Block Bloom 12 locales + Arrow Bloom `en-US`/`ja-JP`/`ko-KR`), Firebase SHA fingerprints + Play link + Remote Config `v9`, AdMob `Block Bloom - Banner` mediation group, Play Account Website + Play Integrity + Data Safety + Ads link accept, and Google Ads `Presence`/`English`/Descriptions/Video/`App-1` H5/Pause rule/YT conversions/`Google Play` link are all **DONE & verified**. Still GA4 IAM blocked by `401` in embedded webview (manual IAM grant needed for 10 custom dims + Key Event cleanup).
 5. **Ajay Manual Actions:**
    - Get **3 more testers** opted into Arrow Bloom (`9/12` → `12/12`) at `https://play.google.com/apps/testing/com.aweagle.arrowbloom`.
    - Submit **India Tax** in Google Ads (`684-480-0945`) + verify **India Tax & US `W-8BEN`** in AdMob Payments + check Firebase Remote Config Blaze notice.

@@ -7,7 +7,7 @@
 > **Play Console Dashboard:** `https://play.google.com/console/u/0/developers/8701670281323658688/app/4972007048514376994/app-dashboard`  
 > **Repository:** `https://github.com/ajay-waghmare/ArrowBloom.git` (`release/2026-10-20-line-arrows`)  
 > **Notes Repository:** `https://github.com/ajay-waghmare/arrowbloom-notes.git` (`journal`)  
-> **Latest Updated:** 2026-11-25 (20:30 IST)
+> **Latest Updated:** 2026-11-25 (22:15 IST — Ajay locked Q1 multi-app Firebase architecture)
 
 ---
 
@@ -41,7 +41,7 @@
 ## 3. Product Architecture & Multi-App Production Roadmap
 * **Current `1.0.0 (4)` Tech Stack:** Kotlin 1.9.24 + Jetpack Compose BOM 2024.06.00, `compileSdk = 36`, `targetSdk = 36`, `minSdk = 26`, `Supports 16 KB` page size, **0 third-party ads/analytics SDKs**, **`VIBRATE` permission only (zero `INTERNET`)**.
 * **Multi-App Ecosystem Gaps (Verified Nov 25):**
-  - **Firebase / GA4:** **Not registered** in `block-bloom-31b39`, no dedicated project exists yet. **Recommended Architecture:** Keep `Arrow Bloom 1.0.0` dark/offline to pass the 12-tester × 14-day Production review cleanly; then for **`1.1.0`** create a **dedicated Firebase project (`arrow-bloom`)** linked under the shared GA4 Account (`409217568`), AdMob (`pub-1693732810683011`), Play (`8701670281323658688`), and Google Ads (`684-480-0945`) — isolating Remote Config/FCM/A/B tests from Block Bloom.
+  - **Firebase / GA4:** **Not registered** in `block-bloom-31b39`, no dedicated project exists yet. **LOCKED ARCHITECTURE (Ajay Decision 2026-11-25):** Keep `Arrow Bloom 1.0.0` dark/offline until it passes Play's 12-tester × 14-day Production review; then for **`1.1.0`** create a **dedicated Firebase project (`arrow-bloom`)** linked under the shared GA4 Account (`409217568`), AdMob (`pub-1693732810683011`), Play (`8701670281323658688`), and Google Ads (`684-480-0945`) — isolating Remote Config/FCM/A/B tests from Block Bloom.
   - **AdMob:** **NOT added in AdMob yet** (no ad units, no GDPR/US messaging). Will add + declare Data Safety / Ads / `AD_ID` / updated `arrow-bloom-privacy.html` before any `1.1.0` monetized build.
   - **Google Ads:** `0` campaigns/conversions yet.
 
@@ -49,6 +49,6 @@
 
 ## 4. Path to Production & Immediate Next Steps
 1. **Unblock 14-Day Clock (`9/12` → `12/12`):** Share `https://play.google.com/apps/testing/com.aweagle.arrowbloom` with **3+ more testers** immediately.
-2. **Fix Short Description Warning:** Remove `"free"` from `en-US` short description (Play API / Console) and add tablet screenshots when ready.
-3. **Update Studio Homepage (`ajay-waghmare.github.io`):** Add Arrow Bloom card + privacy link.
-4. **Await 14 Continuous Days (`12+` testers):** Then click `Apply for production` and answer Play Console questionnaire.
+2. **Add Missing Store Media Before Production:** Add 7-inch & 10-inch tablet screenshots and promo video (short description + `ja-JP`/`ko-KR` mojibake + `ajay-waghmare.github.io` homepage are already fixed).
+3. **Await 14 Continuous Days (`12+` testers):** Then click `Apply for production` and answer Play Console questionnaire.
+4. **Post-`1.0.0` Approval (`1.1.0`):** Create dedicated `arrow-bloom` Firebase project under GA4 Account `409217568` + add AdMob app & updated Data Safety.
