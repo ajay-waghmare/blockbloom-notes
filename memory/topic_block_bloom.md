@@ -94,21 +94,17 @@
 
 ---
 
-## 7. Nov 25 Deep 4-Console Audit Findings (Full Detail: [`topic_console_audit_2026_11_25.md`](topic_console_audit_2026_11_25.md))
+## 7. Nov 25 Deep 4-Console Audit & Phase-1 Fixes Applied (Full Detail: [`topic_console_audit_2026_11_25.md`](topic_console_audit_2026_11_25.md))
 * **Play Console (`8701670281323658688` / `4976030358371797626`):**
-  - **O-1 Incomplete Outside `en-US`:** All `12` non-English locales still carry old pre-ads claims (`pt-BR` still says `"nada interrompe a partida"`).
-  - **Missing Promo Video (`O-3`)** on default listing; **Managed Publishing = OFF**; **Account Website = `-`**; **License Testing** list `Block Bloom Testers` unchecked.
-  - **Data Safety Gaps:** `Purchase history` = `0/4` despite 4 active IAP SKUs; `App functionality` unchecked under `Device or other IDs` for FCM push tokens.
-  - **Integrity & Deep Links:** `Play Integrity API 0/7` (no Cloud project linked); `Deep links: none`; `16 KB` RELRO extension deadline **Feb 1, 2027**.
+  - **Fixed (`O-1` All 13 Locales):** Updated all 12 non-English locales (`ja-JP`, `es-419`, `es-ES`, `pt-BR`, `de-DE`, `tr-TR`, `ko-KR`, `uk`, `id`, `ar`, `zh-TW`, `vi`) to honest ad- + IAP-disclosing copy via Play API (`Validate: 200`, `Commit: 200`).
+  - **Website (`https://ajay-waghmare.github.io`):** Homepage updated & pushed (`bca6309`); Privacy Policy updated & pushed (`faa8483` -> **`14 months`** retention + Ad ID/FCM disclosure). Play Console Account Website submitted (verify ownership/save after 429 reset).
+  - **Remaining Play Gaps:** Missing 30s Promo Video (`O-3`); `Managed Publishing` = OFF & `License Testing` unchecked (awaiting Ajay decision); Data Safety missing `Purchase history` (`0/4`) & FCM `App functionality`; `Play Integrity API 0/7`; Deep Links `none`; `16 KB` deadline **Feb 1, 2027**.
 * **Firebase & GA4 (`block-bloom-31b39` / `555700046`):**
-  - `0` SHA-1/SHA-256 fingerprints on both Android apps; **Google Play** unlinked in Firebase Integrations; **Performance Monitoring** shows `No data`; **Remote Config Console** missing `5+` `vc40` kill switches registered in `BlockBloomApp.kt`.
-  - GA4 **`0` custom dimensions** (`ad_format`, `placement`, `via`, `trigger`, etc. unmeasurable); **`16` Key Events** bloated by `session_start` & e-commerce noise; **`Google Signals DISABLED`**; retention = `14 months` (**contradicts `privacy-policy.html` `2 months` claim**).
-  - **A/B Test `E1`:** Baseline `32` users `$0.06` vs Variant A `32` users `$0.90` (`+1,503%`, `p=0.097`).
+  - **Fixed:** Added all Release (`Play App Signing` + `Upload`) & Debug SHA-1/SHA-256 fingerprints; **linked Google Play** in Firebase Integrations; published **Remote Config `v9`** (`11` keys, all 5 `vc40` defaults added cleanly, `E1` + `autumn_bloom_challenge` untouched).
+  - **Remaining GA4/Perf Gaps:** Perf Monitoring `No data`; GA4 **`0` custom dimensions** & **`16` bloated Key Events** (blocked by `403` without SA `Editor` role on `555700046` or GA UI sign-in); **`Google Signals DISABLED`**.
 * **AdMob (`pub-1693732810683011`):**
-  - **Max Ad Content Rating = `MA`** (should be `T` to match Play `13+` audience; `References to Sex` + `Sexual & Reproductive Health` each ~`11.9%` impr / `7.2%` rev).
-  - **`Block Bloom Banner` (`~3081693900`) has `0` active mediation groups** (falls back to `AdMob (default)`).
-  - GDPR (`67%` consent): **Consent mode OFF**, **Auto-add ad partners OFF**, English-only. Tax status (`India` / `W-8BEN`) needs manual verification (iframe blocked).
+  - **Fixed:** Created **`Block Bloom - Banner`** mediation group (`8407768586`, `AdMob Network` Active) -> Banner now shows `1 active`.
+  - **Remaining / Decisions:** `MA` content rating vs Play `13+` (`References to Sex` 11.9% impr / 7.2% rev) awaiting Ajay decision (`MA` -> `T`); GDPR Consent Mode OFF & Auto-add ad partners OFF; Mintegral awaiting approval; verify India/W-8BEN tax inside AdMob Payments.
 * **Google Ads (`684-480-0945`):**
-  - Balance `₹1,308.45`, Paused (`₹0/day`), TZ IST.
-  - **`BlockBloom-Tier1-EN` leaks:** `Presence or interest` instead of `Presence`; `All languages` instead of `English`; `0/20` videos (`Ad strength: Poor`); `3/5` descriptions with inaccurate/legacy copy (`App-1` still says `"Zero Mid-Game Popups"`); **old automated rule `62682154` (`Pause Tier1 at 3000 spend` all-time) will cut Burst 1 short at `₹1,208`**.
-  - **Google Play not linked**; **`first_open` NOT imported**; `YouTube follow-on views` & `channel subscriptions` marked **`Primary`**; active `Submit India tax info` warning.
+  - **Fixed:** Balance `₹1,308.45`, Paused (`₹0/day`), TZ IST. `BlockBloom-Tier1-EN` creatives upgraded to **`5/5` clean Descriptions** + **`1/20` Video** (`https://youtube.com/shorts/Cc5TRVKpt7c`); `App-1` `"Zero Mid-Game Popups"` replaced with `"Free 8x8 Block Puzzle Fun"`.
+  - **Remaining (stopped by 429 quota at `21:09 IST`):** Confirm `Presence` + `English` save state; disable rule `62682154` (`3000 spend`); change YouTube follow-on/subscriptions `Primary` -> `Secondary`; import GA4 `first_open`; approve Google Play link; submit `India tax info`.

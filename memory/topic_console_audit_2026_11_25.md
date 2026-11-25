@@ -2,7 +2,29 @@
 
 > **Audit Scope:** Google Play Console (`8701670281323658688`), Firebase + GA4 (`block-bloom-31b39` / `555700046`), Google AdMob (`pub-1693732810683011`), Google Ads (`684-480-0945`), and hosted web assets (`ajay-waghmare.github.io`, `app-policy`).
 > **Verification Mode:** Strictly read-only browser UI inspections + live Play Publisher API + GA4 Admin/Data APIs + local file inspection. Zero unverified assumptions.
-> **Latest Updated:** 2026-11-25 (20:30 IST)
+> **Latest Updated:** 2026-11-25 (21:20 IST — Phase 1 API/Website/AdMob/Firebase fixes applied; Ads + Play remaining items paused by Flash browser quota `429`)
+
+---
+
+## ✅ Fixed Live After Audit (Verified `2026-11-25 21:18 IST`)
+1. **Studio Website ([`ajay-waghmare.github.io`](https://ajay-waghmare.github.io)):** Commit `bca6309` (`main`) — now showcases **Arrow Bloom** alongside **Block Bloom** + both Privacy Policies + `app-ads.txt`.
+2. **Block Bloom Privacy Policy (`app-policy/privacy-policy.html`):** Commit `faa8483` (`main`) — retention updated **`2 months` → `14 months`** (matches GA4 `FOURTEEN_MONTHS`), identifier disclosures expanded (`Advertising ID` + `FCM push token`), advertising consent wording aligned.
+3. **Play Store Listings (`Block Bloom` 12 non-English locales + `id` polish):** Committed (`Validate: 200`, `Commit: 200`) honest ad- + IAP-disclosing copy across `ja-JP`, `es-419`, `es-ES`, `pt-BR`, `de-DE`, `tr-TR`, `ko-KR`, `uk`, `id`, `ar`, `zh-TW`, `vi`, eliminating stale `"no ads / no data / <1 MB / nothing interrupts"` claims and `\uFFFD` mojibake.
+4. **Play Store Listings (`Arrow Bloom` `en-US` + `ja-JP` + `ko-KR`):** Committed (`200 OK`) new `en-US` short description (`"Tap arrows to clear the path. A calm logic puzzle with no timer. Plays offline."`, removing `"free"` warning) and cleaned `ja-JP`/`ko-KR` `\uFFFD` mojibake (`fffd left: false`).
+5. **Firebase `block-bloom-31b39`:**
+   - Added **4 Release SHA fingerprints** (`Play App Signing` SHA-1 `E9:E1:8C:75:2F:CA:66:97:68:FE:BB:6E:3A:17:82:CD:0F:AE:10:CB` & SHA-256 `BE:51:65:B1:17:B0:2E:FD:68:BE:B8:67:4E:80:04:EE:2E:8F:96:F0:C2:B6:86:7C:23:7A:57:42:4D:C1:90:EB` + Upload Key SHA-1/SHA-256) to `com.aweagle.blockbloom` and **2 Debug SHA fingerprints** to `.debug`.
+   - **Linked Google Play integration** (`App Distribution`, `Crashlytics`, `Google Analytics` `1/2` apps).
+   - **Published Remote Config `v9`** (`2026-11-25T15:48:16Z`) adding all 5 missing `vc40` defaults (`ads_interstitial_min_gap_s=150`, `ads_rewarded_ready_only=true`, `ads_rewarded_fallback_grant=true`, `remove_ads_offer_enabled=true`, `review_prompt_enabled=true`) alongside existing 6 keys (`E1` & `autumn_bloom_challenge` untouched).
+6. **AdMob (`pub-1693732810683011`):** Created & verified **`Block Bloom - Banner`** mediation group (`8407768586`, `Android`, `Banner`, `All countries`, `AdMob Network` Active) -> `Block Bloom Banner` now shows `1 active`.
+7. **Google Ads (`684-480-0945`) — Partial Before Quota 429:**
+   - `BlockBloom-Tier1-EN` Creatives saved: **`Descriptions 5/5`** (all policy-safe from `05-content-pack.md`) and **`Videos 1/20`** (`https://youtube.com/shorts/Cc5TRVKpt7c`).
+   - `App-1` Headline 5 replaced (`"Zero Mid-Game Popups"` → `"Free 8x8 Block Puzzle Fun"`).
+   - *(Browser agents hit `RESOURCE_EXHAUSTED (429)` at `21:09:57 IST` — resets ~`2h34m`.)*
+
+## ⏳ Remaining Unfinished Console Fixes (Stopped by Quota 429 / Auth / Pending Decisions)
+- **Google Ads (`684-480-0945`):** Re-verify `BlockBloom-Tier1-EN` `Presence` & `English` save state; disable/pause rule `62682154` (`Pause Tier1 at 3000 spend`); change `YouTube follow-on views` & `channel subscriptions` `Primary` → `Secondary`; import GA4 `first_open`; approve Google Play link request (requires owner action).
+- **Play Console (`8701670281323658688`):** Verify Account Website `https://ajay-waghmare.github.io` ownership/save status; update Block Bloom **Data Safety** (`Purchase history` + FCM `App functionality`); link Cloud project `620724418792` in **Play Integrity API**.
+- **GA4 (`555700046`):** Service accounts got `403` (`play-publisher` needs `Editor` on GA4 `555700046` — OR sign into `analytics.google.com` in browser) to register 10 custom dimensions (`ad_format`, `placement`, `trigger`, `reason`, `via`, `step`, `offer`, `action`, `result`, `event_id`) and delete 10 noisy Key Events (`session_start`, etc.).
 
 ---
 

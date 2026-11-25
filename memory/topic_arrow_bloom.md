@@ -31,9 +31,9 @@
 
 ## 2. Store Listing & Console Audit Findings (Nov 25, 2026)
 * **Default Language:** `en-US` + 7 localized listings (`de-DE`, `es-ES`, `es-419`, `ja-JP`, `ko-KR`, `pt-BR`, `tr-TR`).
-* **Short Description Warning (FIX NEEDED):** `"Tap arrows to set them free. A calm logic puzzle with no timer. Plays offline."` triggers Play Console warning *"Should not use keywords that indicate price or promotion"* (flagged by `"free"`). Replace `"set them free"` with safe phrasing (e.g. `"Tap arrows to clear the path. A calm logic puzzle with no timer. Plays offline."`).
+* **Short Description Fixed (`2026-11-25 20:40 IST`):** Replaced `"Tap arrows to set them free..."` (`"free"` price-word warning) with **`"Tap arrows to clear the path. A calm logic puzzle with no timer. Plays offline."`** via Play API (`200 OK`). Also cleaned `\uFFFD` mojibake in `ja-JP` and `ko-KR` (`200 OK`, `fffd left: false`).
 * **Missing Assets:** `0` 7-inch tablet screenshots, `0` 10-inch tablet screenshots, `0` promo video.
-* **Studio Website (`https://ajay-waghmare.github.io`):** Live link points to a Block Bloom-only homepage; needs update to showcase **Arrow Bloom** + link `arrow-bloom-privacy.html`.
+* **Studio Website (`https://ajay-waghmare.github.io`):** Updated & pushed (`bca6309`) to showcase **Arrow Bloom** + link `arrow-bloom-privacy.html`.
 * **Privacy Policy:** `https://ajay-waghmare.github.io/app-policy/arrow-bloom-privacy.html` (accurate for offline `1.0.0`).
 
 ---
