@@ -15,16 +15,15 @@
 * **Production Track:** `(no releases)` (`Inactive`) — **NOT published to production.** `Apply for production` button is disabled until Closed Testing criteria pass.
 * **Open Testing (Beta Track):** `(no releases)` (`Inactive`).
 * **Closed Testing (Alpha Track — `Closed testing - Alpha`):**
-  - Release `1.0.0 (1)`: **Completed / Available to selected testers** (178 countries, released Oct 20, 2026 10:15 AM).
-  - Release `1.0.0 (4)`: **Draft** (staged `4.aab`, Target SDK 36, **Supports 16 KB memory page size**, 18,182 supported devices, 0 errors).
+  - Release `1.0.0 (4)`: **`In review` / `Full rollout`** across 178 countries (committed Nov 25, 2026 via Edit `05758245235302111230`; replaces draft!).
+  - Release `1.0.0 (1)`: **Completed / Available to selected testers** (remains live until `1.0.0 (4)` review clears; released Oct 20, 2026).
   - Tester List: "Block Bloom Testers" (34 emails listed).
   - **Currently Opted-In Testers:** **`10` testers opted-in** (`2` shy of the `12`-tester minimum!).
   - Opt-in URL: [`https://play.google.com/apps/testing/com.aweagle.arrowbloom`](https://play.google.com/apps/testing/com.aweagle.arrowbloom)
 * **Internal Testing Track:**
-  - Release `1.0.0 (1)`: **Completed / Available to internal testers**.
-  - Release `1.0.0 (4)`: **Draft**.
+  - Release `1.0.0 (4)`: **Available to internal testers / Full rollout** (live Nov 25, 2026 1:34 PM IST via Edit `05758245235302111230`).
 * **Publishing Overview & Policy:**
-  - `Managed publishing`: **Off** (`You have no unpublished changes`; last published Oct 20, 2026).
+  - `Managed publishing`: **Off** (`Changes in review`: `Closed testing - Alpha` `1.0.0 (4)` `Start full rollout`; auto-publishes upon review).
   - `Policy status`: **No issues found**.
   - `App content`: **10/10 declarations complete** (Data safety, Target audience 13+, Privacy policy, Ads=No, Advertising ID=No, Content rating, etc.).
   - Non-blocking UX advisories on `1.0.0 (1)`: 3 standard Android 15/16 advisories (edge-to-edge & resizability/orientation).
@@ -33,10 +32,10 @@
 
 ## 2. Uploaded App Bundles (AABs in Console Library)
 The Google Play Console app bundle explorer has received 4 bundles:
-1. `versionCode 1` (`1.0.0`): Active on Closed Testing.
-2. `versionCode 2` (`1.0.0`): Archived / Burnt.
-3. `versionCode 3` (`1.0.0`): Archived / Burnt.
-4. `versionCode 4` (`1.0.0`): Staged in Draft on Closed & Internal tracks.
+1. `versionCode 1` (`1.0.0`): Active on Closed Testing (pending `vc4` review completion), Inactive in latest bundle table.
+2. `versionCode 2` (`1.0.0`): Inactive / Burnt.
+3. `versionCode 3` (`1.0.0`): Inactive / Burnt.
+4. `versionCode 4` (`1.0.0`): **`Active`** (`Target SDK 36`, `Supports 16 KB` page size — live on Internal, In review on Closed Alpha).
 
 ---
 
