@@ -43,14 +43,26 @@
 
 ---
 
+## 3B. Firebase Remote Config (Version 8 — Nov 25, 2026)
+* **`ads_interstitial_enabled`:** Experiment `BlockBloom Android E1` (`abt_1`, 50% `false` / 50% `true`), interval `"4"`.
+* **`ads_banner_enabled`:** `true` (locked to 120s refresh in AdMob).
+* **`ads_mediation_enabled`:** `true` (explicit fail-open killswitch for `vc41` adapters).
+* **`live_events`:** `autumn_bloom_challenge` (`Nov 30 – Dec 8 UTC` condition) serves `Autumn Bloom Challenge` (`DAILY_DOUBLE`, `2.0x` streak bonus, `startsAt: 2026-11-30`, `endsAt: 2026-12-07`); default falls back to `LocalEventConfig`.
+* **Mediation Account Status (Nov 25):** AdMob Console Mediation Groups currently hold `AdMob Network` only (`0` third-party mappings). AppLovin is paused for new publishers (`9:36 AM IST` email); Liftoff paused; Meta deferred (2FA pending).
+
+---
+
 ## 4. Store Presence, Listings & Promotional Content
+* **Active Icon Experiment (`Default store listing`):**
+  - `Global App Icon Test - Neon Jewel Blast` (ID: `5861519280044674347`), started Nov 18, `Running` (`50%/50%`, `Variant 1` leading `228` vs `181` clicks = `+26%`, `"More data needed"`).
+  - Full-bleed `512x512` backup E3 icon variants fixed in `BlockBloom/store/icon-variant-{a-neon,b-crown,c-zen}.png`.
 * **Custom Store Listing (`Tier1-EN`):**
   - Status: **`Live`** (verified in Play Console on Nov 24, 2026).
   - Target Audience: 4 countries (United States, United Kingdom, Canada, Australia).
   - Honest copy compliant with Google Play metadata policies (no "no ads" claims, no fake awards).
 * **Promotional Content (LiveOps):**
   - Event Name: **`Autumn Bloom Challenge`** (ID: `4831564366696552013`).
-  - Schedule: **Nov 30, 2026 – Dec 7, 2026 (UTC)**.
+  - Schedule: **Nov 30, 2026 – Dec 7, 2026 (UTC)** (now synced 1:1 with Firebase Remote Config `live_events`).
   - Status: **`Not started`** (Approved & Scheduled to trigger automatically).
   - Target: 177 countries (Everyone).
 
