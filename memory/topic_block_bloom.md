@@ -94,17 +94,17 @@
 
 ---
 
-## 7. Nov 25 Deep 4-Console Audit & Phase-1 Fixes Applied (Full Detail: [`topic_console_audit_2026_11_25.md`](topic_console_audit_2026_11_25.md))
+## 7. Nov 25 Deep 4-Console Audit & Phase-1/2 Fixes Applied (Full Detail: [`topic_console_audit_2026_11_25.md`](topic_console_audit_2026_11_25.md))
 * **Play Console (`8701670281323658688` / `4976030358371797626`):**
   - **Fixed (`O-1` All 13 Locales):** Updated all 12 non-English locales (`ja-JP`, `es-419`, `es-ES`, `pt-BR`, `de-DE`, `tr-TR`, `ko-KR`, `uk`, `id`, `ar`, `zh-TW`, `vi`) to honest ad- + IAP-disclosing copy via Play API (`Validate: 200`, `Commit: 200`).
-  - **Website (`https://ajay-waghmare.github.io`):** Homepage updated & pushed (`bca6309`); Privacy Policy updated & pushed (`faa8483` -> **`14 months`** retention + Ad ID/FCM disclosure). Play Console Account Website submitted (verify ownership/save after 429 reset).
-  - **Remaining Play Gaps:** Missing 30s Promo Video (`O-3`); `Managed Publishing` = OFF & `License Testing` unchecked (awaiting Ajay decision); Data Safety missing `Purchase history` (`0/4`) & FCM `App functionality`; `Play Integrity API 0/7`; Deep Links `none`; `16 KB` deadline **Feb 1, 2027**.
+  - **Fixed Account & Integrity & Data Safety (`21:50 IST`):** Saved Account Website (`https://ajay-waghmare.github.io/`); linked **Play Integrity API** to Cloud project `620724418792` (`On` for Licensing/App/Device); updated **Data Safety** (`Purchase history` Collected + `Device or other IDs` `App functionality` for FCM) and submitted (`Changes in review`); approved **Google Ads (`684-480-0945`) Linked Services**! Website (`bca6309`) & Privacy Policy (`faa8483` -> `14 months`) also pushed live.
+  - **Remaining Play Gaps / Decisions:** Missing 30s Promo Video (`O-3`); `Managed Publishing` = OFF & `License Testing` unchecked (awaiting Ajay decision); Deep Links `none`; `16 KB` deadline **Feb 1, 2027**.
 * **Firebase & GA4 (`block-bloom-31b39` / `555700046`):**
   - **Fixed:** Added all Release (`Play App Signing` + `Upload`) & Debug SHA-1/SHA-256 fingerprints; **linked Google Play** in Firebase Integrations; published **Remote Config `v9`** (`11` keys, all 5 `vc40` defaults added cleanly, `E1` + `autumn_bloom_challenge` untouched).
-  - **Remaining GA4/Perf Gaps:** Perf Monitoring `No data`; GA4 **`0` custom dimensions** & **`16` bloated Key Events** (blocked by `403` without SA `Editor` role on `555700046` or GA UI sign-in); **`Google Signals DISABLED`**.
+  - **Remaining GA4/Perf Gaps:** Perf Monitoring `No data`; GA4 **`0` custom dimensions** & **`16` bloated Key Events** (blocked by `401` on GA4 IAM webview & `403` SA API without `Editor` role on `555700046`); **`Google Signals DISABLED`**.
 * **AdMob (`pub-1693732810683011`):**
   - **Fixed:** Created **`Block Bloom - Banner`** mediation group (`8407768586`, `AdMob Network` Active) -> Banner now shows `1 active`.
   - **Remaining / Decisions:** `MA` content rating vs Play `13+` (`References to Sex` 11.9% impr / 7.2% rev) awaiting Ajay decision (`MA` -> `T`); GDPR Consent Mode OFF & Auto-add ad partners OFF; Mintegral awaiting approval; verify India/W-8BEN tax inside AdMob Payments.
 * **Google Ads (`684-480-0945`):**
-  - **Fixed:** Balance `₹1,308.45`, Paused (`₹0/day`), TZ IST. `BlockBloom-Tier1-EN` creatives upgraded to **`5/5` clean Descriptions** + **`1/20` Video** (`https://youtube.com/shorts/Cc5TRVKpt7c`); `App-1` `"Zero Mid-Game Popups"` replaced with `"Free 8x8 Block Puzzle Fun"`.
-  - **Remaining (stopped by 429 quota at `21:09 IST`):** Confirm `Presence` + `English` save state; disable rule `62682154` (`3000 spend`); change YouTube follow-on/subscriptions `Primary` -> `Secondary`; import GA4 `first_open`; approve Google Play link; submit `India tax info`.
+  - **Fixed (`21:50 IST`):** Confirmed both campaigns `Paused` (`₹0/day`), TZ IST. Verified `BlockBloom-Tier1-EN` **`Presence`**, **`English`**, **`5/5` clean Descriptions**, **`1/20` Short #1 Video**, `App-1` clean Headline 5, **Rule `62682154` (`Pause Tier1 at 3000 spend`) `Paused`**, BOTH YouTube conversion actions **`Secondary`**, and **Google Play (`8701670281323658688`) Linked**. (`first_open` not selectable in GA4 App import search; Play `installs` remains Primary.)
+  - **Remaining (Ajay Action):** Submit `India tax info` alert in Google Ads Billing; decide on optional Advertiser Verification / `in_app_purchase` import.
