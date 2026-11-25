@@ -15,7 +15,10 @@
    - Added **4 Release SHA fingerprints** (`Play App Signing` SHA-1 `E9:E1:8C:75:2F:CA:66:97:68:FE:BB:6E:3A:17:82:CD:0F:AE:10:CB` & SHA-256 `BE:51:65:B1:17:B0:2E:FD:68:BE:B8:67:4E:80:04:EE:2E:8F:96:F0:C2:B6:86:7C:23:7A:57:42:4D:C1:90:EB` + Upload Key SHA-1/SHA-256) to `com.aweagle.blockbloom` and **2 Debug SHA fingerprints** to `.debug`.
    - **Linked Google Play integration** (`App Distribution`, `Crashlytics`, `Google Analytics` `1/2` apps).
    - **Published Remote Config `v9`** (`2026-11-25T15:48:16Z`) adding all 5 missing `vc40` defaults (`ads_interstitial_min_gap_s=150`, `ads_rewarded_ready_only=true`, `ads_rewarded_fallback_grant=true`, `remove_ads_offer_enabled=true`, `review_prompt_enabled=true`) alongside existing 6 keys (`E1` & `autumn_bloom_challenge` untouched).
-6. **AdMob (`pub-1693732810683011`):** Created & verified **`Block Bloom - Banner`** mediation group (`8407768586`, `Android`, `Banner`, `All countries`, `AdMob Network` Active) -> `Block Bloom Banner` now shows `1 active`.
+6. **AdMob (`pub-1693732810683011`):**
+   - Created & verified **`Block Bloom - Banner`** mediation group (`8407768586`, `Android`, `Banner`, `All countries`, `AdMob Network` Active) -> `Block Bloom Banner` now shows `1 active`.
+   - **Q2 Applied & Verified (`2026-11-25 22:27 IST`):** Account-level & Block Bloom (`~8657812038`, `Match account-level setting = ON`) Max Ad Content Rating changed **`MA` → `T` (`Teens` / `MA ads are blocked`)**; Block Bloom Sensitive Categories **`References to Sex` → `Blocked`** (`Sexual & Reproductive Health` untouched at `Allowed`; `Dating`/`Social Casino`/`Alcohol`/`Gambling 18+` untouched at `Blocked`).
+   - **GDPR Settings Verified (`2026-11-25 22:30 IST`):** Enabled **`Automatically add ad sources as ad partners`**, **`Enable consent mode for advertising purposes`**, and **`Enable consent mode for analytics purposes`** (`Save` persisted with zero message overwrite warnings).
 7. **Google Play Console (`8701670281323658688` / `4976030358371797626`) — Completed & Verified:**
    - **Account Website:** Saved `https://ajay-waghmare.github.io/` (optional Google Search Console verify button remains available).
    - **Play Integrity API:** Linked Cloud project **`Block Bloom`** (`620724418792` / `block-bloom-31b39`); App licensing, Application integrity, and Device integrity all **`On`**.
@@ -30,9 +33,10 @@
 
 ## ⏳ Remaining Unfinished Technical Fix & Pending Ajay Decisions
 - **GA4 (`555700046`) Property Access / Schema Cleanup:** Embedded webview gets HTTP `401` on `analyticssuitefrontend-pa.clients6.google.com` (`/v1/usermanagement/...`). Ajay needs to add `play-publisher@avid-airway-498216-e5.iam.gserviceaccount.com` as **`Editor`** on `555700046` in his regular browser so Node API immediately registers the `10` custom dimensions (`ad_format`, `placement`, `trigger`, `reason`, `via`, `step`, `offer`, `action`, `result`, `event_id`) and removes the `10` noisy Key Events (`session_start`, etc.).
-- **Ajay One-by-One Decisions Progress (`1/4` Locked):**
+- **Ajay One-by-One Decisions Progress (`2/4` Locked & Executed):**
   - **[DECIDED Q1 — 2026-11-25]:** **Arrow Bloom (`com.aweagle.arrowbloom`)** keeps `1.0.0` dark/offline until it passes Play's 12-tester × 14-day Production review; then create a **dedicated `arrow-bloom` Firebase project** and add Firebase + AdMob in `1.1.0` under the same GA4 account (`409217568`).
-  - **Pending (Q2–Q4):** (2) AdMob `MA` → `T`/`PG` rating & `References to Sex`, (3) Play `Managed Publishing` ON + `License Testing`, (4) Manual account/tax/tester tasks (`9/12` → `12/12` Arrow Bloom testers, Google Ads India Tax, AdMob India/`W-8BEN` Tax, Firebase Remote Config Blaze notice, GA4 IAM grant).
+  - **[DECIDED & APPLIED Q2 — 2026-11-25]:** AdMob Max Ad Content Rating set to **`T` (Teens)** AND **`References to Sex` blocked** (plus GDPR Consent Mode + Auto-add ad sources enabled).
+  - **Pending (Q3–Q4):** (3) Play `Managed Publishing` ON + `License Testing`, (4) Manual account/tax/tester tasks (`9/12` → `12/12` Arrow Bloom testers, Google Ads India Tax, AdMob India/`W-8BEN` Tax, Firebase Remote Config Blaze notice, GA4 IAM grant).
 
 ---
 
@@ -142,8 +146,8 @@
 
 ### Decisions Needed From Ajay
 1. **[DECIDED 2026-11-25 — Q1 Approved]:** Keep `block-bloom-31b39` dedicated to Block Bloom only, keep Arrow Bloom `1.0.0` dark/offline through the 12-tester × 14-day Production review, and create a **dedicated `arrow-bloom` Firebase project** under GA4 Account `409217568` when adding Firebase + AdMob in `1.1.0`.
-2. **AdMob Max Content Rating (Q2 — Next):** Tighten **`MA` → `T` (Teen)** (or `PG`) and block **`References to Sex`** (`11.9%` impr / `7.2%` rev)?
-3. **Play Console Controls (Q3):** Enable **Managed Publishing = ON** for Block Bloom and enable **`Block Bloom Testers`** in account **License Testing**?
+2. **[DECIDED & APPLIED 2026-11-25 — Q2 Approved]:** AdMob Max Ad Content Rating set to **`T` (Teens)** and **`References to Sex`** blocked (verified after reload), plus GDPR **`Automatically add ad sources as ad partners`**, **`Enable consent mode for advertising purposes`**, and **`Enable consent mode for analytics purposes`** saved cleanly.
+3. **Play Console Controls (Q3 — Next):** Enable **Managed Publishing = ON** for Block Bloom and how should account **License Testing** handle **`Block Bloom Testers`** (`34` emails)?
 4. **Already Executed (`"GO"` / `"Finish the unfinished ASAP"` Batch):** Websites, Play Store listings (Block Bloom 12 locales + Arrow Bloom `en-US`/`ja-JP`/`ko-KR`), Firebase SHA fingerprints + Play link + Remote Config `v9`, AdMob `Block Bloom - Banner` mediation group, Play Account Website + Play Integrity + Data Safety + Ads link accept, and Google Ads `Presence`/`English`/Descriptions/Video/`App-1` H5/Pause rule/YT conversions/`Google Play` link are all **DONE & verified**. Still GA4 IAM blocked by `401` in embedded webview (manual IAM grant needed for 10 custom dims + Key Event cleanup).
 5. **Ajay Manual Actions:**
    - Get **3 more testers** opted into Arrow Bloom (`9/12` → `12/12`) at `https://play.google.com/apps/testing/com.aweagle.arrowbloom`.
