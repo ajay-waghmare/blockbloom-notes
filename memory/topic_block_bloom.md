@@ -83,10 +83,32 @@
 
 ---
 
-## 6. Daily Analytics Baseline (Nov 24, 2026)
-* **DAU:** 31 active users.
-* **New Installs:** 9 (100% organic, ₹0 ad spend).
-* **Total Sessions:** 47.
-* **Total Playtime:** 402.7 minutes (~13.0 min / user).
-* **Ad Revenue:** **$0.46 (~₹39.10)** with **100% profit margin**.
-* **Tier-1 Contribution:** US generated 3 organic installs and 5 active users today; Tier-1 accounts for ~78% of ad revenue despite being ~15% of players ($0.06 / active user).
+## 6. Daily Analytics & EOD Ground Truth (Nov 25, 2026 · 17:11 IST)
+* **DAU:** `16` active users today (organic only; paid ads paused Nov 22 per Plan v2).
+* **New Installs Today:** `4` — **all `4` from United States** (100% Tier-1).
+* **Sessions / Playtime Today:** `54` sessions (`3.4/user`), `212.5` min total (`13.3` min/user).
+* **Ad Revenue Today:** **`$0.52`** (~₹44, on track vs Plan Day 3 target `₹30`); 7-day total `$3.71` (₹316, Tier-1 share `$2.74` = `74%`).
+* **7-Day Funnel & Vitals:** `tutorial_complete` 7d = `68.9%` (mostly pre-`vc40`; `v1.17.0` today `2/3`), `0.00%` crashes, `0.44%` Play vitals ANR. `OnePlus8Pro` US bot fired `56` `app_clear_data` events causing inflated `ad_failed_to_load` (`44/43`).
+* **Play Reviews:** `0` unanswered/recent reviews (`play-reviews.js` HTTP 200 `{}`).
+* **Content Staged Today:** `01-blockbloom/plan-2026-11/content/clip-captions-week1.md` (Days 3–9 captions + UTM links) and `reddit-post-1-playmygame.md` (Fri Nov 27).
+
+---
+
+## 7. Nov 25 Deep 4-Console Audit Findings (Full Detail: [`topic_console_audit_2026_11_25.md`](topic_console_audit_2026_11_25.md))
+* **Play Console (`8701670281323658688` / `4976030358371797626`):**
+  - **O-1 Incomplete Outside `en-US`:** All `12` non-English locales still carry old pre-ads claims (`pt-BR` still says `"nada interrompe a partida"`).
+  - **Missing Promo Video (`O-3`)** on default listing; **Managed Publishing = OFF**; **Account Website = `-`**; **License Testing** list `Block Bloom Testers` unchecked.
+  - **Data Safety Gaps:** `Purchase history` = `0/4` despite 4 active IAP SKUs; `App functionality` unchecked under `Device or other IDs` for FCM push tokens.
+  - **Integrity & Deep Links:** `Play Integrity API 0/7` (no Cloud project linked); `Deep links: none`; `16 KB` RELRO extension deadline **Feb 1, 2027**.
+* **Firebase & GA4 (`block-bloom-31b39` / `555700046`):**
+  - `0` SHA-1/SHA-256 fingerprints on both Android apps; **Google Play** unlinked in Firebase Integrations; **Performance Monitoring** shows `No data`; **Remote Config Console** missing `5+` `vc40` kill switches registered in `BlockBloomApp.kt`.
+  - GA4 **`0` custom dimensions** (`ad_format`, `placement`, `via`, `trigger`, etc. unmeasurable); **`16` Key Events** bloated by `session_start` & e-commerce noise; **`Google Signals DISABLED`**; retention = `14 months` (**contradicts `privacy-policy.html` `2 months` claim**).
+  - **A/B Test `E1`:** Baseline `32` users `$0.06` vs Variant A `32` users `$0.90` (`+1,503%`, `p=0.097`).
+* **AdMob (`pub-1693732810683011`):**
+  - **Max Ad Content Rating = `MA`** (should be `T` to match Play `13+` audience; `References to Sex` + `Sexual & Reproductive Health` each ~`11.9%` impr / `7.2%` rev).
+  - **`Block Bloom Banner` (`~3081693900`) has `0` active mediation groups** (falls back to `AdMob (default)`).
+  - GDPR (`67%` consent): **Consent mode OFF**, **Auto-add ad partners OFF**, English-only. Tax status (`India` / `W-8BEN`) needs manual verification (iframe blocked).
+* **Google Ads (`684-480-0945`):**
+  - Balance `₹1,308.45`, Paused (`₹0/day`), TZ IST.
+  - **`BlockBloom-Tier1-EN` leaks:** `Presence or interest` instead of `Presence`; `All languages` instead of `English`; `0/20` videos (`Ad strength: Poor`); `3/5` descriptions with inaccurate/legacy copy (`App-1` still says `"Zero Mid-Game Popups"`); **old automated rule `62682154` (`Pause Tier1 at 3000 spend` all-time) will cut Burst 1 short at `₹1,208`**.
+  - **Google Play not linked**; **`first_open` NOT imported**; `YouTube follow-on views` & `channel subscriptions` marked **`Primary`**; active `Submit India tax info` warning.

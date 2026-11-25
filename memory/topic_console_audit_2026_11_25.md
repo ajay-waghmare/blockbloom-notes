@@ -1,0 +1,121 @@
+# Topic Memory: 4-Platform & Website Live Audit (`2026-11-25`)
+
+> **Audit Scope:** Google Play Console (`8701670281323658688`), Firebase + GA4 (`block-bloom-31b39` / `555700046`), Google AdMob (`pub-1693732810683011`), Google Ads (`684-480-0945`), and hosted web assets (`ajay-waghmare.github.io`, `app-policy`).
+> **Verification Mode:** Strictly read-only browser UI inspections + live Play Publisher API + GA4 Admin/Data APIs + local file inspection. Zero unverified assumptions.
+> **Latest Updated:** 2026-11-25 (20:30 IST)
+
+---
+
+## 1. Firebase & GA4 Deep Audit (`block-bloom-31b39` · Project `#620724418792`)
+
+### Project & App Setup
+- **Single Project Only:** Only `block-bloom-31b39` (**Spark** no-cost plan) exists under `ajaywaghmare00a@gmail.com`. **No Firebase project or app exists for Arrow Bloom (`com.aweagle.arrowbloom`).**
+- **Registered Apps (`2`):** `com.aweagle.blockbloom` (`1:620724418792:android:a7b375000072c50ff6f15d`) and `com.aweagle.blockbloom.debug` (`1:620724418792:android:7d259bd308ca559ef6f15d`). (`google-services.json` also maps legacy `.aurora`/`.royal` flavor names to that second ID.)
+- **CRITICAL — `0` SHA-1 / SHA-256 Fingerprints:** Neither Android app has release (Play App Signing) or debug SHA-1/SHA-256 added. Blocks Play Integrity/App Check, App Links verification, and Google Sign-In/PGS if ever needed.
+- **Integrations:**
+  - Linked: Google Analytics (`555700046`), AdMob (`com.aweagle.blockbloom` only), Google Ads (`684-480-0945`, linked `Nov 16, 2026`).
+  - **UNLINKED:** **Google Play** (unlinked!), BigQuery, Display & Video 360, Cloud Logging.
+- **Cloud Messaging:** FCM API (V1) enabled (`Sender ID 620724418792`); 0 Messaging campaigns sent/created.
+- **Remote Config (`v8`, `146` fetches / `122` users in 24h):**
+  - Only **6** keys visible in Console (`ads_banner_enabled`, `ads_interstitial_enabled`, `ads_interstitial_interval`, `ads_mediation_enabled`, `live_events`, `min_supported_version_code`).
+  - Code (`BlockBloomApp.kt:58-76`) registers **15** defaults (`ads_interstitial_min_gap_s`, `ads_rewarded_ready_only`, `ads_rewarded_fallback_grant`, `remove_ads_offer_enabled`, `review_prompt_enabled`, `lucky_chest_*`) — `vc40` kill switches are not yet surfaced in Console.
+  - Console displays Blaze upgrade pricing notice (`"upgrade to Blaze by Nov 15, 2026 for usage-based pricing starting Sept 1, 2026"`).
+- **A/B Testing (`E1 interstitial on vs off`):** 87d remaining; Baseline `32` users `$0.06` (`$0.0018/user`) vs Variant A `32` users `$0.90` (`$0.028/user`), `+1,503%`, `p = 0.097` (not yet statistically significant).
+- **Crashlytics:** `99.15%` crash-free users, `99.76%` crash-free sessions (`6` crashes / `2` users in 7d, `4` open issues including obfuscated `SourceFile` AppLovin crawler traces).
+- **Performance Monitoring:** SDK + Gradle plugin enabled (`build.gradle.kts:8,248`, `BlockBloomApp.kt:34`) yet Console reports **`No data`**.
+- **App Check / Test Lab / App Distribution:** Unconfigured (`Test Lab` shows deprecation notice `Sept 30, 2027`).
+
+### GA4 Property `555700046` (Account `409217568` · TZ `Asia/Calcutta` · `USD`)
+- **Streams:** `15836064648` (`com.aweagle.blockbloom`), `15837881470` (`com.aweagle.blockbloom.debug`).
+- **CRITICAL — `customDimensions` = `{}` (`0` custom dimensions):** Code logs `ad_format`, `placement`, `trigger`, `reason`, `via`, `step`, `offer`, `action`, `result`, `event_id`, etc., but NONE are registered in GA4, making format/placement breakdown impossible in GA4 reports.
+- **CRITICAL — `keyEvents` = `16` (Bloated):** Contains `first_open`, `tutorial_complete`, `in_app_purchase`, `purchase`, `app_store_subscription_convert`, `app_store_subscription_renew` PLUS noisy **`session_start`**, `add_to_cart`, `add_to_wishlist`, `begin_checkout`, `view_item`, `view_item_list`, `view_search_results`, `daily_challenge_done`, `ad_reward`, `first_clear`.
+- **Retention:** `FOURTEEN_MONTHS` (`resetUserDataOnNewActivity: true`) — **contradicts `privacy-policy.html` which still states `2 months`**!
+- **Google Signals:** **`GOOGLE_SIGNALS_DISABLED`**.
+- **Attribution:** `PAID_AND_ORGANIC_CHANNELS_DATA_DRIVEN` (`30d` acquisition, `90d` other, `GOOGLE_PAID_CHANNELS`).
+- **Audiences:** Default `All Users` and `Purchasers` (`540d`) only.
+
+### Recommended Long-Term Multi-App Firebase Architecture
+- Create **one dedicated Firebase project per game** (`block-bloom-31b39` stays dedicated to Block Bloom; create `arrow-bloom` when Arrow Bloom adds telemetry/ads), and link **all projects under the same GA4 Account (`409217568`)**, **AdMob (`pub-1693732810683011`)**, **Play Developer (`8701670281323658688`)**, and **Google Ads (`684-480-0945`)**.
+- Why separate Firebase projects: Remote Config keys (`live_events`, `min_supported_version_code`, `ads_*`), A/B experiments, FCM push campaigns, and Crashlytics quotas are project-scoped and risk cross-app contamination if shared without a unified backend.
+
+---
+
+## 2. Google Play Console Audit (`AW EagleCraft` · `8701670281323658688`)
+
+### Account-Level
+- **Account:** Personal / `Non-trader` (`Declare your trader status by Feb 1, 2027`). Owner: `ajaywaghmare00a@gmail.com`; Console contact email: `ajaywaghmare11a@gmail.com` (store support: `ajaywaghmare00a@gmail.com`); **Account Website: `-` (blank)**.
+- **Payments Profiles:** `0527-7459-1552-0300 - Cross border` and `7007-0018-9201-7637 - India only` (INR).
+- **License Testing:** `Block Bloom Testers` (`34` emails) is **UNCHECKED**; license response `RESPOND_NORMALLY`.
+- **Google Play Games Services:** None.
+
+### Block Bloom (`4976030358371797626`)
+- **Rollout & Vitals:** `1.17.0 (41)` (`Bidding Mediation`) at 100%, `0` pre-launch errors, `0.00%` crashes, `0.44%` ANR.
+- **16 KB Policy Extension:** Approved until **Feb 1, 2027** (`vc41` flags 10 RELRO-incompatible adapter libs + 2 Edge-to-edge + R8 warnings for next release).
+- **Managed Publishing:** **OFF**.
+- **HIGH RISK — Store Listings (`13` locales):** `en-US` updated Nov 23, **all 12 non-English locales** (`pt-BR`, `es-419`, `es-ES`, `ja-JP`, `de-DE`, `ko-KR`, `zh-TW`, `tr-TR`, `uk`, `id`, `ar`, `vi`) STILL contain pre-ads claims (`"reward videos ONLY when you choose"`, and `pt-BR` still says `"nada interrompe a partida"`). **Promo Video (`O-3`):** empty.
+- **Custom Listing & Experiments:** `Tier1-EN` Live (`6` countries, 100%, no conversion data yet); `Global App Icon Test` running (Variant 1 `230` vs Current `181`, `"More data needed"`); `Autumn Bloom Challenge` (`Nov 30 – Dec 7 UTC`) `Not started` (Approved).
+- **Data Safety Gaps:** **`Purchase history: 0/4`** despite 4 active SKUs (`remove_ads`, `gems_small`, `gems_medium`, `gems_large`); **`App functionality`** unchecked under `Device or other IDs` for FCM tokens.
+- **App Integrity & Setup:** `Play Integrity API` `0/7` (**no Cloud project linked**); **Deep Links: none**; Play Billing protection `3/4` (offer usage limits off).
+- **Legacy API Note:** `/inappproducts` returns HTTP 403 (`Please migrate to the new publishing API`); `/oneTimeProducts` is active and works.
+
+### Arrow Bloom (`4972007048514376994`)
+- **Tracks:** `Closed testing - Alpha` `vc4` (`1.0.0`) **Live / Available to testers on Google Play** (`Full rollout`, `178` countries, Nov 25 1:50 PM); `Internal testing` `vc4` live (Nov 25 1:34 PM).
+- **PRODUCTION BLOCKER:** Only **`9/12` testers opted-in** (needs **3 more** before the mandatory **14-day continuous clock** even starts!).
+- **Store Listing Warning:** Short description `"Tap arrows to set them free..."` triggers Play warning *"Should not use keywords that indicate price or promotion"* (flagged by `"free"`).
+- **Missing Store Assets & Integrity:** **0 tablet screenshots** (`7-inch` & `10-inch`), **0 promo video**, **0 pre-launch reports**, **`Play Integrity API` `0/7`** (no Cloud project linked), `3` Android 15/16 advisories (`Edge-to-edge x2`, resizability/orientation).
+- **App Content (`10/10`):** Clean for offline `1.0.0` (`Ads=No`, `Ad ID=No`, `Data safety = no data collected`). Must update before adding any analytics/ads SDKs.
+
+---
+
+## 3. Google AdMob Audit (`pub-1693732810683011`)
+
+- **Account:** `Open`, `No current issues`, `sellers.json = Transparent`, `IST` TZ, `USD` payout, `User metrics = ON`, `app-ads.txt` (`https://ajay-waghmare.github.io/app-ads.txt`) verified 100% authorized (crawled 2h ago).
+- **HIGH RISK — Blocking Controls (`C-21`):**
+  - Max Ad Content Rating = **`MA` (Mature Audiences — `"No ads are blocked"`)** while Block Bloom Play Store rating is **Everyone / PEGI 3 / Target 13+**.
+  - Sensitive categories allowed include **`References to Sex` (`11.9%` impr / `7.2%` rev)** and **`Sexual & Reproductive Health` (`11.9%` impr / `7.2%` rev)**. (`Dating`, `Social Casino Games`, `Alcohol`, `Gambling 18+` are blocked.)
+- **CRITICAL REVENUE LEAK — Mediation Groups:**
+  - `Block Bloom Banner` (`~3081693900`, `120s` refresh ✅, eCPM floor `Disabled`) has **`0` active mediation groups** (falls back to `AdMob (default)`).
+  - `Block Bloom Interstitial` (`~5516285554`, `Google optimized (All prices)` floor, `No cap`) & `Rewarded` (`~7020938918`, `Disabled` floor, `No cap`) have **only `AdMob Network`** (`0` third-party bidders mapped yet; awaiting **Mintegral** staff approval; Pangle dropped corporate-only; AppLovin closed to new pubs; Liftoff paused; Meta deferred pending 2FA).
+- **Privacy & Messaging:**
+  - GDPR (`67%` consent, `57` shown, `199` partners, English only, Block Bloom only): **`Consent mode` = UNCHECKED**, **`Automatically add ad sources as ad partners` = UNCHECKED**, `0` purposes selected.
+  - US states (`0` shown, `349` partners, `en-US` only, Block Bloom only).
+- **Payments Frame:** Embedded AdSense/Payments frame blocked by `X-Frame-Options: sameorigin` (verify India Tax & US `W-8BEN` manually to prevent 24–30% US withholding).
+- **Arrow Bloom:** Confirmed **NOT added in AdMob yet**. Hidden `(Windows PC) Block Bloom` (`~7355057391`) sits in `Requires review / Limited ad serving`.
+
+---
+
+## 4. Google Ads Audit (`684-480-0945`)
+
+- **Account:** Active, `Paused` (`₹0.00` spend Nov 25), TZ `(GMT+05:30) India Standard Time`, Currency `INR`, Auto-tagging `Yes`, Auto-apply recommendations `OFF` ✅, Balance **`₹1,308.45`** (`Funds running low`).
+- **CRITICAL LEAKS & TRAPS IN `BlockBloom-Tier1-EN`:**
+  1. **Location options = `Presence or interest`** instead of **`Presence`** (leaks budget outside US/UK/CA/AU/NZ/IE).
+  2. **Languages = `All languages`** instead of **`English`**.
+  3. **Automated Rule Trap (`Pause Tier1 at 3000 spend`, ID `62682154`):** Evaluates **all-time** cost `>= ₹3,000`. Campaign already spent **`₹1,791.60`**, so **Burst 1 (`₹3,500` on Dec 12) will auto-pause after only `₹1,208.40`!** (Rule `62682241` also exists for `App-1` at `₹2,000`.)
+  4. **Creatives (`Ad strength: Poor`):** **`0/20` Videos** (even though `@ajaywaghmare7034` is linked), **`3/5` Descriptions**, **`3/20` Images**, and stale/inaccurate copy (`"Easy, Classic, and Master Hard modes"`, `"explosive jewel cascades"`, plus `App-1` still says **`"Zero Mid-Game Popups"`**).
+- **Broken Account-Level Conversions & Links:**
+  - **Google Play (`8701670281323658688`) = NOT LINKED** in `Data manager`.
+  - **`first_open` NOT imported** (`C-01` incomplete).
+  - **`YouTube follow-on views`** + **`YouTube channel subscriptions`** set as **`Primary`** (pollutes optimization!), while `tutorial_complete` is `Secondary`. Zero IAP/ad-revenue conversions.
+- **Compliance Warnings:** Active alert **`Submit your India tax info`**, **`Advertiser Verification`** & `EU political ads` unstarted, `Data protection contacts = None`.
+- **Arrow Bloom:** `0` campaigns/conversions.
+
+---
+
+## 5. Website & Policies (`ajay-waghmare.github.io` & `app-policy`)
+
+- `ajay-waghmare.github.io/index.html` links only Block Bloom (missing Arrow Bloom + link to `arrow-bloom-privacy.html`).
+- `app-policy/privacy-policy.html` says Firebase retains data for **`2 months`**, contradicting GA4 Property `555700046` (`14 months` / `FOURTEEN_MONTHS`) and claims data isn't used for ad profiles while `adsPersonalizationEnabled = true` on GA4 Google Ads link + audiences.
+
+---
+
+## 6. Pending Ajay Decisions & Execution Queue
+
+### Decisions Needed From Ajay
+1. **Firebase Multi-App:** Confirm **Option A** — keep `block-bloom-31b39` for Block Bloom only, and create a separate `arrow-bloom` Firebase project under GA4 Account `409217568` once Arrow Bloom `1.0.0` graduates Closed Testing (`1.1.0` adds Firebase + AdMob).
+2. **AdMob Max Content Rating:** Approve tightening **`MA` → `T` (Teen)** (matching Play `13+` target audience) and blocking **`References to Sex`** (`~7.2%` current rev)?
+3. **Play Console Controls:** Enable **Managed Publishing = ON** for Block Bloom and enable **`Block Bloom Testers`** in account **License Testing**?
+4. **`"GO"` for Batch Optimization:** Approve executing API/script fixes (GA4 Key Events + 10 custom dimensions, Remote Config 5 missing kill switches, 12 non-English Block Bloom listings + Arrow Bloom `"set them free"` fix, Studio Website + Privacy Policy `14 months` alignment) AND Browser UI fixes (Google Ads `Presence`/`English`/copy/video/Play-link/`first_open`/Pause-rule fix, AdMob Banner group + GDPR Consent Mode/Auto-add, Play Integrity + Data Safety + SHA-1/256)?
+5. **Ajay Manual Actions:**
+   - Get **3 more testers** opted into Arrow Bloom (`9/12` → `12/12`) at `https://play.google.com/apps/testing/com.aweagle.arrowbloom`.
+   - Submit **India Tax** in Google Ads (`684-480-0945`) + verify **India Tax & US `W-8BEN`** in AdMob Payments + check Firebase Remote Config Blaze notice.
+   - Sign in on the open Firebase Analytics frame if UI Analytics tabs need visual inspection.

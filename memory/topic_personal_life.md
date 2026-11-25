@@ -11,7 +11,7 @@
 > **YouTube Channel:** `@ajaywaghmare7034` (ID: `UCBZUj4KPehpaCozGzVB01eg`)  
 > **GitHub User:** `ajay-waghmare`  
 > **Primary Private Memory Repo:** `https://github.com/ajay-waghmare/blockbloom-notes.git` (`journal`)  
-> **Latest Updated:** 2026-11-24  
+> **Latest Updated:** 2026-11-25 (20:30 IST)  
 
 ---
 
@@ -216,7 +216,7 @@ Health is Ajay's foundation. Without physical vitality, all other goals suffer.
 1. **Maximizing Primary Earning Potential:** Growing into high-impact software engineering, AI architecture, and cloud leadership roles.
 2. **Compounding Commercial Assets (AW EagleCraft):**
    - **Block Bloom (`com.aweagle.blockbloom`):** Live in 177 countries (`vc41`), AdMob bidding mediation, 100% profit margin, organic growth loops.
-   - **Arrow Bloom (`com.aweagle.arrowbloom`):** Closed testing staged, preparing for 14-day 20-tester graduation to Production.
+   - **Arrow Bloom (`com.aweagle.arrowbloom`):** `1.0.0 (4)` live on Closed Alpha (`9/12` testers opted in; needs `3` more for 14-day Production gate).
    - Building side projects and software products that generate independent cashflow.
 3. **Sound Investment Fundamentals:**
    - Mastering personal finance, high savings rate, and disciplined equity investing.
@@ -265,5 +265,5 @@ Ajay refuses to let his identity be consumed solely by his career. Life is meant
 2. **Progressive Explanation:** Simple intuition → Relatable analogy → Technical architecture → Practical code/implementation → Trade-offs and limits.
 3. **Concrete and Actionable:** No vague platitudes. Always deliver exact exercises, exact code, exact prompt templates, and clear criteria for success.
 4. **One Question at a Time:** When coaching communication or exploring challenges, ask one question at a time to keep discussions natural and engaging.
-5. **Permanent Memory & Continuity:** Never ask Ajay to re-explain known context. Maintain persistent awareness across sessions.
+5. **Permanent Memory & Continuity (MANDATORY ON EVERY TASK):** Never ask Ajay to re-explain known context. At the start of every task/session, read `blockbloom-notes/memory/MEMORY.md` + active domain topic files + latest journals. Before concluding ANY task, update local rules/memory AND GitHub (`blockbloom-notes`, `arrowbloom-notes`, `BlockBloom/DAILY_ACTIVITY.md`) in clean UTF-8, commit, and push so any fresh AI/session (Gemini, Claude, Codex, Antigravity) can resume immediately.
 6. **Help Him Think & Act Independently:** Do not foster dependency. Equip Ajay with the mental models, communication fluency, and engineering confidence to excel autonomously.
