@@ -7,23 +7,27 @@
 > **Play Console Dashboard:** `https://play.google.com/console/u/0/developers/8701670281323658688/app/4972007048514376994/app-dashboard`  
 > **Repository:** `https://github.com/ajay-waghmare/ArrowBloom.git` (`release/2026-10-20-line-arrows`)  
 > **Notes Repository:** `https://github.com/ajay-waghmare/arrowbloom-notes.git` (`journal`)  
-> **Latest Updated:** 2026-11-24  
+> **Latest Updated:** 2026-11-25  
 
 ---
 
 ## 1. Google Play Console Status (Live Ground Truth)
-* **Production Track:** `(no releases)` — **NOT published to production.** The game is not visible to public users on Google Play.
-* **Open Testing (Beta Track):** `(no releases)`.
-* **Closed Testing (Alpha Track):**
-  - Release `1.0.0 (1)`: **Completed / Active** in closed testing.
-  - Release `1.0.0 (4)`: **Draft** (staged draft release).
-  - Tester List: "Block Bloom Testers" (34 users configured).
+* **Production Track:** `(no releases)` (`Inactive`) — **NOT published to production.** `Apply for production` button is disabled until Closed Testing criteria pass.
+* **Open Testing (Beta Track):** `(no releases)` (`Inactive`).
+* **Closed Testing (Alpha Track — `Closed testing - Alpha`):**
+  - Release `1.0.0 (1)`: **Completed / Available to selected testers** (178 countries, released Oct 20, 2026 10:15 AM).
+  - Release `1.0.0 (4)`: **Draft** (staged `4.aab`, Target SDK 36, **Supports 16 KB memory page size**, 18,182 supported devices, 0 errors).
+  - Tester List: "Block Bloom Testers" (34 emails listed).
+  - **Currently Opted-In Testers:** **`10` testers opted-in** (`2` shy of the `12`-tester minimum!).
   - Opt-in URL: [`https://play.google.com/apps/testing/com.aweagle.arrowbloom`](https://play.google.com/apps/testing/com.aweagle.arrowbloom)
 * **Internal Testing Track:**
-  - Release `1.0.0 (1)`: **Completed / Active**.
+  - Release `1.0.0 (1)`: **Completed / Available to internal testers**.
   - Release `1.0.0 (4)`: **Draft**.
-* **Last Console Update:** **October 20, 2026**.
-* **Monthly Active Devices:** 1 device.
+* **Publishing Overview & Policy:**
+  - `Managed publishing`: **Off** (`You have no unpublished changes`; last published Oct 20, 2026).
+  - `Policy status`: **No issues found**.
+  - `App content`: **10/10 declarations complete** (Data safety, Target audience 13+, Privacy policy, Ads=No, Advertising ID=No, Content rating, etc.).
+  - Non-blocking UX advisories on `1.0.0 (1)`: 3 standard Android 15/16 advisories (edge-to-edge & resizability/orientation).
 
 ---
 
@@ -64,8 +68,9 @@ The Google Play Console app bundle explorer has received 4 bundles:
 ---
 
 ## 5. Path to Production & Graduation Requirements
-Under Google Play's policy for personal developer accounts:
-1. **14-Day Closed Testing Requirement:** The app must run on the Closed Testing track with at least **20 testers opted in for a minimum of 14 continuous days**.
-2. **Promote Build 4:** Roll out `versionCode 4` (slimmer arrows, 5-star scoring, 100 levels) to the active closed testing track.
-3. **Apply for Production Access:** After meeting the 14-day threshold, Ajay must complete the Play Console Production Access questionnaire detailing testing feedback, bug fixes, and release readiness.
-4. **Rollout Approval:** Once Google grants production access, the app can be rolled out to the public Production track.
+Under Google Play's personal developer account testing policy (verified verbatim on Arrow Bloom Dashboard Nov 25, 2026):
+1. **12-Tester Opt-In Gate (2 More Needed):** Have at least **12 testers** opted into Closed Testing (`10` currently opted in — need **2 more** from the 34-person email list to click the opt-in link).
+2. **14-Day Continuous Clock:** Run the closed test with at least **12 testers continuously opted in for 14 days**.
+3. **Roll Out Build 4 (`1.0.0 (4)`):** Publish the staged `1.0.0 (4)` draft (slimmer line arrows, 5-star scoring, 100 levels) onto `internal` and `alpha` (Closed Testing) so testers experience the real version during the 14 days.
+4. **Apply for Production Access:** Once the 12 testers × 14 days checkmarks turn green, click `Apply for production` and answer the closed-test questionnaire.
+5. **Production Rollout Approval:** After Google approves production access, launch onto the public `Production` track.
