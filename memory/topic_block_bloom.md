@@ -78,7 +78,9 @@
 * **Short #1 (Live):** [`https://youtube.com/shorts/Cc5TRVKpt7c`](https://youtube.com/shorts/Cc5TRVKpt7c).
   - Title: `One piece. Two clears. 😌 #shorts #blockpuzzle #satisfying #relaxing`
   - Tracked Referrer Link: `https://play.google.com/store/apps/details?id=com.aweagle.blockbloom&referrer=utm_source%3Dshorts%26utm_medium%3Dsocial%26utm_campaign%3Dclips_nov26`
-* **Short #2 (Staged):** `BlockBloom/scratch/shorts/short_lineclear.mp4` (8s line clear save).
+* **Short #2 (Live Nov 26):** [`https://youtube.com/shorts/peMbAxgeJpI`](https://youtube.com/shorts/peMbAxgeJpI) (`short_lineclear.mp4`, `0:09` vertical, Public).
+  - Title: `Satisfying 8x8 Line Clear Save 🧩😌 #shorts #blockpuzzle #androidgames #satisfying`
+* **Reddit Post #1 (`r/playmygame`, Live Nov 26):** [`https://www.reddit.com/r/playmygame/comments/1y5ru1o/android_block_bloom_relaxing_88_block_puzzle_id/`](https://www.reddit.com/r/playmygame/comments/1y5ru1o/android_block_bloom_relaxing_88_block_puzzle_id/) (`u/Spirited-Air-916`, `[Mobile] (Android)`, verified top of `/new`, `Rule 7: 1 post/month`).
 * **Short #3 (Staged):** `BlockBloom/scratch/shorts/short_daily_challenge.mp4` (12s daily streak challenge).
 
 ---
