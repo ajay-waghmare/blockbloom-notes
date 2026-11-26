@@ -5,19 +5,19 @@
 > **Package Name:** `com.aweagle.blockbloom`  
 > **Play Console App ID:** `4976030358371797626`  
 > **Repository:** `https://github.com/ajay-waghmare/BlockBloom.git` (`main`)  
-> **Latest Updated:** 2026-11-26 (`22:36 IST` — `vc42` built, audited, committed to Play `internal 100%` + staged `production 20%` retaining `vc41`)  
+> **Latest Updated:** 2026-11-26 (`23:21 IST` — **`vc42` HOLD before Managed Publishing**; phone UI bugs found in `23:15 IST` screenshot -> **Claude handoff to polish `HomeScreen.kt` & ship `vc43` `1.18.1`**)  
 
 ---
 
-## 1. Current Live & Staged Production State
-* **Live Serving Production Version:** `v1.17.0` (`versionCode = 41`) preserved as `completed` in Play `production` track alongside `vc42`.
-* **Staged Rollout Version (`release/vc42`):** **`v1.18.0` (`versionCode = 42`)** — `"1.18.0 (42) - Daily Loop & LiveOps"` (`V41-02`, `V41-03`, `V41-04` Phase A, `V42-01` Winter Bloom, `V42-02` Adventure Home hero, OfferRules Day 2+/session 3+, non-resetting interstitial countdown on rewarded runs, clean GA4 `error_code`/`step`).
-* **Play Tracks Verified (`play-status.js`):**
-  - `production`: `vc42` (`inProgress`, `userFraction: 0.2`, Edit `05796451548276068436`, subject to Play Review + `Managed publishing on`) + `vc41` (`completed`).
-  - `internal`: `vc42` (`completed` `100%`, Edit `18103405302514738223`).
-* **Verification & Stability:** `183/183` release unit tests pass (`0` fail), `:app:lintVitalRelease` `No issues found.`, all 5 mediation adapters + `WinBackReceiver` preserved in R8 `mapping.txt`, `0` dangerous permissions, `0.00%` crashes on `vc41`.
-* **Release Artifact:** `releases/BlockBloom-v1.18.0-vc42-release.aab` (`21,643,784` bytes, `jarsigner` verified, R8 + shrink enabled).
-* **Open RC / Account Follow-ups:** Service account lacks Firebase RC `UPDATE_TEMPLATE` (`403`), so `vc42` uses compiled in-app defaults for the 5 new keys (`daily_loop_enabled`, `reminder_mode`, `reminder_variant`, `referral_enabled`, `home_adventure_button`) until published in Console UI (`E1` `50/50` still running until Dec 6 unless Ajay explicitly decides early end). `V42-03` offer gate is at **`4/5` unique tapping users** (`50%` `4/8` in `22:35 IST` KPI run).
+## 1. Current Live & Staged Production State (Plus `vc43` Handoff)
+* **Live Serving Production Version:** `v1.17.0` (`versionCode = 41`, `completed`) — still serving `100%` of users because `Managed publishing` is ON.
+* **Staged Rollout Version (`release/vc42` `19191e2`):** **`v1.18.0` (`versionCode = 42`)** — `internal` **`completed` 100%** (Edit `18103405302514738223`); `production` **`inProgress` 20%** retaining `vc41` (Edit `05796451548276068436`, queued in Play Managed Publishing). **HOLD `Publish changes` on `vc42`** — Ajay's phone test (`23:15 IST`, `Screenshot_20261126_231514.jpg`) found real UI defects to fix first in **`vc43` (`1.18.1`)**:
+  1. **`CONTI...` truncation (`HomeScreen.kt:283-367`):** Narrow `0.5f` teal button crams `PlayArrow` + uppercase `CONTINUE` + `28.dp` `Refresh` circle -> restore full-width primary Classic/Continue bar + external `54.dp` `↻` button and sleek full-width `50.dp` Frosted Violet **`Adventure · Level N >`** strip underneath (with responsive `HeroBlocks` scaling on `available < 670.dp`).
+  2. **`DAILY CHAL...` truncation + squashed 7th streak pip `0` + height mismatch (`HomeScreen.kt:1211-1482, 1929-1965`):** Daily header and `StreakLadderRow(compact=true)` were squeezed into `~90dp` next to `44.dp` progress ring, and cards were `126.dp` vs `116.dp`. Fix: lock BOTH `AuroraDailyChallengeCard` & `AuroraLuckyChestCard` to **`136.dp` height**, span Header + Streak Ladder + Timer across **full card width**, keep `40.dp` ring next to ONLY objective/rewards, replace `"📅"` with `Icons.Filled.CalendarMonth`, localize `AuroraSegmentedDifficulty`, and remove unused `onPlay` warning (`HomeScreen.kt:1601`).
+  3. **Ship `vc43` (`1.18.1`):** Cut `release/vc43` from `release/vc42`, bump `versionCode = 43` / `versionName = "1.18.1"`, copy `tools/release-notes/vc43.json`, pass `:app:testReleaseUnitTest :app:bundleRelease :app:lintVitalRelease` + R8/manifest checks, replace `vc42` on `internal` (`100%`) & `production` (`20%` `inProgress` retaining `vc41` via fixed `tools/play-rollout.js`), then Ajay approves Managed Publishing.
+* **Latest Live Telemetry (`23:10 IST`):** `active 30m = 4`; `1.17.0` today `10` users / `16` sessions; **`V42-03` offer gate `4/5` users (`50%` `4/8`)**; `219` 7d Real-Geo DAU (`₹326.92`), `SM-S928U = 62.7%` of rev, `0%` Tier-1 D1 (`0/41`).
+* **Open RC / Account Actions (Fri 27 – Sat 28 Nov):** Service account lacks Firebase RC `UPDATE_TEMPLATE` (`403`) — add the `5` `vc42` RC keys in Console UI + Ajay decides on ending `E1` early (`ads_interstitial_enabled = true` `100%`); post Day 5 clip `short_daily_challenge.mp4`; upload `O-3` `15–30s` Store Video; check Mintegral approval email; submit `Winter Bloom` card Sat Nov 28.
+* **Release Artifact (`vc42`):** `releases/BlockBloom-v1.18.0-vc42-release.aab` (`21,643,784` bytes, `jarsigner` verified, `183/183` tests, `lintVitalRelease` `No issues found.`).
 
 ---
 
