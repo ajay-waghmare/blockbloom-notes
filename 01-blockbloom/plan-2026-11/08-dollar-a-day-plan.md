@@ -51,7 +51,7 @@ At current observed FX (`₹93.01 / $1.00` in GA4 `Nov 20–26`), **`$1.00/day =
 ### Phase 2: Build the Retention, Loop & Monetization Engine — `vc42` (`Tue 1 Dec – Fri 11 Dec`, Spend: ₹0)
 **Goal:** Raise ARPDAU (`~$0.46 → ~$0.75/day`) and fix Tier-1 D1 (`0% → ≥ 18%`) **BEFORE spending ₹3,500 on Burst 1**.
 
-1. **`vc42` (`1.18.0`) Engineering Scope (Target Internal `Fri 4 Dec`, Staged `Mon 7 – Wed 9 Dec`, 100% by `Thu 10 Dec`):**
+1. **`vc42` (`1.18.0`) Engineering Scope (**COMPLETED & STAGED EARLY `Thu 26 Nov 22:36 IST`** on `release/vc42` -> Play `internal 100%` + `production 20%` awaiting Managed Publishing; 100% target `~Nov 28–29` after 24h watch):**
    - **`V41-02` Daily Loop + Day-Rollover Fix + Come-Back Chest:** Replace hardcoded `"15h 22m"` in `AuroraDailyChallengeCard`, show real goal types, add 7-day Streak Ladder (Day 3 `+2` gems, Day 7 `+5` gems + `1` Hammer) and Come-Back Chest (`150` coins + `1` lifeline). Directly creates a D1/D2/D3 open hook + more `daily_double` Rewarded views (`$4–$8` eCPM).
    - **`V42-02` Adventure Hero Tile + `V41-03` Smart Streak Reminders:** Surface Adventure Levels next to Classic on Home (`level_complete` is currently `3u/wk`) and schedule streak-at-risk reminder at the player's active hour.
    - **`V41-04` Share Score Card + Referral Link (`O-10`):** Viral organic loop (`utm_source=referral` tracked).

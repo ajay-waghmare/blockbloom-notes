@@ -8,7 +8,7 @@
 
 | Topic File | Scope / Domain | Status | Key Focus Areas |
 | :--- | :--- | :---: | :--- |
-| **[`topic_block_bloom.md`](topic_block_bloom.md)** | **Block Bloom: Block Puzzle Game** | 🟢 Live / Active | Production `v1.17.0 (41)` (`vc41`), AdMob bidding mediation (Mintegral pending approval), 16 KB policy extension (Feb 1 2027), LiveOps events, store listings, social shorts, telemetry. |
+| **[`topic_block_bloom.md`](topic_block_bloom.md)** | **Block Bloom: Block Puzzle Game** | 🟢 Live / Active | `vc41` (`1.17.0`) live `completed` + **`vc42` (`1.18.0`) staged `20%` `production` (`Managed publishing` queue) & `100%` `internal`**; `V41-02..04`/`V42-01..02` shipped; `Mintegral` pending; `SM-S928U` `62.7%` 7d rev; `$1/day` plan active. |
 | **[`topic_arrow_bloom.md`](topic_arrow_bloom.md)** | **Arrow Bloom – Tap Logic Puzzle** | 🟡 Closed Testing | Package `com.aweagle.arrowbloom`, `vc4` live in Closed Alpha (`9/12` testers — needs `3` more for 14-day clock), store listing fixes, post-Production Firebase/AdMob plan. |
 | **[`topic_console_audit_2026_11_25.md`](topic_console_audit_2026_11_25.md)** | **4-Platform + Website Live Audit (25 Nov)** | 🟢 Completed & Verified | All automated & Q1–Q4 fixes + GA4 `17` custom dimensions / `6` Key Events live; remaining `4` human-only tax/tester/Signals checks tracked cleanly. |
 | **[`00-OPERATIONS-PLAYBOOK.md`](../00-OPERATIONS-PLAYBOOK.md)** | **Studio Console & Growth Playbook** | 🟢 Master SOP & PDF | Day-to-day manual + printable PDF ([`AW-EagleCraft-Operations-Playbook.pdf`](../01-blockbloom/AW-EagleCraft-Operations-Playbook.pdf)) covering all 6 platforms, guardrails, kill switches & scripts. |

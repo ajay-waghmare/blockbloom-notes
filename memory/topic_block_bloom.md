@@ -5,16 +5,19 @@
 > **Package Name:** `com.aweagle.blockbloom`  
 > **Play Console App ID:** `4976030358371797626`  
 > **Repository:** `https://github.com/ajay-waghmare/BlockBloom.git` (`main`)  
-> **Latest Updated:** 2026-11-25  
+> **Latest Updated:** 2026-11-26 (`22:36 IST` — `vc42` built, audited, committed to Play `internal 100%` + staged `production 20%` retaining `vc41`)  
 
 ---
 
-## 1. Current Live Production State
-* **Latest Production Version:** `v1.17.0` (`versionCode = 41`).
-* **Rollout Track:** Google Play Store `production` at **100% Full Rollout** (Edit `06316255482718347774`).
-* **Internal Testing Track:** Also committed at 100% (`versionCode = 41`).
-* **Stability:** 100% crash-free sessions across `vc41`, 0 ANRs.
-* **Release Artifact:** `releases/BlockBloom-v1.17.0-vc41-release.aab` (21.58 MB, signed with production keystore, R8 minification & resource shrinking enabled).
+## 1. Current Live & Staged Production State
+* **Live Serving Production Version:** `v1.17.0` (`versionCode = 41`) preserved as `completed` in Play `production` track alongside `vc42`.
+* **Staged Rollout Version (`release/vc42`):** **`v1.18.0` (`versionCode = 42`)** — `"1.18.0 (42) - Daily Loop & LiveOps"` (`V41-02`, `V41-03`, `V41-04` Phase A, `V42-01` Winter Bloom, `V42-02` Adventure Home hero, OfferRules Day 2+/session 3+, non-resetting interstitial countdown on rewarded runs, clean GA4 `error_code`/`step`).
+* **Play Tracks Verified (`play-status.js`):**
+  - `production`: `vc42` (`inProgress`, `userFraction: 0.2`, Edit `05796451548276068436`, subject to Play Review + `Managed publishing on`) + `vc41` (`completed`).
+  - `internal`: `vc42` (`completed` `100%`, Edit `18103405302514738223`).
+* **Verification & Stability:** `183/183` release unit tests pass (`0` fail), `:app:lintVitalRelease` `No issues found.`, all 5 mediation adapters + `WinBackReceiver` preserved in R8 `mapping.txt`, `0` dangerous permissions, `0.00%` crashes on `vc41`.
+* **Release Artifact:** `releases/BlockBloom-v1.18.0-vc42-release.aab` (`21,643,784` bytes, `jarsigner` verified, R8 + shrink enabled).
+* **Open RC / Account Follow-ups:** Service account lacks Firebase RC `UPDATE_TEMPLATE` (`403`), so `vc42` uses compiled in-app defaults for the 5 new keys (`daily_loop_enabled`, `reminder_mode`, `reminder_variant`, `referral_enabled`, `home_adventure_button`) until published in Console UI (`E1` `50/50` still running until Dec 6 unless Ajay explicitly decides early end). `V42-03` offer gate is at **`4/5` unique tapping users** (`50%` `4/8` in `22:35 IST` KPI run).
 
 ---
 
