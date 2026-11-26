@@ -1,11 +1,12 @@
 # Reddit Post #1 — r/playmygame (Fri 27 Nov, Day 5)
 
-**Before posting — Ajay checklist:**
-1. Open `https://www.reddit.com/r/playmygame/about/rules` and read all rules (also the wiki `/r/playmygame/wiki/guidelines`).
-2. Is a developer post allowed or is there a weekly promo thread? Use the thread if required.
-3. Is flair required? Add it.
-4. After posting, check `/new` within 30 min — the spam filter may hold it.
-5. Reply to every comment within 24 h. Never delete criticism.
+**Before posting — Ajay checklist (Verified Live Against `/r/playmygame/about/rules` on Nov 26):**
+1. Log into Reddit on `agent-tab-5` (`https://www.reddit.com/r/playmygame/about/`).
+2. **Use the subreddit's `Make A Post` button (`https://is.gd/pmgmakeapost`)** from the `About community` sidebar instead of the plain "Create a Post" button so required flair/formatting stays compliant.
+3. **Rule 2 & 3 (Verified):** Brief description + state clearly you are the solo developer + put direct Google Play store link first (before any socials).
+4. **Rule 4 & 5 (Verified):** Be 100% truthful about ads/IAPs (`free, banner + optional rewarded ads, optional Remove Ads`) — zero false claims.
+5. **Rule 7 CRITICAL WARNING (`1 post per month please`):** `r/playmygame` strictly limits developers to **1 post per month**! Posting here on **Fri 27 Nov** means **Post #4 (Sat Dec 26) must wait until Dec 28+ OR move to a different subreddit** (`< 1 calendar month` triggers mod removal!).
+6. After posting, open `/r/playmygame/new` within 30 min (spam filter check) and reply to every comment within 24 h.
 
 **UTM store link:**
 `https://play.google.com/store/apps/details?id=com.aweagle.blockbloom&utm_source=reddit&utm_campaign=playmygame_1`
