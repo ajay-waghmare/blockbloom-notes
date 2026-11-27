@@ -5,14 +5,14 @@
 > **Package Name:** `com.aweagle.blockbloom`  
 > **Play Console App ID:** `4976030358371797626`  
 > **Repository:** `https://github.com/ajay-waghmare/BlockBloom.git` (`main`)  
-> **Latest Updated:** 2026-11-27 (`10:02 IST` — **`vc44` (`1.19.0`) LIVE on Play `internal` `completed` (`sha256=8aa02a7daba463df…`)**, awaiting Ajay's `G-2a` phone check & `go` for `production 20%`; `production` still `vc41` + held `vc42`; **`G-1` pulls done**)  
+> **Latest Updated:** 2026-11-27 (`10:06 IST` — **`vc44` (`1.19.0`) staged `20%` `inProgress` on `production` (`vc41` kept `completed`, `vc42` replaced; Edit `13722057481271952370`) + `internal` `completed`; awaits Ajay `Publish changes` in Play Managed Publishing (`G-2 #7`)**; `G-1` pulls done)  
 
 ---
 
-## 0. ➡ Gemini Task (27 Nov 10:02 IST)
+## 0. ➡ Gemini Task (27 Nov 10:06 IST)
 * [`11-gemini-task-handoff.md`](../01-blockbloom/plan-2026-11/11-gemini-task-handoff.md):
   * **`G-1` Console Pulls DONE (`09:50 IST`, logged in [`journal/2026-11-27.md`](../journal/2026-11-27.md)):** AdMob 14d `Nov 13–26` = `$5.06` (`US $3.87 = 76.5%`, `$87.67` Rewarded / `$66.18` Interstitial eCPM vs `TR $0.00` Banner at `$0.06` eCPM on `1,054` req); Firebase `E1 interstitial on vs off` (`n = 94`: Baseline `49u $0.0017` vs Variant A `45u $0.043`, `P = 0.123` not sig.); Play 28d Default listing `1,861` visitors / `23.8%` conv (`Tier1-EN` `Live`, `-` data), `4.909` avg (`11` total), Icon Test `182` vs `230` (`More data needed`), Pre-launch `Google Medium Phone (16K page size) Android 16`; Google Ads verification **`Not started` (`Dec 26` deadline)**, balance **`₹1,308.45`**.
-  * **`G-2` Progress (`#1–3` DONE, `10:02 IST`):** `release/vc44` (`2f69e54`) `238/238` tests, `lintVital` `0`, `jar verified` `21,680,580` B AAB, `5 OK / 26 4KB`, R8 keeps `5/5` adapters + `WinBackReceiver` + `TestLab`. Uploaded (`Edit 04976604612761865576`) & rolled out `100%` on Play **`internal` (`completed`, Edit `14292776545235269941`, `play-status.js` verified)**. **Next (`G-2a` + `#5`):** Ajay runs `G-2a` phone test on `internal` → gives `go` for `production 20%` replacing held `vc42`.
+  * **`G-2` Progress (`#1–6` DONE, `10:06 IST`):** `release/vc44` (`2f69e54`) `238/238` tests, `lintVital` `0`, `jar verified` `21,680,580` B AAB, `5 OK / 26 4KB`, R8 keeps `5/5` adapters + `WinBackReceiver` + `TestLab`. Uploaded (`Edit 04976604612761865576`), `internal` `completed` (`Edit 14292776545235269941`), dry-run (`Edit 00490929581238874986`), and staged **`production 20%` (`Edit 13722057481271952370`, retaining `vc41` `completed`, replacing `vc42`; `play-status.js` verified)**. **Next (`G-2 #7` → `#9`):** Ajay clicks **Publish changes** in Play Managed Publishing → `24–48h` telemetry watch (`first_session_hook > 0`, `0` Test Lab noise on `1.19.0`, crash-free `>= 99.5%`, ANR `< 0.47%`) → Ajay `go` for `100%` & merge to `main`.
   * **Count humans only:** `growth-kpi.js` & `ga4-new-user-devices.js` (`20–27 Nov` on `release/vc44`) show `138` human vs `60` robot/no-geo `first_open`, **`0` human `first-session hook` / `0` human `offer tap` / `0` human `purchase_result`**, `11` Tier-1 human rows (`1.19.0+` turns off analytics & real ads on Test Lab via `TestLab.kt`).
 ---
 
