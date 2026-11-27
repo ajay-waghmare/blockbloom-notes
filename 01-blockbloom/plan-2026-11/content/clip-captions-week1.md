@@ -81,22 +81,22 @@ Block Bloom — a calm puzzle. What should I add next? 💬
 
 ---
 
-## Day 9 — Tue 1 Dec (Aurora Bloom Festival live from 27 Nov)
+## Day 9 — Tue 1 Dec (Autumn Bloom Challenge live Nov 30 – Dec 7 UTC)
 
-**Clip:** Festival event — coins multiplier visible on a clear
+**Clip:** Daily challenge / streak clear (`2x daily streak rewards`)
 **Caption:**
 ```
-Aurora Bloom Festival: coins ×2 until 3 Dec. 🌌
-Come for the event, stay for the combos.
+Autumn Bloom Challenge: 2x daily streak rewards until Dec 7! 🍂✨
+Come for the streak, stay for the combos.
 #blockpuzzle #gamingevent #androidgames #puzzlegame #mobilegaming
 ```
 
 ---
 
-## UTM links (for bio / pinned comment)
+## UTM links (Google Play Referrer format for bio / pinned comment)
 
 | Platform | Link |
 |---|---|
-| YouTube Shorts | `https://play.google.com/store/apps/details?id=com.aweagle.blockbloom&utm_source=shorts&utm_medium=bio&utm_campaign=week1` |
-| Instagram Reels | `https://play.google.com/store/apps/details?id=com.aweagle.blockbloom&utm_source=reels&utm_medium=bio&utm_campaign=week1` |
-| TikTok | `https://play.google.com/store/apps/details?id=com.aweagle.blockbloom&utm_source=tiktok&utm_medium=bio&utm_campaign=week1` |
+| YouTube Shorts | `https://play.google.com/store/apps/details?id=com.aweagle.blockbloom&referrer=utm_source%3Dshorts%26utm_medium%3Dbio%26utm_campaign%3Dclips_nov26` |
+| Instagram Reels | `https://play.google.com/store/apps/details?id=com.aweagle.blockbloom&referrer=utm_source%3Dreels%26utm_medium%3Dbio%26utm_campaign%3Dclips_nov26` |
+| TikTok | `https://play.google.com/store/apps/details?id=com.aweagle.blockbloom&referrer=utm_source%3Dtiktok%26utm_medium%3Dbio%26utm_campaign%3Dclips_nov26` |

@@ -44,7 +44,8 @@
   - **[EXECUTED Q4 — 2026-11-25]:** Bypassed GA4 IAM `401` directly via authenticated GA4 Admin UI + verified via GA4 Admin API (`17` custom dimensions created, `10` noisy Key Events unmarked, `6` Key Events retained).
 - **Ajay Manual Account Items (Browser / Real-World Only):**
   1. **Arrow Bloom (`9/12` → `12/12` testers):** Get 3 more people opted in at `https://play.google.com/apps/testing/com.aweagle.arrowbloom` to start the 14-day Production clock.
-  2. **Tax & Billing Compliance:** Submit **India tax info** in Google Ads (`684-480-0945`), verify **India Tax & US `W-8BEN`** in AdMob Payments, check Firebase Remote Config Blaze notice, and optionally turn ON **`Google Signals`** at `https://analytics.google.com/analytics/web/?authuser=ajaywaghmare00a@gmail.com#/a409217568p555700046/admin/datapolicies/datacollection` (and optionally add `play-publisher@avid-airway-498216-e5.iam.gserviceaccount.com` as `Editor` at `#/a409217568p555700046/admin/suiteusermanagement/property` if API writes are needed later).
+  2. **URGENT — Google Ads Advertiser Verification (`684-480-0945`, Hard Deadline: Dec 26, 2026):** Nov 26 `2:18 PM` email `[Action required] Complete advertiser verification by December 26, 2026` warns account will pause if incomplete (`takes up to 7 business days` — start before **Dec 12 Burst 1**!).
+  3. **Tax & Billing Compliance:** Submit **India tax info** in Google Ads (`684-480-0945`), verify **India Tax & US `W-8BEN`** in AdMob Payments, check Firebase Remote Config Blaze notice, and optionally turn ON **`Google Signals`** at `https://analytics.google.com/analytics/web/?authuser=ajaywaghmare00a@gmail.com#/a409217568p555700046/admin/datapolicies/datacollection` (and optionally add `play-publisher@avid-airway-498216-e5.iam.gserviceaccount.com` as `Editor` at `#/a409217568p555700046/admin/suiteusermanagement/property` if API writes are needed later).
 
 ---
 
@@ -158,6 +159,8 @@
 3. **[DECIDED & APPLIED 2026-11-25 — Q3 Approved]:** Block Bloom **`Managed publishing on`** verified after reload; created & enabled **`Owner QA`** (`ajaywaghmare00a@gmail.com` only) while keeping **`Block Bloom Testers`** (`34` emails) **UNCHECKED** (`RESPOND_NORMALLY`).
 4. **[COMPLETED & VERIFIED 2026-11-25 — Q4 Done]:** Created `Owner QA` License Testing list (`ajaywaghmare00a@gmail.com`) AND completed GA4 Property `555700046` schema cleanup directly via authenticated UI + GA4 Admin API readback (`17` custom dimensions registered, `10` noisy Key Events unmarked leaving `6` clean conversion events). Offline/manual-only items left for Ajay: `9/12` -> `12/12` Arrow Bloom testers, Google Ads India Tax, AdMob India/`W-8BEN` Tax, Firebase Blaze check, optional GA4 `Google Signals` toggle.
 5. **Ajay Manual Actions:**
+   - **URGENT (`Due Dec 26, allow 7 business days`):** Start **Google Ads Advertiser Verification** (`684-480-0945`) ASAP so Burst 1 (`Dec 12`) and account do not pause.
    - Get **3 more testers** opted into Arrow Bloom (`9/12` → `12/12`) at `https://play.google.com/apps/testing/com.aweagle.arrowbloom`.
    - Submit **India Tax** in Google Ads (`684-480-0945`) + verify **India Tax & US `W-8BEN`** in AdMob Payments + check Firebase Remote Config Blaze notice.
    - Sign in on the open Firebase Analytics frame if UI Analytics tabs need visual inspection.
+   - **🔴 Play Policy — 16 KB Memory Page Sizes (`com.aweagle.blockbloom` / `Extension granted`, Action by `Feb 1, 2027`):** Google Play warns current latest production release does **not** support **16 KB memory page sizes**; starting **Feb 1, 2027**, app updates will be blocked until a 16 KB-aligned production bundle ships (schedule AGP 9 / Kotlin 2.x / GMA 24+ native `.so` alignment upgrade + Play bundle explorer check in **Jan 2027**).
