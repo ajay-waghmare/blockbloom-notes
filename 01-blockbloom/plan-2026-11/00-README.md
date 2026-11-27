@@ -21,6 +21,7 @@ folder; where the two differ, **this folder wins**.
 | **06-organic-tier1.md** | The main engine: levers O-1…O-12 (honest listing, custom listing, store video, ratings, Play event cards, daily clips, Reddit, creators, referral), targets, Holiday Bloom, measurement |
 | **07-ad-bursts.md** | The ad money answer (₹3,500 committed, ₹10,500 at most to 31 Dec), why bursts, burst rules, set-up, measurement, the Burst 2 decision |
 | **08-dollar-a-day-plan.md** | **Nov 26 Amendment:** Mathematical `$1.00/day` (`₹93/day`) gap diagnosis + phased roadmap (`Phase 1` measurement/O-3/O-6 -> `Phase 2` `vc42` daily loop + E1/interstitial/mediation/IAP pacing -> `Phase 3` retention-gated Burst 1) |
+| **09-30day-1to3-dollar-handoff.md** | **Nov 27 Ground-Truth Handoff + `## Claude Task`:** Complete verified GA4/AdMob/Play/Code baseline (`TR`/`RU`/`(not set)` vs `US`/Tier-1, `30->17->6` Tier-1 funnel, `SM-S928U` risk, `$1–3/day` unit math, P0–P3 App Improvements & explicit `Claude Task` checklist for next 30 days) |
 | 02-gemini-dev-specs.md | vc40 (V40-1…V40-11), vc41 (V41-01…05), vc42 (V42-01…04), vc43 hotfix rules — unchanged by v2 |
 | 03-console-runbooks.md | C-01…C-25 click by click (v2 notes at the top) |
 | 04-measurement-and-gates.md | `tools/growth-kpi.js` spec, spend log, formulas, routines (v2 notes at the top) |
