@@ -1,0 +1,14 @@
+# Gemini CLI custom command: /bb-start
+# Copy to ~/.gemini/commands/ or <app repo>/.gemini/commands/. Replace <NOTES> with the blockbloom-notes clone path
+# (branch journal) and <APP> with the BlockBloom clone path on this machine.
+description = "Block Bloom: session bootstrap - read memory, fetch both repos, report state and the next step"
+prompt = """
+Start a Block Bloom session the way Claude does (see <NOTES>/01-blockbloom/gemini-skills/06-work-like-claude.md, section 2).
+1. Read, in order: <NOTES>/memory/MEMORY.md, the topic file(s) it points to, the newest file in <NOTES>/journal/,
+   the active task file named in the MEMORY.md banner, and DAILY_ACTIVITY.md on the active release branch in <APP>.
+2. Run `git fetch` in <NOTES> and <APP>; list every commit since the latest journal entry on journal, main and every
+   release/* branch (another AI may have acted).
+3. Report in this order: (a) live Play state (run `node tools/play-status.js` in <APP>), (b) what changed since the
+   journal, (c) the next step of the active task with its pass mark, (d) decisions waiting on Ajay.
+Do not change anything in this command. {{args}}
+"""

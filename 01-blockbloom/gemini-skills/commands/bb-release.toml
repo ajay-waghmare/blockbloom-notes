@@ -1,0 +1,17 @@
+# Gemini CLI custom command: /bb-release <versionCode> <step>
+# Copy to ~/.gemini/commands/ or <app repo>/.gemini/commands/. Replace <APP> with the BlockBloom clone path.
+description = "Block Bloom: run ONE release step with gate, dry-run, Ajay's go, read-back and log"
+prompt = """
+Run one Block Bloom release step for: {{args}} (e.g. "45 gate", "45 internal", "45 production-20", "45 complete", "45 halt").
+Rules (see <NOTES>/01-blockbloom/gemini-skills/06-work-like-claude.md sections 5-7):
+- gate: in the release worktree, `gradlew :app:testReleaseUnitTest :app:bundleRelease :app:lintVitalRelease`; then
+  `jarsigner -verify`, `node tools/check-16kb.js` on the AAB, R8 mapping keeps the 5 mediation adapters + WinBackReceiver,
+  merged manifest versionCode/permissions. Report every number.
+- Any Play step: STOP and ask Ajay for a one-line go first. Then for production use `--dry-run` before the real call.
+  internal: `node tools/play-upload.js <aab> com.aweagle.blockbloom internal "<name>"`;
+  production: `node tools/play-rollout.js <vc> --track=production --name="<name>" --fraction=0.2` (or --complete / --halt).
+- After every Play call: `node tools/play-status.js` and quote the read-back. Production must always keep the previous
+  release `completed` while the new one is `inProgress`.
+- Log the step with times (from the clock), edit ids and the read-back in today's journal and in DAILY_ACTIVITY.md on the
+  release branch; push both; `git status` clean. Never press Publish for Ajay; never merge to main.
+"""

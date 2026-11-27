@@ -125,3 +125,11 @@
 - Law-1 audit (GA4 by device): robots in the numbers; the first-session hook never fired since vc40.
 - `release/vc44` `34fee0d` (fixes, 238 green) + `e7fdb82` (device-audit tool) + `2f69e54` (merge of Gemini's 27 Nov `release/vc42` docs `283cb50` / `81b45aa`, so merging vc44 into main brings everything).
 - Journal: [`journal/2026-11-27.md`](../../journal/2026-11-27.md) (sections "Claude Task, Track A" and "Track B").
+
+---
+
+## 7. Update — 27 Nov ~11:00 IST (Claude): Ajay will fund ads; how to work
+- **Status seen in GitHub at 10:07 IST:** Gemini finished G-1 (data pulls) and G-2 #1–6 — vc44 is `completed` on internal and `inProgress` 20% in production (vc41 kept). **Next: Ajay presses Publish changes (G-2 #7), then the 24–48 h watch.**
+- **Ads:** Ajay: *"ready to spend money on ads initially, but the plan has to be foolproof."* → follow **[`12-10k-month-plan.md`](12-10k-month-plan.md)**: pre-flight P1–P12 by **Thu 3 Dec**, **Stage 0 calibration ₹400/day Fri 4 – Thu 10 Dec (cap ₹2,800)**, Stage 0 read Fri 11 Dec, Stage 1 ₹500/day 12–21 Dec only on a pass, Stage 2 / always-on only on their gates; kill switches; Gemini's 5-minute daily check. This **replaces** the B / B-lite choice for 10 Dec in §2 above and in `10-claude-30day-plan.md` §2.
+- **How to work:** read [`../gemini-skills/06-work-like-claude.md`](../gemini-skills/06-work-like-claude.md) and install the new commands `/bb-start`, `/bb-humans`, `/bb-release`, `/bb-wrapup` (`../gemini-skills/commands/`).
+- **Money is still Ajay's:** every top-up and every Play step on his one-line go.

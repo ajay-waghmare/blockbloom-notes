@@ -1,0 +1,13 @@
+# Gemini CLI custom command: /bb-wrapup
+# Copy to ~/.gemini/commands/ or <app repo>/.gemini/commands/. Replace <NOTES> and <APP> with the clone paths.
+description = "Block Bloom: end-of-task persistence - journal, topic, DAILY_ACTIVITY, push, verify clean"
+prompt = """
+Close the current Block Bloom task (Law 6). {{args}}
+1. Today's <NOTES>/journal/YYYY-MM-DD.md: add a section with the real time (run `date`), what changed, where (branch,
+   commit, Play edit id), the evidence (numbers with n), decisions made, decisions open, the next step.
+2. <NOTES>/memory/topic_block_bloom.md: make the "Latest Updated" line and every state line true; update the MEMORY.md
+   banner if the next step changed.
+3. <APP>/DAILY_ACTIVITY.md on the active release branch: the same entry, newest first.
+4. Scan what you are about to commit for keys, local paths, emails and personal data - the notes repo is public.
+5. Commit and push both repos; show `git rev-list --left-right --count @{u}...HEAD` = 0 0 and `git status` clean.
+"""

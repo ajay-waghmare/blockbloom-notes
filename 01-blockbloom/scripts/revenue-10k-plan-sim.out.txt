@@ -1,0 +1,60 @@
+
+== WORST (Stage 0 fails, ads stop, product stalls)
+month   | ad spend | revenue | profit | cumulative profit | Tier-1 DAU (month end) | ₹/day at month end
+202612 |    2,800 |     889 | -1,911 |            -1,911 |                      3 |   10
+202701 |        0 |     345 |    345 |            -1,566 |                      2 |   11
+202702 |        0 |     317 |    317 |            -1,248 |                      2 |   11
+202703 |        0 |     351 |    351 |              -897 |                      2 |   11
+202704 |        0 |     344 |    344 |              -554 |                      2 |   12
+peak cash needed (lowest cumulative profit): ₹1,911; cumulative profit turns positive in: not by April
+total Dec–Apr: spend ₹2,800, revenue ₹2,246, profit ₹-554 (plus whale upside ~₹30/day while he stays)
+
+== BASE (gates pass on time)
+month   | ad spend | revenue | profit | cumulative profit | Tier-1 DAU (month end) | ₹/day at month end
+202612 |    7,800 |   2,827 | -4,973 |            -4,973 |                      7 |   38
+202701 |    4,200 |   3,389 |   -811 |            -5,784 |                     21 |  132
+202702 |    7,000 |   7,766 |    766 |            -5,018 |                     46 |  325
+202703 |    9,300 |  15,083 |  5,783 |               765 |                     66 |  538
+202704 |    9,000 |  17,289 |  8,289 |             9,055 |                     76 |  608
+peak cash needed (lowest cumulative profit): ₹5,784; cumulative profit turns positive in: 202703
+total Dec–Apr: spend ₹37,300, revenue ₹46,355, profit ₹9,055 (plus whale upside ~₹30/day while he stays)
+
+== STOP AFTER STAGE 1 (Stage 0 passes, Stage 1 D7 fails, ads stop)
+month   | ad spend | revenue | profit | cumulative profit | Tier-1 DAU (month end) | ₹/day at month end
+202612 |    7,800 |   2,594 | -5,206 |            -5,206 |                      7 |   33
+202701 |        0 |     916 |    916 |            -4,290 |                      4 |   28
+202702 |        0 |     733 |    733 |            -3,557 |                      3 |   25
+202703 |        0 |     764 |    764 |            -2,793 |                      3 |   24
+202704 |        0 |     720 |    720 |            -2,072 |                      3 |   24
+peak cash needed (lowest cumulative profit): ₹5,206; cumulative profit turns positive in: not by April
+total Dec–Apr: spend ₹7,800, revenue ₹5,728, profit ₹-2,072 (plus whale upside ~₹30/day while he stays)
+
+== SLOW WITH RULES (retention only reaches "mid"; the Stage-3 gate fails, so no always-on spend)
+month   | ad spend | revenue | profit | cumulative profit | Tier-1 DAU (month end) | ₹/day at month end
+202612 |    7,800 |   2,827 | -4,973 |            -4,973 |                      7 |   38
+202701 |        0 |   1,171 |  1,171 |            -3,802 |                      5 |   38
+202702 |        0 |   1,508 |  1,508 |            -2,294 |                      5 |   54
+202703 |        0 |   1,855 |  1,855 |              -439 |                      7 |   62
+202704 |        0 |   1,895 |  1,895 |             1,456 |                      7 |   64
+peak cash needed (lowest cumulative profit): ₹4,973; cumulative profit turns positive in: 202704
+total Dec–Apr: spend ₹7,800, revenue ₹9,256, profit ₹1,456 (plus whale upside ~₹30/day while he stays)
+
+== NO RULES - what the gates prevent (keeps spending ₹150–200/day although retention only reaches "mid")
+month   | ad spend | revenue | profit | cumulative profit | Tier-1 DAU (month end) | ₹/day at month end
+202612 |    7,800 |   2,827 | -4,973 |            -4,973 |                      7 |   38
+202701 |    4,200 |   2,902 | -1,298 |            -6,272 |                     21 |  116
+202702 |    4,200 |   3,942 |   -258 |            -6,530 |                     24 |  148
+202703 |    6,200 |   5,608 |   -592 |            -7,122 |                     33 |  194
+202704 |    6,000 |   6,099 |     99 |            -7,023 |                     36 |  211
+peak cash needed (lowest cumulative profit): ₹7,122; cumulative profit turns positive in: not by April
+total Dec–Apr: spend ₹28,400, revenue ₹21,377, profit ₹-7,023 (plus whale upside ~₹30/day while he stays)
+
+== UPSIDE (faster retention, Stage 2 runs)
+month   | ad spend | revenue | profit | cumulative profit | Tier-1 DAU (month end) | ₹/day at month end
+202612 |   13,400 |   5,357 | -8,043 |            -8,043 |                     72 |  332
+202701 |    9,100 |  11,137 |  2,037 |            -6,006 |                     49 |  419
+202702 |    9,800 |  16,689 |  6,889 |               883 |                     76 |  660
+202703 |   12,400 |  23,199 | 10,799 |            11,682 |                     95 |  804
+202704 |   12,000 |  25,440 | 13,440 |            25,122 |                    106 |  886
+peak cash needed (lowest cumulative profit): ₹8,043; cumulative profit turns positive in: 202702
+total Dec–Apr: spend ₹56,700, revenue ₹81,822, profit ₹25,122 (plus whale upside ~₹30/day while he stays)

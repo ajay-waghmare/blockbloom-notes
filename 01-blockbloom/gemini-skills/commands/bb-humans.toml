@@ -1,0 +1,12 @@
+# Gemini CLI custom command: /bb-humans [start-date]
+# Copy to ~/.gemini/commands/ or <app repo>/.gemini/commands/. Replace <APP> with the BlockBloom clone path.
+description = "Block Bloom: human-only KPI check (robots and emulators excluded) before any gate or claim"
+prompt = """
+Produce a humans-only KPI read for Block Bloom. In <APP> on the active release branch (it has the emulator filter):
+1. `node tools/growth-kpi.js`
+2. `node tools/ga4-new-user-devices.js --start {{args}}` (default: 7 days ago)
+Report: human new users (n), human first-clear %, human tutorial %, human day-1 return per cohort WITH n,
+Tier-1 human count, first_session_hook count on 1.19.0+, offer taps and purchase_result by humans, revenue per day and
+the top-device share. Flag every number with n < 30 as "sample too small". Say "robots included" for any number from
+an app version below 1.19.0. Do not round away small samples. Append the result to today's journal and push.
+"""

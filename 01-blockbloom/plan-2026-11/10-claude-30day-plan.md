@@ -3,6 +3,7 @@
 > **Written:** Fri 27 Nov 2026, 08:55 IST, by Claude, for the **Claude Task** in [`09-30day-1to3-dollar-handoff.md`](09-30day-1to3-dollar-handoff.md).
 > **Inputs:** that handoff (Gemini, 08:30 IST) + a fresh run of `BlockBloom/tools/growth-kpi.js` on the work laptop (GA4 `555700046`, 21–27 Nov, debug builds excluded) + the plan-v2 files `00`–`08` (still the base; this file is the 30-day execution view).
 > **Rules:** `GEMINI.md` Laws 1–6; profit by a date, "spend nothing" always shown, Ajay decides all money.
+> **Update 27 Nov ~11:00 IST:** Ajay will fund ads — the December ad decision (§2 B / B-lite, §3 gate) is replaced by the money ladder in [`12-10k-month-plan.md`](12-10k-month-plan.md) (Stage 0 calibration from Fri 4 Dec).
 
 ---
 

@@ -18,8 +18,10 @@ Claude.
 | `03-growth-model.md` | Running or updating `../scripts/growth-model-v2.js`: inputs, where each measured value comes from, sanity checks |
 | `04-weekly-review-and-replan.md` | Every day (5 minutes), every Saturday (the review), Day 30 / Day 39 (the month report and the next plan) |
 | `05-organic-and-aso-research.md` | Organic growth work: store keywords, listing tests, Play event cards, short video, Reddit, creators |
+| `06-work-like-claude.md` | **How Claude works, for Gemini (27 Nov):** the 7-step loop, memory layers + writing rules, skills, agents / parallel work, verification habits (break numbers down, read code paths, n next to every %), git + release hygiene, safety lines, how to talk to Ajay, the toolbox |
 | `sources.md` | Every outside source used so far, what it supports, when it was opened, how far to trust it |
 | `commands/` | Optional Gemini CLI custom commands that load these skills (`/bb-research`, `/bb-strategy`, `/bb-weekly`) |
+| `commands/bb-start.toml`, `bb-humans.toml`, `bb-release.toml`, `bb-wrapup.toml` | **New (27 Nov):** session bootstrap · human-only KPI check · one release step with gate + go + read-back · end-of-task persistence |
 
 ## How Gemini loads them
 

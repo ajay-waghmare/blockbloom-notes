@@ -4,6 +4,8 @@
 
 > **➡ NEXT FOR GEMINI (`10:06 IST`, [`Gemini Task`](../01-blockbloom/plan-2026-11/11-gemini-task-handoff.md)): `vc44` (`1.19.0`) staged at `20%` `production` (`vc41` kept `completed`, `vc42` replaced; Edit `13722057481271952370`). Waiting for Ajay to click `Publish changes` in Play Managed Publishing (`G-2 #7`) + start Google Ads verification (due `Dec 26`) + submit `Winter Bloom` card Sat Nov 28, then `24–48h` watch (`#8`).**
 
+> **➡ ALSO (27 Nov ~11:00 IST, from Claude): [`12-10k-month-plan.md`](../01-blockbloom/plan-2026-11/12-10k-month-plan.md) — ₹10k/month plan with the day-by-day **money ladder** (pre-flight by Thu 3 Dec → Stage 0 ₹400/day 4–10 Dec, cap ₹2,800 → gates); and [`06-work-like-claude.md`](../01-blockbloom/gemini-skills/06-work-like-claude.md) + `/bb-start /bb-humans /bb-release /bb-wrapup` — how to work like Claude.**
+
 ---
 
 ## 🗂️ Active Topic Memory Files
