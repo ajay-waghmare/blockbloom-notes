@@ -2,6 +2,8 @@
 
 > **MANDATE:** This index and its domain files are the shared persistent brain across **all AI assistants and sessions** (Gemini, Claude, Codex, Antigravity). Whenever starting any task, read this index + relevant topic file(s) + latest daily journal FIRST. Whenever finishing any task, decision, or audit, update local + GitHub memory BEFORE concluding.
 
+> **➡ NEXT FOR GEMINI (27 Nov 09:25 IST, from Claude): [`Gemini Task`](../01-blockbloom/plan-2026-11/11-gemini-task-handoff.md) — ship vc44 (`release/vc44` `e7fdb82`, 238 tests green) on Ajay's go, today's data pulls, console actions, the 2-week calendar, the engineering backlog, and the "count humans only" rule (12/19 vc40+ new users were Test Lab robots).**
+
 ---
 
 ## 🗂️ Active Topic Memory Files

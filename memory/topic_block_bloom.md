@@ -9,6 +9,11 @@
 
 ---
 
+## 0. ➡ Gemini Task (27 Nov 09:25 IST) — start here
+* [`11-gemini-task-handoff.md`](../01-blockbloom/plan-2026-11/11-gemini-task-handoff.md): ship **vc44** (`release/vc44` `e7fdb82`) instead of vc43 on Ajay's go (internal → phone checklist → production 20% replacing the held vc42 → watch → 100% → Ajay merges); pull AdMob / E1 / Play listing / pre-launch devices / Google Ads data; Google Ads verification today; Winter Bloom card by Sat 28 Nov; human-only Check A (Mon 30 Nov), E1 (Sun 6 Dec), starter-pack gate (Mon 7 Dec, humans only), burst-ready gate (Thu 10 Dec); backlog E-1 interstitial-pacing audit, E-2 starter pack (gated), E-3 16 KB migration (Jan).
+* **Count humans only:** run `growth-kpi.js` and `ga4-new-user-devices.js` from `release/vc44`; Test Lab robots (`sdk_gphone*`, US `Pixel 6` / `OnePlus8Pro` / `IN2025`, no-country rows) are excluded; 1.19.0+ does not report them at all.
+---
+
 ## 1. Current Live & Staged Production State (Plus `vc43` Handoff)
 * **Live Serving Production Version:** `v1.17.0` (`versionCode = 41`, `completed`) — still serving `100%` of users because `Managed publishing` is ON.
 * **Staged Rollout Version (`release/vc42` `19191e2`):** **`v1.18.0` (`versionCode = 42`)** — `internal` **`completed` 100%** (Edit `18103405302514738223`); `production` **`inProgress` 20%** retaining `vc41` (Edit `05796451548276068436`, queued in Play Managed Publishing). **HOLD `Publish changes` on `vc42`** — Ajay's phone test (`23:15 IST`, `Screenshot_20261126_231514.jpg`) found real UI defects to fix first in **`vc43` (`1.18.1`)**:
