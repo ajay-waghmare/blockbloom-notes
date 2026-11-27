@@ -1,6 +1,6 @@
 # Block Bloom — 30-Day Plan to `$1–3/day` (Fri 27 Nov – Sun 27 Dec 2026) · Claude, Track A
 
-> **Written:** Fri 27 Nov 2026, 09:30 IST, by Claude, for the **Claude Task** in [`09-30day-1to3-dollar-handoff.md`](09-30day-1to3-dollar-handoff.md).
+> **Written:** Fri 27 Nov 2026, 08:55 IST, by Claude, for the **Claude Task** in [`09-30day-1to3-dollar-handoff.md`](09-30day-1to3-dollar-handoff.md).
 > **Inputs:** that handoff (Gemini, 08:30 IST) + a fresh run of `BlockBloom/tools/growth-kpi.js` on the work laptop (GA4 `555700046`, 21–27 Nov, debug builds excluded) + the plan-v2 files `00`–`08` (still the base; this file is the 30-day execution view).
 > **Rules:** `GEMINI.md` Laws 1–6; profit by a date, "spend nothing" always shown, Ajay decides all money.
 
@@ -22,6 +22,14 @@
 3. **`$2–3/day` by 27 Dec cannot be reached profitably.** Buying it would take ~₹1,500–3,000/day of ads at a 66–80% loss. It becomes possible when a Tier-1 install is worth ≥ ₹29 — that needs purchases (starter pack / Remove Ads) **and** day-1 return ≥ 30%. That is the January–February goal, built on what this month proves.
 
 **Every paid burst loses money on its own at today's numbers.** A burst's value is (a) the first clean Tier-1 retention and revenue sample, (b) store-ranking lift during Winter Bloom, (c) learning the true cost per install. Plan v2 already treats Burst 1 as a gated test; the numbers above say keep it that way.
+
+### 1b. Correction, 27 Nov 09:05 IST (Law 1 audit, GA4 by device model): robots are in the numbers
+- **Google's Play pre-launch / Firebase Test Lab devices** (emulators `sdk_gphone*`, lab phones `Pixel 6` and `OnePlus8Pro`, US-located) were **12 of the 19 "new users" on vc40+** (20–27 Nov). They open the app, start a game and never clear a line.
+- They made the **vc40+ first session read 47%** (real people: 5 of 7; the KPI tool with emulators excluded: 9/12 = 75%) and **Tier-1 day-1 return read 0/36**.
+- **All 3 `purchase_result` events and 3 of the 5 offer taps were the `Pixel 6` robot** tapping "Remove Ads". Real purchase intent is **unmeasured**: the only human who tapped an offer is `SM-S928U` (twice), who never reached billing.
+- **Real organic Tier-1 is ~1–2 human installs a week**, not ~2 a day (`V2310`, US, is the one clear human in 20–27 Nov). `$1/day` without paid traffic is further away than §1 says.
+- **A real bug behind the churn story:** the first-session hook (V40-2, the "come back tomorrow" card after the first game over) **never showed to any new player since vc40** — its flag read "seen" as soon as the first game started (0 `first_session_hook` events; a real player in Iran had 9 game overs). **Fixed in vc44.**
+- **Fixes:** vc44 switches analytics and real ad requests off on Test Lab devices (`TestLab.kt`), so from vc44 every gate reads humans; `growth-kpi.js` now drops emulators. Until vc44 is at 100%, read every first-session, offer and Tier-1 number as "robots included".
 
 ---
 
@@ -89,8 +97,8 @@ Revenue = AdMob basis (GA4 × 1.15). "Whale stays" = `SM-S928U` keeps earning ~�
 | Sat 5 Dec | G | KPI: vc44 tutorial % and day-1 return so far (n, not just %) | in journal |
 | **Sun 6 Dec** | G → A | **E1 decision:** interstitials to 100% only if revenue per user is up **and** day-1 return is not down | RC changed or not |
 | | A | Creator batch 2; Mintegral → mediation groups if approved | done |
-| **Mon 7 Dec** | A | **Starter-pack gate:** offer_tap ≥ 5 unique users (4/5 today) → approve price ($0.99 or $1.99) | price decided |
-| | C/G | Create the Play product (`play-create-product.js`), flip the RC flag | product active |
+| **Mon 7 Dec** | A | **Starter-pack gate, humans only:** offer_tap ≥ 5 unique **human** users (today: 1 — the other taps were the Test Lab robot, §1b) → if it passes, approve the price ($0.99 or $1.99); if not, no SKU yet | decided on human data |
+| | C/G | Only if it passed: create the Play product (`play-create-product.js`), flip the RC flag | product active, or skipped |
 | Tue 8 Dec | G → A | Burst assets (2 portrait + 1 landscape Winter Bloom videos, 5 headlines) | approved |
 | Wed 9 Dec | A | Holiday Bloom Play card · Google Ads settings (paused) · money only after verification is complete | done |
 | **Thu 10 Dec** | G → A | **Burst-ready gate (§3)** → B, B-lite or move to 25 Dec | decision logged |
@@ -126,7 +134,7 @@ Revenue = AdMob basis (GA4 × 1.15). "Whale stays" = `SM-S928U` keeps earning ~�
 | Build | When | Scope (ordered by revenue impact) |
 |---|---|---|
 | **vc43 (1.18.1)** | built (`release/vc43` `78a4d11`); upload on Ajay's go today; 100% Mon 30 Nov | Home UI fix + Home translations (done) |
-| **vc44 (1.19.0)** | internal Mon 30 Nov → 20% Tue 1 Dec → 100% Thu 3 Dec | 1. **First session:** fire `tutorial_complete` on the real first-board clear; remove the step-3 friction — only after the Law-1 audit shows where players stop. 2. **Run-1 hook:** a Day-0 path to a fast win (Daily Challenge / Adventure Level 1). 3. **Purchase telemetry:** full `BillingResponseCode` + `offer` + `product_id` on `purchase_result`. 4. **Interstitial pacing:** audit `rewardedWatchedInRun` vs `rewardedWatchedThisRun` and Adventure transitions; RC dials stay fail-closed; no behaviour change without evidence. 5. **Starter pack** code behind an RC flag (no Play product until the 7 Dec gate + price). 6. **53 in-game strings** × 6 languages (same translation test as vc43). 7. **360×640:** hide the hero board below ~560 dp of height so the cards fit without scrolling. |
+| **vc44 (1.19.0)** | internal Mon 30 Nov → 20% Tue 1 Dec → 100% Thu 3 Dec | **Built 27 Nov on `release/vc44` (see the journal):** 1. **First-session hook fix** — the V40-2 card after the first game over now shows (it never had since vc40); `first_game_over` reports again; the ads SDK starts after the first game over as designed. 2. **Test Lab / pre-launch robots** get no analytics and no real ad requests (`TestLab.kt`). 3. **Purchase telemetry:** `reason` = billing code name on `purchase_result` (a registered GA4 dimension); gem packs report too; a cancelled gem purchase no longer says "coming soon". 4. **All 41 remaining English-only strings** × 6 languages + a test that fails on any new English-only string. 5. **360×640:** the board gives way on 16:9 phones so both cards fit. **Deliberately not in vc44:** an onboarding redesign — the audit found real people complete the first session at 5/7 (≈ older builds); the collapse was robots. **Still to do:** interstitial-pacing audit; starter-pack code only if the 7 Dec human-only gate passes. |
 | vc45 | Fri 18 Dec hotfix slot only | — |
 | January | branch Mon 4 Jan → internal 15 Jan → production by 25 Jan | AGP 9 + Kotlin 2 + GMA 24 + Billing 8 → all 26 third-party `.so` 16 KB-aligned before the **1 Feb 2027** Play deadline |
 
@@ -160,5 +168,5 @@ Every build: `:app:testReleaseUnitTest`, `:app:bundleRelease` (R8), `:app:lintVi
 2. **Start Google Ads advertiser verification today.**
 3. **Day-1 pass mark for 10 Dec:** ≥ 22% on all real new users (n ≥ 40) — or keep 25% on ≥ 60 (likely unreachable by 10 Dec at ~7 real installs a day).
 4. **Burst size at the gate:** B (₹3,500) or B-lite (₹1,500).
-5. **Starter-pack price** at the 7 Dec gate: $0.99 or $1.99.
+5. **Starter pack:** decide on the 7 Dec gate with **human-only** taps (today 1 human; the robot did the rest) — likely "not yet".
 6. **E1:** end early or wait for 6 Dec.

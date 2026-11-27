@@ -5,7 +5,7 @@
 > **Package Name:** `com.aweagle.blockbloom`  
 > **Play Console App ID:** `4976030358371797626`  
 > **Repository:** `https://github.com/ajay-waghmare/BlockBloom.git` (`main`)  
-> **Latest Updated:** 2026-11-27 (`08:40 IST` — **`vc43` (`1.18.1`) on `release/vc43` `78a4d11`: UI fix + 33 JUnit tests, gate green; Ajay tests on his phone and does the Play upload**; `vc42` still HOLD in Managed Publishing)  
+> **Latest Updated:** 2026-11-27 (`09:10 IST` — **`vc43` `78a4d11` + `vc44` (`1.19.0`) `34fee0d` built and gate-verified, both pushed; nothing uploaded**; Law-1 audit: 12/19 vc40+ new users and all purchase attempts were Test Lab robots; first-session hook never fired since vc40 → fixed in vc44; plan [`10-claude-30day-plan.md`](../01-blockbloom/plan-2026-11/10-claude-30day-plan.md))  
 
 ---
 
