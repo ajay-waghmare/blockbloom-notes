@@ -22,6 +22,7 @@ folder; where the two differ, **this folder wins**.
 | **07-ad-bursts.md** | The ad money answer (₹3,500 committed, ₹10,500 at most to 31 Dec), why bursts, burst rules, set-up, measurement, the Burst 2 decision |
 | **08-dollar-a-day-plan.md** | **Nov 26 Amendment:** Mathematical `$1.00/day` (`₹93/day`) gap diagnosis + phased roadmap (`Phase 1` measurement/O-3/O-6 -> `Phase 2` `vc42` daily loop + E1/interstitial/mediation/IAP pacing -> `Phase 3` retention-gated Burst 1) |
 | **09-30day-1to3-dollar-handoff.md** | **Nov 27 Ground-Truth Handoff + `## Claude Task`:** Complete verified GA4/AdMob/Play/Code baseline (`TR`/`RU`/`(not set)` vs `US`/Tier-1, `30->17->6` Tier-1 funnel, `SM-S928U` risk, `$1–3/day` unit math, P0–P3 App Improvements & explicit `Claude Task` checklist for next 30 days) |
+| **10-claude-30day-plan.md** | **Nov 27 Claude Track A:** honest 30-day plan (27 Nov – 27 Dec): today ₹51/day (68% one device); a Tier-1 install earns ₹5–10 in 90 days vs ~₹29 cost → every burst loses money alone; profit by date for spend-nothing / Burst 1 / B-lite ₹1,500 / Burst 2; gate fix (sample size: measure all real new users n ≥ 40, D1 ≥ 22%); day-by-day calendar; vc44 scope; data list for Gemini; 6 decisions for Ajay |
 | 02-gemini-dev-specs.md | vc40 (V40-1…V40-11), vc41 (V41-01…05), vc42 (V42-01…04), vc43 hotfix rules — unchanged by v2 |
 | 03-console-runbooks.md | C-01…C-25 click by click (v2 notes at the top) |
 | 04-measurement-and-gates.md | `tools/growth-kpi.js` spec, spend log, formulas, routines (v2 notes at the top) |
