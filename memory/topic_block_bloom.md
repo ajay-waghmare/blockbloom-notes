@@ -5,7 +5,7 @@
 > **Package Name:** `com.aweagle.blockbloom`  
 > **Play Console App ID:** `4976030358371797626`  
 > **Repository:** `https://github.com/ajay-waghmare/BlockBloom.git` (`main`)  
-> **Latest Updated:** 2026-11-27 (`23:22 IST` — **`vc44` (`1.19.0`) LIVE at `20%` (`Nov 27 10:41 PM`)**, `P7` `--source` campaign cohort filters shipped & verified on `release/vc44` [`growth-kpi.js` `--source=BlockBloom-Tier1-EN` proves `72.7%` (`16/22`) RoW leak & `D1 9.8%` (`4/41`)], **`E-1` Interstitial & `1.19.0` `TestLab` audit complete** [`GameViewModel.kt:799+1715` false `rewarded_run` skip proved live on `OnePlus8Pro`]; **`P1–P12` Pre-flight scorecard logged** in [`13-preflight-and-e1-audit.md`](../01-blockbloom/plan-2026-11/13-preflight-and-e1-audit.md))  
+> **Latest Updated:** 2026-11-27 (`23:38 IST` — **`vc44` (`1.19.0`) LIVE at `20%` (`Nov 27 10:41 PM`)**, **`P7` `--source` campaign filters + `E-1` audit DONE** (`13-preflight-and-e1-audit.md`), **Canva Pro `Block Bloom` Hub built (`FAHcIXxIkiA`)** [verified `1024x500` Feature, `1200x628` + `1080x1920` Ads, `O-3` Video Frame & `1080p MP4` End Card, layered `Winter Bloom`, transparent icon cutout `MAHcIQjOUow`; flagged `1200x1200` overlap & 5-card fake mockups for fix], and **diagnosed Home `CONTINUE <diff> · 427` single-save UX bug** (`vc45` queue))  
 
 ---
 
