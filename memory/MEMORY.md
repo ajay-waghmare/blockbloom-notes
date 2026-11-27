@@ -2,7 +2,7 @@
 
 > **MANDATE:** This index and its domain files are the shared persistent brain across **all AI assistants and sessions** (Gemini, Claude, Codex, Antigravity). Whenever starting any task, read this index + relevant topic file(s) + latest daily journal FIRST. Whenever finishing any task, decision, or audit, update local + GitHub memory BEFORE concluding.
 
-> **➡ NEXT FOR GEMINI (27 Nov 09:25 IST, from Claude): [`Gemini Task`](../01-blockbloom/plan-2026-11/11-gemini-task-handoff.md) — ship vc44 (`release/vc44` `2f69e54`, 238 tests green) on Ajay's go, today's data pulls, console actions, the 2-week calendar, the engineering backlog, and the "count humans only" rule (12/19 vc40+ new users were Test Lab robots).**
+> **➡ NEXT FOR GEMINI (`09:50 IST`, [`Gemini Task`](../01-blockbloom/plan-2026-11/11-gemini-task-handoff.md)): `G-1` console pulls & `G-2 #1–2` local `vc44` (`2f69e54`, `238/238` green, `21,680,580` B AAB) DONE & logged. Awaiting Ajay's `go` for `G-2 #3` (`vc44 -> internal`) + `Google Ads verification` start (`Not started`, due `Dec 26`) + `Winter Bloom` card Sat Nov 28.**
 
 ---
 
@@ -10,7 +10,7 @@
 
 | Topic File | Scope / Domain | Status | Key Focus Areas |
 | :--- | :--- | :---: | :--- |
-| **[`topic_block_bloom.md`](topic_block_bloom.md)** | **Block Bloom: Block Puzzle Game** | 🟢 Live / `vc43` Ready | `vc41` (`100%`) live; `vc42` HELD; **`vc43` `78a4d11` + `vc44` `34fee0d` built (238 tests green); 12/19 vc40+ installs = Test Lab robots; hook bug fixed; plan `10-claude-30day-plan.md`; Ajay: phone check + uploads**; **`5/5` RC keys LIVE**; **30-day `$1–3/day` handoff + [`Claude Task`](../01-blockbloom/plan-2026-11/09-30day-1to3-dollar-handoff.md) pushed** (US=`69%`/`87%` 7d rev; `TR/RU/(not set)` `<1c/day`; clean Tier-1 funnel `30->17->6`, `0%` D1); `/blockbloom/` + Holiday Bloom/Burst 1/Outreach done; **Deadlines:** Google Ads Verif (`Dec 26`) & 16 KB (`Feb 1, 2027`). |
+| **[`topic_block_bloom.md`](topic_block_bloom.md)** | **Block Bloom: Block Puzzle Game** | 🟢 Live / `vc44` Ready | `vc41` (`100%`) live; `vc42` HELD; **`vc44` (`2f69e54`) built & gate-verified (`238/238`, `21,680,580` B AAB), awaits Ajay's `go` to upload**; **`G-1` console pulls done** (`AdMob 14d $5.06`, `US 76.5%`, `E1 n=94 P=0.123`, `Default 23.8% conv / 11 ratings / Icon 182 vs 230`, `Ads ₹1,308.45 / Verif Not started Dec 26`); **humans-only audit:** `0` human `hook`/`offer_tap`/`buy` (`Nov 20–27`); **`5/5` RC live** + `holiday-bloom`/outreach packs done; **Play `16 KB` due `Feb 1, 2027`**. |
 | **[`topic_arrow_bloom.md`](topic_arrow_bloom.md)** | **Arrow Bloom – Tap Logic Puzzle** | 🟡 Closed Testing | Package `com.aweagle.arrowbloom`, `vc4` live in Closed Alpha (`9/12` testers — needs `3` more for 14-day clock), store listing fixes, post-Production Firebase/AdMob plan. |
 | **[`topic_console_audit_2026_11_25.md`](topic_console_audit_2026_11_25.md)** | **4-Platform + Website Live Audit (25 Nov)** | 🟢 Completed & Verified | All automated & Q1–Q4 fixes + GA4 `17` custom dimensions / `6` Key Events live; remaining `4` human-only tax/tester/Signals checks tracked cleanly. |
 | **[`00-OPERATIONS-PLAYBOOK.md`](../00-OPERATIONS-PLAYBOOK.md)** | **Studio Console & Growth Playbook** | 🟢 Master SOP & PDF | Day-to-day manual + printable PDF ([`AW-EagleCraft-Operations-Playbook.pdf`](../01-blockbloom/AW-EagleCraft-Operations-Playbook.pdf)) covering all 6 platforms, guardrails, kill switches & scripts. |
