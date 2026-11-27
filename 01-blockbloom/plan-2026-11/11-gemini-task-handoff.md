@@ -13,7 +13,7 @@
 | **Production** | `vc41` (1.17.0) `completed`, serving 100% · `vc42` (1.18.0) staged 20% `inProgress`, **held in Managed Publishing — do not publish it** |
 | **Internal** | `vc42` (1.18.0) `completed` 100% |
 | **`release/vc43`** | `78a4d11` — Home UI fix (CONTI… / DAILY CHAL… / squashed pip / card heights) + Home translations + 33 tests. Gate green. **Not uploaded.** Fallback only. |
-| **`release/vc44`** | **`e7fdb82`** — everything in vc43 **plus**: the first-session-hook fix, Test Lab robots switched off (analytics + real ads), purchase telemetry, the last 41 English-only strings × 6 languages, Home fits on 16:9 phones, KPI emulator filter, `tools/ga4-new-user-devices.js`. **238/238 tests**, signed R8 bundle OK, lintVital 0, 16 KB unchanged, R8 keeps the 5 mediation adapters + `WinBackReceiver`. **Not uploaded.** |
+| **`release/vc44`** | **`2f69e54`** (code = `2f69e54`; also contains your 27 Nov vc42 docs) — everything in vc43 **plus**: the first-session-hook fix, Test Lab robots switched off (analytics + real ads), purchase telemetry, the last 41 English-only strings × 6 languages, Home fits on 16:9 phones, KPI emulator filter, `tools/ga4-new-user-devices.js`. **238/238 tests**, signed R8 bundle OK, lintVital 0, 16 KB unchanged, R8 keeps the 5 mediation adapters + `WinBackReceiver`. **Not uploaded.** |
 | **Plan** | [`10-claude-30day-plan.md`](10-claude-30day-plan.md) — profit by date, options, calendar, gates, §1b robots correction |
 | **Robots** | GA4 23–27 Nov: **37 first_open = 17 humans + 20 robots / no-country**; **1 Tier-1 human** (US). All 3 `purchase_result` events and 3 of 5 offer taps in 20–27 Nov were the `Pixel 6` lab robot. |
 | **Bug found** | The V40-2 first-session hook (card after the first game over) **never showed to any new player since vc40** — fixed in vc44 |
@@ -35,7 +35,7 @@
 
 | # | Step | Command / action | Done when |
 |---|---|---|---|
-| 1 | Build + gate on your laptop | `git fetch && git checkout release/vc44` (`e7fdb82`); `gradlew :app:testReleaseUnitTest :app:bundleRelease :app:lintVitalRelease` | 238/238 tests, lintVital 0, signed AAB `versionCode 44` / `1.19.0` |
+| 1 | Build + gate on your laptop | `git fetch && git checkout release/vc44` (`2f69e54`); `gradlew :app:testReleaseUnitTest :app:bundleRelease :app:lintVitalRelease` | 238/238 tests, lintVital 0, signed AAB `versionCode 44` / `1.19.0` |
 | 2 | Size + R8 checks | `node tools/check-16kb.js` (point it at the vc44 AAB); mapping keeps the 5 adapters + `WinBackReceiver` | 5 OK / 26 third-party 4 KB (unchanged) |
 | 3 | **[go]** Internal | `node tools/play-upload.js <vc44.aab> com.aweagle.blockbloom internal "1.19.0 (44)"` | internal shows vc44 |
 | 4 | **Ajay phone test** (checklist G-2a) | install from the internal track | Ajay says OK |
@@ -123,5 +123,5 @@
 - `release/vc43` `78a4d11`: Home UI fix + 33 JUnit tests (216 green).
 - [`10-claude-30day-plan.md`](10-claude-30day-plan.md): honest 30-day plan (Track A) + §1b correction.
 - Law-1 audit (GA4 by device): robots in the numbers; the first-session hook never fired since vc40.
-- `release/vc44` `34fee0d` + `e7fdb82`: the fixes in §0 (238 green) + the device-audit tool.
+- `release/vc44` `34fee0d` (fixes, 238 green) + `2f69e54` (device-audit tool) + `2f69e54` (merge of Gemini's 27 Nov `release/vc42` docs `283cb50` / `81b45aa`, so merging vc44 into main brings everything).
 - Journal: [`journal/2026-11-27.md`](../../journal/2026-11-27.md) (sections "Claude Task, Track A" and "Track B").
