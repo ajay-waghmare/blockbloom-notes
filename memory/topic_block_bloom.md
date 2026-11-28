@@ -5,7 +5,7 @@
 > **Package Name:** `com.aweagle.blockbloom`  
 > **Play Console App ID:** `4976030358371797626`  
 > **Repository:** `https://github.com/ajay-waghmare/BlockBloom.git` (`main`)  
-> **Latest Updated:** 2026-11-28 (`08:39 IST` — **`vc44` (`1.19.0`) `20%` morning check clean:** Firebase Crashlytics `100%` crash-free / `0` non-fatals / `0` ANRs, Play Pre-launch `0` issues, AdMob Nov 27 final `$0.50` / Nov 28 `$0.40` / MTD `$6.91` / Policy `0` issues, `E1` `n=107` `P=0.128`; **confirmed `Winter Bloom` draft missing in Play `/liveops/overview`** (submit TODAY Sat Nov 28); **fixed `1200×1200` Canva Square Ad `DAHcIhyhWnY`** overlap in open tx `8728499629994047133` awaiting `commit` go + 5-card real-screenshot rebuild; `vc45` queue holds `E-1` + Home `CONTINUE <diff>·427` fix)  
+> **Latest Updated:** 2026-11-28 (`09:42 IST` — **`Winter Bloom 2026` (`4831553379281356155`, `Dec 14–21 UTC`) SUBMITTED (`Not started`)**; **`P3` verified `Presence` + `6` Tier-1 + `₹400/day` + `₹25` tCPI + `Paused`**; **`P12` `18%` Integrated GST confirmed (`-₹563.12` on `₹3,128.42` spend -> Stage 0 needs `₹2,000` Dec 3 top-up, not `₹1,500`)**; **`P2` Advertiser Verification inspected (`Dec 26` deadline)**; **`vc44` (`1.19.0`) `20%` Crashlytics `100%` / `0` ANRs**, `54.84%` AdMob match rate `42/42` proved `TR`+`RU` on `1.17.0` (`US/BR/ES 100%`), Canva `DAHcIhyhWnY` committed + `4` PNGs exported; pending: `P2` ID submit, `P4` Landscape video + `O-3`, `P9` CPA rule, 5-card Play Showcase rebuild)  
 
 ---
 
