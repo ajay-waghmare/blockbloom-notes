@@ -142,13 +142,13 @@ The whale (~₹30/day) is **excluded** everywhere — the plan must work without
 
 | When | Build / change | Moves | Pass mark (humans) |
 |---|---|---|---|
-| **Now → 3 Dec** | **vc44 → 100%** (hook fix, robots off, purchase telemetry, all strings translated) | measurement + day-1 | first-session card shown on ≥ 80% of first game overs; no Test Lab rows on 1.19.0 |
+| **Now → 3 Dec** | **vc44 → vc45 (`1.19.1`) → 100%** (`vc45` removes dead `pangle`/`applovin` SDKs -> `0` `.so` libs = 16 KB clean + `−6.66 MB`, fixes `+50%%` event string; keeps all `vc44` hook/robots/telemetry fixes) | 16 KB + measurement + D1 | `vc45` live 100%; first-session card shown on ≥ 80% of first game overs; no Test Lab rows; 0 Play 16 KB warnings |
 | **Sun 6 Dec** (Remote Config, no release) | **E1 decision**: interstitials for everyone only if revenue per user is up **and** day-1 is not down. Pacing: never before the first game over, every 3–4 games, ≥ 120 s apart | revenue per player | revenue per Tier-1 player-day ≥ ₹5 within 7 days |
-| **vc45 — Fri 18 Dec slot** (small, only if Stage 0 shows the gap) | **Rewarded ads that players choose:** the US show rate of loaded rewarded ads is **11%** — make "double coins", "continue" and the Lucky Chest offers visible at the right moment (opt-in only, Law 5); log offer → watched per placement | revenue per player | rewarded shown / loaded ≥ 25% |
+| **vc46 — Fri 18 Dec slot** (small, only if Stage 0 shows the gap) | **Rewarded ads that players choose** + **`E-1` (`GameViewModel.kt:1715`) + interstitial backoff**: make "double coins", "continue" and Lucky Chest visible; log offer → watched per placement | revenue per player | rewarded shown / loaded ≥ 25% |
 | Sat 19 Dec – Sun 3 Jan | **code freeze** | — | — |
-| **vc46 — 5–16 Jan** | **Retention sprint:** reminder opt-in after the first game over, daily-challenge visibility, streak rewards, Adventure levels 1–10 pacing, a weekly mini-event | retention | D1 ≥ 28%, D7 ≥ 10% (n ≥ 100) |
-| **vc47 — 19–30 Jan** | **16 KB migration** (AGP 9 + Kotlin 2 + GMA 24 + Billing 8; Play deadline 1 Feb) + mediation bidders (Mintegral, then Liftoff / Meta) | eCPM + compliance | `check-16kb` all aligned; match rate ≥ 75% |
-| **vc48 — February** | **Purchases:** Remove Ads price test ($1.99 vs $2.99), starter pack (only if ≥ 5 human offer taps), gem-pack placement in the moments players run out | purchases | 8+ purchases / month |
+| **vc47 — 5–16 Jan** | **Retention sprint:** reminder opt-in after the first game over, daily-challenge visibility, streak rewards, Adventure levels 1–10 pacing, a weekly mini-event | retention | D1 ≥ 28%, D7 ≥ 10% (n ≥ 100) |
+| **vc48 — 19–30 Jan** | **Toolchain modernization** (AGP 9 + Kotlin 2 + GMA 24, zero 16 KB pressure now) + active mediation bidders (Mintegral / Liftoff / Meta) | eCPM + SDK currency | match rate ≥ 75% |
+| **vc49 — February** | **Purchases:** Remove Ads price test ($1.99 vs $2.99), starter pack (only if ≥ 5 human offer taps), gem-pack placement in the moments players run out | purchases | 8+ purchases / month |
 | **March – April** | events every 2 weeks; Arrow Bloom cross-promotion | retention + installs | D7 ≥ 12% |
 
 ## 7. Free growth that runs alongside (Gemini prepares; Ajay posts / approves)
