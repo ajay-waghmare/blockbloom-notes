@@ -17,6 +17,7 @@ const RET = {
   target: curve([0.30, 0.20, 0.16, 0.14, 0.13, 0.125, 0.12], 0.7),  // ASSUMED: casual-puzzle median, the Feb goal
 };
 const IAP_NET = 0.85 * 1.99 * 93;   // ₹ per $1.99 purchase after Play's 15%
+const GST_RATE = 1.18;              // VERIFIED 28 Nov 2026 (P12): Google Ads India deducts 18.00% Integrated GST from Prepay (-₹563.12 on ₹3,128.42 spend)
 
 // Case definitions. stage(d) returns paid ₹/day; the ladder in 12-10k-month-plan.md §4.
 const CASES = {
@@ -97,13 +98,17 @@ for (const [name, c] of Object.entries(CASES)) {
     spendTot += spend; revTot += rev;
   }
   console.log(`\n== ${name}`);
-  console.log('month   | ad spend | revenue | profit | cumulative profit | Tier-1 DAU (month end) | ₹/day at month end');
-  let cum = 0;
+  console.log('month   | ad spend | cash(1.18x) | revenue | profit(after GST) | cum profit(GST) | Tier-1 DAU (end) | ₹/day (end)');
+  let cum = 0, cumGst = 0, cashTot = 0;
   for (const [m, v] of Object.entries(months)) {
+    const cash = v.spend * GST_RATE;
+    cashTot += cash;
     cum += v.rev - v.spend;
-    console.log(`${m} | ${f(v.spend).padStart(8)} | ${f(v.rev).padStart(7)} | ${f(v.rev - v.spend).padStart(6)} | ${f(cum).padStart(17)} | ${f(v.t1dau).padStart(22)} | ${f(v.lastDay).padStart(4)}`);
+    cumGst += v.rev - cash;
+    console.log(`${m} | ${f(v.spend).padStart(8)} | ${f(cash).padStart(11)} | ${f(v.rev).padStart(7)} | ${f(v.rev - cash).padStart(17)} | ${f(cumGst).padStart(15)} | ${f(v.t1dau).padStart(16)} | ${f(v.lastDay).padStart(11)}`);
   }
-  let run = 0, peak = 0, beMonth = null; for (const [m, v] of Object.entries(months)) { run += v.rev - v.spend; if (run < peak) peak = run; if (run >= 0 && beMonth === null && peak < 0) beMonth = m; }
-  console.log(`peak cash needed (lowest cumulative profit): ₹${f(-peak)}; cumulative profit turns positive in: ${beMonth || (peak === 0 ? "never negative" : "not by April")}`);
-  console.log(`total Dec–Apr: spend ₹${f(spendTot)}, revenue ₹${f(revTot)}, profit ₹${f(revTot - spendTot)} (plus whale upside ~₹30/day while he stays)`);
+  let run = 0, peak = 0, beMonth = null;
+  for (const [m, v] of Object.entries(months)) { run += v.rev - v.spend * GST_RATE; if (run < peak) peak = run; if (run >= 0 && beMonth === null && peak < 0) beMonth = m; }
+  console.log(`peak cash needed incl. 18% GST: ₹${f(-peak)}; cumulative profit turns positive in: ${beMonth || (peak === 0 ? "never negative" : "not by April")}`);
+  console.log(`total Dec–Apr: ad spend ₹${f(spendTot)} (wallet cash ₹${f(cashTot)}), revenue ₹${f(revTot)}, profit ex-GST ₹${f(revTot - spendTot)}, profit after 18% GST ₹${f(revTot - cashTot)} (plus whale upside ~₹30/day while he stays)`);
 }

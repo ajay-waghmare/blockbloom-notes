@@ -5,7 +5,7 @@
 > **Package Name:** `com.aweagle.blockbloom`  
 > **Play Console App ID:** `4976030358371797626`  
 > **Repository:** `https://github.com/ajay-waghmare/BlockBloom.git` (`main`)  
-> **Latest Updated:** 2026-11-28 (`09:42 IST` — **`Winter Bloom 2026` (`4831553379281356155`, `Dec 14–21 UTC`) SUBMITTED (`Not started`)**; **`P3` verified `Presence` + `6` Tier-1 + `₹400/day` + `₹25` tCPI + `Paused`**; **`P12` `18%` Integrated GST confirmed (`-₹563.12` on `₹3,128.42` spend -> Stage 0 needs `₹2,000` Dec 3 top-up, not `₹1,500`)**; **`P2` Advertiser Verification inspected (`Dec 26` deadline)**; **`vc44` (`1.19.0`) `20%` Crashlytics `100%` / `0` ANRs**, `54.84%` AdMob match rate `42/42` proved `TR`+`RU` on `1.17.0` (`US/BR/ES 100%`), Canva `DAHcIhyhWnY` committed + `4` PNGs exported; pending: `P2` ID submit, `P4` Landscape video + `O-3`, `P9` CPA rule, 5-card Play Showcase rebuild)  
+> **Latest Updated:** 2026-11-28 (`21:44 IST` — **`vc44` (`1.19.0`) `22.5h` `20%` watch green (`3` real humans `UA`/`ID`/`NL` on `1.19.0`, `100%` Crashlytics / `0` ANRs)**; **`Winter Bloom 2026` (`4831553379281356155`, `Dec 14–21 UTC`) SUBMITTED (`Not started`)**; **`P3` verified `Presence` + `6` Tier-1 + `₹400/day` + `₹25` tCPI + `Paused`**; **`P12` `18%` GST synced into `12-10k-month-plan.md` & `revenue-10k-plan-sim.{js,out.txt}` (Dec 3 top-up = `₹2,000`)**; **`O-9` expanded**; **fresh `1.19.0` `Home`/`Gameplay` shots + 5-card `1080×1920` Play Showcase built & verified in `content/play-showcase/`** (also noted `+50%%` typo in live `event_weekend_desc` banner for `vc45`); remaining: `P2` Ads Verification (`Dec 26`), `P4` static swap + `P9` CPA rule (paused on user takeover), `O-3`/Landscape video, `vc44` -> `100%` `P1`)  
 
 ---
 

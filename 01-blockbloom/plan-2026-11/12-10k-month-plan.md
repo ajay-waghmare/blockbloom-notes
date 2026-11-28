@@ -15,8 +15,8 @@
 | **Today** | ₹35–51/day (AdMob 14 days: $5.06; GA4 7 days: ₹311). **68% from one US device.** Without him: ~₹10–15/day. |
 | **Target** | ₹333/day sustained, not dependent on one player |
 | **When (if every gate passes on time)** | run-rate **≈ end of February 2027**; first full ₹10k+ month **March** (₹15k in the BASE case) |
-| **Investment** | Ad budget **₹7,800 in December** (in two capped stages), then **₹150–300/day** only while the numbers pay. Total Dec–Apr ≈ ₹37k, mostly recycled from revenue. **Peak cash out of pocket ≈ ₹5,800 (BASE), ₹8,000 (UPSIDE).** Keep **₹8,000** available; commit it stage by stage. |
-| **Worst case if the gates are followed** | stop after the first test: **₹2,800 spent, −₹554 by April**; stop after the second: **₹7,800 spent, −₹2,072 by April** |
+| **Investment** | Ad budget **₹7,800 in December** (in two capped stages; **₹9,204** wallet cash incl. **18% GST**), then **₹150–300/day** only while the numbers pay. Total Dec–Apr ≈ ₹37.3k spend (**₹44k** incl. 18% GST), mostly recycled from revenue. **Peak cash out of pocket incl. 18% GST ≈ ₹8,438 (BASE), ₹10,455 (UPSIDE).** Commit it stage by stage. |
+| **Worst case if the gates are followed** | stop after the first test: **₹2,800 spent (₹3,304 incl. GST), −₹1,058 (−₹554 ex-GST) by April**; stop after the second: **₹7,800 spent (₹9,204 incl. GST), −₹3,476 (−₹2,072 ex-GST) by April** |
 | **Why it can work** | A Tier-1 install is worth **₹10 today** (180 days) and costs **~₹27**. If retention reaches day-1 30% / day-7 12% and ad revenue per player reaches ₹5.5+, the same install is worth **₹37–70** → ads pay for themselves and can be scaled. |
 | **What it is not** | Not a promise. The two biggest uncertainties — retention lift and revenue per player — are exactly what the first ₹2,800 measures. No further money moves until they are measured. |
 
@@ -43,12 +43,12 @@ Inputs: US banner eCPM **$3.38 MEASURED** (AdMob, 705 impressions, 14 days); US 
 ## 2. The investment calendar — day by day (next 5 weeks), then month by month
 
 **Rules of the calendar:** prepay only, **no automatic top-ups**; the account never holds more than the current stage's cap (or 7 days of budget from January) — when the balance runs out, ads stop by themselves. **Every top-up = Ajay's one-line go** after Gemini posts the gate result.
-**GST check (do once, before the first top-up):** Google Ads in India may add 18% GST to ad costs (UNVERIFIED for this account). Look at the November invoice: if ₹3,000 paid bought less than ₹3,000 of ads, multiply every cash figure below by 1.18.
+**GST VERIFIED (28 Nov, P12):** Google Ads India Billing Summary (`684-480-0945`) deducts **18.00% Integrated GST** directly from Prepay (`-₹563.12` GST on `₹3,128.42` Nov spend -> `₹5,000` deposited minus `₹3,691.55` net cost = `₹1,308.45` left). Multiply every ad budget figure by **`1.18`** for actual wallet cash needed (`Stage 0` `₹2,800` spend = `₹3,304` cash -> **₹2,000** top-up on Dec 3).
 
-| Date | Stage | Ad budget that day | Top-up by Ajay (balance today ₹1,308) | Cumulative ad spend | Only if |
+| Date | Stage | Ad budget that day | Top-up by Ajay (incl. 18% GST; balance ₹1,308) | Cumulative ad spend | Only if |
 |---|---|---|---|---|---|
 | Fri 27 Nov – Wed 2 Dec | **Pre-flight** | ₹0 | — | ₹0 | — (§3 checklist; vc44 → 100%; Google Ads verification submitted) |
-| **Thu 3 Dec** | Stage 0 go / no-go | ₹0 | **₹1,500** → balance ₹2,808 | ₹0 | all 12 pre-flight items green |
+| **Thu 3 Dec** | Stage 0 go / no-go | ₹0 | **₹2,000** → balance ₹3,308 (covers ₹2,800 + ₹504 GST) | ₹0 | all 12 pre-flight items green |
 | Fri 4 Dec | **Stage 0 — calibration** | ₹400 | — | ₹400 | — |
 | Sat 5 Dec | Stage 0 | ₹400 | — | ₹800 | no kill switch fired |
 | Sun 6 Dec | Stage 0 (+ E1 decision) | ₹400 | — | ₹1,200 | " |
@@ -56,20 +56,21 @@ Inputs: US banner eCPM **$3.38 MEASURED** (AdMob, 705 impressions, 14 days); US 
 | Tue 8 Dec | Stage 0 | ₹400 | — | ₹2,000 | " |
 | Wed 9 Dec | Stage 0 | ₹400 | — | ₹2,400 | " |
 | Thu 10 Dec | Stage 0 (last day) | ₹400 | — | **₹2,800** | " |
-| **Fri 11 Dec** | **Stage 0 read** (§4) | ₹0 | **₹5,000** if Stage 0 passed | ₹2,800 | Stage 0 pass marks |
+| **Fri 11 Dec** | **Stage 0 read** (§4) | ₹0 | **₹5,900** (₹5,000 + ₹900 GST) if Stage 0 passed | ₹2,800 | Stage 0 pass marks |
 | Sat 12 – Mon 21 Dec | **Stage 1 — Winter Bloom push** (10 days) | ₹500/day | — | ₹3,300 → **₹7,800** | Stage 0 passed |
 | Tue 22 – Wed 23 Dec | read day-7 | ₹0 | — | ₹7,800 | — |
-| **Wed 23 Dec** | **Stage 2 decision** (§4) | ₹0 | **₹7,700** only if Stage 2 passes | ₹7,800 | Stage 2 pass marks **and Google Ads verification complete** (else the account pauses on 26 Dec) |
+| **Wed 23 Dec** | **Stage 2 decision** (§4) | ₹0 | **₹9,086** (₹7,700 + ₹1,386 GST) only if Stage 2 passes | ₹7,800 | Stage 2 pass marks **and Google Ads verification complete** (else the account pauses on 26 Dec) |
 | Thu 24 Dec – Sun 3 Jan | **Stage 2 — Holiday Bloom** (UPSIDE only, 11 days) | ₹700/day | — | → ₹15,500 | Stage 2 passed |
-| **Mon 4 Jan →** | **Stage 3 — always-on** | **₹150/day** (BASE) | **₹1,050 every Monday** (7 days) | +₹4,200 in Jan | Stage-3 entry gate (§4) |
-| Feb | Stage 3 | ₹250/day | ₹1,750 every Monday | +₹7,000 | weekly scaling rule |
-| Mar – Apr | Stage 3 | ₹300/day (cap ₹10,000 / month unless Ajay raises it) | ₹2,100 every Monday | +₹9,000 / month | weekly scaling rule |
+| **Mon 4 Jan →** | **Stage 3 — always-on** | **₹150/day** (BASE) | **₹1,239 every Monday** (₹1,050 + 18% GST) | +₹4,200 in Jan | Stage-3 entry gate (§4) |
+| Feb | Stage 3 | ₹250/day | ₹2,065 every Monday (incl. 18% GST) | +₹7,000 | weekly scaling rule |
+| Mar – Apr | Stage 3 | ₹300/day (cap ₹10,000 / month unless Ajay raises it) | ₹2,478 every Monday (incl. 18% GST) | +₹9,000 / month | weekly scaling rule |
 
-**Money summary**
+**Money summary (ad spend · wallet cash incl. 18% GST)**
 
 | | Stage 0 | + Stage 1 | + Stage 2 (UPSIDE) | Jan | Feb | Mar | Apr |
 |---|---|---|---|---|---|---|---|
-| New money committed | ₹2,800 | ₹5,000 | ₹7,700 | ₹4,200 | ₹7,000 | ₹9,300 | ₹9,000 |
+| Ad spend committed | ₹2,800 | ₹5,000 | ₹7,700 | ₹4,200 | ₹7,000 | ₹9,300 | ₹9,000 |
+| Wallet cash (1.18× GST) | ₹3,304 | ₹5,900 | ₹9,086 | ₹4,956 | ₹8,260 | ₹10,974 | ₹10,620 |
 | Committed only after | pre-flight | Stage 0 pass | Stage 2 pass | Stage-3 gate | weekly rule | weekly rule | weekly rule |
 
 ---
@@ -114,24 +115,24 @@ Inputs: US banner eCPM **$3.38 MEASURED** (AdMob, 705 impressions, 14 days); US 
 
 The whale (~₹30/day) is **excluded** everywhere — the plan must work without him; his revenue is extra.
 
-| Case | Ad spend Dec–Apr | Peak cash needed | Profit by end of April | ₹/day at end of Feb |
+| Case | Ad spend Dec–Apr (wallet cash incl. 18% GST) | Peak cash needed (incl. GST) | Profit by Apr ex-GST (after 18% GST) | ₹/day at end of Feb |
 |---|---|---|---|---|
-| **WORST** — Stage 0 fails, ads stop, product stalls | ₹2,800 | ₹1,911 | **−₹554** | ₹11 |
-| **STOP AFTER STAGE 1** — Stage 1 day-7 fails, ads stop | ₹7,800 | ₹5,206 | **−₹2,072** | ₹25 |
-| **SLOW WITH RULES** — retention only reaches "mid", no always-on spend | ₹7,800 | ₹4,973 | **+₹1,456** | ₹54 |
-| **BASE** — gates pass on time | ₹37,300 | **₹5,784** | **+₹9,055** (positive from March) | **₹325** ≈ ₹10k/month |
-| **UPSIDE** — faster retention, Stage 2 runs | ₹56,700 | ₹8,043 | **+₹25,122** (positive from February) | ₹660 |
-| *NO RULES — keep spending ₹150–200/day although retention only reaches "mid"* | *₹28,400* | *₹7,122* | ***−₹7,023*** | *₹148* |
+| **WORST** — Stage 0 fails, ads stop, product stalls | ₹2,800 (₹3,304) | ₹1,911 (**₹2,415**) | −₹554 (**−₹1,058**) | ₹11 |
+| **STOP AFTER STAGE 1** — Stage 1 day-7 fails, ads stop | ₹7,800 (₹9,204) | ₹5,206 (**₹6,610**) | −₹2,072 (**−₹3,476**) | ₹25 |
+| **SLOW WITH RULES** — retention only reaches "mid", no always-on spend | ₹7,800 (₹9,204) | ₹4,973 (**₹6,377**) | +₹1,456 (**+₹52**) | ₹54 |
+| **BASE** — gates pass on time | ₹37,300 (₹44,014) | ₹5,784 (**₹8,438**) | +₹9,055 (**+₹2,341**, turns +ve Apr) | **₹325** ≈ ₹10k/month |
+| **UPSIDE** — faster retention, Stage 2 runs | ₹56,700 (₹66,906) | ₹8,043 (**₹10,455**) | +₹25,122 (**+₹14,916**, turns +ve Mar) | ₹660 |
+| *NO RULES — keep spending ₹150–200/day although retention only reaches "mid"* | *₹28,400 (₹33,512)* | *₹7,122 (**₹12,135**)* | ***−₹7,023 (−₹12,135)*** | *₹148* |
 
-**BASE month by month**
+**BASE month by month (after 18% GST)**
 
-| Month | Ad spend | Revenue | Profit | Cumulative | Tier-1 players / day (month end) | ₹ / day (month end) |
-|---|---|---|---|---|---|---|
-| Dec | ₹7,800 | ₹2,827 | −₹4,973 | −₹4,973 | 7 | 38 |
-| Jan | ₹4,200 | ₹3,389 | −₹811 | −₹5,784 | 21 | 132 |
-| Feb | ₹7,000 | ₹7,766 | +₹766 | −₹5,018 | 46 | **325** |
-| Mar | ₹9,300 | ₹15,083 | +₹5,783 | +₹765 | 66 | 538 |
-| Apr | ₹9,000 | ₹17,289 | +₹8,289 | **+₹9,055** | 76 | 608 |
+| Month | Ad spend | Cash (1.18× GST) | Revenue | Profit (after GST) | Cumulative (after GST) | Tier-1 players / day (month end) | ₹ / day (month end) |
+|---|---|---|---|---|---|---|---|
+| Dec | ₹7,800 | ₹9,204 | ₹2,827 | −₹6,377 | −₹6,377 | 7 | 38 |
+| Jan | ₹4,200 | ₹4,956 | ₹3,389 | −₹1,567 | −₹7,944 | 21 | 132 |
+| Feb | ₹7,000 | ₹8,260 | ₹7,766 | −₹494 | −₹8,438 | 46 | **325** |
+| Mar | ₹9,300 | ₹10,974 | ₹15,083 | +₹4,109 | −₹4,329 | 66 | 538 |
+| Apr | ₹9,000 | ₹10,620 | ₹17,289 | +₹6,669 | **+₹2,341** | 76 | 608 |
 
 **BASE assumes** (each one is checked by a gate before money depends on it): retention reaches D1 24% in January and D1 30% / D7 12% in February · revenue per Tier-1 player-day ₹5 from 7 Dec (interstitials on), ₹6 in Feb, ₹7 from March · purchases 4 / 8 / 12 a month in Jan / Feb / Mar+ · free Tier-1 installs 1–3 a day (Winter Bloom week 1.5) · cost per paid install ₹27 (+15% before Christmas, −20% after).
 

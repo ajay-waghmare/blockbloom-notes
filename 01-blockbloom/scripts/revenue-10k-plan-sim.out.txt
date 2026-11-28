@@ -1,60 +1,60 @@
 
 == WORST (Stage 0 fails, ads stop, product stalls)
-month   | ad spend | revenue | profit | cumulative profit | Tier-1 DAU (month end) | ₹/day at month end
-202612 |    2,800 |     889 | -1,911 |            -1,911 |                      3 |   10
-202701 |        0 |     345 |    345 |            -1,566 |                      2 |   11
-202702 |        0 |     317 |    317 |            -1,248 |                      2 |   11
-202703 |        0 |     351 |    351 |              -897 |                      2 |   11
-202704 |        0 |     344 |    344 |              -554 |                      2 |   12
-peak cash needed (lowest cumulative profit): ₹1,911; cumulative profit turns positive in: not by April
-total Dec–Apr: spend ₹2,800, revenue ₹2,246, profit ₹-554 (plus whale upside ~₹30/day while he stays)
+month   | ad spend | cash(1.18x) | revenue | profit(after GST) | cum profit(GST) | Tier-1 DAU (end) | ₹/day (end)
+202612 |    2,800 |       3,304 |     889 |            -2,415 |          -2,415 |                3 |          10
+202701 |        0 |           0 |     345 |               345 |          -2,070 |                2 |          11
+202702 |        0 |           0 |     317 |               317 |          -1,752 |                2 |          11
+202703 |        0 |           0 |     351 |               351 |          -1,401 |                2 |          11
+202704 |        0 |           0 |     344 |               344 |          -1,058 |                2 |          12
+peak cash needed incl. 18% GST: ₹2,415; cumulative profit turns positive in: not by April
+total Dec–Apr: ad spend ₹2,800 (wallet cash ₹3,304), revenue ₹2,246, profit ex-GST ₹-554, profit after 18% GST ₹-1,058 (plus whale upside ~₹30/day while he stays)
 
 == BASE (gates pass on time)
-month   | ad spend | revenue | profit | cumulative profit | Tier-1 DAU (month end) | ₹/day at month end
-202612 |    7,800 |   2,827 | -4,973 |            -4,973 |                      7 |   38
-202701 |    4,200 |   3,389 |   -811 |            -5,784 |                     21 |  132
-202702 |    7,000 |   7,766 |    766 |            -5,018 |                     46 |  325
-202703 |    9,300 |  15,083 |  5,783 |               765 |                     66 |  538
-202704 |    9,000 |  17,289 |  8,289 |             9,055 |                     76 |  608
-peak cash needed (lowest cumulative profit): ₹5,784; cumulative profit turns positive in: 202703
-total Dec–Apr: spend ₹37,300, revenue ₹46,355, profit ₹9,055 (plus whale upside ~₹30/day while he stays)
+month   | ad spend | cash(1.18x) | revenue | profit(after GST) | cum profit(GST) | Tier-1 DAU (end) | ₹/day (end)
+202612 |    7,800 |       9,204 |   2,827 |            -6,377 |          -6,377 |                7 |          38
+202701 |    4,200 |       4,956 |   3,389 |            -1,567 |          -7,944 |               21 |         132
+202702 |    7,000 |       8,260 |   7,766 |              -494 |          -8,438 |               46 |         325
+202703 |    9,300 |      10,974 |  15,083 |             4,109 |          -4,329 |               66 |         538
+202704 |    9,000 |      10,620 |  17,289 |             6,669 |           2,341 |               76 |         608
+peak cash needed incl. 18% GST: ₹8,438; cumulative profit turns positive in: 202704
+total Dec–Apr: ad spend ₹37,300 (wallet cash ₹44,014), revenue ₹46,355, profit ex-GST ₹9,055, profit after 18% GST ₹2,341 (plus whale upside ~₹30/day while he stays)
 
 == STOP AFTER STAGE 1 (Stage 0 passes, Stage 1 D7 fails, ads stop)
-month   | ad spend | revenue | profit | cumulative profit | Tier-1 DAU (month end) | ₹/day at month end
-202612 |    7,800 |   2,594 | -5,206 |            -5,206 |                      7 |   33
-202701 |        0 |     916 |    916 |            -4,290 |                      4 |   28
-202702 |        0 |     733 |    733 |            -3,557 |                      3 |   25
-202703 |        0 |     764 |    764 |            -2,793 |                      3 |   24
-202704 |        0 |     720 |    720 |            -2,072 |                      3 |   24
-peak cash needed (lowest cumulative profit): ₹5,206; cumulative profit turns positive in: not by April
-total Dec–Apr: spend ₹7,800, revenue ₹5,728, profit ₹-2,072 (plus whale upside ~₹30/day while he stays)
+month   | ad spend | cash(1.18x) | revenue | profit(after GST) | cum profit(GST) | Tier-1 DAU (end) | ₹/day (end)
+202612 |    7,800 |       9,204 |   2,594 |            -6,610 |          -6,610 |                7 |          33
+202701 |        0 |           0 |     916 |               916 |          -5,694 |                4 |          28
+202702 |        0 |           0 |     733 |               733 |          -4,961 |                3 |          25
+202703 |        0 |           0 |     764 |               764 |          -4,197 |                3 |          24
+202704 |        0 |           0 |     720 |               720 |          -3,476 |                3 |          24
+peak cash needed incl. 18% GST: ₹6,610; cumulative profit turns positive in: not by April
+total Dec–Apr: ad spend ₹7,800 (wallet cash ₹9,204), revenue ₹5,728, profit ex-GST ₹-2,072, profit after 18% GST ₹-3,476 (plus whale upside ~₹30/day while he stays)
 
 == SLOW WITH RULES (retention only reaches "mid"; the Stage-3 gate fails, so no always-on spend)
-month   | ad spend | revenue | profit | cumulative profit | Tier-1 DAU (month end) | ₹/day at month end
-202612 |    7,800 |   2,827 | -4,973 |            -4,973 |                      7 |   38
-202701 |        0 |   1,171 |  1,171 |            -3,802 |                      5 |   38
-202702 |        0 |   1,508 |  1,508 |            -2,294 |                      5 |   54
-202703 |        0 |   1,855 |  1,855 |              -439 |                      7 |   62
-202704 |        0 |   1,895 |  1,895 |             1,456 |                      7 |   64
-peak cash needed (lowest cumulative profit): ₹4,973; cumulative profit turns positive in: 202704
-total Dec–Apr: spend ₹7,800, revenue ₹9,256, profit ₹1,456 (plus whale upside ~₹30/day while he stays)
+month   | ad spend | cash(1.18x) | revenue | profit(after GST) | cum profit(GST) | Tier-1 DAU (end) | ₹/day (end)
+202612 |    7,800 |       9,204 |   2,827 |            -6,377 |          -6,377 |                7 |          38
+202701 |        0 |           0 |   1,171 |             1,171 |          -5,206 |                5 |          38
+202702 |        0 |           0 |   1,508 |             1,508 |          -3,698 |                5 |          54
+202703 |        0 |           0 |   1,855 |             1,855 |          -1,843 |                7 |          62
+202704 |        0 |           0 |   1,895 |             1,895 |              52 |                7 |          64
+peak cash needed incl. 18% GST: ₹6,377; cumulative profit turns positive in: 202704
+total Dec–Apr: ad spend ₹7,800 (wallet cash ₹9,204), revenue ₹9,256, profit ex-GST ₹1,456, profit after 18% GST ₹52 (plus whale upside ~₹30/day while he stays)
 
 == NO RULES - what the gates prevent (keeps spending ₹150–200/day although retention only reaches "mid")
-month   | ad spend | revenue | profit | cumulative profit | Tier-1 DAU (month end) | ₹/day at month end
-202612 |    7,800 |   2,827 | -4,973 |            -4,973 |                      7 |   38
-202701 |    4,200 |   2,902 | -1,298 |            -6,272 |                     21 |  116
-202702 |    4,200 |   3,942 |   -258 |            -6,530 |                     24 |  148
-202703 |    6,200 |   5,608 |   -592 |            -7,122 |                     33 |  194
-202704 |    6,000 |   6,099 |     99 |            -7,023 |                     36 |  211
-peak cash needed (lowest cumulative profit): ₹7,122; cumulative profit turns positive in: not by April
-total Dec–Apr: spend ₹28,400, revenue ₹21,377, profit ₹-7,023 (plus whale upside ~₹30/day while he stays)
+month   | ad spend | cash(1.18x) | revenue | profit(after GST) | cum profit(GST) | Tier-1 DAU (end) | ₹/day (end)
+202612 |    7,800 |       9,204 |   2,827 |            -6,377 |          -6,377 |                7 |          38
+202701 |    4,200 |       4,956 |   2,902 |            -2,054 |          -8,432 |               21 |         116
+202702 |    4,200 |       4,956 |   3,942 |            -1,014 |          -9,446 |               24 |         148
+202703 |    6,200 |       7,316 |   5,608 |            -1,708 |         -11,154 |               33 |         194
+202704 |    6,000 |       7,080 |   6,099 |              -981 |         -12,135 |               36 |         211
+peak cash needed incl. 18% GST: ₹12,135; cumulative profit turns positive in: not by April
+total Dec–Apr: ad spend ₹28,400 (wallet cash ₹33,512), revenue ₹21,377, profit ex-GST ₹-7,023, profit after 18% GST ₹-12,135 (plus whale upside ~₹30/day while he stays)
 
 == UPSIDE (faster retention, Stage 2 runs)
-month   | ad spend | revenue | profit | cumulative profit | Tier-1 DAU (month end) | ₹/day at month end
-202612 |   13,400 |   5,357 | -8,043 |            -8,043 |                     72 |  332
-202701 |    9,100 |  11,137 |  2,037 |            -6,006 |                     49 |  419
-202702 |    9,800 |  16,689 |  6,889 |               883 |                     76 |  660
-202703 |   12,400 |  23,199 | 10,799 |            11,682 |                     95 |  804
-202704 |   12,000 |  25,440 | 13,440 |            25,122 |                    106 |  886
-peak cash needed (lowest cumulative profit): ₹8,043; cumulative profit turns positive in: 202702
-total Dec–Apr: spend ₹56,700, revenue ₹81,822, profit ₹25,122 (plus whale upside ~₹30/day while he stays)
+month   | ad spend | cash(1.18x) | revenue | profit(after GST) | cum profit(GST) | Tier-1 DAU (end) | ₹/day (end)
+202612 |   13,400 |      15,812 |   5,357 |           -10,455 |         -10,455 |               72 |         332
+202701 |    9,100 |      10,738 |  11,137 |               399 |         -10,056 |               49 |         419
+202702 |    9,800 |      11,564 |  16,689 |             5,125 |          -4,931 |               76 |         660
+202703 |   12,400 |      14,632 |  23,199 |             8,567 |           3,636 |               95 |         804
+202704 |   12,000 |      14,160 |  25,440 |            11,280 |          14,916 |              106 |         886
+peak cash needed incl. 18% GST: ₹10,455; cumulative profit turns positive in: 202703
+total Dec–Apr: ad spend ₹56,700 (wallet cash ₹66,906), revenue ₹81,822, profit ex-GST ₹25,122, profit after 18% GST ₹14,916 (plus whale upside ~₹30/day while he stays)

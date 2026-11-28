@@ -12,6 +12,8 @@
 | **MiniReview** (NimbleThor team) | Curated indie Android games & honest reviews | `contact@minireview.io` · Reddit `u/NimbleThor` | `https://play.google.com/store/apps/details?id=com.aweagle.blockbloom&referrer=utm_source%3Dcreator%26utm_medium%3Dreview%26utm_campaign%3Dminireview_dec26` |
 | **Pocket Gamer** | Mobile gaming news, reviews & indie roundups | `reviews@pocketgamer.co.uk` / `news@pocketgamer.co.uk` | `https://play.google.com/store/apps/details?id=com.aweagle.blockbloom&referrer=utm_source%3Dcreator%26utm_medium%3Dreview%26utm_campaign%3Dpocketgamer_dec26` |
 | **AppUnwrapper** | Casual & puzzle mobile game showcases / guides | `http://www.appunwrapper.com/suggest-a-walkthrough-or-review/` | `https://play.google.com/store/apps/details?id=com.aweagle.blockbloom&referrer=utm_source%3Dcreator%26utm_medium%3Dreview%26utm_campaign%3Dappunwrapper_dec26` |
+| **Indie Game Buzz** | Indie game reviews & coverage | `games@indiegamebuzz.com` | `https://play.google.com/store/apps/details?id=com.aweagle.blockbloom&referrer=utm_source%3Dcreator%26utm_medium%3Dreview%26utm_campaign%3Dindiegamebuzz_dec26` |
+| **Indie Story Games** | Indie game spotlights & submissions | `indiestorygames@gmail.com` | `https://play.google.com/store/apps/details?id=com.aweagle.blockbloom&referrer=utm_source%3Dcreator%26utm_medium%3Dreview%26utm_campaign%3Dindiestory_dec26` |
 
 ### Ready-to-Send Pitch (MiniReview / Pocket Gamer)
 > **Subject:** Indie Android Puzzle Submission: Block Bloom (Offline 8x8 Block Puzzle · Dec 14 Winter Event)  
